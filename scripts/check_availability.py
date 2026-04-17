@@ -153,7 +153,26 @@ def check_asin(page, asin: str) -> str:
             except Exception:
                 pass
 
-        # --- 3. Full page: buyable text (checked BEFORE unavailability text) ---
+        # --- 3. Buy box text — check for explicit unavailability BEFORE scanning full page.
+        #    This prevents "in winkelwagen" appearing in recommendation carousels from
+        #    masking a buy box that says "momenteel niet verkrijgbaar".
+        #    Also catches "koop als gebruikt" (used-only, no new copy available).
+        for sel in ["#buybox", "#desktop_buybox", "#newAccordionRow"]:
+            try:
+                el = page.locator(sel).first
+                if el.count() > 0:
+                    box_text = el.inner_text().strip().lower()
+                    if box_text:
+                        for s in AVAILABILITY_OUT_TEXT:
+                            if s in box_text:
+                                return "unavailable"
+                        # Used-only buy box: no new copy available
+                        if "koop als gebruikt" in box_text and "in winkelwagen" not in box_text:
+                            return "unavailable"
+            except Exception:
+                pass
+
+        # --- 4. Full page: buyable text (checked BEFORE unavailability text) ---
         try:
             content = page.content().lower()
         except Exception:
@@ -163,12 +182,12 @@ def check_asin(page, asin: str) -> str:
             if s in content:
                 return "available"
 
-        # --- 4. Full page: specific unavailability phrases ---
+        # --- 5. Full page: specific unavailability phrases ---
         for s in UNAVAILABLE_PAGE_STRINGS:
             if s in content:
                 return "unavailable"
 
-        # --- 5. "See all buying options" = only used/third-party, no new-copy buy box ---
+        # --- 6. "See all buying options" = only used/third-party, no new-copy buy box ---
         if "see all buying options" in content or "alle aankoopmogelijkheden" in content:
             return "unavailable"
 
