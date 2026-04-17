@@ -1,122 +1,183 @@
 """
-check_availability.py — Scan all books in books.json for out-of-print / unavailable
-Amazon listings, then optionally remove them.
+check_availability.py — Playwright-based Amazon.nl availability checker.
+
+Uses a headed Chromium browser to bypass Amazon bot detection.
+Checks amazon.nl because that's where Netherlands/EU visitors land via OneLink.
 
 Usage:
     python scripts/check_availability.py           # dry run: report only
     python scripts/check_availability.py --remove  # remove unavailable books & save
-    python scripts/check_availability.py --batch 0 200   # check books 0-199 only
+    python scripts/check_availability.py --batch 0 100  # check books 0-99 only
+    python scripts/check_availability.py --fresh   # ignore cached results, re-check all
 
-The script checks amazon.com/dp/{ASIN} for known unavailability strings:
-  - "Out of Print--Limited Availability"
-  - "Currently unavailable"
-  - "This item is not available"
-  - "Unavailable"  (buy-box area)
-  - No "Add to Cart" AND no "Buy Now" button at all
+Detection priority (highest confidence first):
+  1. CSS: #add-to-cart-button / #buy-now-button present → "available"
+  2. CSS: #availability span text → "op voorraad" / "niet op voorraad"
+  3. Full page: buyable text ("in winkelwagen") → "available"
+  4. Full page: very specific unavailability phrases → "unavailable"
+  5. Full page: "see all buying options" (ONLY if no buyable text found) → "unavailable"
+  6. → "unknown" (keep book, no false removals)
 
-Writes results to scripts/unavailable_asins.json so you can resume or inspect them.
+Saves progress to scripts/unavailable_asins.json every 10 checks so you can resume.
 """
 
 import json
-import os
-import re
 import sys
-import time
-import random
+import os
 import argparse
+import random
+import io
 from pathlib import Path
 
-try:
-    import requests
-except ImportError:
-    print("requests not installed — run: pip install requests")
-    sys.exit(1)
+# Fix Windows cp1252 console encoding
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-# Fix Windows cp1252 console encoding — allow printing any Unicode book title
-if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+try:
+    from playwright.sync_api import sync_playwright
+except ImportError:
+    print("playwright not installed — run:")
+    print("  pip install playwright")
+    print("  playwright install chromium")
+    sys.exit(1)
 
 SCRIPT_DIR = Path(__file__).parent
 BOOKS_JSON = SCRIPT_DIR.parent / "data" / "books.json"
 RESULTS_FILE = SCRIPT_DIR / "unavailable_asins.json"
+LOG_FILE = SCRIPT_DIR / "availability_debug.log"
 
-# Strings that indicate a book is not purchasable
-UNAVAILABLE_STRINGS = [
-    "out of print--limited availability",
-    "out of print",
-    "currently unavailable",
-    "this item is not available",
-    "temporarily out of stock",  # different from out-of-print, but still not buyable
+# CSS selectors for the direct buy button — if present, book is definitely buyable
+BUY_BUTTON_SELECTORS = [
+    "#add-to-cart-button",
+    "#buy-now-button",
+    "input[name='submit.buy-now']",
 ]
 
-# The presence of these strings means the book IS buyable — used as sanity check
-BUYABLE_STRINGS = [
+# Text in the dedicated #availability element only
+# (don't check these in the full page — they appear as boilerplate elsewhere)
+AVAILABILITY_IN_STOCK_TEXT = [
+    "op voorraad",        # Dutch: "in stock"
+    "in stock",
+    "in voorraad",
+    "beschikbaar",        # Dutch: "available"
+]
+AVAILABILITY_OUT_TEXT = [
+    "niet op voorraad",           # "not in stock"
+    "momenteel niet verkrijgbaar",  # "currently unavailable"
+    "tijdelijk niet op voorraad",
+    "niet leverbaar",
+    "vergrijpte uitgave",         # "out of print"
+    "out of print",
+    "currently unavailable",
+    "temporarily out of stock",
+    "this item is not available",
+]
+
+# Buy button TEXT found anywhere on the page — high confidence the book is buyable
+BUYABLE_PAGE_STRINGS = [
+    "in winkelwagen",   # Dutch "Add to Cart"
+    "nu kopen",         # Dutch "Buy Now"
+    "direct kopen",     # Dutch "Buy directly"
     "add to cart",
     "buy now",
     "add to basket",
 ]
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    ),
-    "Accept-Language": "en-US,en;q=0.9",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-}
+# Specific unavailability phrases for the full-page fallback.
+# Only include phrases that are very specific and NOT generic UI boilerplate.
+# Do NOT include "niet beschikbaar" — it appears on every page as help text.
+UNAVAILABLE_PAGE_STRINGS = [
+    "momenteel niet verkrijgbaar",   # "currently unavailable" — very specific
+    "niet op voorraad",              # "not in stock" — specific
+    "tijdelijk niet op voorraad",    # "temporarily out of stock"
+    "vergrijpte uitgave",            # "out of print"
+    "out of print--limited availability",
+    "out of print",
+    "currently unavailable",
+    "temporarily out of stock",
+    "this item is not available",
+]
 
 
-def check_asin(session, asin: str) -> str:
+def check_asin(page, asin: str) -> str:
     """
-    Returns:
-      'unavailable' — clearly out of print / unavailable
-      'available'   — has a buy button
-      'blocked'     — Amazon blocked the request (CAPTCHA / 503)
-      'error'       — network / unexpected error
+    Navigate to amazon.nl/dp/{asin} and determine availability.
+    Returns: 'available', 'unavailable', 'unknown', or 'error:...'
     """
-    url = f"https://www.amazon.com/dp/{asin}"
+    url = f"https://www.amazon.nl/dp/{asin}"
     try:
-        resp = session.get(url, headers=HEADERS, timeout=15, allow_redirects=True)
-        if resp.status_code in (503, 429):
-            return "blocked"
-        if resp.status_code == 404:
-            return "unavailable"
-        if resp.status_code != 200:
-            return f"error:{resp.status_code}"
+        page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        page.wait_for_timeout(2500)  # wait for JS buy box to render
 
-        page = resp.text.lower()
+        # Write debug log entry
+        try:
+            with open(LOG_FILE, "a", encoding="utf-8") as lf:
+                lf.write(f"ASIN={asin} title={repr(page.title()[:80])} url={page.url[:80]}\n")
+        except Exception:
+            pass
 
-        # CAPTCHA / bot detection
-        if "enter the characters you see below" in page or "robot check" in page:
-            return "blocked"
+        # --- CAPTCHA / robot check ---
+        for _ in range(90):
+            title = page.title().lower()
+            if "robot" in title or "characters" in title or "captcha" in title or "typ de tekens" in title:
+                print("  ⚠ CAPTCHA detected — solve in the browser window (waiting up to 90s)...", flush=True)
+                page.wait_for_timeout(1000)
+            else:
+                break
 
-        # CAPTCHA / bot detection — Amazon served a stripped page, can't judge.
-        if "enter the characters you see below" in page or "robot check" in page:
-            return "blocked"
+        # --- 1. Buy button CSS selector (highest confidence) ---
+        # Don't use is_visible() — in background processes it can fail to detect
+        # visible-but-off-screen elements. count() > 0 is sufficient.
+        for sel in BUY_BUTTON_SELECTORS:
+            try:
+                el = page.locator(sel).first
+                if el.count() > 0:
+                    return "available"
+            except Exception:
+                pass
 
-        # Explicit unavailability strings → definitely can't buy.
-        for s in UNAVAILABLE_STRINGS:
-            if s in page:
+        # --- 2. #availability element text ---
+        for sel in ["#availability span", "#availability"]:
+            try:
+                el = page.locator(sel).first
+                if el.count() > 0:
+                    avail_text = el.inner_text().strip().lower()
+                    if avail_text:
+                        # In-stock strings
+                        for s in AVAILABILITY_IN_STOCK_TEXT:
+                            if s in avail_text:
+                                return "available"
+                        # Out-of-stock strings
+                        for s in AVAILABILITY_OUT_TEXT:
+                            if s in avail_text:
+                                return "unavailable"
+            except Exception:
+                pass
+
+        # --- 3. Full page: buyable text (checked BEFORE unavailability text) ---
+        try:
+            content = page.content().lower()
+        except Exception:
+            return "unknown"
+
+        for s in BUYABLE_PAGE_STRINGS:
+            if s in content:
+                return "available"
+
+        # --- 4. Full page: specific unavailability phrases ---
+        for s in UNAVAILABLE_PAGE_STRINGS:
+            if s in content:
                 return "unavailable"
 
-        # Direct buy button present → definitely available.
-        has_buy_button = any(s in page for s in BUYABLE_STRINGS)
-        if has_buy_button:
-            return "available"
-
-        # "See all buying options" without a buy button means no new-copy buy box —
-        # only used/third-party sellers, so no proper affiliate buy button.
-        if "see all buying options" in page:
+        # --- 5. "See all buying options" = only used/third-party, no new-copy buy box ---
+        if "see all buying options" in content or "alle aankoopmogelijkheden" in content:
             return "unavailable"
 
-        # Page loaded but no signals either way — likely geo-blocked or bot-stripped.
-        # Keep the book to avoid false removals.
+        # --- No signal either way — keep book, don't remove ---
+        with open(LOG_FILE, "a", encoding="utf-8") as lf:
+            lf.write(f"  -> unknown (no signal)\n")
         return "unknown"
 
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
         return f"error:{type(e).__name__}"
 
 
@@ -133,77 +194,104 @@ def save_results(results: dict):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Check Amazon availability for all books")
-    parser.add_argument("--remove", action="store_true", help="Remove unavailable books from books.json")
+    parser = argparse.ArgumentParser(description="Check Amazon.nl availability for all books (Playwright)")
+    parser.add_argument("--remove", action="store_true",
+                        help="Remove unavailable books from books.json (requires --confirm)")
+    parser.add_argument("--confirm", action="store_true",
+                        help="Required together with --remove to actually delete books")
     parser.add_argument("--batch", nargs=2, type=int, metavar=("START", "END"),
                         help="Only check books[START:END] (0-indexed)")
     parser.add_argument("--delay", type=float, default=2.5,
                         help="Base delay between requests in seconds (default: 2.5)")
+    parser.add_argument("--fresh", action="store_true",
+                        help="Ignore cached results and re-check every book")
     args = parser.parse_args()
 
     with open(BOOKS_JSON, encoding="utf-8") as f:
         data = json.load(f)
     books = data["books"]
 
-    # Load previously checked results so we can resume
-    results = load_existing_results()
+    # Load previously checked results (unless --fresh)
+    results = {} if args.fresh else load_existing_results()
     already_checked = set(results.keys())
+
+    if args.fresh and RESULTS_FILE.exists():
+        os.remove(RESULTS_FILE)
+        print("Cleared cached results (--fresh mode).")
 
     # Slice if batch mode
     if args.batch:
         start, end = args.batch
         to_check = books[start:end]
-        print(f"Batch mode: checking books {start} to {end-1} ({len(to_check)} books)")
+        print(f"Batch mode: checking books {start}–{end-1} ({len(to_check)} books)")
     else:
         to_check = books
-        print(f"Checking all {len(to_check)} books...")
-
-    session = requests.Session()
-    session.headers.update(HEADERS)
+        print(f"Checking all {len(to_check)} books on amazon.nl (Playwright)...")
 
     checked = 0
     skipped = 0
     unavailable_count = 0
-    blocked_count = 0
+    unknown_count = 0
 
-    for i, book in enumerate(to_check):
-        asin = book.get("asin")
-        if not asin:
-            continue
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(
+            headless=False,
+            slow_mo=50,
+            args=["--start-maximized"],
+        )
+        context = browser.new_context(
+            viewport={"width": 1400, "height": 900},
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/124.0.0.0 Safari/537.36"
+            ),
+            locale="nl-NL",
+        )
+        page = context.new_page()
 
-        if asin in already_checked:
-            skipped += 1
-            if results[asin] == "unavailable":
+        for i, book in enumerate(to_check):
+            asin = book.get("asin")
+            if not asin:
+                continue
+
+            if asin in already_checked:
+                skipped += 1
+                if results[asin] == "unavailable":
+                    unavailable_count += 1
+                continue
+
+            status = check_asin(page, asin)
+            results[asin] = status
+            checked += 1
+
+            title_short = book.get("title", "")[:65]
+
+            if status == "unavailable":
                 unavailable_count += 1
-            continue
+                print(f"  [NO BUY BOX] {title_short}", flush=True)
+            elif status == "unknown":
+                unknown_count += 1
+                if checked % 20 == 0:
+                    print(f"  ... {checked} checked (+{skipped} resumed) | "
+                          f"{unavailable_count} no-buy-box | {unknown_count} unknown", flush=True)
+            elif status.startswith("error"):
+                print(f"  [ERROR] {asin}: {status}", flush=True)
+            else:
+                # available
+                if checked % 20 == 0:
+                    print(f"  ... {checked} checked (+{skipped} resumed) | "
+                          f"{unavailable_count} no-buy-box | {unknown_count} unknown", flush=True)
 
-        status = check_asin(session, asin)
-        results[asin] = status
-        checked += 1
+            # Save progress every 10 checks
+            if checked % 10 == 0:
+                save_results(results)
 
-        if status == "unavailable":
-            unavailable_count += 1
-            print(f"  [OUT OF PRINT] {book['title'][:70]}")
-        elif status == "blocked":
-            blocked_count += 1
-            print(f"  [BLOCKED] ASIN {asin} — Amazon blocked request #{checked}")
-        elif status == "unknown":
-            if checked % 25 == 0:
-                print(f"  ... checked {checked} (+ {skipped} resumed) | {unavailable_count} unavailable so far")
-        elif status.startswith("error"):
-            print(f"  [ERROR] ASIN {asin}: {status}")
-        else:
-            # available — only print every 25 to keep output manageable
-            if checked % 25 == 0:
-                print(f"  ... checked {checked} (+ {skipped} resumed) | {unavailable_count} unavailable so far")
+            # Polite delay with jitter
+            delay_ms = int((args.delay + random.uniform(0, 1.5)) * 1000)
+            page.wait_for_timeout(delay_ms)
 
-        # Save after every 10 checks so we can resume
-        if checked % 10 == 0:
-            save_results(results)
-
-        # Delay — add jitter to avoid detection
-        delay = args.delay + random.uniform(0, 1.5)
-        time.sleep(delay)
+        browser.close()
 
     # Final save
     save_results(results)
@@ -213,26 +301,31 @@ def main():
     unavailable_books = [b for b in books if b.get("asin") in unavailable_asins]
 
     print(f"\n{'='*60}")
-    print(f"Checked: {checked} new | Resumed: {skipped} | Blocked: {blocked_count}")
-    print(f"Unavailable / out-of-print: {len(unavailable_books)} books")
+    print(f"Checked: {checked} new | Resumed: {skipped} | Unknown (kept): {unknown_count}")
+    print(f"No buy box on amazon.nl: {len(unavailable_books)} books")
 
     if unavailable_books:
-        print("\nOut-of-print books:")
+        print("\nBooks with no buy box:")
         for b in unavailable_books:
-            print(f"  [{b['asin']}] {b['title'][:70]}")
+            print(f"  [{b['asin']}] {b.get('title','')[:70]}")
 
-    if args.remove and unavailable_books:
+    if args.remove and not args.confirm:
+        print(f"\n⚠  --remove passed but --confirm was not. Dry run only.")
+        print(f"   To actually delete, run with: --remove --confirm")
+
+    if args.remove and args.confirm and unavailable_books:
         before = len(books)
         data["books"] = [b for b in books if b.get("asin") not in unavailable_asins]
         after = len(data["books"])
         with open(BOOKS_JSON, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"\nRemoved {before - after} books. Catalog now has {after} books.")
-        # Clear results file so next run starts fresh
-        os.remove(RESULTS_FILE)
+        # Clear cache so next run starts fresh
+        if RESULTS_FILE.exists():
+            os.remove(RESULTS_FILE)
         print("Cleared results cache.")
-    elif unavailable_books and not args.remove:
-        print(f"\nDry run — run with --remove to delete these {len(unavailable_books)} books.")
+    elif unavailable_books and not (args.remove and args.confirm):
+        print(f"\nDry run — run with --remove --confirm to delete these {len(unavailable_books)} books.")
 
 
 if __name__ == "__main__":
