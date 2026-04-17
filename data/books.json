@@ -6226,7 +6226,8 @@
       "coverImage": "https://books.google.com/books/content?id=OPUtDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
       "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1119271649.01.LZZZZZZZ.jpg",
       "categories": [
-        "fiction"
+        "business",
+        "self-help"
       ],
       "tags": [],
       "language": "en",

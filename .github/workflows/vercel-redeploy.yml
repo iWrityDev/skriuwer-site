@@ -1,0 +1,26 @@
+name: Trigger Vercel Deploy After Rate Limit Reset
+
+on:
+  # Fires at 23:50 UTC on April 18 — 10 min after the daily limit resets (resets at 23:40 UTC)
+  schedule:
+    - cron: '50 23 18 4 *'
+  # Also allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  trigger-redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.email "deploy@skriuwer.com"
+          git config user.name "Skriuwer Deploy Bot"
+
+      - name: Push empty commit to trigger Vercel webhook
+        run: |
+          git commit --allow-empty -m "chore: trigger Vercel redeploy [skip ci]"
+          git push origin master
