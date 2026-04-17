@@ -1,0 +1,30 @@
+import type { Metadata } from "next";
+import booksData from "../../../data/books.json";
+import type { Book } from "@/lib/types";
+import { BestOfPage } from "@/components/BestOfPage";
+
+export const metadata: Metadata = {
+  title: "Best Dark History Books in 2026 | True Stories of Horror & Brutality",
+  description:
+    "The best dark history books ranked by reader reviews. Uncover the gruesome, brutal, and disturbing facts from history that mainstream textbooks leave out.",
+  alternates: { canonical: "https://skriuwer.com/best-dark-history-books" },
+};
+
+export default function BestDarkHistoryBooksPage() {
+  const books = (booksData.books as Book[])
+    .filter((b) => b.categories.includes("dark-history"))
+    .sort((a, b) => b.reviewCount - a.reviewCount)
+    .slice(0, 15);
+
+  return (
+    <BestOfPage
+      title="Best Dark History Books"
+      description="History is far darker than any textbook will ever admit. These are the best dark history books — unflinching accounts of atrocities, cover-ups, and the brutal realities of the past — ranked by readers who wanted the full truth."
+      books={books}
+      breadcrumb="Best Dark History Books"
+      categoryPage="/category/dark-history"
+      categoryLabel="dark history"
+      canonical="https://skriuwer.com/best-dark-history-books"
+    />
+  );
+}
