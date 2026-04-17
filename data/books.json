@@ -11942,34 +11942,6 @@
       "publishedDate": null
     },
     {
-      "slug": "asin-3758411424",
-      "asin": "3758411424",
-      "title": "60 Short Stories in German A Dual-Language Book in English and German: A German Learning Book for Children and Beginners Learn German Language Through ... Stories for Young Minds English - German",
-      "description": "<p><span class=\"a-text-bold\">Ready to Discover a Magical World of Learning?</span></p><p><span>Welcome, little adventurers! Immerse yourself in \"60 Enchanting Mini Stories\", where every tale promises fun, magic, and invaluable lessons.</span></p><p><span><br></span></p><p><span class=\"a-text-bold\">Why It's a Treasure of Knowledge:</span></p><p><span>Research highlights the potency of stories in facilitating lasting learning. When education meets enjoyment, words transform into delightful companions and sentences into memorable adventures. This book offers a unique bilingual experience, presenting every story in both English and German. With 60 captivating tales, each page promises laughter, joy, and linguistic discovery. Suited for beginners and curious minds alike, every story is an invitation to a vibrant world where learning is an exhilarating voyage.</span></p><p><span><br></span></p><p><span class=\"a-text-bold\">Are You Ready for the Adventure?</span></p><p><span>Dive into a world where stories come to life and learning feels like play. Every turn of the page is a step into a universe filled with magic, fun, and knowledge. Enjoy the journey and happy exploring!</span></p>",
-      "author": "Skriuwer.com",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/P/3758411424.01.L.jpg",
-      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/3758411424.01.L.jpg",
-      "categories": [
-        "language-learning"
-      ],
-      "tags": [],
-      "language": "en",
-      "pages": null,
-      "price": null,
-      "currency": "USD",
-      "reviewCount": 27,
-      "starRating": 4.5,
-      "marketplaces": {
-        "amazon.com": "https://www.amazon.com/dp/3758411424",
-        "amazon.de": "https://www.amazon.de/dp/3758411424",
-        "amazon.co.uk": "https://www.amazon.co.uk/dp/3758411424",
-        "amazon.nl": "https://www.amazon.nl/dp/3758411424"
-      },
-      "isOwnBook": false,
-      "hookText": "You're never too old, too busy, or too bad at languages to learn one.",
-      "publishedDate": null
-    },
-    {
       "slug": "asin-b0dxfsbpjk",
       "asin": "B0DXFSBPJK",
       "title": "The History of China: A Complete Imperial History (The History of Countries)",
@@ -12910,6 +12882,34 @@
       },
       "isOwnBook": false,
       "hookText": "The real story is never the one in the textbook.",
+      "publishedDate": null
+    },
+    {
+      "slug": "asin-b0f3dbdgt2",
+      "asin": "B0F3DBDGT2",
+      "title": "A Science Based Nutrition Book: Facts for a Better Lifestyle",
+      "description": "<p><span>Looking for nutrition advice that's based on actual science instead of trends and fads? This book breaks down the latest research into straightforward steps you can use every day. No confusing jargon, no conflicting claims. Just clear, evidence-based guidance on how to eat well and feel better.</span></p><p><span>Inside, you'll find realistic meal ideas that make daily eating simple and satisfying, practical tips on shopping, cooking, and planning balanced meals, and detailed explanations of the vitamins, minerals, and nutrients your body actually needs. The book covers protein, carbs, and fats in depth, with a strong focus on micronutrients that many other guides gloss over. It also addresses how nutritional needs change across different life stages, from childhood through older adulthood, so the advice stays relevant no matter where you are. Whether you already know your way around nutrition or you're just getting started, this book gives you something you can apply right away.</span></p><p><span class=\"a-text-bold\">What's inside:</span></p><ul class=\"a-unordered-list a-vertical\"><li><span class=\"a-list-item\"><span>Macronutrients explained clearly: what protein, carbs, and fats actually do and how to balance them for your goals</span></span></li><li><span class=\"a-list-item\"><span>Vitamins and minerals in depth: a detailed look at the micronutrients your body depends on and the best food sources for each</span></span></li><li><span class=\"a-list-item\"><span>Practical meal planning: realistic ideas for shopping, cooking, and eating well without overcomplicating your daily routine</span></span></li><li><span class=\"a-list-item\"><span>Nutrition across life stages: how dietary needs shift from childhood through adulthood and into older age, and how to adjust accordingly</span></span></li><li><span class=\"a-list-item\"><span>Habits that last: strategies for building a sustainable relationship with food based on science rather than restriction or willpower</span></span></li></ul><span><br></span><p><span class=\"a-text-bold\">Reader review:</span><span><br></span><span class=\"a-text-italic\">\"I've tried a lot of nutrition books and most of them either oversimplify everything or bury you in studies you can't make sense of. This one hits the right balance. The micronutrient sections were especially useful, and the meal planning tips actually fit into a normal week. Solid, practical, and well-researched.\"</span><span> Karen L.</span></p><p><span>If you want a no-nonsense, science-backed approach to eating better, this book delivers clear information you can act on starting today. Good nutrition doesn't have to be complicated, and this book proves it.</span></p><p><span class=\"a-text-bold\">Order your copy today.</span></p>",
+      "author": "Skriuwer.com",
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/P/B0F3DBDGT2.01.L.jpg",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/B0F3DBDGT2.01.L.jpg",
+      "categories": [
+        "science"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": null,
+      "price": null,
+      "currency": "USD",
+      "reviewCount": 15,
+      "starRating": 4.9,
+      "marketplaces": {
+        "amazon.com": "https://www.amazon.com/dp/B0F3DBDGT2",
+        "amazon.de": "https://www.amazon.de/dp/B0F3DBDGT2",
+        "amazon.co.uk": "https://www.amazon.co.uk/dp/B0F3DBDGT2",
+        "amazon.nl": "https://www.amazon.nl/dp/B0F3DBDGT2"
+      },
+      "isOwnBook": false,
+      "hookText": "History is far darker than any textbook will ever admit.",
       "publishedDate": null
     },
     {
