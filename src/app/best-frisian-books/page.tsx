@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestFrisianBooksPage() {
-  const books = (booksData.books as Book[])
+  const books = ((booksData.books as unknown) as Book[])
     .filter((b) => {
       const combined = `${b.title} ${b.description}`.toLowerCase();
       return combined.includes("frisian") || combined.includes("fries");

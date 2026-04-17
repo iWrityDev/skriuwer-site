@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestStoicismBooksPage() {
-  const books = (booksData.books as Book[])
+  const books = ((booksData.books as unknown) as Book[])
     .filter((b) => {
       const text = (b.description || "").toLowerCase() + " " + b.title.toLowerCase();
       return /stoic|stoicism|marcus aurelius|seneca|epictetus/.test(text);

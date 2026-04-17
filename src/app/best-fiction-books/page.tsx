@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestFictionBooksPage() {
-  const books = (booksData.books as Book[])
+  const books = ((booksData.books as unknown) as Book[])
     .filter((b) => b.categories.includes("fiction"))
     .sort((a, b) => b.reviewCount - a.reviewCount)
     .slice(0, 15);

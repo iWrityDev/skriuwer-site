@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestAncientGreeceBooksPage() {
-  const books = (booksData.books as Book[])
+  const books = ((booksData.books as unknown) as Book[])
     .filter((b) => {
       const text = `${b.title} ${b.description || ""} ${b.tags?.join(" ") || ""}`.toLowerCase();
       return /\bgreece\b|\bgreek\b|athens|sparta|socrates|plato|aristotle|alexander|pericles|thucydides|herodotus|acropolis|parthenon|olympia|peloponnesian|marathon\b|thermopylae|agora/.test(text);

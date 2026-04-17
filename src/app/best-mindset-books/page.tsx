@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestMindsetBooksPage() {
-  const books = (booksData.books as Book[])
+  const books = ((booksData.books as unknown) as Book[])
     .filter((b) => b.categories.includes("self-help") || b.categories.includes("psychology"))
     .sort((a, b) => b.reviewCount - a.reviewCount)
     .slice(0, 15);

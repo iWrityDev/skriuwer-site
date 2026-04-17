@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestBilingualBooksPage() {
-  const books = (booksData.books as Book[])
+  const books = ((booksData.books as unknown) as Book[])
     .filter((b) => {
       const titleLower = b.title.toLowerCase();
       return (

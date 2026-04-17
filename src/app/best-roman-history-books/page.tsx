@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestRomanHistoryBooksPage() {
-  const books = (booksData.books as Book[])
+  const books = ((booksData.books as unknown) as Book[])
     .filter((b) => {
       if (!b.categories.includes("history")) return false;
       const combined = `${b.title} ${b.description}`.toLowerCase();

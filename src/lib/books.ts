@@ -1,7 +1,7 @@
 import booksData from "../../data/books.json";
 import type { Book } from "./types";
 
-const books: Book[] = booksData.books as Book[];
+const books: Book[] = (booksData.books as unknown) as Book[];
 
 export function getAllBooks(): Book[] {
   return books;

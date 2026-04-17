@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestVikingBooksPage() {
-  const books = (booksData.books as Book[])
+  const books = ((booksData.books as unknown) as Book[])
     .filter((b) => {
       const text = `${b.title} ${b.description || ""} ${b.tags?.join(" ") || ""}`.toLowerCase();
       return /viking|norse|scandinavia|odin|thor|valhalla|ragnarok|longship|northmen|norsemen|fjord|saga|skald/.test(text);

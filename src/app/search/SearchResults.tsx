@@ -8,7 +8,7 @@ import Image from "next/image";
 import type { Book } from "@/lib/types";
 import booksData from "../../../data/books.json";
 
-const allBooks = booksData.books as Book[];
+const allBooks = (booksData.books as unknown) as Book[];
 const fuse = new Fuse(allBooks, {
   keys: [
     { name: "title", weight: 0.5 },

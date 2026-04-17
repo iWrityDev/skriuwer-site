@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestBooksForHistoryLoversPage() {
-  const books = (booksData.books as Book[])
+  const books = ((booksData.books as unknown) as Book[])
     .filter(
       (b) =>
         b.categories.includes("history") || b.categories.includes("dark-history")

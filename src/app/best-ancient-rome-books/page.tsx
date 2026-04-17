@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestAncientRomeBooksPage() {
-  const books = (booksData.books as Book[])
+  const books = ((booksData.books as unknown) as Book[])
     .filter((b) => {
       const text = `${b.title} ${b.description || ""} ${b.tags?.join(" ") || ""}`.toLowerCase();
       return /\brome\b|\broman\b|caesar|gladiator|legion|colosseum|republic\b.*rome|senate.*rome|emperor.*rome|julius|augustus|nero|caligula|hadrian|marcus aurelius|seneca|cicero/.test(text);
