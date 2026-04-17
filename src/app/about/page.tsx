@@ -29,6 +29,12 @@ export default function AboutPage() {
         <p>
           Skriuwer.com was founded by Auke, an author and publisher based in Harkema, Friesland, Netherlands. With a deep passion for books on history, mythology, language learning, and culture, Auke started this site to help readers discover the best titles across these niches — books that are genuinely worth your time.
         </p>
+        <p>
+          Our small international team of authors and editors spans Friesland, France, and Spain. A portion of proceeds from our books supports <strong className="text-[var(--color-text)]">De Fryske Wrâld</strong>, a nonprofit foundation dedicated to preserving the Frisian language and culture.{" "}
+          <Link href="/team" className="text-[var(--color-orange-light)] hover:underline">
+            Meet the full team →
+          </Link>
+        </p>
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">What We Do</h2>
         <p>
