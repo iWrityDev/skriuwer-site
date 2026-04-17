@@ -34,8 +34,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Header */}
         <header className="bg-[var(--color-surface)] border-b border-[var(--color-border)] sticky top-0 z-40">
           <nav className="max-w-7xl mx-auto px-4 py-3 flex items-center">
-            <Link href="/" className="flex items-center gap-3">
-              <Logo size={44} />
+            <Link href="/" className="flex items-center gap-2.5">
+              <Logo size={40} />
+              <span
+                className="text-[1.15rem] font-extrabold text-[var(--color-orange-light)] hidden sm:inline"
+                style={{ fontFamily: "Georgia, 'Times New Roman', serif", fontStyle: "italic", letterSpacing: "-0.01em" }}
+              >
+                Skriuwer
+                <span
+                  className="text-[var(--color-text-dim)] font-normal"
+                  style={{ fontStyle: "normal", fontSize: "0.75em" }}
+                >
+                  .com
+                </span>
+              </span>
             </Link>
             <div className="flex items-center gap-6 text-sm font-semibold uppercase tracking-wider ml-8">
               <Link href="/books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">

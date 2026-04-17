@@ -1,27 +1,43 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Book } from "@/lib/types";
 import { StarRating } from "./StarRating";
 
 export function BookCard({ book }: { book: Book }) {
-  const hasCover = book.coverImage && book.coverImage.startsWith("http");
+  const initialSrc =
+    book.coverImage && book.coverImage.startsWith("http") ? book.coverImage : null;
+  const [imgSrc, setImgSrc] = useState<string | null>(initialSrc);
+
+  const handleError = () => {
+    if (book.coverImageFallback && book.coverImageFallback.startsWith("http")) {
+      setImgSrc(book.coverImageFallback);
+    } else {
+      setImgSrc(null);
+    }
+  };
 
   return (
     <Link href={`/books/${book.slug}`} className="book-card block group">
       <div className="relative aspect-[2/3] bg-[var(--color-surface-light)] flex items-center justify-center">
-        {hasCover ? (
+        {imgSrc ? (
           <Image
-            src={book.coverImage}
+            src={imgSrc}
             alt={book.title}
             fill
             className="object-cover"
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
             unoptimized
+            onError={handleError}
           />
         ) : (
           <div className="absolute inset-0 flex flex-col items-center justify-center p-3 text-center">
             <span className="text-3xl mb-2">&#128218;</span>
-            <span className="text-xs text-[var(--color-text-dim)] line-clamp-3 leading-snug">{book.title}</span>
+            <span className="text-xs text-[var(--color-text-dim)] line-clamp-3 leading-snug">
+              {book.title}
+            </span>
           </div>
         )}
       </div>

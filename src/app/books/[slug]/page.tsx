@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllSlugs, getBookBySlug, getRelatedBooks } from "@/lib/books";
 import { BuyButton } from "@/components/BuyButton";
 import { StarRating } from "@/components/StarRating";
 import { BookGrid } from "@/components/BookGrid";
+import { BookCoverImage } from "@/components/BookCoverImage";
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -125,21 +125,7 @@ export default async function BookPage({
           <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8">
             {/* Cover */}
             <div>
-              <div className="relative aspect-[2/3] bg-[var(--color-surface-light)] rounded-lg overflow-hidden flex items-center justify-center">
-                {book.coverImage && book.coverImage.startsWith("http") ? (
-                  <Image
-                    src={book.coverImage}
-                    alt={book.title}
-                    fill
-                    className="object-cover"
-                    sizes="280px"
-                    priority
-                    unoptimized
-                  />
-                ) : (
-                  <span className="text-6xl">📚</span>
-                )}
-              </div>
+              <BookCoverImage book={book} />
               {book.starRating && (
                 <div className="flex justify-center mt-3">
                   <StarRating rating={book.starRating} showNumber />
@@ -174,7 +160,9 @@ export default async function BookPage({
 
               {/* Short description */}
               <div className="text-[var(--color-text-muted)] text-sm leading-relaxed mb-6 line-clamp-6">
-                {cleanDescription.slice(0, 500)}...
+                {cleanDescription.length > 500
+                  ? `${cleanDescription.slice(0, 500)}…`
+                  : cleanDescription}
               </div>
 
               {/* Buy */}
@@ -211,10 +199,18 @@ export default async function BookPage({
             <div className="w-1 h-6 bg-[var(--color-orange)] rounded-full" />
             <h2 className="text-xl font-bold text-[var(--color-text)]">Description</h2>
           </div>
-          <div
-            className="prose max-w-none"
-            dangerouslySetInnerHTML={{ __html: book.description }}
-          />
+          {book.description.includes("<") ? (
+            <div
+              className="prose max-w-none"
+              dangerouslySetInnerHTML={{ __html: book.description }}
+            />
+          ) : (
+            <div className="prose max-w-none">
+              {book.description.split(/\n+/).map((para, i) =>
+                para.trim() ? <p key={i}>{para.trim()}</p> : null
+              )}
+            </div>
+          )}
         </div>
 
         {/* Tags */}
