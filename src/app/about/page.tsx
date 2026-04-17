@@ -4,6 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Us",
   description: "Skriuwer.com is an Amazon affiliate book discovery site founded by Auke, an author and publisher based in Friesland, Netherlands.",
+  alternates: { canonical: "https://skriuwer.com/about" },
 };
 
 export default function AboutPage() {

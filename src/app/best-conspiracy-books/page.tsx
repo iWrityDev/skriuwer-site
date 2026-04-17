@@ -24,6 +24,7 @@ export default function BestConspiracyBooksPage() {
       breadcrumb="Best Conspiracy Books"
       categoryPage="/category/conspiracy"
       categoryLabel="conspiracy"
+      canonical="https://skriuwer.com/best-conspiracy-books"
     />
   );
 }

@@ -4,6 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Affiliate Disclosure",
   description: "Skriuwer.com is a participant in the Amazon Services LLC Associates Program. Learn how our affiliate links work.",
+  alternates: { canonical: "https://skriuwer.com/affiliate-disclosure" },
 };
 
 export default function AffiliateDisclosurePage() {

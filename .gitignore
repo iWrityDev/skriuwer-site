@@ -6,3 +6,10 @@ scripts/secrets.env
 .env
 .env.local
 .env*.local
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+tsconfig.tsbuildinfo
+next-env.d.ts

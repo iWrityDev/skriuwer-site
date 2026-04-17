@@ -5,13 +5,21 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Skriuwer.com - The Online Bookstore",
+    default: "Skriuwer.com — Book Recommendations & Reviews",
     template: "%s – Skriuwer.com",
   },
   description:
-    "Discover bestselling books across history, mythology, language learning, and more. Boldly written. Independently published.",
+    "Discover the best books across history, mythology, language learning, psychology, true crime, and more. Curated lists with Amazon affiliate links.",
   metadataBase: new URL("https://skriuwer.com"),
-  openGraph: { siteName: "Skriuwer.com", type: "website" },
+  openGraph: {
+    siteName: "Skriuwer.com",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    site: "@skriuwer",
+  },
   alternates: {
     types: {
       "application/rss+xml": "https://skriuwer.com/feed.xml",

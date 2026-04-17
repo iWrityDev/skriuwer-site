@@ -278,6 +278,37 @@ TOPICS = [
     "Al Capone: The Rise and Fall of Chicago's Most Dangerous Gangster",
     "The Nuremberg Trials: Justice After the Holocaust",
     "Operation Paperclip: How the US Recruited Nazi Scientists",
+    # Philosophy & Stoicism
+    "What Is Stoicism? The Ancient Philosophy That Runs the World",
+    "Marcus Aurelius' Meditations: The Most Powerful Self-Help Book Ever Written",
+    "Seneca on Time: How to Use Your Hours Like a Philosopher",
+    "Epictetus: The Slave Who Became a Philosopher",
+    "Plato's Republic: What It Says and Why It Still Matters",
+    "Nietzsche's Thus Spoke Zarathustra: A Beginner's Guide",
+    "The Allegory of the Cave: Plato's Greatest Thought Experiment",
+    "Aristotle's Nicomachean Ethics: The Philosophy of the Good Life",
+    "Kant's Categorical Imperative: The Ultimate Moral Rule",
+    "The Socratic Method: How to Think Clearly and Argue Well",
+    "Existentialism Explained: Sartre, Camus, and the Meaning of Life",
+    "Stoic Exercises for Daily Life: What the Ancients Actually Practiced",
+    "How Stoicism Differs from Buddhism (And What They Share)",
+    "The Pre-Socratics: Philosophy Before Plato",
+    "David Hume and the Problem of Induction",
+    "René Descartes: 'I Think, Therefore I Am'",
+    "The Stoic View of Anger: How Ancient Romans Controlled Their Temper",
+    "Zeno of Citium: The Founder of Stoicism",
+    # Extra true crime
+    "Ted Bundy: The Psychology Behind America's Most Charming Killer",
+    "The Night Stalker: Richard Ramirez and the Terror of 1985",
+    "Jack the Ripper: The Prime Suspects and the Unsolved Mystery",
+    "The Unabomber: Ted Kaczynski and the War Against Technology",
+    "Bonnie and Clyde: The Real Story Behind the Legend",
+    # Extra biography
+    "Sun Tzu: The Art of War and the Life Behind It",
+    "Catherine the Great: Russia's Most Powerful Empress",
+    "Frederick the Great: Prussia's Philosopher King",
+    "Voltaire: The Writer Who Changed Europe",
+    "Machiavelli: The Man Behind 'The Prince'",
 ]
 
 

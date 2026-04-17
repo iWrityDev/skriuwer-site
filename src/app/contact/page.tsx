@@ -4,6 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Get in touch with Skriuwer.com. We'd love to hear from fellow book lovers.",
+  alternates: { canonical: "https://skriuwer.com/contact" },
 };
 
 export default function ContactPage() {

@@ -1,6 +1,816 @@
 {
   "books": [
     {
+      "slug": "the-only-leadership-book-youll-ever-need-how-to-build-organizations-where-employ",
+      "asin": "1601637470",
+      "title": "The Only Leadership Book You'll Ever Need: How to Build Organizations Where Employees Love to Come to Work",
+      "description": "Every organization faces challenges and hardships. The Only Leadership Book You’ll Ever Need teaches leaders how to overcome their most difficult obstacle: employee engagement. By pinpointing specific areas leaders can focus on and change, this book shows how one leader can effectively change the entire workplace environment-- for the better. Topics addressed include: The 10 Keys to Workplace Excellence. The 11 Stupid Things Managers Do to Mess Up Workplace Excellence. 76 Strategies to Effectively Lead and Engage Employees. Timely and accessible, The Only Leadership Book You’ll Ever Need is an essential book for every executive and manager.",
+      "author": "Peter Barron Stark, Jane Flaherty",
+      "coverImage": "https://books.google.com/books/content?id=A95EDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1601637470.01.LZZZZZZZ.jpg",
+      "categories": [
+        "business"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 224,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1601637470?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1601637470?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1601637470?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1601637470?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2010-03-20",
+      "shortDescription": "Every organization faces challenges and hardships. The Only Leadership Book You’ll Ever Need teaches leaders how to overcome their most difficult obstacle: employee engagement. By pinpointing specific...",
+      "source": "google_books"
+    },
+    {
+      "slug": "scope-of-leadership-book-series-leadership-self-communications-others-partnershi",
+      "asin": "1612541259",
+      "title": "SCOPE of Leadership Book Series: Leadership, Self, Communications, Others, Partnerships, and Execution",
+      "description": "The fully searchable digital box set that includes the six-book series: Leadership, Self, Communications, Others, Partnerships, and Execution. The SCOPE of Leadership six-book series outlines the competencies that great leaders who lead as coaches possess. Read this series to learn the principles of developing, enabling, and inspiring people through a coaching approach to leadership. Develop the capabilities that produce consistently outstanding results; be a leader people aspire to follow; leverage cross-functional collaboration; build trust, teamwork, and a spirit of community; increase employee engagement and loyalty; communicate with confidence; foster innovation and competitive advantage; attract, develop, and motivate top talent; sustain speed, quality, and operational excellence. The SCOPE of Leadership book series teaches how to achieve exceptional results by working through people. You will learn a straightforward framework to guide you in developing, enabling, exhorting, inspiring, managing, and assimilating people. Benefit from the wisdom of many years of leadership, consulting, and executive coaching experience. Discover how to develop the competencies that align consistently with great leadership. The SCOPE of Leadership digital box set is fully searchable between books and includes links to additional resources and content by the author. \"The most comprehensive treatment of leadership I've ever seen by one author . . . full of insightful assessments, useful tools, and practical tips.\" —Jim Kouzes, coauthor of The Leadership Challenge",
+      "author": "Mike Hawkins",
+      "coverImage": "https://books.google.com/books/content?id=79pBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1612541259.01.LZZZZZZZ.jpg",
+      "categories": [
+        "business"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 912,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1612541259?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1612541259?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1612541259?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1612541259?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2013-06-10",
+      "shortDescription": "The fully searchable digital box set that includes the six-book series: Leadership, Self, Communications, Others, Partnerships, and Execution. The SCOPE of Leadership six-book series outlines the comp...",
+      "source": "google_books"
+    },
+    {
+      "slug": "an-introduction-to-the-five-practices-of-exemplary-leadership-participant-workbo",
+      "asin": "0470591986",
+      "title": "An Introduction to The Five Practices of Exemplary Leadership Participant Workbook",
+      "description": "Leadership is Everyone's Business Are you ready to seize the opportunities that lead to extraordinary results? Are you ready to inspire others to dream, to encourage their active participation, and to stand beside them when the going gets tough? Are you ready to lead? More than ever our families, our organizations, our communities, our nations, our world is in need of leaders who are willing to take on difficult challenges. An Introduction to The Five Practices of Exemplary Leadership® will inspire you to do just that—to take the initiative, to seize opportunities, to make a difference. Backed by over 25 years of original research, The Five Practices is an evidence-based leadership development model created by bestselling authors, Jim Kouzes and Barry Posner. With a simple, yet profound, principle at its core this program demystifies the concept of leadership and approaches it as a measurable, learnable set of behaviors The colorful, interactive pages of this workbook introduce you to the Leadership Practices Inventory (LPI) self assessment and then take you on a tour of The Five Practices: As you make your way through this workbook, you will discover the immediate and practical applicability of this time-tested leadership program.",
+      "author": "James M. Kouzes, Barry Z. Posner",
+      "coverImage": "https://books.google.com/books/content?id=dTZhIqaaY6YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0470591986.01.LZZZZZZZ.jpg",
+      "categories": [
+        "business"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 98,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0470591986?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0470591986?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0470591986?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0470591986?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2010-06-21",
+      "shortDescription": "Leadership is Everyone's Business Are you ready to seize the opportunities that lead to extraordinary results? Are you ready to inspire others to dream, to encourage their active participation, and to...",
+      "source": "google_books"
+    },
+    {
+      "slug": "the-leadership-challenge",
+      "asin": "0470947594",
+      "title": "The Leadership Challenge",
+      "description": "The most trusted resource on becoming a leader is now updated and revised for a new generation. This leadership classic continues to be a bestseller after three editions and twenty years in print. It is the gold standard for research-based leadership, and the premier resource on becoming a leader. This new edition, with streamlined text, more international and business examples, and a graphic redesign, is more readable and accessible than ever before. The Leadership Challenge, Fourth Edition, has been extensively updated with the latest research and case studies, and offers inspiring new stories of real people achieving extraordinary results. The authors' central theme remains the same and is more relevant today than ever: \"Leadership is Everyone?s Business.\" Their \"five practices\" and \"ten commitments\" have been proven by hundreds of thousands of dedicated, successful leaders. This edition, with almost one-third new material, emphasizes the global community and refocuses on business leaders.",
+      "author": "James M. Kouzes, Barry Z. Posner",
+      "coverImage": "https://books.google.com/books/content?id=t6WT1jA8Hg4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0470947594.01.LZZZZZZZ.jpg",
+      "categories": [
+        "business"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 416,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 15,
+      "starRating": 4.0,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0470947594?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0470947594?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0470947594?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0470947594?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2010-08-27",
+      "shortDescription": "The most trusted resource on becoming a leader is now updated and revised for a new generation. This leadership classic continues to be a bestseller after three editions and twenty years in print. It ...",
+      "source": "google_books"
+    },
+    {
+      "slug": "the-leadership-challenge-workshop-participant-workbook",
+      "asin": "0470543558",
+      "title": "The Leadership Challenge Workshop, Participant Workbook",
+      "description": "Leadership is Everyone's Business Are you ready to seize the opportunities that lead to extraordinary results? Are you ready to inspire others to dream, to encourage their active participation, and to stand beside them when the going gets tough? Are you ready to lead? More than ever our families, our organizations, our communities, our nations, our world is in need of leaders who are willing to take on difficult challenges. The Leadership Challenge® Workshop will prepare you to do just that—to take the initiative, to seize opportunities, to make a difference. Backed by over 25 years of original research, The Leadership Challenge® Workshop is a unique andintense discovery process created by bestselling authors, Jim Kouzes and Barry Posner. The workshop demystifies the concept of leadership and approaches it as learnable set of behaviors. In other words, forget about job titles, forget about position or rank or work experience. Leadership is about what you do. This revised Participant Workbook has been updated for today's in-demand leader. Grounded in Kouzes and Posner's evidence-based leadership model, the colorful, interactive pages help you to uncover the deeper meanings of: As you make your way through this workbook, you will soon discover The Leadership Challenge® Workshop experience goes beyond the typical training session. It might even change your life.",
+      "author": "James M. Kouzes, Barry Z. Posner",
+      "coverImage": "https://books.google.com/books/content?id=5zSRaMCHA80C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0470543558.01.LZZZZZZZ.jpg",
+      "categories": [
+        "business"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 226,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0470543558?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0470543558?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0470543558?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0470543558?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2010-06-21",
+      "shortDescription": "Leadership is Everyone's Business Are you ready to seize the opportunities that lead to extraordinary results? Are you ready to inspire others to dream, to encourage their active participation, and to...",
+      "source": "google_books"
+    },
+    {
+      "slug": "leadership-sustainability-seven-disciplines-to-achieve-the-changes-great-leaders",
+      "asin": "0071808531",
+      "title": "Leadership Sustainability: Seven Disciplines to Achieve the Changes Great Leaders Know They Must Make",
+      "description": "MAKE YOUR LEADERSHIP EFFORTS STICK Every day, thousands of people put great effort--and money--into becoming more effective leaders, through seminars, personal coaching, and employee development plans. These undertakings can do wonders to help leaders of all stripes improve their effectiveness. But not every leader finishes what he or she starts--and many revert back to less effective habits, often without even realizing it. How can you ensure that you stick with all the positive changes you have made? How do you make sure you don’t slip back into your old ways? Answer: Leadership Sustainability Dave Ulrich--the man BusinessWeek referred to as the \"#1 Management Educator and Guru\"--teams up with leadership expert Norm Smallwood to go where no leadership guide has gone. This dream team provides sophisticated, proven leadership sustainability ideas and tools that you can put to use immediately. Leadership Sustainability helps you turn good intentions into effective actions by mastering seven critical disciplines: Simplicity: Focus on the few key behaviors that will have the most impact. Time: Allocate your time so your calendar matches your intentions. Accountability: Take personal responsibility for doing what you say you will do. Resources: Support your leadership with effective, ongoing coaching and HR systems. Tracking: Develop metrics for measuring your leadership improvement. Melioration: Learn from your mistakes and demonstrate resilience. Emotion: Draw on deep personal values to keep yourself motivated. The journey to great leadership doesn't end with learning and implementing effective new skills. Great leadership is about consistency, and the drive for consistency is a never-ending process. Use Leadership Sustainability to ensure leadership greatness today, tomorrow, and for the rest of your life. PRAISE FOR LEADERSHIP SUSTAINABILITY: \"Dave and Norm propose a practical approach to solving the problem of leaders turning what they intend into what they do. The seven principles provide a simple and practical way to get things done.\" -- Ram Charan, coauthor of the New York Times bestselling Execution \"Dave and Norm do a great job about teaching leaders not just what to do, but how to make sure that they do it. The ideas in the book are insightful, specific, and actionable.\" -- Gina Qiao, SVP Human Resources, Lenovo \"Finally, a 'how-to' book that is grounded in the real-world dynamics of leading organizations!\" -- Dixon Thayer, CEO, HealthNEXT \"Dave and Norm provide both an in-depth understanding of why we often fall short and a set of tools for getting on with it.\" -- Morgan W. McCall, Jr., Professor, Marshall School of Business, University of Southern California, and author of High Flyer \"Leaders all over the world will celebrate Dave and Norm’s powerful new gift: the concept of Leadership Sustainability and its seven disciplines.\" -- Frances Hesselbein, President and CEO, The Frances Hesselbein Leadership Institute \"Finally, we have two scholar-practitioners who correctly address evidence that one of every two leaders fails and offer solutions about proper execution that leads to sustainability.\" -- W. Warner Burke, Professor of Psychology and Education, Teachers College, Columbia University \"Dave and Norm understand that one of the keys to success is disciplined continuity and sustainability--which constitute a required core competency among leadership.\" -- Kathleen Wilson-Thompson, Chief Human Resources Officer, Walgreen Co.",
+      "author": "Dave Ulrich, Norm Smallwood",
+      "coverImage": "https://books.google.com/books/content?id=2r9Hz9Nb9OIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0071808531.01.LZZZZZZZ.jpg",
+      "categories": [
+        "business"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 288,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0071808531?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0071808531?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0071808531?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0071808531?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2013-04-05",
+      "shortDescription": "MAKE YOUR LEADERSHIP EFFORTS STICK Every day, thousands of people put great effort--and money--into becoming more effective leaders, through seminars, personal coaching, and employee development plans...",
+      "source": "google_books"
+    },
+    {
+      "slug": "the-future-leader-9-skills-and-mindsets-to-succeed-in-the-next-decade",
+      "asin": "1119518377",
+      "title": "The Future Leader: 9 Skills and Mindsets to Succeed in the Next Decade",
+      "description": "WINNER OF CMI MANAGEMENT BOOK OF THE YEAR 2021 Are you a future-ready leader? Based on exclusive interviews with over 140 of the world's top CEOs and a survey of nearly 14,000 people. Do you have the right mindsets and skills to be able to lead effectively in the next ten years and beyond? Most individuals and organizations don’t even know what leadership will look like in the future. Until now. There has been a lot written about leadership for the present day, but the world is changing quickly. What worked in the past won’t work in the future. We need to know how to prepare leaders who can successfully navigate and guide us through the next decade and beyond. How is leadership changing, and why? How ready are leaders today for these changes? What should leaders do now? To answer these questions, Jacob interviewed over 140 CEOs from companies like Unilever, Mastercard, Best Buy, Oracle, Verizon, Kaiser, KPMG, Intercontinental Hotels Group, Yum! Brands, Saint-Gobain, Dominos, Philip Morris International, and over a hundred others. Jacob also partnered with Linkedin to survey almost 14,000 of their members around the globe to see how CEO insights align with employee perspectives The majority of the world's top business leaders that Jacob interviewed believe that while some core aspects of leadership will remain the same, such as creating a vision and executing on strategy, leaders of the future will need a new arsenal of skills and mindsets to succeed. What emerged from all of this research is the most accurate groundbreaking book on the future of leadership, which shares exclusive insights from the world's top CEOs and never before seen research. After reading it, you will: Learn the greatest trends impacting the future of leadership and their implications Understand the top skills and mindsets that leaders of the future will need to possess and how to learn them Change your perception of who a leader is and what leadership means Tackle the greatest challenges that leaders of the future will face See the gap that exists between what CEOs identified versus what employees are actually experiencing Become a future-ready leader This is the book that you, your team, and your organization must read in order to lead in the future of work.",
+      "author": "Jacob Morgan",
+      "coverImage": "https://books.google.com/books/content?id=wGvDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1119518377.01.LZZZZZZZ.jpg",
+      "categories": [
+        "business"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 327,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1119518377?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1119518377?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1119518377?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1119518377?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2020-02-26",
+      "shortDescription": "WINNER OF CMI MANAGEMENT BOOK OF THE YEAR 2021 Are you a future-ready leader? Based on exclusive interviews with over 140 of the world's top CEOs and a survey of nearly 14,000 people. Do you have the ...",
+      "source": "google_books"
+    },
+    {
+      "slug": "the-confident-leader-how-the-most-successful-people-go-from-effective-to-excepti",
+      "asin": "0071641688",
+      "title": "The Confident Leader: How the Most Successful People Go From Effective to Exceptional",
+      "description": "\"This groundbreaking book will become a classic. I'll be recommending it to all of my readers.” -Kevin Hogan, author of The Psychology of Persuasion New York Times bestselling author Larina Kase explains how to accomplish the things you think you can't, but really wish you could . . . Many people who want to advance in their career or business are faced with an innate fear of change--even positive change that could move them forward. Using cutting-edge research to help readers become true leaders in their fields, Larina Kase provides strategies to help readers move out of their comfort zones and better distinguish the positive decisions and actions that will dramatically propel their success. She includes interviews with top business thinkers such as Seth Godin, Joe Vitale, Annie McKee, and Tim Sanders. Apply the lessons in this book to: Discover why you don’t do what you need to do Empower yourself and others to stay motivated Transform fear of change into a positive driver for success Face uncomfortable situations with grace and poise “Imagine what you could accomplish with the confidence of the world’s top leaders . . . Read this book for a step-by-step plan to make it happen.” —Dr. Joe Vitale, author of The Key “The success of coaches, clients, and self-help aficionados, in particular, will dramatically increase after putting Larina’s powerful wisdom to work.” —Marilee Adams, Ph.D., author of Change Your Questions, Change Your Life",
+      "author": "Larina Kase",
+      "coverImage": "https://books.google.com/books/content?id=v1QnmGRzaEEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0071641688.01.LZZZZZZZ.jpg",
+      "categories": [
+        "business"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 288,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0071641688?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0071641688?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0071641688?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0071641688?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2008-09-07",
+      "shortDescription": "\"This groundbreaking book will become a classic. I'll be recommending it to all of my readers.” -Kevin Hogan, author of The Psychology of Persuasion New York Times bestselling author Larina Kase expla...",
+      "source": "google_books"
+    },
+    {
+      "slug": "exploring-engineering-an-introduction-to-engineering-and-design",
+      "asin": "0128025883",
+      "title": "Exploring Engineering: An Introduction to Engineering and Design",
+      "description": "Exploring Engineering, Fourth Edition: An Introduction to Engineering and Design, winner of a 2017 Textbook Excellence Award (Texty), presents the emerging challenges engineers face in a wide range of areas as they work to help improve our quality of life. In this classic textbook, the authors explain what engineers actually do, from the fundamental principles that form the basis of their work to the application of that knowledge within a structured design process. The text itself is organized into three parts: Lead-On, Minds-On, Hands-On. This organization allows the authors to give a basic introduction to engineering methods, then show the application of these principles and methods, and finally present a design challenge. This book is an ideal introduction for anyone interested in exploring the various fields of engineering and learning how engineers work to solve problems. - Winner of a 2017 Textbook Excellence Award (Texty) from the Textbook & Academic Authors Association - NEW: Chapters on Aeronautical Engineering, Industrial Engineering, and Design Teams - NEW: Expanded content in the chapters \"Defining the Problem,\" \"Generation of 'Alternative Concepts',\" and \"Detailed Design\" - NEW: Material on sustainability issues in engineering - Introduces students to the engineering profession, emphasizing the fundamental physical, chemical, and material bases for all engineering work - Includes an Engineering Ethics Decision Matrix used throughout the book to pose ethical challenges and explore decision-making in an engineering context - Lists of \"Top Engineering Achievements\" and \"Top Engineering Challenges\" help put the material in context and show engineering as a vibrant discipline involved in solving societal problems - Companion Web site includes links to several new drawing supplements, including \"Free-hand Engineering Sketching,\" (detailed instructions on free-hand engineering sketching); \"AutoCAD Introduction,\" (an introduction to the free AutoCAD drawing software); and \"Design Projects,\" (new freshman-level design projects that complement the \"Hands-On\" part of the textbook)",
+      "author": "Robert Balmer, William Keat",
+      "coverImage": "https://books.google.com/books/content?id=A96oBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0128025883.01.LZZZZZZZ.jpg",
+      "categories": [
+        "science"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 552,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0128025883?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0128025883?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0128025883?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0128025883?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2015-06-11",
+      "shortDescription": "Exploring Engineering, Fourth Edition: An Introduction to Engineering and Design, winner of a 2017 Textbook Excellence Award (Texty), presents the emerging challenges engineers face in a wide range of...",
+      "source": "google_books"
+    },
+    {
+      "slug": "process-engineering-facts-fiction-and-fables",
+      "asin": "111937040X",
+      "title": "Process Engineering: Facts, Fiction and Fables",
+      "description": "This is not your average technical book! Using a humorous and easy-to-understand approach to solving common process engineering problems, this unique volume is the go-to guide for any veteran or novice engineer in the plant, office, or classroom. Textbooks are often too theoretical to help the average process engineer solve everyday problems in the plant, and generic handbooks are often out of date and not comprehensive. This guide focuses on the most common problems that every engineer faces and how to solve them. The \"characters\" walk the reader through every problem and solution step-by-step, through dialogues that literally occur every day in process plants around the world. With over half a century of experience and many books, videos, and seminars to his credit, Norm Lieberman is well-known all over the world and has helped countless companies and engineers through issues with equipment, processes, and training. This is the first time that this knowledge has appeared in a format like this, quite unlike anything ever published before in books on process engineering. This is a must-have for any engineer working in process engineering.",
+      "author": "Norman P. Lieberman",
+      "coverImage": "https://books.google.com/books/content?id=4r-nDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/111937040X.01.LZZZZZZZ.jpg",
+      "categories": [
+        "science"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 289,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/111937040X?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/111937040X?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/111937040X?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/111937040X?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2017-04-11",
+      "shortDescription": "This is not your average technical book! Using a humorous and easy-to-understand approach to solving common process engineering problems, this unique volume is the go-to guide for any veteran or novic...",
+      "source": "google_books"
+    },
+    {
+      "slug": "exploring-engineering-an-introduction-to-engineering-and-design",
+      "asin": "0080884466",
+      "title": "Exploring Engineering: An Introduction to Engineering and Design",
+      "description": "Exploring Engineering: An Introduction to Engineering and Design, Second Edition, provides an introduction to the engineering profession. It covers both classical engineering and emerging fields, such as bioengineering, nanotechnology, and mechatronics. The book is organized into two parts. Part 1 provides an overview of the engineering discipline. It begins with a discussion of what engineers do and then covers topics such as the key elements of engineering analysis; problems solving and spreadsheet analyses; and the kinds, conversion, and conservation of energy. The book also discusses key concepts drawn from the fields of chemical engineering; mechanical engineering; electrical engineering; electrochemical engineering; materials engineering; civil engineering; engineering kinematics; bioengineering; manufacturing engineering; and engineering economics. Part 2 focuses on the steps in the engineering design process. It provides content for a Design Studio, where students can design and build increasingly complex engineering system. It also presents examples of design competitions and concludes with brief remarks about the importance of design projects. - Organized in two parts to cover both the concepts and practice of engineering: Part I, Minds On, introduces the fundamental physical, chemical and material bases for all engineering work while Part II, Hands On, provides opportunity to do design projects - An Engineering Ethics Decision Matrix is introduced in Chapter 1 and used throughout the book to pose ethical challenges and explore ethical decision-making in an engineering context - Lists of \"Top Engineering Achievements\" and \"Top Engineering Challenges\" help put the material in context and show engineering as a vibrant discipline involved in solving societal problemsNew to this edition: - Additional discussions on what engineers do, and the distinctions between engineers, technicians, and managers (Chapter 1) - New coverage of Renewable Energy and Environmental Engineering helps emphasize the emerging interest in Sustainable Engineering - New discussions of Six Sigma in the Design section, and expanded material on writing technical reports - Re-organized and updated chapters in Part I to more closely align with specific engineering disciplines new end of chapter excercises throughout the book",
+      "author": "Robert Balmer, William Keat",
+      "coverImage": "https://books.google.com/books/content?id=n0gAFJo0ufgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0080884466.01.LZZZZZZZ.jpg",
+      "categories": [
+        "science"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 464,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0080884466?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0080884466?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0080884466?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0080884466?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2009-09-05",
+      "shortDescription": "Exploring Engineering: An Introduction to Engineering and Design, Second Edition, provides an introduction to the engineering profession. It covers both classical engineering and emerging fields, such...",
+      "source": "google_books"
+    },
+    {
+      "slug": "30-second-engineering-50-key-principles-methods-and-fields-explained-in-half-a-m",
+      "asin": "1782408371",
+      "title": "30-Second Engineering: 50 Key Principles, Methods, and Fields Explained in Half a Minute",
+      "description": "30-Second Engineering surveys the tasks and challenges that engineers face in every field, from civil to electrical, and explores their methods, inventions, and achievements. This introduction to engineering is split into 7 chapters that cover: Engineering Methods--from problem solving to applying mathematics Civil & Environmental Engineering--building bridges, taming rivers and industry ethics Mechanical, Materials & Mechatronic Engineering--from thrust bearings to robotics Chemical Engineering & Energy Production--energy supplies and industry hazards Electrical & Electronic Engineering--from computers to internet storage and biomedical body parts Aerospace & Transport Engineering--driverless cars, floating factories and lessons from space Engineering the future--how engineers endeavour to save the planet Plus profiles of notable engineers, such as Ernst Dickmanns, William Rankine, Liang Jianying and Fazlur Khan. Each topic is summarised in 300 words with one image, helping you understand the subject at great speed. Written by industry experts from around the world, this book gives incredible insight to an underrated but integral occupation. Without it, skyscrapers, driverless cars, energy supply systems, AI, factories, the internet, and aircraft would not exist. Engineering enabled our evolution and this book will arm you with the conversational prowess to discuss it.",
+      "author": "James Trevelyan",
+      "coverImage": "https://books.google.com/books/content?id=RxytDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1782408371.01.LZZZZZZZ.jpg",
+      "categories": [
+        "history"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 163,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1782408371?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1782408371?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1782408371?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1782408371?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2019-10",
+      "shortDescription": "30-Second Engineering surveys the tasks and challenges that engineers face in every field, from civil to electrical, and explores their methods, inventions, and achievements. This introduction to engi...",
+      "source": "google_books"
+    },
+    {
+      "slug": "the-art-of-doing-science-and-engineering-learning-to-learn",
+      "asin": "195395331X",
+      "title": "The Art of Doing Science and Engineering: Learning to Learn",
+      "description": "A groundbreaking treatise by one of the great mathematicians of our age, who outlines a style of thinking by which great ideas are conceived. What inspires and spurs on a great idea? Can we train ourselves to think in a way that will enable world-changing understandings and insights to emerge? Richard Hamming said we can. He first inspired a generation of engineers, scientists, and researchers in 1986 with “You and Your Research,” an electrifying sermon on why some scientists do great work, why most don’t, why he did, and why you can—and should—too. The Art of Doing Science and Engineering is the full expression of what “You and Your Research” outlined. It's a book about thinking; more specifically, a style of thinking by which great ideas are conceived. The book is filled with stories of great people performing mighty deeds—but they are not meant simply to be admired. Instead, they are to be aspired to, learned from, and surpassed. Hamming consistently returns to Shannon’s information theory, Einstein’s theory of relativity, Grace Hopper’s work on high-level programming, Kaiser’s work on digital filters, and his own work on error-correcting codes. He also recounts a number of his spectacular failures as clear examples of what to avoid. Originally published in 1996 and adapted from a course that Hamming taught at the US Naval Postgraduate School, this edition includes an all-new foreword by designer, engineer, and founder of Dynamicland Bret Victor, plus more than 70 redrawn graphs and charts. The Art of Doing Science and Engineering is a reminder that a capacity for learning and creativity are accessible to everyone. Hamming was as much a teacher as a scientist, and having spent a lifetime forming and confirming a theory of great people and great ideas, he prepares the next generation for even greater distinction.",
+      "author": "Richard W. Hamming ",
+      "coverImage": "https://books.google.com/books/content?id=3RjBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/195395331X.01.LZZZZZZZ.jpg",
+      "categories": [
+        "history"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 326,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/195395331X?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/195395331X?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/195395331X?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/195395331X?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2020-05-26",
+      "shortDescription": "A groundbreaking treatise by one of the great mathematicians of our age, who outlines a style of thinking by which great ideas are conceived. What inspires and spurs on a great idea? Can we train ours...",
+      "source": "google_books"
+    },
+    {
+      "slug": "a-greater-foundation-for-machine-learning-engineering-the-hallmarks-of-the-great",
+      "asin": "166415129X",
+      "title": "A Greater Foundation for Machine Learning Engineering: The Hallmarks of the Great Beyond in Pytorch, R, Tensorflow, and Python",
+      "description": "The book provides foundations of machine learning and algorithms with a road map to deep learning, genesis of machine learning, installation of Python, supervised machine learning algorithms and implementations in Python or R, unsupervised machine learning algorithms in Python or R including natural language processing techniques and algorithms, Bayesian statistics, origins of deep learning, neural networks, and all the deep learning algorithms with some implementations in TensorFlow and architectures, installation of TensorFlow, neural net implementations in TensorFlow, Amazon ecosystem for machine learning, swarm intelligence, machine learning algorithms, in-memory computing, genetic algorithms, real-world research projects with supercomputers, deep learning frameworks with Intel deep learning platform, Nvidia deep learning frameworks, IBM PowerAI deep learning frameworks, H2O AI deep learning framework, HPC with deep learning frameworks, GPUs and CPUs, memory architectures, history of supercomputing, infrastructure for supercomputing, installation of Hadoop on Linux operating system, design considerations, e-Therapeutics's big data project, infrastructure for in-memory data fabric Hadoop, healthcare and best practices for data strategies, R, architectures, NoSQL databases, HPC with parallel computing, MPI for data science and HPC, and JupyterLab for HPC.",
+      "author": "Dr Ganapathi Pulipaka",
+      "coverImage": "https://books.google.com/books/content?id=eQ2tzgEACAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/166415129X.01.LZZZZZZZ.jpg",
+      "categories": [
+        "history"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 510,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/166415129X?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/166415129X?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/166415129X?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/166415129X?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2021-10",
+      "shortDescription": "The book provides foundations of machine learning and algorithms with a road map to deep learning, genesis of machine learning, installation of Python, supervised machine learning algorithms and imple...",
+      "source": "google_books"
+    },
+    {
+      "slug": "everyday-is-an-adventure-when-you-are-a-civil-engineer-blank-funny-civil-enginee",
+      "asin": "1700083015",
+      "title": "Everyday Is an Adventure When You Are a Civil Engineer: Blank Funny Civil Engineering Lined Notebook/ Journal For Future Mechanical Engineer, Inspirational Saying Unique Special Birthday Gift Idea Personal 6x9 110 Pages",
+      "description": "Looking for a great gift to show your appreciation and support for a friend? Need a new journal in your life? This unique funny notebook / journal is the perfect way to express your love and gratitude to your friends and family! Filled with 50+ double sided sheets (110 writing pages!) of lined paper, this inspirational notebook with motivational quote makes a memorable useful present for anybody. Give your friend an inspiring gift they'll remember! With a beautiful matte, full-color paperback cover, this cute lined notebook can be used as a diary to record all your creative stories. High quality ruled journal of ideal size suitable for kids, women or men to write. Best cool small gift under $10! Desired Awesome Journals are perfect for: Birthday Christmas Gifts New Job Gift Colleague/ Co-worker/ Boss Gifts Journals & Planners Doodle Diaries Homeschool Planners for Kids Creative Writing Notebooks Gifts for Mom Dad, Grandma Grandpa, Cousins, Brother Sister Retirement Gifts School Notebooks Student Graduation Gifts Teacher Thank You Gifts Mom Daughter Journal Journaling For Kids Book Lover Souvenir Novelty Blank Scrapbook Monthly Project Tracker Practical Plan Checklist And much more........ Place your order today!",
+      "author": "Eli Motiv Superb Popular Modern Vintage",
+      "coverImage": "https://books.google.com/books/content?id=iCzWywEACAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1700083015.01.LZZZZZZZ.jpg",
+      "categories": [
+        "history"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 112,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1700083015?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1700083015?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1700083015?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1700083015?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2019-10-15",
+      "shortDescription": "Looking for a great gift to show your appreciation and support for a friend? Need a new journal in your life? This unique funny notebook / journal is the perfect way to express your love and gratitude...",
+      "source": "google_books"
+    },
+    {
+      "slug": "everyday-is-an-adventure-when-you-are-a-civil-engineer-funny-blank-lined-noteboo",
+      "asin": "1700074342",
+      "title": "Everyday Is an Adventure When You Are a Civil Engineer: Funny Blank Lined Notebook/ Journal For Civil Engineering, Future Mechanical Engineer, Inspirational Saying Unique Special Birthday Gift Idea Cute Ruled 6x9 110 Pages",
+      "description": "Looking for a great gift to show your appreciation and support for a friend? Need a new journal in your life? This unique funny notebook / journal is the perfect way to express your love and gratitude to your friends and family! Filled with 50+ double sided sheets (110 writing pages!) of lined paper, this inspirational notebook with motivational quote makes a memorable useful present for anybody. Give your friend an inspiring gift they'll remember! With a beautiful matte, full-color paperback cover, this cute lined notebook can be used as a diary to record all your creative stories. High quality ruled journal of ideal size suitable for kids, women or men to write. Best cool small gift under $10! Desired Awesome Journals are perfect for: Birthday Christmas Gifts New Job Gift Colleague/ Co-worker/ Boss Gifts Journals & Planners Doodle Diaries Homeschool Planners for Kids Creative Writing Notebooks Gifts for Mom Dad, Grandma Grandpa, Cousins, Brother Sister Retirement Gifts School Notebooks Student Graduation Gifts Teacher Thank You Gifts Mom Daughter Journal Journaling For Kids Book Lover Souvenir Novelty Blank Scrapbook Monthly Project Tracker Practical Plan Checklist And much more........ Place your order today!",
+      "author": "Eli Motiv Superb Popular Modern Vintage",
+      "coverImage": "https://books.google.com/books/content?id=t26-ywEACAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1700074342.01.LZZZZZZZ.jpg",
+      "categories": [
+        "history"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 112,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1700074342?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1700074342?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1700074342?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1700074342?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2019-10-15",
+      "shortDescription": "Looking for a great gift to show your appreciation and support for a friend? Need a new journal in your life? This unique funny notebook / journal is the perfect way to express your love and gratitude...",
+      "source": "google_books"
+    },
+    {
+      "slug": "look-im-an-engineer",
+      "asin": "1465482350",
+      "title": "Look I'm an Engineer",
+      "description": "This playful preschool activity book for kids will unleash your child's curiosity and creativity as they play their way through 15 super fun STEM projects. Every project features bright photography and charming illustrations, which support the easy-to-follow instructions. Perfect for ages 3-6, this children's book will excite little ones by revealing the everyday ways they can be an engineer. Children are born with everything they need to be great engineers - inquisitive minds, unlimited imagination, and super senses. With this educational book in hand, little readers are encouraged to use their senses to investigate and discover the world of science and math while having fun. This kids book is ridiculously cool and filled with fun experiments you and your kids can do together. They'll learn how to make the strongest paper bridges, how to power a tugboat with an elastic band, which materials make the best parachutes, and much more. These ingenious hands-on activities align with subjects taught at school, including science, math, and technology. Children have the opportunity to do what they do best with this awesome kids' activity book - imagine, create, learn, problem-solve, and above all, play their way to engineering discovery. Get Your Engineering Hat Ready! You were born with everything you need to be an engineer - a brilliant brain and spectacular senses! Get ready to touch, smell, see, hear, and taste your way to engineering excellence. Find out how to make a floating rescue raft, what makes a bridge super strong, why paper planes glide and much, much more! Full of amazing engineering creations for kids to make like: - A magical woodland den - A sweet, sweet pyramid - The coolest paper bridge - A totally artistic painting pendulum (we're learning gravity here) - And much more! Prepare to have all the FUN! DK's Look! I'm Learning series of exciting and educational STEM books focus on the sensory experience of practical learning and play and finds the science in everyday activities. Hands-on learning experiences tap straight into kids' insatiable curiosity and sense of wonder. These books for children are perfect for ages 3-6 as they are formatted with a padded cover and toddler-tough pages. The series encourages children to develop independence and improves their critical thinking, investigation skills, and motor skills. Try the other titles in the series next, including Look I'm A Scientist, Look I'm A Mathematician, and Look I'm A Cook.",
+      "author": "DK",
+      "coverImage": "https://books.google.com/books/content?id=pVtaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1465482350.01.LZZZZZZZ.jpg",
+      "categories": [
+        "fiction"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": null,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1465482350?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1465482350?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1465482350?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1465482350?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2018-08-07",
+      "shortDescription": "This playful preschool activity book for kids will unleash your child's curiosity and creativity as they play their way through 15 super fun STEM projects. Every project features bright photography an...",
+      "source": "google_books"
+    },
+    {
+      "slug": "computer-games-and-software-engineering",
+      "asin": "1482226685",
+      "title": "Computer Games and Software Engineering",
+      "description": "Computer games represent a significant software application domain for innovative research in software engineering techniques and technologies. Game developers, whether focusing on entertainment-market opportunities or game-based applications in non-entertainment domains, thus share a common interest with software engineers and developers on how to best engineer game software. Featuring contributions from leading experts in software engineering, the book provides a comprehensive introduction to computer game software development that includes its history as well as emerging research on the interaction between these two traditionally distinct fields. An ideal reference for software engineers, developers, and researchers, this book explores game programming and development from a software engineering perspective. It introduces the latest research in computer game software engineering (CGSE) and covers topics such as HALO (Highly Addictive, sociaLly Optimized) software engineering, multi-player outdoor smartphone games, gamifying sports software, and artificial intelligence in games. The book explores the use of games in software engineering education extensively. It also covers game software requirements engineering, game software architecture and design approaches, game software testing and usability assessment, game development frameworks and reusability techniques, and game scalability infrastructure, including support for mobile devices and web-based services.",
+      "author": "Kendra M. L. Cooper, Walt Scacchi",
+      "coverImage": "https://books.google.com/books/content?id=Oy6IoAEACAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1482226685.01.LZZZZZZZ.jpg",
+      "categories": [
+        "history"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": null,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1482226685?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1482226685?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1482226685?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1482226685?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2015-05-08",
+      "shortDescription": "Computer games represent a significant software application domain for innovative research in software engineering techniques and technologies. Game developers, whether focusing on entertainment-marke...",
+      "source": "google_books"
+    },
+    {
+      "slug": "the-making-of-an-expert-engineer",
+      "asin": "1315742284",
+      "title": "The Making of an Expert Engineer",
+      "description": "This book sets out the principles of engineering practice, knowledge that has come to light through more than a decade of research by the author and his students studying engineers at work. Until now, this knowledge has been almost entirely unwritten, passed on invisibly from one generation of engineers to the next, what engineers refer to asexpe",
+      "author": "James Trevelyan",
+      "coverImage": "https://books.google.com/books/content?id=ht_KBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1315742284.01.LZZZZZZZ.jpg",
+      "categories": [
+        "science"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 591,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1315742284?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1315742284?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1315742284?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1315742284?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2014-09-22",
+      "shortDescription": "This book sets out the principles of engineering practice, knowledge that has come to light through more than a decade of research by the author and his students studying engineers at work. Until now,...",
+      "source": "google_books"
+    },
+    {
+      "slug": "getting-started-with-engineering-think-like-an-engineer",
+      "asin": "1119291224",
+      "title": "Getting Started with Engineering: Think Like an Engineer!",
+      "description": "Fun engineering projects for kids Does your kid's love of 'tinkering' resemble that of a budding Thomas Edison? Then Getting Started with Engineering is guaranteed to spark their fascination! The focused, easy-to-complete projects offered inside are designed to broaden their understanding of basic engineering principles, challenge their problem-solving skills, and sharpen their creativity—all while having fun along the way. Engineers are experts on how things work—and this book is your youngster's best first step to developing the skills they need to think, design, and build things like the pros. The projects they'll complete feature a fun twist that appeal to their age group—from a tiny model roller coaster to a wearable toy that includes an electronic circuit—and the instructions are written in an easy-to-follow manner, making it possible for them to experience the pride and accomplishment of working independently. Appropriate for children aged 7-11 Simple explanations guide children to complete three projects using household items The full-color design, short page count, and easy-to-follow instructions are designed to appeal to kids Brought to you by the trusted For Dummies brand If you have a little engineer that could, Getting Started with Engineering is a great way to encourage their fascination of figuring out how things work.",
+      "author": "Camille McCue",
+      "coverImage": "https://books.google.com/books/content?id=ZS4jDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1119291224.01.LZZZZZZZ.jpg",
+      "categories": [
+        "fiction"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 137,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1119291224?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1119291224?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1119291224?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1119291224?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2016-07-05",
+      "shortDescription": "Fun engineering projects for kids Does your kid's love of 'tinkering' resemble that of a budding Thomas Edison? Then Getting Started with Engineering is guaranteed to spark their fascination! The focu...",
+      "source": "google_books"
+    },
+    {
+      "slug": "btec-first-engineering-core-units-for-btec-firsts-in-engineering-and-common-spec",
+      "asin": "0750680601",
+      "title": "BTEC First Engineering: Core Units for BTEC Firsts in Engineering and Common Specialist Units in All Pathways",
+      "description": "This key course book covers the compulsory core units of the 2006 BTEC First Engineering schemes from Edexcel. Full coverage is given to the common core units of the Certificate / Diploma (units 1 and 2), plus the additional compulsory units for Diploma students (units 3 and 4), for all pathways. It also covers the three common specialist option units found within each pathway: Selecting Engineering Materials (unit 8), Using Computer Aided Drawing Techniques in Engineering (unit 10), and Electronic Circuit Construction and Testing (unit 19). BTEC First Engineering students will find this a clear, straightforward and easily accessible text, which encourages independent study and covers all the core material they will be following throughout their course. Knowledge-check questions and activities are included throughout, along with review questions, innovative Another View features, and worked mathematical examples, all of which relate to real-world engineering contexts. Students will gain a valuable insight into various areas of engineering technology and related industries, providing a potential springboard to further training, eventual progression to qualifications within higher education, or to suitable employment. For those students wishing to progress to BTEC National, this text covers all the vital material required as a prerequisite for progression to NQF Level 3. The book is supported with extensive online resources. At http://www.key2study.com students will find: a 2D CAD package that can be used to carry out the practical CAD activities described in the book downloadable CAD drawing templates and Visio symbol libraries an engineering materials database which can be modified and added to by students spreadsheets for solving some common engineering calculations additional software and an on-line quiz for unit 19. In addition, for lecturers only, http://textbooks.elsevier.com has answers to the review questions in units 3 and 4. Mike Tooleyis formerly Vice Principal and Head of Faculty of Engineering at Brooklands College, Surrey, and is the author of many best-selling engineering books.",
+      "author": "Mike Tooley",
+      "coverImage": "https://books.google.com/books/content?id=D1wwa2GddnYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0750680601.01.LZZZZZZZ.jpg",
+      "categories": [
+        "science"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 305,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0750680601?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0750680601?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0750680601?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0750680601?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2006",
+      "shortDescription": "This key course book covers the compulsory core units of the 2006 BTEC First Engineering schemes from Edexcel. Full coverage is given to the common core units of the Certificate / Diploma (units 1 and...",
+      "source": "google_books"
+    },
+    {
+      "slug": "the-second-world-war",
+      "asin": "1472520882",
+      "title": "The Second World War",
+      "description": "\"I am perhaps the only man who has passed through the twosupreme cataclysms of recorded history in high executive office... I was in thissecond struggle with Germany for more than five years the head of His Majesty'sGovernment. I write therefore from a different standpoint and with moreauthority than was possible in my earlier books. I do not describe it as ahistory, for that belongs to another generation. But I claim with confidencethat it is a contribution to history which will be of service to the future.\" Sir Winston Churchill From the origins of the conflict, the rise of Hitler and thefutile attempts at appeasement, through the darkest days of Britain's lonestand against the Axis powers, the great alliances with the USA and SovietRussia and the triumphs of D Day and the eventual liberation of Europe to theterrible birth of the Cold War under the shadow of nuclear weaponry, this isWinston Churchill's landmark history of World War II. At once a personalaccount and a majesterial history, TheSecond World War remains Churchill's literary masterpiece.",
+      "author": "Winston Churchill",
+      "coverImage": "https://books.google.com/books/content?id=hkNDAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1472520882.01.LZZZZZZZ.jpg",
+      "categories": [
+        "biography"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 1056,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1472520882?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1472520882?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1472520882?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1472520882?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2013-11-15",
+      "shortDescription": "\"I am perhaps the only man who has passed through the twosupreme cataclysms of recorded history in high executive office... I was in thissecond struggle with Germany for more than five years the head ...",
+      "source": "google_books"
+    },
+    {
+      "slug": "the-yogin-and-the-madman-reading-the-biographical-corpus-of-tibets-great-saint-m",
+      "asin": "0231535538",
+      "title": "The Yogin and the Madman: Reading the Biographical Corpus of Tibet's Great Saint Milarepa",
+      "description": "Tibetan biographers began writing Jetsun Milarepa's (1052–1135) life story shortly after his death, initiating a literary tradition that turned the poet and saint into a model of virtuosic Buddhist practice throughout the Himalayan world. Andrew Quintman traces this history and its innovations in narrative and aesthetic representation across four centuries, culminating in a detailed analysis of the genre's most famous example, composed in 1488 by Tsangnyön Heruka, or the \"Madman of Western Tibet.\" Quintman imagines these works as a kind of physical body supplanting the yogin's corporeal relics.",
+      "author": "Andrew Quintman",
+      "coverImage": "https://books.google.com/books/content?id=laxAAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0231535538.01.LZZZZZZZ.jpg",
+      "categories": [
+        "religion"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 331,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0231535538?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0231535538?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0231535538?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0231535538?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2013-11-05",
+      "shortDescription": "Tibetan biographers began writing Jetsun Milarepa's (1052–1135) life story shortly after his death, initiating a literary tradition that turned the poet and saint into a model of virtuosic Buddhist pr...",
+      "source": "google_books"
+    },
+    {
+      "slug": "inside-the-mind-of-the-sex-killer",
+      "asin": "1874358400",
+      "title": "Inside the Mind of the Sex Killer",
+      "description": "An in-depth study examining just what drives men to kill. Illustrated with fascinating real-life murder cases, this title probes the psychological reasons why they happen. Some say there is a bit of sado-masochism in everyone, so are sexual killers actually responsible for the crime they commit? Here are all the answers, chronicled in a fascinating voyage through the dark inner regions of the mind and brought vividly to life with case histories drawn from all over the world.",
+      "author": "John Sanders",
+      "coverImage": "https://books.google.com/books/content?id=KTTg-ykMsZ4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1874358400.01.LZZZZZZZ.jpg",
+      "categories": [
+        "true-crime"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 276,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1874358400?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1874358400?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1874358400?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1874358400?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2008",
+      "shortDescription": "An in-depth study examining just what drives men to kill. Illustrated with fascinating real-life murder cases, this title probes the psychological reasons why they happen. Some say there is a bit of s...",
+      "source": "google_books"
+    },
+    {
+      "slug": "practical-crime-scene-processing-and-investigation-third-edition",
+      "asin": "1351692380",
+      "title": "Practical Crime Scene Processing and Investigation, Third Edition",
+      "description": "Every action performed by a crime scene investigator has an underlying purpose: to both recover evidence and capture scene context. It is imperative that crime scene investigators must understand their mandate—not only as an essential function of their job but because they have the immense responsibility and duty to do so. Practice Crime Scene Processing and Investigation, Third Edition provides the essential tools for what crime scene investigators need to know, what they need to do, and how to do it. As professionals, any investigator’s master is the truth and only the truth. Professional ethics demands an absolute adherence to this mandate. When investigators can effectively seek, collect, and preserve information and evidence from the crime scene to the justice system—doing so without any agenda beyond seeking the truth— not only are they carrying out the essential function and duty of their job, it also increases the likelihood that the ultimate goal of true justice will be served. Richly illustrated—with more than 415 figures, including over 300 color photographs—the Third Edition of this best-seller thoroughly addresses the role of the crime scene investigator in the context of: Understanding the nature of physical evidence, including fingerprint, biological, trace, hair and fiber, impression, and other forms of evidence Assessing the scene, including search considerations and dealing with chemical and bioterror hazards Crime scene photography; scene sketching, mapping, and documentation; and the role of crime scene analysis and reconstruction Bloodstain pattern analysis and discussion of the body as a crime scene Special scene considerations, including fire, buried bodies, and entomological evidence Coverage details the importance of maintaining objectivity, emphasizing that every action the crime scene investigator performs has an underlying purpose: to both recover evidence and capture scene context. Key features: Outlines the responsibilities of the responding officer, from documenting and securing the initial information to providing emergency care Includes three new chapters on light technology and crime scene processing techniques, recovering fingerprints, and castings Addresses emerging technology and new techniques in 3-D Laser scanning procedures in capturing a scene Provides a list of review questions at the end of each chapter Practice Crime Scene Processing and Investigation, Third Edition includes practical, proven methods to be used at any crime scene to ensure that evidence is preserved, admissible in court, and persuasive. Course ancillaries including PowerPoint® lecture slides and a Test Bank are available with qualified course adoption.",
+      "author": "Ross M. Gardner, Donna Krouskup",
+      "coverImage": "https://books.google.com/books/content?id=9y73DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1351692380.01.LZZZZZZZ.jpg",
+      "categories": [
+        "true-crime"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 431,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1351692380?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1351692380?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1351692380?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1351692380?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2018-09-20",
+      "shortDescription": "Every action performed by a crime scene investigator has an underlying purpose: to both recover evidence and capture scene context. It is imperative that crime scene investigators must understand thei...",
+      "source": "google_books"
+    },
+    {
+      "slug": "good-girl-bad-blood-a-good-girls-guide-to-murder-book-2",
+      "asin": "1405297778",
+      "title": "Good Girl, Bad Blood (A Good Girl’s Guide to Murder, Book 2)",
+      "description": "The New York Times and Sunday Times best-selling, brilliantly crafted crime-thriller sequel to A Good Girl’s Guide to Murder. NOW A MAJOR NETFLIX SERIES.",
+      "author": "Holly Jackson",
+      "coverImage": "https://books.google.com/books/content?id=WVObEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1405297778.01.LZZZZZZZ.jpg",
+      "categories": [
+        "true-crime"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 248,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1405297778?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1405297778?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1405297778?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1405297778?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2020-04-30",
+      "shortDescription": "The New York Times and Sunday Times best-selling, brilliantly crafted crime-thriller sequel to A Good Girl’s Guide to Murder. NOW A MAJOR NETFLIX SERIES.",
+      "source": "google_books"
+    },
+    {
+      "slug": "nietzsches-free-spirit-philosophy",
+      "asin": "821621118X",
+      "title": "Nietzsche's Free Spirit Philosophy",
+      "description": "This wide-ranging and inspiring volume of essays explores Nietzsche's philosophy of the free spirit. Nietzsche begins to articulate his philosophy of the free spirit in 1878 and it results in his most congenial books, including Human, all too Human, Dawn (or Daybreak), and The Gay Science. It is one of the most neglected aspects of Nietzsche's corpus, yet crucially important to an understanding of his work. Written by leading Nietzsche scholars from Europe and North America, the essays in this book explore topics such as: the kind of freedom practiced by the free spirit; the free spirit's relation to truth; the play between laughter and seriousness in the free spirit period texts; integrity and the free spirit; health and the free spirit; the free spirit and cosmopolitanism; and the figure of the free spirit in Nietzsche's later writings. This book fills a significant gap in the available literature and will set the agenda for future research in Nietzsche Studies.",
+      "author": "Rebecca Bamford",
+      "coverImage": "https://books.google.com/books/content?id=QmR2EQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/821621118X.01.LZZZZZZZ.jpg",
+      "categories": [
+        "philosophy"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 289,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/821621118X?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/821621118X?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/821621118X?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/821621118X?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2015-09-29",
+      "shortDescription": "This wide-ranging and inspiring volume of essays explores Nietzsche's philosophy of the free spirit. Nietzsche begins to articulate his philosophy of the free spirit in 1878 and it results in his most...",
+      "source": "google_books"
+    },
+    {
       "slug": "how-to-get-published-in-india-your-go-to-guide-to-write-publish-and-sell-your-bo",
       "asin": "9388271084",
       "title": "How to Get Published in India: Your go-to guide to write, publish and sell your book with tips and insights from industry experts",
