@@ -32,6 +32,10 @@ except ImportError:
     print("requests not installed — run: pip install requests")
     sys.exit(1)
 
+# Fix Windows cp1252 console encoding — allow printing any Unicode book title
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 SCRIPT_DIR = Path(__file__).parent
 BOOKS_JSON = SCRIPT_DIR.parent / "data" / "books.json"
 RESULTS_FILE = SCRIPT_DIR / "unavailable_asins.json"
