@@ -453,12 +453,16 @@ def parse_volume(item):
         if not asin:
             return None
 
-        # Skip if BOTH avgRating < 3.5 AND ratingsCount < 10
+        # Quality gate: must have at least 10 Google Books ratings AND a rating ≥ 3.5.
+        # Books with 0 ratings are almost always obscure/niche editions that are
+        # out-of-print on Amazon (their ISBN maps to an old edition). Popular,
+        # currently-in-print editions consistently have 10+ Google Books reviews.
         avg_rating = volume_info.get("averageRating")
         ratings_count = volume_info.get("ratingsCount", 0) or 0
-        if avg_rating is not None:
-            if float(avg_rating) < 3.5 and int(ratings_count) < 10:
-                return None
+        if not avg_rating or int(ratings_count) < 10:
+            return None
+        if float(avg_rating) < 3.5:
+            return None
 
         # Language must be en or de
         language = volume_info.get("language", "en")
