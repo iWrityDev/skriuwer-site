@@ -1,6 +1,219 @@
 {
   "books": [
     {
+      "slug": "answers-to-pastors-faqs",
+      "asin": "0781441560",
+      "title": "Answers to Pastors' FAQs",
+      "description": "Both new seminary graduates and experienced pastors have expressed their need for solid, practical advice. Drawing on their combined wealth of experiences pastoring a wide variety of churches, Pastors Wiersbe and Sugden tackle practical questions.",
+      "author": "Howard F. Sugden, Warren W. Wiersbe",
+      "coverImage": "https://books.google.com/books/content?id=DiBIAwFI0wQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0781441560.01.LZZZZZZZ.jpg",
+      "categories": [
+        "religion"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 196,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0781441560?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0781441560?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0781441560?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0781441560?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2005",
+      "shortDescription": "Both new seminary graduates and experienced pastors have expressed their need for solid, practical advice. Drawing on their combined wealth of experiences pastoring a wide variety of churches, Pastors...",
+      "source": "google_books"
+    },
+    {
+      "slug": "handbook-of-cognitive-behavioral-therapies-fourth-edition",
+      "asin": "1462547729",
+      "title": "Handbook of Cognitive-Behavioral Therapies, Fourth Edition",
+      "description": "Now revised and expanded with over 50% new material, this definitive clinical reference is the text of choice for graduate-level courses in evidence-based psychotherapy. Foremost authorities describe the conceptual and scientific foundations of cognitive-behavioral therapy (CBT) and provide a framework for assessment and case formulation. Major approaches are reviewed in detail, including emotion-centered problem-solving therapy, rational emotive behavior therapy, cognitive therapy, schema therapy, mindfulness- and acceptance-based interventions, and dialectical behavior therapy (DBT). Applications to specific populations are discussed, including children and adolescents, couples, culturally diverse clients, and more. New to This Edition *Chapter on clinical assessment. *Chapter on DBT. *Chapters on transdiagnostic treatments, CBT-based prevention models, and improving dissemination and implementation. *Existing chapters extensively revised or rewritten to reflect important research and clinical advances.",
+      "author": "Keith S. Dobson, David J. A. Dozois",
+      "coverImage": "https://books.google.com/books/content?id=GJ6TEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1462547729.01.LZZZZZZZ.jpg",
+      "categories": [
+        "psychology",
+        "self-help"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 543,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1462547729?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1462547729?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1462547729?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1462547729?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2021-04-23",
+      "shortDescription": "Now revised and expanded with over 50% new material, this definitive clinical reference is the text of choice for graduate-level courses in evidence-based psychotherapy. Foremost authorities describe ...",
+      "source": "google_books"
+    },
+    {
+      "slug": "annual-editions-child-growth-and-development",
+      "asin": "0073545783",
+      "title": "Annual Editions: Child Growth and Development",
+      "description": "[In this book, the editors] hope to present you with the latest research and thinking to help you better appreciate the complex interactions that characterize human development in infancy and childhood. [They] have placed ... emphasis on important contemporary issues and challenges, exploring topics such as understanding development in the context of current societal and cultural influences ... Attention is given to articles that also discuss effective, practical applications. [The editors] hope that this anthology will serve as a catalyst to help students become more effective future professionals and parents.-Pref.",
+      "author": "Ellen Nan Junn, Chris Boyatzis",
+      "coverImage": "https://books.google.com/books/content?id=begovKiLV2sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0073545783.01.LZZZZZZZ.jpg",
+      "categories": [
+        "psychology",
+        "self-help"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 228,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0073545783?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0073545783?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0073545783?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0073545783?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2005-09",
+      "shortDescription": "[In this book, the editors] hope to present you with the latest research and thinking to help you better appreciate the complex interactions that characterize human development in infancy and childhoo...",
+      "source": "google_books"
+    },
+    {
+      "slug": "annual-editions-psychology-08-09-2009-update",
+      "asin": "0073397792",
+      "title": "Annual Editions: Psychology 08/09 (2009 Update)",
+      "description": "This 2009 UPDATE, Thirty-Ninth Edition of ANNUAL EDITIONS: PSYCHOLOGY provides convenient, inexpensive access to current articles selected from the best of the public press. Organizational features include: an annotated listing of selected World Wide Web sites; an annotated table of contents; a topic guide; a general introduction; brief overviews for each section; and an online instructor’s resource guide with testing materials. USING ANNUAL EDITIONS IN THE CLASSROOM (ISBN 9780073301907) is offered as a practical guide for instructors. ANNUAL EDITIONS titles are supported by our student website, www.mhcls.com/online.",
+      "author": "Karen Duffy",
+      "coverImage": "https://books.google.com/books/content?id=CBjDl_0Y_kkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0073397792.01.LZZZZZZZ.jpg",
+      "categories": [
+        "psychology",
+        "self-help"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 228,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0073397792?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0073397792?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0073397792?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0073397792?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2008-03-10",
+      "shortDescription": "This 2009 UPDATE, Thirty-Ninth Edition of ANNUAL EDITIONS: PSYCHOLOGY provides convenient, inexpensive access to current articles selected from the best of the public press. Organizational features in...",
+      "source": "google_books"
+    },
+    {
+      "slug": "master-of-electricity-nikola-tesla-a-quick-read-biography-about-the-life-and-inv",
+      "asin": "1508668027",
+      "title": "Master of Electricity - Nikola Tesla: A Quick-Read Biography About the Life and Inventions of a Visionary Genius",
+      "description": "\"Ever wanted to learn more about Nikola Tesla, but never felt you had the time to read a comprehensive work? Here author Cynthia A. Parker removes that pain by offering an opportunity to Get-to-Know the 'Master of Electricity.' to learn of his youth and upbringing, his early career, and of course his pivotal role in advancing the World into the Electrical Age! Turn these pages and enjoy the opportunity to learn history, but better yet to come to know Tesla better through Parker's amazing ability to describe his life, his and above all, his accomplishments; making this an enjoyable and interesting Quick-Read Biography\"--Back cover",
+      "author": "Cynthia A. Parker",
+      "coverImage": "https://books.google.com/books/content?id=c9X6rQEACAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1508668027.01.LZZZZZZZ.jpg",
+      "categories": [
+        "biography"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": null,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1508668027?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1508668027?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1508668027?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1508668027?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2015-02-22",
+      "shortDescription": "\"Ever wanted to learn more about Nikola Tesla, but never felt you had the time to read a comprehensive work? Here author Cynthia A. Parker removes that pain by offering an opportunity to Get-to-Know t...",
+      "source": "google_books"
+    },
+    {
+      "slug": "tesla-inventor-of-the-electrical-age",
+      "asin": "1400846552",
+      "title": "Tesla: Inventor of the Electrical Age",
+      "description": "“The gold standard for Tesla biography.”—Science “Superb.”—Nature The definitive account of Tesla's life and work Nikola Tesla was a major contributor to the electrical revolution that transformed daily life at the turn of the twentieth century. His inventions, patents, and theoretical work formed the basis of modern AC electricity, and contributed to the development of radio and television. Like his competitor Thomas Edison, Tesla was one of America's first celebrity scientists, enjoying the company of New York high society and dazzling the likes of Mark Twain with his electrical demonstrations. An astute self-promoter and gifted showman, he cultivated a public image of the eccentric genius. Even at the end of his life when he was living in poverty, Tesla still attracted reporters to his annual birthday interview, regaling them with claims that he had invented a particle-beam weapon capable of bringing down enemy aircraft. Plenty of biographies glamorize Tesla and his eccentricities, but until now none has carefully examined what, how, and why he invented. In this groundbreaking book, W. Bernard Carlson demystifies the legendary inventor, placing him within the cultural and technological context of his time, and focusing on his inventions themselves as well as the creation and maintenance of his celebrity. Drawing on original documents from Tesla's private and public life, Carlson shows how he was an \"idealist\" inventor who sought the perfect experimental realization of a great idea or principle, and who skillfully sold his inventions to the public through mythmaking and illusion. This major biography sheds new light on Tesla's visionary approach to invention and the business strategies behind his most important technological breakthroughs.",
+      "author": "W. Bernard Carlson",
+      "coverImage": "https://books.google.com/books/content?id=5I5c9j8BEn4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1400846552.01.LZZZZZZZ.jpg",
+      "categories": [
+        "biography"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 517,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 2,
+      "starRating": 5.0,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1400846552?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1400846552?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1400846552?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1400846552?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2013-05-07",
+      "shortDescription": "“The gold standard for Tesla biography.”—Science “Superb.”—Nature The definitive account of Tesla's life and work Nikola Tesla was a major contributor to the electrical revolution that transformed dai...",
+      "source": "google_books"
+    },
+    {
+      "slug": "an-historical-introduction-to-moral-philosophy",
+      "asin": "0136014518",
+      "title": "An Historical Introduction to Moral Philosophy",
+      "description": "Approaches moral philosophy as a living tradition and exposes students to some of the most influential thinkers and major traditions in moral philosophy from its Classical Greek origins to the present. Composed of twenty-five readings organized in five historical periods and substantive pedagogical issues in moral philosophy and emphasizes comparative and critical analysis of those readings.",
+      "author": "Michael F. Wagner",
+      "coverImage": "https://books.google.com/books/content?id=RSp1dnao5-EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0136014518.01.LZZZZZZZ.jpg",
+      "categories": [
+        "philosophy"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 292,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0136014518?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0136014518?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0136014518?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0136014518?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "1991",
+      "shortDescription": "Approaches moral philosophy as a living tradition and exposes students to some of the most influential thinkers and major traditions in moral philosophy from its Classical Greek origins to the present...",
+      "source": "google_books"
+    },
+    {
       "slug": "the-only-leadership-book-youll-ever-need-how-to-build-organizations-where-employ",
       "asin": "1601637470",
       "title": "The Only Leadership Book You'll Ever Need: How to Build Organizations Where Employees Love to Come to Work",
