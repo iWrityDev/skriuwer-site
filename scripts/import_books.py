@@ -85,15 +85,20 @@ def main():
     seen_asins = set()
 
     # 1. Process Shopify products (own books)
+    skipped_no_asin = []
     for i, prod in enumerate(shopify_products):
         asin = prod.get("amazon_asin") or extract_asin(prod.get("amazon_url", ""))
         slug = prod["handle"]
 
+        # REQUIRED: skip books with no Amazon ASIN — they can't be bought via affiliate links
+        if not asin:
+            skipped_no_asin.append(prod["title"])
+            continue
+
         if slug in seen_slugs:
             continue
         seen_slugs.add(slug)
-        if asin:
-            seen_asins.add(asin)
+        seen_asins.add(asin)
 
         hook_data = hooks.get(str(i), {})
         categories = classify_book(prod["title"], prod.get("tags", []), prod.get("body_html", ""))
@@ -122,6 +127,11 @@ def main():
             "hookText": hook_data.get("hook"),
             "publishedDate": None,
         })
+
+    if skipped_no_asin:
+        print(f"\nSkipped {len(skipped_no_asin)} Shopify products with no ASIN (no Amazon link):")
+        for t in skipped_no_asin:
+            print(f"  [NO ASIN] {t[:80]}")
 
     # 2. Process master products (add review data to existing, add new ones)
     for i, prod in enumerate(master_products):
@@ -168,6 +178,9 @@ def main():
             "hookText": hook_data.get("hook"),
             "publishedDate": None,
         })
+
+    # Final safety filter: never write a book without an ASIN (no affiliate link = no revenue)
+    output_books = [b for b in output_books if b.get("asin")]
 
     # Keep Shopify products in their original order (first 144),
     # then append Amazon-only books sorted by review count
