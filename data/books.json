@@ -1249,7 +1249,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 4.0,
+      "starRating": 4,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/0306810387?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/0306810387?tag=31813-20",
@@ -1339,7 +1339,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 5.0,
+      "starRating": 5,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/0195092147?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/0195092147?tag=31813-20",
@@ -1399,7 +1399,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 5.0,
+      "starRating": 5,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/0756638313?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/0756638313?tag=31813-20",
@@ -2990,7 +2990,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 5.0,
+      "starRating": 5,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/0631195513?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/0631195513?tag=31813-20",
@@ -3350,7 +3350,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 5.0,
+      "starRating": 5,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/1740597362?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/1740597362?tag=31813-20",
@@ -3530,7 +3530,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 5.0,
+      "starRating": 5,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/1606234048?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/1606234048?tag=31813-20",
@@ -3860,7 +3860,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 4.0,
+      "starRating": 4,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/0852928076?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/0852928076?tag=31813-20",
@@ -3980,7 +3980,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 4,
-      "starRating": 4.0,
+      "starRating": 4,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/1576751198?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/1576751198?tag=31813-20",
@@ -4760,7 +4760,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 2,
-      "starRating": 5.0,
+      "starRating": 5,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/0805431381?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/0805431381?tag=31813-20",
@@ -5330,7 +5330,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 5.0,
+      "starRating": 5,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/0865165734?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/0865165734?tag=31813-20",
@@ -5360,7 +5360,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 5.0,
+      "starRating": 5,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/0192801341?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/0192801341?tag=31813-20",
@@ -5540,7 +5540,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 5.0,
+      "starRating": 5,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/1606235303?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/1606235303?tag=31813-20",
@@ -6560,7 +6560,7 @@
       "price": "",
       "currency": "USD",
       "reviewCount": 1,
-      "starRating": 4.0,
+      "starRating": 4,
       "marketplaces": {
         "amazon_us": "https://www.amazon.com/dp/0451402391?tag=31813-20",
         "amazon_uk": "https://www.amazon.co.uk/dp/0451402391?tag=31813-20",
@@ -11389,34 +11389,6 @@
       "publishedDate": null
     },
     {
-      "slug": "asin-b0cp18jbz6",
-      "asin": "B0CP18JBZ6",
-      "title": "60 Histoires Courtes en Anglais | Un Livre Bilingue en Anglais et en Français | Un Livre d'Apprentissage de l'Anglais pour Enfants et Débutants: ... pour apprendre l'anglais) (French Edition)",
-      "description": "<p><span>Des difficultés avec l'anglais ? Essayez les </span><span class=\"a-text-bold\">courtes histoires en anglais</span><span> ! Ce livre rend l’apprentissage de l’anglais </span><span class=\"a-text-bold\">facile et accessible</span><span>. En utilisant des </span><span class=\"a-text-bold\">histoires amusantes</span><span>, il vous aide à apprendre des </span><span class=\"a-text-bold\">mots essentiels</span><span> et à améliorer votre </span><span class=\"a-text-bold\">compréhension globale</span><span>. Chaque page en anglais est accompagnée de sa </span><span class=\"a-text-bold\">traduction en français</span><span>, ce qui facilite les comparaisons et vous permet de progresser à votre rythme.</span></p><p><span>Les recherches montrent que lire des histoires dans </span><span class=\"a-text-bold\">deux langues</span><span> est une méthode très efficace pour apprendre une nouvelle langue. Cela vous permet d’associer rapidement les </span><span class=\"a-text-bold\">mots</span><span> et les </span><span class=\"a-text-bold\">phrases</span><span> à leur signification, tout en rendant l’apprentissage plus intéressant. Ce livre enseigne un </span><span class=\"a-text-bold\">vocabulaire anglais essentiel</span><span> pour le quotidien et le travail. Chaque histoire montre comment utiliser les </span><span class=\"a-text-bold\">nouveaux mots</span><span> dans des situations réelles, ce qui facilite la mémorisation. Vous pouvez </span><span class=\"a-text-bold\">pratiquer immédiatement</span><span> ce que vous apprenez, renforçant ainsi vos connaissances.</span></p><p><span>Conçu pour </span><span class=\"a-text-bold\">tous les âges</span><span>, ce livre s’adapte à votre rythme, que vous appreniez </span><span class=\"a-text-bold\">seul</span><span> ou avec d’autres. Vous pouvez étudier </span><span class=\"a-text-bold\">quand vous voulez</span><span> et à votre manière, ce qui est idéal pour les emplois du temps chargés.</span></p><p><span>Que vous soyez </span><span class=\"a-text-bold\">débutant</span><span>, que vous souhaitiez revoir vos </span><span class=\"a-text-bold\">bases</span><span> ou simplement améliorer votre </span><span class=\"a-text-bold\">anglais</span><span>, ce livre est fait pour vous. </span><span class=\"a-text-bold\">Prenez votre exemplaire aujourd’hui</span><span> et commencez à apprendre l’anglais de manière simple et efficace !</span></p>",
-      "author": "Skriuwer.com",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/P/B0CP18JBZ6.01.L.jpg",
-      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/B0CP18JBZ6.01.L.jpg",
-      "categories": [
-        "general"
-      ],
-      "tags": [],
-      "language": "en",
-      "pages": null,
-      "price": null,
-      "currency": "USD",
-      "reviewCount": 58,
-      "starRating": 4.4,
-      "marketplaces": {
-        "amazon.com": "https://www.amazon.com/dp/B0CP18JBZ6",
-        "amazon.de": "https://www.amazon.de/dp/B0CP18JBZ6",
-        "amazon.co.uk": "https://www.amazon.co.uk/dp/B0CP18JBZ6",
-        "amazon.nl": "https://www.amazon.nl/dp/B0CP18JBZ6"
-      },
-      "isOwnBook": false,
-      "hookText": "You're never too old, too busy, or too bad at languages to learn one.",
-      "publishedDate": null
-    },
-    {
       "slug": "asin-b0f2n3fskn",
       "asin": "B0F2N3FSKN",
       "title": "The Taurus Book: Everything You Should Know About Tauruses: A Guide to Clarity and Growth (Astrology Books)",
@@ -12193,7 +12165,7 @@
       "price": null,
       "currency": "USD",
       "reviewCount": 24,
-      "starRating": 4.0,
+      "starRating": 4,
       "marketplaces": {
         "amazon.com": "https://www.amazon.com/dp/3758426170",
         "amazon.de": "https://www.amazon.de/dp/3758426170",
@@ -12787,7 +12759,7 @@
       "price": null,
       "currency": "USD",
       "reviewCount": 17,
-      "starRating": 4.0,
+      "starRating": 4,
       "marketplaces": {
         "amazon.com": "https://www.amazon.com/dp/B0CF48R8VB",
         "amazon.de": "https://www.amazon.de/dp/B0CF48R8VB",
@@ -13100,7 +13072,7 @@
       "price": null,
       "currency": "USD",
       "reviewCount": 15,
-      "starRating": 4.0,
+      "starRating": 4,
       "marketplaces": {
         "amazon.com": "https://www.amazon.com/dp/B0FD5CXXS7",
         "amazon.de": "https://www.amazon.de/dp/B0FD5CXXS7",
