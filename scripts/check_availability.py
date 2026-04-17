@@ -93,21 +93,27 @@ def check_asin(session, asin: str) -> str:
         if "enter the characters you see below" in page or "robot check" in page:
             return "blocked"
 
-        # EXPLICIT unavailability — only flag if Amazon directly says so.
-        # Do NOT infer unavailability from a missing buy button: Amazon often
-        # hides the buy button for non-US IPs without the book being out of print.
+        # CAPTCHA / bot detection — Amazon served a stripped page, can't judge.
+        if "enter the characters you see below" in page or "robot check" in page:
+            return "blocked"
+
+        # Explicit unavailability strings → definitely can't buy.
         for s in UNAVAILABLE_STRINGS:
             if s in page:
                 return "unavailable"
 
-        # Has a buy button → definitely available
-        for s in BUYABLE_STRINGS:
-            if s in page:
-                return "available"
+        # Direct buy button present → definitely available.
+        has_buy_button = any(s in page for s in BUYABLE_STRINGS)
+        if has_buy_button:
+            return "available"
 
-        # Neither explicit unavailability nor a buy button — could be geo-blocked
-        # or Amazon's bot detection serving a stripped page. Mark as unknown so
-        # we don't falsely remove books.
+        # "See all buying options" without a buy button means no new-copy buy box —
+        # only used/third-party sellers, so no proper affiliate buy button.
+        if "see all buying options" in page:
+            return "unavailable"
+
+        # Page loaded but no signals either way — likely geo-blocked or bot-stripped.
+        # Keep the book to avoid false removals.
         return "unknown"
 
     except requests.exceptions.RequestException as e:
