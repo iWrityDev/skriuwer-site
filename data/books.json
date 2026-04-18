@@ -5228,6 +5228,36 @@
       "source": "google_books"
     },
     {
+      "slug": "the-history-of-the-frisians-the-evolution-of-friesland",
+      "asin": "3818751560",
+      "title": "The History of the Frisians: The Evolution of Friesland",
+      "description": "The History of the Frisians takes you on a fascinating journey through time, uncovering the rich and dynamic story of the Frisian people. From their ancient roots on the windswept North Sea coasts to their role in shaping European trade and culture, this book delves deep into the legacy of one of Europe's most intriguing communities. Discover the Frisii, the early settlers who thrived in harmony with the sea and left their mark on Roman history. Explore their tumultuous encounters with the Roman Empire, their resilience during the migration period, and the evolution of their unique language and identity. The narrative captures the highs and lows of Frisian history, including the rise of the Frisian Kingdom, the leadership of King Redbad, and their defiance against external powers. Uncover how the Frisians navigated the Viking Age, becoming both raiders and traders, and how they crafted one of the most advanced systems of customary law with the Lex Frisionum. Witness their Golden Age of maritime trade, their influence in the Hanseatic League, and the cultural and literary achievements that continue to inspire. As history progresses, the book examines the challenges faced by Friesland under foreign rule, the impact of the Dutch Republic, and the transformation brought by industrialization. It also highlights the resilience of Frisian culture during global upheavals like the World Wars and its modern revival in the face of globalization. With engaging stories and detailed accounts, The History of the Frisians celebrates the enduring spirit of a people who have preserved their identity and heritage through millennia. Whether you are a history enthusiast, a cultural explorer, or someone with Frisian roots, this book offers an illuminating look at the past, present, and future of Friesland.",
+      "author": "SKRIUWER COM.",
+      "coverImage": "https://books.google.com/books/content?id=nItc0QEACAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/3818751560.01.LZZZZZZZ.jpg",
+      "categories": [
+        "history"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": null,
+      "price": "13.99",
+      "currency": "USD",
+      "reviewCount": 0,
+      "starRating": null,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/3818751560?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/3818751560?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/3818751560?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/3818751560?tag=31813-20"
+      },
+      "isOwnBook": true,
+      "hookText": "",
+      "publishedDate": "2025-04-17",
+      "shortDescription": "The History of the Frisians takes you on a fascinating journey through time, uncovering the rich and dynamic story of the Frisian people. From their ancient roots on the windswept North Sea coasts to ...",
+      "source": "google_books"
+    },
+    {
       "slug": "holland-the-history-of-netherlands-europe-history",
       "asin": "1594623414",
       "title": "Holland: The History of Netherlands - (Europe History)",
@@ -11943,34 +11973,6 @@
       },
       "isOwnBook": true,
       "hookText": "Offizielle Geschichtsbücher lassen die interessantesten Teile aus.",
-      "publishedDate": null
-    },
-    {
-      "slug": "asin-3758411424",
-      "asin": "3758411424",
-      "title": "60 Short Stories in German A Dual-Language Book in English and German: A German Learning Book for Children and Beginners Learn German Language Through ... Stories for Young Minds English - German",
-      "description": "<p><span class=\"a-text-bold\">Ready to Discover a Magical World of Learning?</span></p><p><span>Welcome, little adventurers! Immerse yourself in \"60 Enchanting Mini Stories\", where every tale promises fun, magic, and invaluable lessons.</span></p><p><span><br></span></p><p><span class=\"a-text-bold\">Why It's a Treasure of Knowledge:</span></p><p><span>Research highlights the potency of stories in facilitating lasting learning. When education meets enjoyment, words transform into delightful companions and sentences into memorable adventures. This book offers a unique bilingual experience, presenting every story in both English and German. With 60 captivating tales, each page promises laughter, joy, and linguistic discovery. Suited for beginners and curious minds alike, every story is an invitation to a vibrant world where learning is an exhilarating voyage.</span></p><p><span><br></span></p><p><span class=\"a-text-bold\">Are You Ready for the Adventure?</span></p><p><span>Dive into a world where stories come to life and learning feels like play. Every turn of the page is a step into a universe filled with magic, fun, and knowledge. Enjoy the journey and happy exploring!</span></p>",
-      "author": "Skriuwer.com",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/P/3758411424.01.L.jpg",
-      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/3758411424.01.L.jpg",
-      "categories": [
-        "language-learning"
-      ],
-      "tags": [],
-      "language": "en",
-      "pages": null,
-      "price": "13.99",
-      "currency": "USD",
-      "reviewCount": 27,
-      "starRating": 4.5,
-      "marketplaces": {
-        "amazon.com": "https://www.amazon.com/dp/3758411424",
-        "amazon.de": "https://www.amazon.de/dp/3758411424",
-        "amazon.co.uk": "https://www.amazon.co.uk/dp/3758411424",
-        "amazon.nl": "https://www.amazon.nl/dp/3758411424"
-      },
-      "isOwnBook": true,
-      "hookText": "You're never too old, too busy, or too bad at languages to learn one.",
       "publishedDate": null
     },
     {
