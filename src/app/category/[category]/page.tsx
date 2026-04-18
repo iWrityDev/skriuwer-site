@@ -34,11 +34,17 @@ function TopBookCard({ book, rank }: { book: Book; rank: number }) {
         {rank}
       </span>
       <div className="flex-shrink-0 relative rounded overflow-hidden bg-[var(--color-surface-light)] flex items-center justify-center" style={{ width: 56, height: 80 }}>
-        {book.coverImage && book.coverImage.startsWith("http") ? (
-          <Image src={book.coverImage} alt={book.title} fill className="object-cover" sizes="56px" unoptimized />
-        ) : (
-          <span className="text-xl">&#128218;</span>
-        )}
+        {(() => {
+          // Own books: use Shopify CDN (coverImage). Third-party: prefer Amazon CDN (coverImageFallback).
+          const src = book.isOwnBook
+            ? (book.coverImage?.startsWith("http") ? book.coverImage : null)
+            : (book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : book.coverImage?.startsWith("http") ? book.coverImage : null);
+          return src ? (
+            <Image src={src} alt={book.title} fill className="object-cover" sizes="56px" unoptimized />
+          ) : (
+            <span className="text-xl">&#128218;</span>
+          );
+        })()}
       </div>
       <div className="flex-1 min-w-0">
         <Link href={`/books/${book.slug}`}>
