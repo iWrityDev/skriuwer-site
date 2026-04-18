@@ -1,9 +1,13 @@
 import booksData from "../../data/books.json";
+import deletedSlugsData from "../../data/deleted_slugs.json";
 import type { Book } from "./types";
 
-// Exclude Kindle-only editions (B0* ASINs) — site shows paperbacks only
+// Persistent blocklist — slugs admin-deleted via the panel or clean_books.py
+const DELETED_SLUGS = new Set<string>(deletedSlugsData as string[]);
+
+// Exclude Kindle-only editions (B0* ASINs) and admin-deleted slugs
 const books: Book[] = (booksData.books as unknown as Book[]).filter(
-  (b) => !b.asin || !b.asin.startsWith("B0")
+  (b) => (!b.asin || !b.asin.startsWith("B0")) && !DELETED_SLUGS.has(b.slug)
 );
 
 export function getAllBooks(): Book[] {

@@ -11,6 +11,7 @@ const GH_OWNER = "iWrityDev";
 const GH_REPO = "skriuwer-site";
 const GH_BRANCH = "master";
 const GH_FILE = "data/books.json";
+const GH_DELETED_FILE = "data/deleted_slugs.json";
 
 async function deleteViaGitHub(slug: string) {
   const token = process.env.GITHUB_TOKEN;
@@ -25,33 +26,50 @@ async function deleteViaGitHub(slug: string) {
     "Content-Type": "application/json",
   };
 
-  // Step 1: Get file metadata (sha + download_url). Content is empty for files > 1 MB — that's fine.
-  const metaRes = await fetch(`${base}/contents/${GH_FILE}?ref=${GH_BRANCH}`, { headers });
+  // Step 1: Fetch books.json and deleted_slugs.json metadata in parallel
+  const [metaRes, deletedMetaRes] = await Promise.all([
+    fetch(`${base}/contents/${GH_FILE}?ref=${GH_BRANCH}`, { headers }),
+    fetch(`${base}/contents/${GH_DELETED_FILE}?ref=${GH_BRANCH}`, { headers }),
+  ]);
   if (!metaRes.ok) return { error: `GitHub metadata error ${metaRes.status}` };
   const meta = await metaRes.json();
-  const downloadUrl: string = meta.download_url;
 
-  // Step 2: Download raw content via raw.githubusercontent.com (no size limit)
-  const rawRes = await fetch(downloadUrl);
+  // Step 2: Download books.json
+  const rawRes = await fetch(meta.download_url);
   if (!rawRes.ok) return { error: `Failed to download books.json: ${rawRes.status}` };
-  const raw = await rawRes.text();
-  const data = JSON.parse(raw);
+  const data = JSON.parse(await rawRes.text());
 
   const before = data.books.length;
   data.books = data.books.filter((b: { slug: string }) => b.slug !== slug);
   const after = data.books.length;
   if (before === after) return { error: "Book not found" };
 
-  const newContent = JSON.stringify(data, null, 2);
+  // Step 2b: Update deleted_slugs.json
+  let deletedSlugs: string[] = [];
+  if (deletedMetaRes.ok) {
+    const deletedMeta = await deletedMetaRes.json();
+    try {
+      const dr = await fetch(deletedMeta.download_url);
+      if (dr.ok) deletedSlugs = JSON.parse(await dr.text());
+    } catch { /* start fresh */ }
+  }
+  if (!deletedSlugs.includes(slug)) { deletedSlugs.push(slug); deletedSlugs.sort(); }
 
-  // Step 3: Create a new blob with the updated content
-  const blobRes = await fetch(`${base}/git/blobs`, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({ content: newContent, encoding: "utf-8" }),
-  });
+  // Step 3: Create blobs for both files
+  const [blobRes, deletedBlobRes] = await Promise.all([
+    fetch(`${base}/git/blobs`, {
+      method: "POST", headers,
+      body: JSON.stringify({ content: JSON.stringify(data, null, 2), encoding: "utf-8" }),
+    }),
+    fetch(`${base}/git/blobs`, {
+      method: "POST", headers,
+      body: JSON.stringify({ content: JSON.stringify(deletedSlugs, null, 2), encoding: "utf-8" }),
+    }),
+  ]);
   if (!blobRes.ok) return { error: `GitHub blob error ${blobRes.status}` };
+  if (!deletedBlobRes.ok) return { error: `GitHub deleted_slugs blob error ${deletedBlobRes.status}` };
   const { sha: blobSha } = await blobRes.json();
+  const { sha: deletedBlobSha } = await deletedBlobRes.json();
 
   // Step 4: Get the current commit SHA for the branch
   const refRes = await fetch(`${base}/git/ref/heads/${GH_BRANCH}`, { headers });
@@ -69,7 +87,10 @@ async function deleteViaGitHub(slug: string) {
     headers,
     body: JSON.stringify({
       base_tree: treeSha,
-      tree: [{ path: GH_FILE, mode: "100644", type: "blob", sha: blobSha }],
+      tree: [
+        { path: GH_FILE, mode: "100644", type: "blob", sha: blobSha },
+        { path: GH_DELETED_FILE, mode: "100644", type: "blob", sha: deletedBlobSha },
+      ],
     }),
   });
   if (!treeRes.ok) return { error: `GitHub tree error ${treeRes.status}` };

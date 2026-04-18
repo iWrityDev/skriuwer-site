@@ -64,20 +64,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div className="absolute top-full left-0 mt-1 w-52 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 py-1">
                   {[
                     { label: "History", slug: "history" },
+                    { label: "Dark History", slug: "dark-history" },
+                    { label: "Conspiracy", slug: "conspiracy" },
                     { label: "Mythology", slug: "mythology" },
+                    { label: "Religion & Spirituality", slug: "religion" },
+                    { label: "Science & Nature", slug: "science" },
                     { label: "Language Learning", slug: "language-learning" },
                     { label: "Frisian Language", slug: "frisian" },
-                    { label: "Philosophy", slug: "philosophy" },
-                    { label: "Psychology & Mind", slug: "psychology" },
                     { label: "Self-Help", slug: "self-help" },
-                    { label: "Business & Finance", slug: "business" },
-                    { label: "Biography & Memoir", slug: "biography" },
-                    { label: "True Crime", slug: "true-crime" },
-                    { label: "Science & Nature", slug: "science" },
-                    { label: "Fiction", slug: "fiction" },
-                    { label: "Dark History", slug: "dark-history" },
-                    { label: "Religion & Spirituality", slug: "religion" },
-                    { label: "Conspiracy", slug: "conspiracy" },
                   ].map((cat) => (
                     <Link
                       key={cat.slug}
@@ -144,12 +138,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Best Of Lists</h3>
                 <div className="flex flex-col gap-2 text-sm">
                   <Link href="/best-history-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best History Books</Link>
-                  <Link href="/best-greek-mythology-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Greek Mythology Books</Link>
-                  <Link href="/best-roman-history-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Roman History Books</Link>
-                  <Link href="/best-psychology-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Psychology Books</Link>
-                  <Link href="/best-business-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Business Books</Link>
+                  <Link href="/best-mythology-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Mythology Books</Link>
                   <Link href="/best-conspiracy-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Conspiracy Books</Link>
-                  <Link href="/best-books-2026" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Books of 2026</Link>
+                  <Link href="/best-dark-history-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Dark History Books</Link>
+                  <Link href="/best-language-learning-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Language Learning Books</Link>
+                  <Link href="/best-religion-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Religion Books</Link>
+                  <Link href="/best-science-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Science Books</Link>
                 </div>
               </div>
               <div>

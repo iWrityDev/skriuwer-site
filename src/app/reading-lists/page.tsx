@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Best Book Reading Lists — Curated by Category",
   description:
-    "Explore our curated reading lists — the best history books, best Greek mythology books, best psychology books, and more. Each list is ranked by reader popularity.",
+    "Explore our curated reading lists — the best history books, best mythology books, best conspiracy books, best language learning books, and more. Each list ranked by reader popularity.",
   alternates: { canonical: "https://skriuwer.com/reading-lists" },
 };
 
@@ -13,15 +13,13 @@ const LISTS = [
     category: "History",
     lists: [
       { title: "Best History Books", href: "/best-history-books", desc: "Top-rated history books of all time" },
-      { title: "Best Roman History Books", href: "/best-roman-history-books", desc: "From the Republic to the Fall of Rome" },
-      { title: "Best Ancient Civilizations Books", href: "/best-ancient-civilizations-books", desc: "Egypt, Greece, Mesopotamia and beyond" },
-      { title: "Best World War 2 Books", href: "/best-world-war-2-books", desc: "The definitive WW2 reading list" },
       { title: "Best Dark History Books", href: "/best-dark-history-books", desc: "The brutal truths history left out" },
+      { title: "Best Conspiracy Books", href: "/best-conspiracy-books", desc: "Cover-ups, hidden history, and power" },
       { title: "Best Books for History Lovers", href: "/best-books-for-history-lovers", desc: "Essential reads for any history buff" },
       { title: "Best Ancient Rome Books", href: "/best-ancient-rome-books", desc: "The Republic, Emperors, and the Fall" },
-      { title: "Best Ancient Greece Books", href: "/best-ancient-greece-books", desc: "Athens, Sparta, and Greek philosophy" },
-      { title: "Best Ancient Egypt Books", href: "/best-ancient-egypt-books", desc: "Pharaohs, pyramids, and the Nile" },
       { title: "Best Viking Books", href: "/best-viking-books", desc: "Norse raiders, explorers, and gods" },
+      { title: "Best World War 2 Books", href: "/best-world-war-2-books", desc: "The definitive WW2 reading list" },
+      { title: "Best Ancient Egypt Books", href: "/best-ancient-egypt-books", desc: "Pharaohs, pyramids, and the Nile" },
     ],
   },
   {
@@ -34,50 +32,23 @@ const LISTS = [
     ],
   },
   {
-    category: "Mind & Self-Improvement",
-    lists: [
-      { title: "Best Psychology Books", href: "/best-psychology-books", desc: "Understand the human mind" },
-      { title: "Best Self-Help Books", href: "/best-self-help-books", desc: "Books that actually change your life" },
-      { title: "Best Philosophy Books", href: "/best-philosophy-books", desc: "Wisdom from Plato to Nietzsche" },
-      { title: "Best Stoicism Books", href: "/best-stoicism-books", desc: "Ancient wisdom for modern living" },
-      { title: "Best Mindset Books", href: "/best-mindset-books", desc: "Train your brain for success" },
-      { title: "Best Leadership Books", href: "/best-leadership-books", desc: "Lead with confidence and clarity" },
-    ],
-  },
-  {
-    category: "Business & Money",
-    lists: [
-      { title: "Best Business Books", href: "/best-business-books", desc: "From startups to global empires" },
-    ],
-  },
-  {
-    category: "Dark & Gripping",
-    lists: [
-      { title: "Best True Crime Books", href: "/best-true-crime-books", desc: "Real murders, heists, and serial killers" },
-      { title: "Best Conspiracy Books", href: "/best-conspiracy-books", desc: "Cover-ups, hidden history, and power" },
-      { title: "Best Thriller Books", href: "/best-thriller-books", desc: "Page-turners you cannot put down" },
-    ],
-  },
-  {
-    category: "Science & Knowledge",
-    lists: [
-      { title: "Best Science Books", href: "/best-science-books", desc: "Physics, biology, and the universe" },
-      { title: "Best Biography Books", href: "/best-biography-books", desc: "True stories of remarkable lives" },
-    ],
-  },
-  {
-    category: "Language & Fiction",
-    lists: [
-      { title: "Best Language Learning Books", href: "/best-language-learning-books", desc: "Master any language faster" },
-      { title: "Best Bilingual Books", href: "/best-bilingual-books", desc: "Learn while you read great stories" },
-      { title: "Best Frisian Books", href: "/best-frisian-books", desc: "Literature and learning in Frisian" },
-      { title: "Best Fiction Books", href: "/best-fiction-books", desc: "Timeless stories and modern classics" },
-    ],
-  },
-  {
-    category: "Religion & Spirituality",
+    category: "Religion & Science",
     lists: [
       { title: "Best Religion Books", href: "/best-religion-books", desc: "From the Bible to Eastern thought" },
+      { title: "Best Science Books", href: "/best-science-books", desc: "Physics, biology, and the universe" },
+    ],
+  },
+  {
+    category: "Language Learning",
+    lists: [
+      { title: "Best Language Learning Books", href: "/best-language-learning-books", desc: "Master any language faster" },
+      { title: "Best Frisian Books", href: "/best-frisian-books", desc: "Literature and learning in Frisian" },
+    ],
+  },
+  {
+    category: "Self-Improvement",
+    lists: [
+      { title: "Best Self-Help Books", href: "/best-self-help-books", desc: "Books that actually change your life" },
     ],
   },
   {
@@ -93,7 +64,6 @@ export default function ReadingListsPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
-      {/* Breadcrumb */}
       <nav className="text-sm text-[var(--color-text-dim)] mb-6">
         <Link href="/" className="hover:text-[var(--color-orange-light)]">Home</Link>
         {" / "}
@@ -150,7 +120,7 @@ export default function ReadingListsPage() {
         <div className="flex flex-wrap gap-3 justify-center">
           <Link href="/books" className="btn-outline text-sm">Browse All Books</Link>
           <Link href="/search" className="btn-outline text-sm">Search Books</Link>
-          <Link href="/blog" className="btn-outline text-sm">Read the Blog</Link>
+          <Link href="/gift-guides" className="btn-outline text-sm">Gift Guides</Link>
         </div>
       </div>
     </div>
