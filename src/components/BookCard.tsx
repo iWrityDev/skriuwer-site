@@ -40,6 +40,11 @@ export function BookCard({ book }: { book: Book }) {
             </span>
           </div>
         )}
+        {book.asin?.startsWith("B0") && (
+          <span className="absolute top-2 left-2 bg-[#232f3e] text-[#f90] text-[9px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded">
+            Kindle
+          </span>
+        )}
       </div>
       <div className="p-3">
         <h3 className="font-medium text-sm text-[var(--color-text)] line-clamp-2 mb-1 group-hover:text-[var(--color-orange-light)] transition leading-snug">
