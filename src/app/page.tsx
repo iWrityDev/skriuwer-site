@@ -246,43 +246,25 @@ export default function HomePage() {
           <div className="w-1 h-6 bg-[var(--color-orange)] rounded-full" />
           <h2 className="text-xl font-bold text-[var(--color-text)]">Popular Reading Lists</h2>
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {[
-            { label: "Best Greek Mythology Books", href: "/best-greek-mythology-books" },
-            { label: "Best Roman History Books", href: "/best-roman-history-books" },
-            { label: "Best History Books", href: "/best-history-books" },
-            { label: "Best Mythology Books", href: "/best-mythology-books" },
-            { label: "Best Self-Help Books", href: "/best-self-help-books" },
-            { label: "Best Psychology Books", href: "/best-psychology-books" },
-            { label: "Best True Crime Books", href: "/best-true-crime-books" },
-            { label: "Best Philosophy Books", href: "/best-philosophy-books" },
-            { label: "Best Business Books", href: "/best-business-books" },
-            { label: "Best Stoicism Books", href: "/best-stoicism-books" },
-            { label: "Best Biography Books", href: "/best-biography-books" },
-            { label: "Best Science Books", href: "/best-science-books" },
-            { label: "Best Language Learning Books", href: "/best-language-learning-books" },
-            { label: "Best Norse Mythology Books", href: "/best-norse-mythology-books" },
-            { label: "Best Books of 2026", href: "/best-books-2026" },
-            { label: "Best Ancient Civilizations Books", href: "/best-ancient-civilizations-books" },
-            { label: "Best Fiction Books", href: "/best-fiction-books" },
-            { label: "Best Bilingual Books", href: "/best-bilingual-books" },
-            { label: "Best World War 2 Books", href: "/best-world-war-2-books" },
-            { label: "Best Leadership Books", href: "/best-leadership-books" },
-            { label: "Best Mindset Books", href: "/best-mindset-books" },
-            { label: "Best Thriller Books", href: "/best-thriller-books" },
-            { label: "Best Conspiracy Books", href: "/best-conspiracy-books" },
-            { label: "Best Dark History Books", href: "/best-dark-history-books" },
-            { label: "Best Ancient Egypt Books", href: "/best-ancient-egypt-books" },
-            { label: "Best Viking Books", href: "/best-viking-books" },
-            { label: "Best Ancient Rome Books", href: "/best-ancient-rome-books" },
-            { label: "Best Ancient Greece Books", href: "/best-ancient-greece-books" },
+            { label: "Best History Books", sub: "Ancient civilizations to modern conflicts", href: "/best-history-books" },
+            { label: "Best Biography Books", sub: "Lives that shaped the world", href: "/best-biography-books" },
+            { label: "Best Business Books", sub: "Strategy, money, and leadership", href: "/best-business-books" },
+            { label: "Best Language Learning Books", sub: "Learn faster, remember more", href: "/best-language-learning-books" },
+            { label: "Best Science Books", sub: "How the world actually works", href: "/best-science-books" },
+            { label: "Best Philosophy Books", sub: "Ideas that changed everything", href: "/best-philosophy-books" },
+            { label: "Best Psychology Books", sub: "The mind, behaviour, and influence", href: "/best-psychology-books" },
           ].map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="inline-block px-3 py-1.5 text-xs font-semibold rounded-full border border-[var(--color-orange)] text-[var(--color-orange)] bg-transparent hover:bg-[var(--color-orange)] hover:text-white transition-colors"
+              className="group flex flex-col p-4 bg-[var(--color-surface)] rounded-lg border border-[var(--color-border)] hover:border-[var(--color-orange)] transition-colors"
             >
-              {item.label}
+              <span className="font-bold text-sm text-[var(--color-text)] group-hover:text-[var(--color-orange)] transition-colors mb-1">
+                {item.label}
+              </span>
+              <span className="text-xs text-[var(--color-text-muted)]">{item.sub}</span>
             </Link>
           ))}
         </div>

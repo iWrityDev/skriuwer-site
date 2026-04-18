@@ -99,18 +99,23 @@ export function BestOfPage({
 
                   {/* Cover image */}
                   <div className="flex-shrink-0 w-[60px] h-[90px] relative rounded overflow-hidden bg-[var(--color-surface-light)] flex items-center justify-center">
-                    {book.coverImage && book.coverImage.startsWith("http") ? (
-                      <Image
-                        src={book.coverImage}
-                        alt={book.title}
-                        fill
-                        className="object-cover"
-                        sizes="60px"
-                        unoptimized
-                      />
-                    ) : (
-                      <span className="text-2xl">&#128218;</span>
-                    )}
+                    {(() => {
+                      const src = book.isOwnBook
+                        ? (book.coverImage?.startsWith("http") ? book.coverImage : book.coverImageFallback)
+                        : (book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : book.coverImage);
+                      return src && src.startsWith("http") ? (
+                        <Image
+                          src={src}
+                          alt={book.title}
+                          fill
+                          className="object-cover"
+                          sizes="60px"
+                          unoptimized
+                        />
+                      ) : (
+                        <span className="text-2xl">&#128218;</span>
+                      );
+                    })()}
                   </div>
 
                   {/* Book info */}

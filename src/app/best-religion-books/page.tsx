@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import booksData from "../../../data/books.json";
+import { getAllBooks } from '@/lib/books';
 import type { Book } from "@/lib/types";
 import { BestOfPage } from "@/components/BestOfPage";
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestReligionBooksPage() {
-  const books = ((booksData.books as unknown) as Book[])
+  const books = getAllBooks()
     .filter((b) => b.categories.includes("religion"))
     .sort((a, b) => b.reviewCount - a.reviewCount)
     .slice(0, 15);

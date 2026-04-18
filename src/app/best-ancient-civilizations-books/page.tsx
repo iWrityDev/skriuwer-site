@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import booksData from "../../../data/books.json";
+import { getAllBooks } from '@/lib/books';
 import type { Book } from "@/lib/types";
 import { BestOfPage } from "@/components/BestOfPage";
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestAncientCivilizationsBooksPage() {
-  const books = ((booksData.books as unknown) as Book[])
+  const books = getAllBooks()
     .filter((b) => {
       if (!b.categories.includes("history")) return false;
       const titleLower = b.title.toLowerCase();

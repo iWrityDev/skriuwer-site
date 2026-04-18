@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import booksData from "../../../data/books.json";
+import { getAllBooks } from '@/lib/books';
 import type { Book } from "@/lib/types";
 import { BestOfPage } from "@/components/BestOfPage";
 
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestWW2BooksPage() {
-  const books = ((booksData.books as unknown) as Book[])
+  const books = getAllBooks()
     .filter((b) =>
       b.categories.includes("history") &&
       (b.title.toLowerCase().includes("world war") ||
@@ -25,7 +25,7 @@ export default function BestWW2BooksPage() {
     .slice(0, 15);
 
   // Fallback: top history books if we don't have enough WW2-specific books
-  const finalBooks = books.length >= 3 ? books : ((booksData.books as unknown) as Book[])
+  const finalBooks = books.length >= 3 ? books : getAllBooks()
     .filter((b) => b.categories.includes("history"))
     .sort((a, b) => b.reviewCount - a.reviewCount)
     .slice(0, 15);

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import booksData from "../../../data/books.json";
+import { getAllBooks } from '@/lib/books';
 import type { Book } from "@/lib/types";
 import { BestOfPage } from "@/components/BestOfPage";
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestAncientEgyptBooksPage() {
-  const books = ((booksData.books as unknown) as Book[])
+  const books = getAllBooks()
     .filter((b) => {
       const text = `${b.title} ${b.description || ""} ${b.tags?.join(" ") || ""}`.toLowerCase();
       return /egypt|pharaoh|pyramid|nile|hieroglyph|mummy|sphinx|cleopatra|osiris|isis|ra\b|anubis|tutankhamun|ramesses/.test(text);

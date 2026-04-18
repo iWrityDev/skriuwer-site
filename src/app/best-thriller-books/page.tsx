@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import booksData from "../../../data/books.json";
+import { getAllBooks } from '@/lib/books';
 import type { Book } from "@/lib/types";
 import { BestOfPage } from "@/components/BestOfPage";
 
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function BestThrillerBooksPage() {
-  const books = ((booksData.books as unknown) as Book[])
+  const books = getAllBooks()
     .filter((b) => b.categories.includes("fiction") || b.categories.includes("true-crime"))
     .sort((a, b) => b.reviewCount - a.reviewCount)
     .slice(0, 15);
