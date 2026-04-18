@@ -5,16 +5,27 @@ import Image from "next/image";
 import type { Book } from "@/lib/types";
 
 export function BookCoverImage({ book }: { book: Book }) {
-  const initialSrc =
-    book.coverImage && book.coverImage.startsWith("http") ? book.coverImage : null;
-  const [imgSrc, setImgSrc] = useState<string | null>(initialSrc);
+  // Own books use high-res Shopify CDN images — keep as primary.
+  // Third-party books: prefer Amazon LZZZZZZZ (consistent quality) over Google Books.
+  const pickPrimary = () => {
+    if (book.isOwnBook) {
+      return book.coverImage?.startsWith("http") ? book.coverImage : null;
+    }
+    if (book.coverImageFallback?.startsWith("http")) return book.coverImageFallback;
+    return book.coverImage?.startsWith("http") ? book.coverImage : null;
+  };
+  const pickFallback = () => {
+    if (book.isOwnBook) {
+      return book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : null;
+    }
+    return book.coverImage?.startsWith("http") ? book.coverImage : null;
+  };
+
+  const [imgSrc, setImgSrc] = useState<string | null>(pickPrimary());
 
   const handleError = () => {
-    if (book.coverImageFallback && book.coverImageFallback.startsWith("http")) {
-      setImgSrc(book.coverImageFallback);
-    } else {
-      setImgSrc(null);
-    }
+    const fallback = pickFallback();
+    setImgSrc(fallback !== imgSrc ? fallback : null);
   };
 
   return (

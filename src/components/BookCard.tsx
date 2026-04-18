@@ -7,16 +7,19 @@ import type { Book } from "@/lib/types";
 import { StarRating } from "./StarRating";
 
 export function BookCard({ book }: { book: Book }) {
-  const initialSrc =
-    book.coverImage && book.coverImage.startsWith("http") ? book.coverImage : null;
-  const [imgSrc, setImgSrc] = useState<string | null>(initialSrc);
+  // Own books → Shopify CDN (primary) → Amazon (fallback)
+  // Third-party books → Amazon LZZZZZZZ (primary) → Google Books (fallback)
+  const primary = book.isOwnBook
+    ? (book.coverImage?.startsWith("http") ? book.coverImage : null)
+    : (book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : book.coverImage?.startsWith("http") ? book.coverImage : null);
+  const fallbackSrc = book.isOwnBook
+    ? (book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : null)
+    : (book.coverImage?.startsWith("http") ? book.coverImage : null);
+
+  const [imgSrc, setImgSrc] = useState<string | null>(primary);
 
   const handleError = () => {
-    if (book.coverImageFallback && book.coverImageFallback.startsWith("http")) {
-      setImgSrc(book.coverImageFallback);
-    } else {
-      setImgSrc(null);
-    }
+    setImgSrc(fallbackSrc !== primary ? fallbackSrc : null);
   };
 
   return (

@@ -137,11 +137,18 @@ export default function HomePage() {
     categories: b.categories,
   }));
 
-  // Pick a featured book (most-reviewed own book with cover and description)
+  // Pick a featured book — own book, English, with cover and description
   const featuredBook =
     featured
-      .filter((b) => b.description.length > 100 && b.coverImage && b.coverImage.startsWith("http"))
+      .filter(
+        (b) =>
+          b.language === "en" &&
+          b.description.length > 100 &&
+          b.coverImage &&
+          b.coverImage.startsWith("http")
+      )
       .sort((a, b) => b.reviewCount - a.reviewCount)[0] ||
+    featured.find((b) => b.language === "en" && b.description.length > 100 && b.coverImage) ||
     featured.find((b) => b.description.length > 100 && b.coverImage) ||
     featured[0];
 

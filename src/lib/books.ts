@@ -1,7 +1,10 @@
 import booksData from "../../data/books.json";
 import type { Book } from "./types";
 
-const books: Book[] = (booksData.books as unknown) as Book[];
+// Exclude Kindle-only editions (B0* ASINs) — site shows paperbacks only
+const books: Book[] = (booksData.books as unknown as Book[]).filter(
+  (b) => !b.asin || !b.asin.startsWith("B0")
+);
 
 export function getAllBooks(): Book[] {
   return books;
