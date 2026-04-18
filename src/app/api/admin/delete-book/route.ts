@@ -101,7 +101,7 @@ async function deleteViaGitHub(slug: string) {
     method: "POST",
     headers,
     body: JSON.stringify({
-      message: `Admin: remove book ${slug}`,
+      message: `Admin: remove book ${slug} [skip ci]`,
       tree: newTreeSha,
       parents: [commitSha],
     }),
@@ -160,6 +160,6 @@ export async function POST(req: NextRequest) {
     success: true,
     remaining: result.remaining,
     via: "github",
-    note: "Committed to GitHub — Vercel rebuild in ~30s",
+    note: "Committed to GitHub — live after next deploy",
   });
 }
