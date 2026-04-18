@@ -56,25 +56,24 @@ function RelatedBookCard({ book }: { book: Book }) {
   return (
     <div className="flex gap-3 p-3 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg hover:border-[var(--color-orange)] transition-colors">
       <Link href={`/books/${book.slug}`} className="flex-shrink-0">
-        {book.coverImage ? (
-          <div className="relative rounded overflow-hidden" style={{ width: 64, height: 90 }}>
-            <Image
-              src={book.coverImage}
-              alt={book.title}
-              fill
-              className="object-cover"
-              sizes="64px"
-              unoptimized
-            />
-          </div>
-        ) : (
-          <div
-            className="rounded flex items-center justify-center bg-[var(--color-surface-light)] text-[var(--color-text-dim)] text-xs"
-            style={{ width: 64, height: 90 }}
-          >
-            No cover
-          </div>
-        )}
+        {(() => {
+          // Own books: Shopify CDN. Third-party: Amazon CDN (coverImageFallback) preferred.
+          const src = book.isOwnBook
+            ? (book.coverImage?.startsWith("http") ? book.coverImage : book.coverImageFallback)
+            : (book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : book.coverImage);
+          return src && src.startsWith("http") ? (
+            <div className="relative rounded overflow-hidden" style={{ width: 64, height: 90 }}>
+              <Image src={src} alt={book.title} fill className="object-cover" sizes="64px" unoptimized />
+            </div>
+          ) : (
+            <div
+              className="rounded flex items-center justify-center bg-[var(--color-surface-light)] text-[var(--color-text-dim)] text-xs"
+              style={{ width: 64, height: 90 }}
+            >
+              📚
+            </div>
+          );
+        })()}
       </Link>
 
       <div className="flex flex-col justify-between min-w-0 flex-1">
