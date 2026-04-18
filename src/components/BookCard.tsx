@@ -43,6 +43,11 @@ export function BookCard({ book }: { book: Book }) {
             </span>
           </div>
         )}
+        {book.isOwnBook && !book.asin?.startsWith("B0") && (
+          <span className="absolute top-2 right-2 bg-[var(--color-orange)] text-white text-[9px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded shadow-sm">
+            ★ Our Pick
+          </span>
+        )}
         {book.asin?.startsWith("B0") && (
           <span className="absolute top-2 left-2 bg-[#232f3e] text-[#f90] text-[9px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded">
             Kindle

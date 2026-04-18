@@ -81,6 +81,28 @@ export default async function BookPage({
         reviewCount: book.reviewCount.toString(),
       },
     }),
+    // Editorial review for own books
+    ...(book.isOwnBook && {
+      review: {
+        "@type": "Review",
+        reviewBody: cleanDescription.slice(0, 300),
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: book.starRating ? book.starRating.toString() : "5",
+          bestRating: "5",
+        },
+        author: {
+          "@type": "Organization",
+          name: "Skriuwer",
+          url: "https://skriuwer.com/about",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "Skriuwer",
+          url: "https://skriuwer.com",
+        },
+      },
+    }),
   };
 
   const breadcrumbLd = {

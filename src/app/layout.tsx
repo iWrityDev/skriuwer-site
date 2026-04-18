@@ -92,6 +92,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/reading-lists" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
                 Reading Lists
               </Link>
+              <Link href="/gift-guides" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
+                Gift Guides
+              </Link>
               <Link href="/blog" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
                 Blog
               </Link>
@@ -126,12 +129,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Browse</h3>
                 <div className="flex flex-col gap-2 text-sm">
+                  <Link href="/start-here" className="text-[var(--color-orange-light)] hover:text-[var(--color-orange)] transition font-semibold">Start Here</Link>
                   <Link href="/books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">All Books</Link>
                   <Link href="/bestsellers" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Bestsellers</Link>
                   <Link href="/category/history" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">History Books</Link>
                   <Link href="/category/mythology" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Mythology Books</Link>
                   <Link href="/category/language-learning" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Language Learning</Link>
-                  <Link href="/category/dark-history" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Dark History</Link>
+                  <Link href="/gift-guides" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Gift Guides</Link>
                   <Link href="/blog" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Blog</Link>
                   <Link href="/search" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Search</Link>
                 </div>
@@ -153,6 +157,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div className="flex flex-col gap-2 text-sm">
                   <Link href="/about" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">About Us</Link>
                   <Link href="/team" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Meet the Authors</Link>
+                  <Link href="/authors/auke" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Author: Auke</Link>
+                  <Link href="/authors/jennifer-joseph" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Author: Jennifer Joseph</Link>
+                  <Link href="/authors/yahia-fathy" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Author: Yahia Fathy</Link>
                   <Link href="/contact" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Contact</Link>
                   <Link href="/affiliate-disclosure" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Affiliate Disclosure</Link>
                   <Link href="/privacy-policy" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Privacy Policy</Link>
