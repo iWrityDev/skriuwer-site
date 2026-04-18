@@ -183,13 +183,13 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Bestsellers */}
+      {/* Bestsellers — all books sorted by review count */}
       {bestsellers.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 py-10 section-divider">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
               <div className="w-1 h-6 bg-[var(--color-orange)] rounded-full" />
-              <h2 className="text-xl font-bold text-[var(--color-text)]">Most Reviewed</h2>
+              <h2 className="text-xl font-bold text-[var(--color-text)]">Most Popular Books</h2>
             </div>
             <Link href="/bestsellers" className="text-sm text-[var(--color-orange)] hover:underline">
               View all &rarr;
