@@ -64,7 +64,11 @@ export function BookCard({ book }: { book: Book }) {
         {book.starRating && (
           <div className="flex items-center gap-1 mb-1">
             <StarRating rating={book.starRating} />
-            <span className="text-xs text-[var(--color-text-dim)]">({book.reviewCount})</span>
+            <span className="text-xs text-[var(--color-text-dim)]">
+              ({book.reviewCount >= 1000
+                ? `${Math.floor(book.reviewCount / 1000)}k`
+                : book.reviewCount})
+            </span>
           </div>
         )}
       </div>
