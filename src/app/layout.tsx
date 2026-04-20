@@ -164,14 +164,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Contact</h3>
                 <div className="text-sm text-[var(--color-text-muted)] space-y-1">
                   <p className="font-semibold text-[var(--color-text)]">Skriuwer.com</p>
-                  <p>Splitting 1, 9281 KJ</p>
-                  <p>Harkema, Friesland, Netherlands</p>
+                  <p>Friesland, Netherlands</p>
                   <p className="mt-3">
                     <a href="mailto:kontakt@skriuwer.com" className="text-[var(--color-orange-light)] hover:underline">
                       kontakt@skriuwer.com
                     </a>
                   </p>
-                  <p>WhatsApp: +31 630771404</p>
                 </div>
                 {/* Social media */}
                 <div className="flex gap-3 mt-5">

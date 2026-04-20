@@ -12,9 +12,9 @@ const authors = [
     name: "Auke",
     role: "Founder & Author",
     flag: "🏴󠁮󠁬󠁦󠁲󠁿",
-    location: "Harkema, Friesland, Netherlands",
+    location: "Friesland, Netherlands",
     bio: [
-      "Auke is a Frisian language advocate and publisher based in Harkema, Friesland. He founded Skriuwer.com out of a deep love for books and a desire to help readers discover outstanding titles across history, mythology, languages, and culture.",
+      "Auke is a Frisian language advocate and publisher based in Friesland. He founded Skriuwer.com out of a deep love for books and a desire to help readers discover outstanding titles across history, mythology, languages, and culture.",
       "Frisian is spoken by roughly 500,000 people, primarily in Friesland, and holds official status alongside Dutch — one of the few minority languages in Europe with genuine legal recognition. Auke has made it his mission to keep that language and culture alive through education and publishing.",
       "A portion of proceeds from Skriuwer's books supports De Fryske Wrâld, a nonprofit foundation dedicated to Frisian language and cultural preservation.",
     ],

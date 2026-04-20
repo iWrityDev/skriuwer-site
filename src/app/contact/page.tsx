@@ -35,12 +35,8 @@ export default function ContactPage() {
             <p className="text-[var(--color-text)]">Skriuwer.com</p>
           </div>
           <div>
-            <span className="text-[var(--color-text-dim)] text-sm uppercase tracking-wide">Address</span>
-            <address className="not-italic text-[var(--color-text)]">
-              Splitting 1<br />
-              9281 KJ Harkema<br />
-              Friesland, Netherlands
-            </address>
+            <span className="text-[var(--color-text-dim)] text-sm uppercase tracking-wide">Location</span>
+            <p className="text-[var(--color-text)]">Friesland, Netherlands</p>
           </div>
           <div>
             <span className="text-[var(--color-text-dim)] text-sm uppercase tracking-wide">Email</span>
@@ -50,19 +46,6 @@ export default function ContactPage() {
                 className="text-[var(--color-orange-light)] hover:underline"
               >
                 kontakt@skriuwer.com
-              </a>
-            </p>
-          </div>
-          <div>
-            <span className="text-[var(--color-text-dim)] text-sm uppercase tracking-wide">WhatsApp</span>
-            <p>
-              <a
-                href="https://wa.me/31630771404"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--color-orange-light)] hover:underline"
-              >
-                +31 630 771 404
               </a>
             </p>
           </div>

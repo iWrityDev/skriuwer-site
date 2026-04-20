@@ -99,9 +99,6 @@ const organizationJsonLd = {
   description: "An affiliate book discovery site specializing in history, mythology, language learning, and more.",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Splitting 1",
-    postalCode: "9281 KJ",
-    addressLocality: "Harkema",
     addressRegion: "Friesland",
     addressCountry: "NL",
   },
@@ -358,50 +355,13 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Newsletter */}
-      <section className="max-w-7xl mx-auto pt-10 pb-10 mt-4 section-divider">
-        <div className="max-w-2xl mx-auto px-4">
-          <div
-            className="rounded-2xl p-8 md:p-10 text-center"
-            style={{
-              background: "var(--color-card-gradient)",
-              border: "1px solid var(--color-orange)",
-              boxShadow: "0 0 32px rgba(232,100,10,0.15)",
-            }}
-          >
-            <div className="flex items-center justify-center gap-2 mb-3">
-              <span className="text-2xl">&#128218;</span>
-              <h2 className="text-xl font-bold text-[var(--color-text)]">Get Weekly Book Recommendations</h2>
-            </div>
-            <p className="text-[var(--color-text-muted)] text-sm mb-1">
-              Discover the best new books in history, mythology, and more &mdash; straight to your inbox.
-            </p>
-            <p className="text-[var(--color-text-dim)] text-xs mb-6">
-              Join readers discovering the best books in history, mythology &amp; more.
-            </p>
-            <form
-              action="https://buttondown.email/api/emails/embed-subscribe/skriuwer"
-              method="POST"
-              className="flex flex-col sm:flex-row gap-3 justify-center"
-            >
-              <input
-                type="email"
-                name="email"
-                placeholder="your@email.com"
-                required
-                className="flex-1 px-4 py-3 rounded-lg text-sm bg-[var(--color-bg)] border border-[var(--color-border)] text-[var(--color-text)] placeholder:text-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-orange)] transition-colors"
-              />
-              <button
-                type="submit"
-                className="px-6 py-3 rounded-lg text-sm font-bold uppercase tracking-wider bg-[var(--color-orange)] text-white hover:bg-[var(--color-orange-light)] transition-colors whitespace-nowrap"
-              >
-                Subscribe Free
-              </button>
-            </form>
-            <p className="mt-4 text-[var(--color-text-dim)] text-xs">No spam. Unsubscribe anytime.</p>
-          </div>
-        </div>
-      </section>
+      {/* Newsletter — DISABLED
+          The Buttondown endpoint buttondown.email/api/emails/embed-subscribe/skriuwer
+          returns 404 (the 'skriuwer' tenant doesn't exist), so every subscribe
+          attempt went into the void. Block is hidden until a real list is set up.
+          To re-enable: create a Buttondown account (or Mailchimp/ConvertKit),
+          confirm the action URL works, then uncomment this block with the
+          real endpoint. */}
 
       {/* Mission */}
       <section className="max-w-3xl mx-auto px-6 py-14 text-center mt-4 section-divider">

@@ -406,40 +406,9 @@ export function BestOfPage({
             </div>
           )}
 
-          {/* Newsletter */}
-          <div className="mb-10 p-6 rounded-xl" style={{
-            background: "var(--color-card-gradient)",
-            border: "1px solid var(--color-orange)",
-            boxShadow: "0 0 28px rgba(232,100,10,0.12)",
-          }}>
-            <div className="flex items-center gap-3 mb-2">
-              <span className="text-xl">📚</span>
-              <h2 className="text-base font-bold text-[var(--color-text)]">Get our weekly book picks</h2>
-            </div>
-            <p className="text-sm text-[var(--color-text-muted)] mb-4">
-              One email per week. The best books in history, mythology, psychology, and more — handpicked by our editors.
-            </p>
-            <form
-              action="https://buttondown.email/api/emails/embed-subscribe/skriuwer"
-              method="POST"
-              className="flex flex-col sm:flex-row gap-3"
-            >
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="your@email.com"
-                className="flex-1 px-4 py-2.5 text-sm bg-[var(--color-bg)] border border-[var(--color-border)] rounded text-[var(--color-text)] placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-orange)] transition-colors"
-              />
-              <button
-                type="submit"
-                className="px-5 py-2.5 bg-[var(--color-orange)] hover:bg-[var(--color-orange-light)] text-white text-sm font-semibold rounded transition-colors whitespace-nowrap"
-              >
-                Subscribe →
-              </button>
-            </form>
-            <p className="text-xs text-[var(--color-text-dim)] mt-2">No spam. Unsubscribe any time.</p>
-          </div>
+          {/* Newsletter — DISABLED (Buttondown endpoint returns 404,
+              see note on src/app/page.tsx). Re-enable after setting up a
+              real list provider. */}
 
           {/* Footer links */}
           <div className="border-t border-[var(--color-border)] pt-6 flex flex-wrap gap-4 items-center justify-between">
