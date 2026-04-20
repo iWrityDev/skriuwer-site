@@ -62,28 +62,44 @@ body {
   position: relative;
 }
 body::before {
-  /* Matches the intensity the user likes in the homepage hero — same
-     orange top-left + gold top-right mix, fixed to the viewport so
-     it stays put as you scroll. Every page now has that hero-glow
-     feel behind its content, not just the homepage hero. */
+  /* Orange wash across the entire viewport — anchored in 4 spots so
+     no matter where you scroll or which section you land on, you're
+     surrounded by the same warm glow the user likes in the hero.
+     A single small gold accent in the top-right keeps a second hue
+     in play without competing with the orange dominance. */
   content: "";
   position: fixed;
   inset: 0;
   background:
+    /* Dominant top-left — wide and warm */
     radial-gradient(
-      ellipse 60% 50% at 15% 0%,
-      rgba(232, 100, 10, 0.22) 0%,
-      transparent 58%
+      ellipse 95% 70% at 10% 0%,
+      rgba(232, 100, 10, 0.24) 0%,
+      transparent 65%
     ),
+    /* Mid-right — keeps orange on screen as you scroll */
     radial-gradient(
-      ellipse 50% 40% at 85% 5%,
-      rgba(251, 191, 36, 0.14) 0%,
-      transparent 52%
-    ),
-    radial-gradient(
-      ellipse 70% 50% at 50% 100%,
-      rgba(20, 184, 166, 0.08) 0%,
+      ellipse 70% 55% at 100% 45%,
+      rgba(232, 100, 10, 0.18) 0%,
       transparent 60%
+    ),
+    /* Bottom-left bloom */
+    radial-gradient(
+      ellipse 80% 60% at 15% 100%,
+      rgba(232, 100, 10, 0.15) 0%,
+      transparent 60%
+    ),
+    /* Bottom-right subtle — closes the loop */
+    radial-gradient(
+      ellipse 60% 50% at 95% 100%,
+      rgba(232, 100, 10, 0.12) 0%,
+      transparent 55%
+    ),
+    /* One gold highlight for hue variation (top-right only) */
+    radial-gradient(
+      ellipse 45% 35% at 82% 8%,
+      rgba(251, 191, 36, 0.14) 0%,
+      transparent 55%
     );
   pointer-events: none;
   z-index: 0;
