@@ -1,23 +1,64 @@
 @import "tailwindcss";
 
 :root {
+  /* ===== Brand ===== */
   --color-orange: #e8640a;
   --color-orange-light: #f07828;
   --color-orange-gradient: linear-gradient(135deg, #f07010, #e8640a);
+
+  /* Secondary accents (keep the dark theme from feeling one-note) */
+  --color-gold: #fbbf24;
+  --color-gold-dim: rgba(251, 191, 36, 0.15);
+  --color-teal: #14b8a6;
+  --color-teal-dim: rgba(20, 184, 166, 0.15);
+
+  /* ===== Background & surfaces ===== */
   --color-bg: #0a0e1a;
   --color-surface: #111827;
   --color-surface-light: #1a2236;
   --color-surface-border: rgba(232, 100, 10, 0.15);
+  --color-card-gradient: linear-gradient(180deg, #141c2e 0%, #0f1524 100%);
+
+  /* ===== Text ===== */
+  /* Contrast fixes — muted/dim used to be 0.55/0.35 which failed WCAG AA on #0a0e1a */
   --color-text: #f0ede8;
-  --color-text-muted: rgba(240, 237, 232, 0.55);
-  --color-text-dim: rgba(240, 237, 232, 0.35);
+  --color-text-muted: rgba(240, 237, 232, 0.72);
+  --color-text-dim: rgba(240, 237, 232, 0.50);
   --color-border: rgba(255, 255, 255, 0.08);
+
+  /* ===== Per-category accents =====
+     Used as: category page banner, card chip, dropdown dot.
+     Picked to be saturated enough to pop on #0a0e1a while reading
+     as dark/muted next to the orange CTA. */
+  --cat-history:           #d97706; /* amber */
+  --cat-dark-history:      #dc2626; /* blood red */
+  --cat-conspiracy:        #c026d3; /* magenta */
+  --cat-mythology:         #a855f7; /* purple */
+  --cat-religion:          #ca8a04; /* gold */
+  --cat-science:           #0ea5e9; /* sky / cyan */
+  --cat-language-learning: #14b8a6; /* teal */
+  --cat-frisian:           #2563eb; /* Frisian-flag blue */
+  --cat-self-help:         #22c55e; /* green */
+  --cat-biography:         #ec4899; /* pink */
+  --cat-business:          #7c3aed; /* violet */
+  --cat-psychology:        #f472b6; /* rose */
+  --cat-true-crime:        #991b1b; /* dark red */
+  --cat-philosophy:        #0369a1; /* deep blue */
+  --cat-fiction:           #fb923c; /* coral */
+  --cat-fallback:          var(--color-orange);
 }
 
 body {
   color: var(--color-text);
   background: var(--color-bg);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ===== Focus rings (keyboard users) ===== */
+:focus-visible {
+  outline: 2px solid var(--color-orange-light);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* ===== Buttons ===== */
@@ -64,21 +105,52 @@ body {
   color: var(--color-orange-light);
 }
 
-/* ===== Star Rating ===== */
-.star-rating { color: #f59e0b; }
+/* ===== Star Rating (warmer gold, was amber-500) ===== */
+.star-rating { color: var(--color-gold); }
 
-/* ===== Book Card ===== */
+/* ===== Book Card =====
+   Subtle gradient surface so it doesn't read as flat.
+   Hover: colored glow ring in the card's accent color (default orange;
+   per-card overrides set --card-accent inline). */
 .book-card {
-  background: var(--color-surface);
+  background: var(--color-card-gradient);
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--color-border);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  --card-accent: var(--color-orange);
 }
 .book-card:hover {
-  border-color: var(--color-surface-border);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-color: color-mix(in srgb, var(--card-accent) 40%, transparent);
+  box-shadow:
+    0 14px 36px rgba(0, 0, 0, 0.45),
+    0 0 0 1px color-mix(in srgb, var(--card-accent) 20%, transparent),
+    0 0 24px color-mix(in srgb, var(--card-accent) 18%, transparent);
   transform: translateY(-4px);
+}
+
+/* Category chip on book card (under author) */
+.cat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: color-mix(in srgb, var(--cat-color, var(--color-orange)) 14%, transparent);
+  color: color-mix(in srgb, var(--cat-color, var(--color-orange)) 85%, white);
+  border: 1px solid color-mix(in srgb, var(--cat-color, var(--color-orange)) 25%, transparent);
+  white-space: nowrap;
+}
+.cat-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--cat-color, var(--color-orange));
+  flex-shrink: 0;
 }
 
 /* ===== Prose (for descriptions and blog posts) ===== */
@@ -106,13 +178,120 @@ body {
 
 /* ===== Featured Card ===== */
 .featured-card {
-  background: var(--color-surface);
+  background: var(--color-card-gradient);
   border: 1px solid var(--color-surface-border);
   border-radius: 16px;
   padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.featured-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-orange), var(--color-gold), transparent);
+  opacity: 0.7;
 }
 
-/* ===== Section divider ===== */
+/* ===== Section header with gradient accent bar ===== */
+.section-header {
+  position: relative;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.section-header .accent-bar {
+  width: 4px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--color-orange-gradient);
+  flex-shrink: 0;
+}
+.section-header.section-header-gold .accent-bar { background: linear-gradient(180deg, var(--color-gold), #d97706); }
+.section-header.section-header-teal .accent-bar { background: linear-gradient(180deg, #2dd4bf, var(--color-teal)); }
+
+/* ===== Section divider — 2px gradient instead of 1px flat ===== */
 .section-divider {
-  border-top: 1px solid var(--color-border);
+  position: relative;
+}
+.section-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(232, 100, 10, 0.35) 30%,
+    rgba(251, 191, 36, 0.25) 55%,
+    transparent 100%
+  );
+}
+
+/* ===== Hero radial glow (homepage / category page) ===== */
+.hero-glow {
+  position: relative;
+  isolation: isolate;
+}
+.hero-glow::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% 0 -10%;
+  background:
+    radial-gradient(
+      ellipse 60% 50% at 15% 0%,
+      rgba(232, 100, 10, 0.18) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 50% 40% at 85% 10%,
+      rgba(251, 191, 36, 0.10) 0%,
+      transparent 55%
+    );
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Category-tinted hero glow */
+.hero-glow-cat {
+  position: relative;
+  isolation: isolate;
+}
+.hero-glow-cat::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% 0 -10%;
+  background:
+    radial-gradient(
+      ellipse 60% 50% at 20% 0%,
+      color-mix(in srgb, var(--cat-color, var(--color-orange)) 18%, transparent) 0%,
+      transparent 60%
+    );
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Subtle staggered fade-in on card grids (first-paint only) */
+@keyframes card-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.book-grid > * {
+  animation: card-rise 0.5s ease-out both;
+}
+.book-grid > *:nth-child(1) { animation-delay: 0ms; }
+.book-grid > *:nth-child(2) { animation-delay: 40ms; }
+.book-grid > *:nth-child(3) { animation-delay: 80ms; }
+.book-grid > *:nth-child(4) { animation-delay: 120ms; }
+.book-grid > *:nth-child(5) { animation-delay: 160ms; }
+.book-grid > *:nth-child(6) { animation-delay: 200ms; }
+.book-grid > *:nth-child(7) { animation-delay: 240ms; }
+.book-grid > *:nth-child(8) { animation-delay: 280ms; }
+.book-grid > *:nth-child(n+9) { animation-delay: 320ms; }
+@media (prefers-reduced-motion: reduce) {
+  .book-grid > * { animation: none; }
 }

@@ -35,4 +35,6 @@ export interface Category {
   name: string;
   description: string;
   keywords: string[];
+  /** CSS variable name (without `var(...)`) defined in globals.css, e.g. "--cat-history". */
+  cssVar?: string;
 }

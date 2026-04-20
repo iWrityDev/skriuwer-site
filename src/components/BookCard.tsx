@@ -1,10 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Book } from "@/lib/types";
 import { StarRating } from "./StarRating";
+import {
+  CATEGORIES,
+  getCategoryCssVar,
+  primaryCategorySlug,
+} from "@/lib/categories";
+
+const CAT_NAME_BY_SLUG: Record<string, string> = Object.fromEntries(
+  CATEGORIES.map((c) => [c.slug, c.name])
+);
 
 export function BookCard({ book }: { book: Book }) {
   // Own books → Shopify CDN (primary) → Amazon (fallback)
@@ -24,8 +33,21 @@ export function BookCard({ book }: { book: Book }) {
     setImgSrc(fallbackSrc !== primary ? fallbackSrc : null);
   };
 
+  // Colored hover glow: own books glow orange, third-party books glow in
+  // their primary category color.
+  const catSlug = primaryCategorySlug(book.categories);
+  const cardAccentVar = book.isOwnBook
+    ? "--color-orange"
+    : getCategoryCssVar(catSlug);
+  const cardStyle = {
+    "--card-accent": `var(${cardAccentVar})`,
+    "--cat-color": `var(${getCategoryCssVar(catSlug)})`,
+  } as CSSProperties;
+
+  const catLabel = catSlug ? CAT_NAME_BY_SLUG[catSlug] : null;
+
   return (
-    <Link href={`/books/${book.slug}`} className="book-card block group">
+    <Link href={`/books/${book.slug}`} className="book-card block group" style={cardStyle}>
       <div className="relative aspect-[2/3] bg-[var(--color-surface-light)] flex items-center justify-center">
         {imgSrc ? (
           <Image
@@ -56,18 +78,26 @@ export function BookCard({ book }: { book: Book }) {
           {book.title}
         </h3>
         {book.author && (
-          <p className="text-xs text-[var(--color-text-dim)] truncate mb-1">{book.author}</p>
+          <p className="text-xs text-[var(--color-text-dim)] truncate mb-2">{book.author}</p>
         )}
-        {book.starRating && (
-          <div className="flex items-center gap-1 mb-1">
-            <StarRating rating={book.starRating} />
-            <span className="text-xs text-[var(--color-text-dim)]">
-              ({book.reviewCount >= 1000
-                ? `${Math.floor(book.reviewCount / 1000)}k`
-                : book.reviewCount})
+        <div className="flex items-center gap-2 flex-wrap">
+          {book.starRating ? (
+            <div className="flex items-center gap-1">
+              <StarRating rating={book.starRating} />
+              <span className="text-[10px] text-[var(--color-text-dim)]">
+                ({book.reviewCount >= 1000
+                  ? `${Math.floor(book.reviewCount / 1000)}k`
+                  : book.reviewCount})
+              </span>
+            </div>
+          ) : null}
+          {catLabel && (
+            <span className="cat-chip">
+              <span className="cat-dot" />
+              {catLabel}
             </span>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </Link>
   );

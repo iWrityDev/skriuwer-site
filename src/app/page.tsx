@@ -2,19 +2,21 @@ import Link from "next/link";
 import Image from "next/image";
 import { BookGrid } from "@/components/BookGrid";
 import { SearchBar } from "@/components/SearchBar";
+import { SectionHeader } from "@/components/SectionHeader";
 import { StarRating } from "@/components/StarRating";
 import { getFeaturedBooks, getBestsellers, getAllBooks, getRecentlyAdded } from "@/lib/books";
 import { getAllBlogPosts } from "@/lib/blog";
 import { buildAffiliateUrl } from "@/lib/affiliate";
-import { CATEGORIES } from "@/lib/categories";
+import { CATEGORIES, getCategoryCssVar } from "@/lib/categories";
 import type { Book } from "@/lib/types";
+import type { CSSProperties } from "react";
 
 function FeaturedBook({ book }: { book: Book }) {
   return (
     <div className="featured-card">
       <div className="flex items-center gap-2 mb-6">
-        <span className="text-[var(--color-orange)]">&#9813;</span>
-        <span className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-orange)]">
+        <span className="text-[var(--color-gold)]">&#9813;</span>
+        <span className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-gold)]">
           Featured This Week
         </span>
       </div>
@@ -152,169 +154,213 @@ export default function HomePage() {
     featured.find((b) => b.description.length > 100 && b.coverImage) ||
     featured[0];
 
+  const ownBookCount = allBooks.filter((b) => b.isOwnBook).length;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
     <div>
-      {/* Search */}
-      <div className="w-full bg-[var(--color-surface)] border-b border-[var(--color-border)] py-3.5 px-6 flex justify-center">
-        <SearchBar variant="hero" items={searchItems} />
-      </div>
+      {/* Hero */}
+      <section className="hero-glow relative">
+        <div className="max-w-5xl mx-auto px-4 pt-14 pb-6 text-center">
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[var(--color-gold-dim)] text-[var(--color-gold)] border border-[color-mix(in_srgb,var(--color-gold)_25%,transparent)]">
+            ♕ Skriuwer.com
+          </span>
+          <h1 className="mt-5 text-3xl sm:text-4xl md:text-5xl font-extrabold text-[var(--color-text)] leading-[1.1] tracking-tight">
+            Find your next
+            <span
+              className="relative inline-block mx-2"
+              style={{
+                backgroundImage: "var(--color-orange-gradient)",
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                color: "transparent",
+              }}
+            >
+              unforgettable read.
+            </span>
+          </h1>
+          <p className="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-[var(--color-text-muted)] leading-relaxed">
+            {allBooks.length}+ curated titles across history, mythology, language learning,
+            true crime and more. {ownBookCount} of them written by us — every one of them
+            worth your time.
+          </p>
+          <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link href="/books" className="btn-primary">Browse all books</Link>
+            <Link href="/start-here" className="btn-outline">Start here</Link>
+          </div>
+        </div>
+
+        {/* Search bar, visually attached to the hero */}
+        <div className="max-w-5xl mx-auto px-4 mt-6">
+          <div className="w-full bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl py-3.5 px-6 flex justify-center">
+            <SearchBar variant="hero" items={searchItems} />
+          </div>
+        </div>
+      </section>
 
       {/* Featured Book */}
-      <section className="max-w-5xl mx-auto px-4 pt-10 pb-6">
+      <section className="max-w-5xl mx-auto px-4 pt-12 pb-6">
         <FeaturedBook book={featuredBook} />
       </section>
 
       {/* New Arrivals */}
       {recentlyAdded.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 py-10">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-3">
-              <div className="w-1 h-6 bg-[var(--color-orange)] rounded-full" />
-              <h2 className="text-xl font-bold text-[var(--color-text)]">New Arrivals</h2>
-            </div>
-            <Link href="/books" className="text-sm text-[var(--color-orange)] hover:underline">
-              Browse all &rarr;
-            </Link>
-          </div>
+          <SectionHeader
+            title="New Arrivals"
+            tone="teal"
+            link={{ href: "/books", label: "Browse all" }}
+          />
           <BookGrid books={recentlyAdded} columns={4} />
         </section>
       )}
 
-      {/* Bestsellers — all books sorted by review count */}
+      {/* Bestsellers */}
       {bestsellers.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 py-10 section-divider">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-3">
-              <div className="w-1 h-6 bg-[var(--color-orange)] rounded-full" />
-              <h2 className="text-xl font-bold text-[var(--color-text)]">Most Popular Books</h2>
-            </div>
-            <Link href="/bestsellers" className="text-sm text-[var(--color-orange)] hover:underline">
-              View all &rarr;
-            </Link>
+        <section className="max-w-7xl mx-auto pt-10 pb-10 mt-4 section-divider">
+          <div className="px-4">
+            <SectionHeader
+              title="Most Popular Books"
+              tone="gold"
+              link={{ href: "/bestsellers", label: "View all" }}
+            />
+            <BookGrid books={bestsellers} columns={4} />
           </div>
-          <BookGrid books={bestsellers} columns={4} />
         </section>
       )}
 
       {/* Our Books */}
-      <section className="max-w-7xl mx-auto px-4 py-10 section-divider">
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center gap-3">
-            <div className="w-1 h-6 bg-[var(--color-orange)] rounded-full" />
-            <h2 className="text-xl font-bold text-[var(--color-text)]">Our Books</h2>
+      <section className="max-w-7xl mx-auto pt-10 pb-10 mt-4 section-divider">
+        <div className="px-4">
+          <SectionHeader
+            title="Our Books"
+            icon="★"
+            link={{ href: "/books", label: "View all" }}
+            subtitle={`${ownBookCount} books written and published under Skriuwer.com`}
+          />
+          <BookGrid books={featured.slice(0, 20)} columns={5} />
+          <div className="text-center mt-8">
+            <Link href="/books" className="btn-outline">VIEW ALL BOOKS</Link>
           </div>
-          <Link href="/books" className="text-sm text-[var(--color-orange)] hover:underline">
-            View all &rarr;
-          </Link>
-        </div>
-        <BookGrid books={featured.slice(0, 20)} columns={5} />
-        <div className="text-center mt-8">
-          <Link href="/books" className="btn-outline">VIEW ALL BOOKS</Link>
         </div>
       </section>
 
-      {/* Categories */}
-      <section className="max-w-7xl mx-auto px-4 py-10 section-divider">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-1 h-6 bg-[var(--color-orange)] rounded-full" />
-          <h2 className="text-xl font-bold text-[var(--color-text)]">Browse by Category</h2>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-          {CATEGORIES.map((cat) => (
-            <Link
-              key={cat.slug}
-              href={`/category/${cat.slug}`}
-              className="group p-4 bg-[var(--color-surface)] rounded-lg border border-[var(--color-border)] hover:border-[var(--color-orange)] transition-colors"
-            >
-              <h3 className="font-bold text-sm text-[var(--color-text)] group-hover:text-[var(--color-orange)] transition-colors mb-1">
-                {cat.name}
-              </h3>
-              <p className="text-xs text-[var(--color-text-muted)] leading-snug line-clamp-2">
-                {cat.description}
-              </p>
-            </Link>
-          ))}
+      {/* Categories with per-category color */}
+      <section className="max-w-7xl mx-auto pt-10 pb-10 mt-4 section-divider">
+        <div className="px-4">
+          <SectionHeader
+            title="Browse by Category"
+            tone="teal"
+            subtitle="Every category has its own hand-picked collection."
+          />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+            {CATEGORIES.map((cat) => {
+              const style = {
+                "--cat-color": `var(${getCategoryCssVar(cat.slug)})`,
+              } as CSSProperties;
+              return (
+                <Link
+                  key={cat.slug}
+                  href={`/category/${cat.slug}`}
+                  style={style}
+                  className="group relative p-4 bg-[var(--color-surface)] rounded-lg border border-[var(--color-border)] transition-all hover:-translate-y-0.5"
+                  data-cat={cat.slug}
+                >
+                  <span
+                    className="absolute left-0 top-0 bottom-0 w-[3px] rounded-l-lg opacity-60 group-hover:opacity-100 transition-opacity"
+                    style={{ background: "var(--cat-color)" }}
+                  />
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="cat-dot" />
+                    <h3 className="font-bold text-sm text-[var(--color-text)] transition-colors" style={{ color: "inherit" }}>
+                      <span className="group-hover:text-[color-mix(in_srgb,var(--cat-color)_75%,white)] transition-colors">
+                        {cat.name}
+                      </span>
+                    </h3>
+                  </div>
+                  <p className="text-xs text-[var(--color-text-muted)] leading-snug line-clamp-2">
+                    {cat.description}
+                  </p>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
 
       {/* Popular Lists */}
-      <section className="max-w-7xl mx-auto px-4 py-10 section-divider">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-1 h-6 bg-[var(--color-orange)] rounded-full" />
-          <h2 className="text-xl font-bold text-[var(--color-text)]">Popular Reading Lists</h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {[
-            { label: "Best History Books", sub: "Ancient civilizations to modern conflicts", href: "/best-history-books" },
-            { label: "Best Biography Books", sub: "Lives that shaped the world", href: "/best-biography-books" },
-            { label: "Best Business Books", sub: "Strategy, money, and leadership", href: "/best-business-books" },
-            { label: "Best Language Learning Books", sub: "Learn faster, remember more", href: "/best-language-learning-books" },
-            { label: "Best Science Books", sub: "How the world actually works", href: "/best-science-books" },
-            { label: "Best Philosophy Books", sub: "Ideas that changed everything", href: "/best-philosophy-books" },
-            { label: "Best Psychology Books", sub: "The mind, behaviour, and influence", href: "/best-psychology-books" },
-          ].map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="group flex flex-col p-4 bg-[var(--color-surface)] rounded-lg border border-[var(--color-border)] hover:border-[var(--color-orange)] transition-colors"
-            >
-              <span className="font-bold text-sm text-[var(--color-text)] group-hover:text-[var(--color-orange)] transition-colors mb-1">
-                {item.label}
-              </span>
-              <span className="text-xs text-[var(--color-text-muted)]">{item.sub}</span>
-            </Link>
-          ))}
+      <section className="max-w-7xl mx-auto pt-10 pb-10 mt-4 section-divider">
+        <div className="px-4">
+          <SectionHeader title="Popular Reading Lists" tone="gold" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {[
+              { label: "Best History Books", sub: "Ancient civilizations to modern conflicts", href: "/best-history-books" },
+              { label: "Best Biography Books", sub: "Lives that shaped the world", href: "/best-biography-books" },
+              { label: "Best Business Books", sub: "Strategy, money, and leadership", href: "/best-business-books" },
+              { label: "Best Language Learning Books", sub: "Learn faster, remember more", href: "/best-language-learning-books" },
+              { label: "Best Science Books", sub: "How the world actually works", href: "/best-science-books" },
+              { label: "Best Philosophy Books", sub: "Ideas that changed everything", href: "/best-philosophy-books" },
+              { label: "Best Psychology Books", sub: "The mind, behaviour, and influence", href: "/best-psychology-books" },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group flex flex-col p-4 bg-[var(--color-surface)] rounded-lg border border-[var(--color-border)] hover:border-[var(--color-gold)] transition-colors"
+              >
+                <span className="font-bold text-sm text-[var(--color-text)] group-hover:text-[var(--color-gold)] transition-colors mb-1">
+                  {item.label}
+                </span>
+                <span className="text-xs text-[var(--color-text-muted)]">{item.sub}</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Blog Highlights */}
       {recentPosts.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 py-10 section-divider">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-3">
-              <div className="w-1 h-6 bg-[var(--color-orange)] rounded-full" />
-              <h2 className="text-xl font-bold text-[var(--color-text)]">From the Blog</h2>
+        <section className="max-w-7xl mx-auto pt-10 pb-10 mt-4 section-divider">
+          <div className="px-4">
+            <SectionHeader
+              title="From the Blog"
+              link={{ href: "/blog", label: "Read all articles" }}
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {recentPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="block p-5 bg-[var(--color-surface)] rounded-xl border border-[var(--color-border)] hover:border-[var(--color-orange)] transition-colors group"
+                >
+                  {post.categories.length > 0 && (
+                    <span className="inline-block px-2 py-0.5 bg-[var(--color-surface-light)] text-[var(--color-gold)] text-xs rounded-full font-semibold capitalize mb-3">
+                      {post.categories[0].replace(/-/g, " ")}
+                    </span>
+                  )}
+                  <h3 className="font-bold text-sm text-[var(--color-text)] group-hover:text-[var(--color-orange)] transition-colors leading-snug mb-2 line-clamp-2">
+                    {post.title}
+                  </h3>
+                  {post.date && (
+                    <p className="text-xs text-[var(--color-text-dim)]">{post.date}</p>
+                  )}
+                </Link>
+              ))}
             </div>
-            <Link href="/blog" className="text-sm text-[var(--color-orange)] hover:underline">
-              Read all articles &rarr;
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {recentPosts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="block p-5 bg-[var(--color-surface)] rounded-xl border border-[var(--color-border)] hover:border-[var(--color-orange)] transition-colors group"
-              >
-                {post.categories.length > 0 && (
-                  <span className="inline-block px-2 py-0.5 bg-[var(--color-surface-light)] text-[var(--color-orange-light)] text-xs rounded-full font-semibold capitalize mb-3">
-                    {post.categories[0].replace(/-/g, " ")}
-                  </span>
-                )}
-                <h3 className="font-bold text-sm text-[var(--color-text)] group-hover:text-[var(--color-orange)] transition-colors leading-snug mb-2 line-clamp-2">
-                  {post.title}
-                </h3>
-                {post.date && (
-                  <p className="text-xs text-[var(--color-text-dim)]">{post.date}</p>
-                )}
-              </Link>
-            ))}
           </div>
         </section>
       )}
 
       {/* Newsletter */}
-      <section className="max-w-7xl mx-auto px-4 py-10 section-divider">
-        <div className="max-w-2xl mx-auto">
+      <section className="max-w-7xl mx-auto pt-10 pb-10 mt-4 section-divider">
+        <div className="max-w-2xl mx-auto px-4">
           <div
             className="rounded-2xl p-8 md:p-10 text-center"
             style={{
-              background: "var(--color-surface)",
+              background: "var(--color-card-gradient)",
               border: "1px solid var(--color-orange)",
-              boxShadow: "0 0 32px rgba(232,100,10,0.12)",
+              boxShadow: "0 0 32px rgba(232,100,10,0.15)",
             }}
           >
             <div className="flex items-center justify-center gap-2 mb-3">
@@ -352,7 +398,7 @@ export default function HomePage() {
       </section>
 
       {/* Mission */}
-      <section className="max-w-3xl mx-auto px-6 py-14 text-center section-divider">
+      <section className="max-w-3xl mx-auto px-6 py-14 text-center mt-4 section-divider">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
           Preserving the Frisian Language
         </h2>
