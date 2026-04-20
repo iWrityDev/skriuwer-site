@@ -13,15 +13,15 @@
   --color-teal-dim: rgba(20, 184, 166, 0.15);
 
   /* ===== Background & surfaces =====
-     Base is a warm deep navy rather than OLED black — just enough
-     tint that the orange/gold accents feel "on top" of something,
-     not floating over a void. Surfaces step up from bg in +3-4
-     lightness increments to keep card/bg contrast readable. */
-  --color-bg: #0f1524;
-  --color-surface: #17213a;
-  --color-surface-light: #202b48;
-  --color-surface-border: rgba(232, 100, 10, 0.18);
-  --color-card-gradient: linear-gradient(180deg, #1b274a 0%, #141d34 100%);
+     Warmer, clearly-not-black deep navy. The whole page gets an extra
+     radial glow on top (see body::before) so the page feels atmospheric
+     rather than uniformly dark. Surfaces step up in +6-8 lightness to
+     keep card/bg contrast. */
+  --color-bg: #131b33;
+  --color-surface: #1e2945;
+  --color-surface-light: #293553;
+  --color-surface-border: rgba(232, 100, 10, 0.22);
+  --color-card-gradient: linear-gradient(180deg, #243055 0%, #1a2440 100%);
 
   /* ===== Text ===== */
   /* Contrast fixes — muted/dim used to be 0.55/0.35 which failed WCAG AA on #0a0e1a */
@@ -56,6 +56,37 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  /* Ambient page-level warmth — soft orange in the top-left, soft
+     gold in the top-right, fading away by ~70% down the fold.
+     Fixed-positioned so it stays put as you scroll. */
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 60% 50% at 10% -5%,
+      rgba(232, 100, 10, 0.13) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 50% 50% at 100% 0%,
+      rgba(251, 191, 36, 0.08) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 80% 60% at 50% 110%,
+      rgba(20, 184, 166, 0.05) 0%,
+      transparent 60%
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+body > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* ===== Focus rings (keyboard users) ===== */
