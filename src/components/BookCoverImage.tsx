@@ -6,19 +6,20 @@ import type { Book } from "@/lib/types";
 
 export function BookCoverImage({ book }: { book: Book }) {
   // Own books use high-res Shopify CDN images — keep as primary.
-  // Third-party books: prefer Amazon LZZZZZZZ (consistent quality) over Google Books.
+  // Third-party books: Amazon images/P/{ISBN} returns a 1×1 placeholder for physical books.
+  // Google Books must be primary; Amazon URL is kept as fallback only.
   const pickPrimary = () => {
     if (book.isOwnBook) {
       return book.coverImage?.startsWith("http") ? book.coverImage : null;
     }
-    if (book.coverImageFallback?.startsWith("http")) return book.coverImageFallback;
-    return book.coverImage?.startsWith("http") ? book.coverImage : null;
+    if (book.coverImage?.startsWith("http")) return book.coverImage;
+    return book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : null;
   };
   const pickFallback = () => {
     if (book.isOwnBook) {
       return book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : null;
     }
-    return book.coverImage?.startsWith("http") ? book.coverImage : null;
+    return book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : null;
   };
 
   const [imgSrc, setImgSrc] = useState<string | null>(pickPrimary());

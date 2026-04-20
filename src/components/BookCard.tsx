@@ -8,13 +8,15 @@ import { StarRating } from "./StarRating";
 
 export function BookCard({ book }: { book: Book }) {
   // Own books → Shopify CDN (primary) → Amazon (fallback)
-  // Third-party books → Amazon LZZZZZZZ (primary) → Google Books (fallback)
+  // Third-party books → Google Books (primary) → Amazon (fallback)
+  // Note: Amazon images/P/{ISBN} URLs return a 1×1 placeholder for physical books,
+  // so Google Books must come first for third-party entries.
   const primary = book.isOwnBook
     ? (book.coverImage?.startsWith("http") ? book.coverImage : null)
-    : (book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : book.coverImage?.startsWith("http") ? book.coverImage : null);
+    : (book.coverImage?.startsWith("http") ? book.coverImage : book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : null);
   const fallbackSrc = book.isOwnBook
     ? (book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : null)
-    : (book.coverImage?.startsWith("http") ? book.coverImage : null);
+    : (book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : null);
 
   const [imgSrc, setImgSrc] = useState<string | null>(primary);
 
