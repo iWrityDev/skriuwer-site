@@ -52,8 +52,6 @@ export default async function BookPage({
   const related = getRelatedBooks(book, 5);
   const cleanDescription = stripHtml(book.description);
 
-  const isKindle = book.asin?.startsWith("B0") ?? false;
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Book",
@@ -62,7 +60,6 @@ export default async function BookPage({
     description: cleanDescription.slice(0, 300),
     author: { "@type": "Person", name: book.author },
     url: `https://skriuwer.com/books/${slug}`,
-    bookFormat: isKindle ? "https://schema.org/EBook" : "https://schema.org/Paperback",
     ...(book.pages && book.pages > 0 && { numberOfPages: book.pages }),
     ...(book.publishedDate && { datePublished: book.publishedDate }),
     ...(book.language && { inLanguage: book.language }),
@@ -197,7 +194,6 @@ export default async function BookPage({
 
               {/* Book details */}
               <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-[var(--color-text-dim)] mb-4">
-                <span>{isKindle ? "📱 Kindle Edition" : "📖 Paperback"}</span>
                 {book.pages && book.pages > 0 && (
                   <span>{book.pages} pages</span>
                 )}
@@ -211,19 +207,9 @@ export default async function BookPage({
 
               {/* Trust badges */}
               <div className="flex flex-wrap gap-4 text-xs text-[var(--color-text-dim)]">
-                {isKindle ? (
-                  <>
-                    <span>⚡ Instant delivery</span>
-                    <span>✓ Read on any device</span>
-                    <span>🔒 Secure checkout</span>
-                  </>
-                ) : (
-                  <>
-                    <span>&#128230; Ships worldwide</span>
-                    <span>&#10003; 30-day returns</span>
-                    <span>&#128274; Secure checkout</span>
-                  </>
-                )}
+                <span>&#128230; Ships worldwide</span>
+                <span>&#10003; 30-day returns</span>
+                <span>&#128274; Secure checkout</span>
               </div>
             </div>
           </div>
