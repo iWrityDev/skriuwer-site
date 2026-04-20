@@ -1,9 +1,9 @@
 name: Trigger Vercel Deploy After Rate Limit Reset
 
 on:
-  # Fires at 23:50 UTC on April 18 — 10 min after the daily limit resets (resets at 23:40 UTC)
+  # Fires at 23:50 UTC every night — 10 min after the daily limit resets (resets at 23:40 UTC)
   schedule:
-    - cron: '50 23 18 4 *'
+    - cron: '50 23 * * *'
   # Also allow manual trigger from GitHub Actions tab
   workflow_dispatch:
 
