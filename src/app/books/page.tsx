@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { BookGrid } from "@/components/BookGrid";
 import { getAllBooks, getBookCount, getBookCountByCategory } from "@/lib/books";
-import { CATEGORIES } from "@/lib/categories";
+import { CATEGORIES, getCategoryCssVar } from "@/lib/categories";
 
 export const metadata: Metadata = {
   title: "All Books — Browse Our Complete Collection | Skriuwer",
@@ -12,6 +13,8 @@ export const metadata: Metadata = {
 
 export default function BooksPage() {
   const books = getAllBooks();
+  const totalCount = getBookCount();
+  const ownCount = books.filter((b) => b.isOwnBook).length;
   const categoryCounts = getBookCountByCategory();
 
   // Sort categories by book count descending
@@ -20,32 +23,62 @@ export default function BooksPage() {
     .sort((a, b) => (categoryCounts[b.slug] || 0) - (categoryCounts[a.slug] || 0));
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="flex items-center gap-3 mb-2">
-        <div className="w-1 h-6 bg-[var(--color-orange)] rounded-full" />
-        <h1 className="text-2xl font-bold text-[var(--color-text)]">All Books</h1>
-      </div>
-      <p className="text-[var(--color-text-muted)] mb-6 ml-5">
-        {getBookCount()} books to discover. Click any book for details and Amazon links.
-      </p>
+    <>
+      {/* Hero */}
+      <section className="hero-glow">
+        <div className="max-w-7xl mx-auto px-4 pt-10 pb-6">
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[var(--color-gold-dim)] text-[var(--color-gold)] border border-[color-mix(in_srgb,var(--color-gold)_25%,transparent)]">
+            📚 Full Catalog
+          </span>
+          <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold text-[var(--color-text)] leading-[1.1] tracking-tight">
+            All{" "}
+            <span
+              style={{
+                backgroundImage: "var(--color-orange-gradient)",
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                color: "transparent",
+              }}
+            >
+              {totalCount} books
+            </span>
+          </h1>
+          <p className="mt-3 max-w-2xl text-sm sm:text-base text-[var(--color-text-muted)] leading-relaxed">
+            {ownCount} of them written and published under Skriuwer.com. Click any book
+            for details and the current price on your local Amazon.
+          </p>
+        </div>
+      </section>
 
-      {/* Category quick-filter */}
-      <div className="flex flex-wrap gap-2 mb-8">
-        <span className="px-3 py-1.5 text-xs font-semibold rounded-full border border-[var(--color-orange)] text-[var(--color-orange)] bg-[rgba(232,100,10,0.08)]">
-          All ({getBookCount()})
-        </span>
-        {sortedCategories.map((cat) => (
-          <Link
-            key={cat.slug}
-            href={`/category/${cat.slug}`}
-            className="px-3 py-1.5 text-xs font-semibold rounded-full border border-[var(--color-border)] text-[var(--color-text-muted)] hover:border-[var(--color-orange)] hover:text-[var(--color-orange)] transition-colors"
-          >
-            {cat.name} ({categoryCounts[cat.slug] || 0})
-          </Link>
-        ))}
-      </div>
+      <div className="max-w-7xl mx-auto px-4 pb-10">
+        {/* Category quick-filter — each chip in its category color */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          <span className="px-3 py-1.5 text-xs font-semibold rounded-full border text-[var(--color-orange)] bg-[color-mix(in_srgb,var(--color-orange)_12%,transparent)]" style={{ borderColor: "var(--color-orange)" }}>
+            All ({totalCount})
+          </span>
+          {sortedCategories.map((cat) => {
+            const style = {
+              "--cat-color": `var(${getCategoryCssVar(cat.slug)})`,
+            } as CSSProperties;
+            return (
+              <Link
+                key={cat.slug}
+                href={`/category/${cat.slug}`}
+                style={style}
+                className="group inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-full border border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
+              >
+                <span className="cat-dot" />
+                {cat.name}{" "}
+                <span className="text-[var(--color-text-dim)] group-hover:text-[var(--color-text-muted)]">
+                  ({categoryCounts[cat.slug] || 0})
+                </span>
+              </Link>
+            );
+          })}
+        </div>
 
-      <BookGrid books={books} />
-    </div>
+        <BookGrid books={books} />
+      </div>
+    </>
   );
 }
