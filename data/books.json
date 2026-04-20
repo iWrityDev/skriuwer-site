@@ -4045,12 +4045,12 @@
     },
     {
       "slug": "the-rape-of-nanking-chang",
-      "asin": "0613180771",
+      "asin": "0465068367",
       "title": "The Rape of Nanking",
       "description": "<p>The shocking story of the Japanese invasion of the ancient city of Nanking, where more than 300,000 Chinese civilians were tortured, raped, and killed, is told by those who survived and supported by newly found documents</p>",
       "author": "Iris Chang",
       "coverImage": "https://covers.openlibrary.org/b/isbn/0613180771-L.jpg",
-      "coverImageFallback": "https://m.media-amazon.com/images/P/0613180771.01._SX1000_.jpg",
+      "coverImageFallback": "https://m.media-amazon.com/images/P/0465068367.01._SX1000_.jpg",
       "categories": [
         "dark-history",
         "history"
@@ -4065,11 +4065,10 @@
       "reviewCount": 5000,
       "starRating": 4.7,
       "marketplaces": {
-        "amazon.com": "https://www.amazon.com/dp/0613180771",
-        "amazon.de": "https://www.amazon.de/dp/0613180771",
-        "amazon.co.uk": "https://www.amazon.co.uk/dp/0613180771",
-        "amazon.nl": "https://www.amazon.nl/dp/0613180771",
-        "amazon.fr": "https://www.amazon.fr/dp/0613180771"
+        "amazon_us": "https://www.amazon.com/dp/0465068367?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0465068367?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0465068367?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0465068367?tag=31813-20"
       },
       "isOwnBook": false,
       "hookText": null,
@@ -4580,12 +4579,12 @@
     },
     {
       "slug": "edith-hamiltons-mythology-hamilton",
-      "asin": "1586633805",
+      "asin": "0446574759",
       "title": "Edith Hamilton's Mythology",
       "description": "<p>Sparknotes presents a clear discussion of the action and thoughts of the work.</p>",
       "author": "Edith Hamilton",
       "coverImage": "https://covers.openlibrary.org/b/isbn/1586633805-L.jpg",
-      "coverImageFallback": "https://m.media-amazon.com/images/P/1586633805.01._SX1000_.jpg",
+      "coverImageFallback": "https://m.media-amazon.com/images/P/0446574759.01._SX1000_.jpg",
       "categories": [
         "mythology"
       ],
@@ -4599,11 +4598,10 @@
       "reviewCount": 21000,
       "starRating": 4.6,
       "marketplaces": {
-        "amazon.com": "https://www.amazon.com/dp/1586633805",
-        "amazon.de": "https://www.amazon.de/dp/1586633805",
-        "amazon.co.uk": "https://www.amazon.co.uk/dp/1586633805",
-        "amazon.nl": "https://www.amazon.nl/dp/1586633805",
-        "amazon.fr": "https://www.amazon.fr/dp/1586633805"
+        "amazon_us": "https://www.amazon.com/dp/0446574759?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0446574759?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0446574759?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0446574759?tag=31813-20"
       },
       "isOwnBook": false,
       "hookText": null,
@@ -5019,12 +5017,12 @@
     },
     {
       "slug": "wild-from-lost-to-found-on-the-pacific-crest-trail-strayed",
-      "asin": "1400033438",
+      "asin": "0307476073",
       "title": "Wild: From Lost to Found on the Pacific Crest Trail",
       "description": "<p>At twenty-two, Cheryl Strayed thought she had lost everything. In the wake of her mother's death, her family scattered and her own marriage was soon destroyed. Four years later, with nothing more to lose, she made the most impulsive decision of her life: to hike the Pacific Crest Trail from the Mojave Desert through California and Oregon to Washington Stateâ€”and to do it alone. The journey she took changed her life forever.</p>",
       "author": "Cheryl Strayed",
       "coverImage": "https://covers.openlibrary.org/b/isbn/1400033438-L.jpg",
-      "coverImageFallback": "https://m.media-amazon.com/images/P/1400033438.01._SX1000_.jpg",
+      "coverImageFallback": "https://m.media-amazon.com/images/P/0307476073.01._SX1000_.jpg",
       "categories": [
         "biography"
       ],
@@ -5038,11 +5036,10 @@
       "reviewCount": 110000,
       "starRating": 4.5,
       "marketplaces": {
-        "amazon.com": "https://www.amazon.com/dp/1400033438",
-        "amazon.de": "https://www.amazon.de/dp/1400033438",
-        "amazon.co.uk": "https://www.amazon.co.uk/dp/1400033438",
-        "amazon.nl": "https://www.amazon.nl/dp/1400033438",
-        "amazon.fr": "https://www.amazon.fr/dp/1400033438"
+        "amazon_us": "https://www.amazon.com/dp/0307476073?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0307476073?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0307476073?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0307476073?tag=31813-20"
       },
       "isOwnBook": false,
       "hookText": null,
@@ -5050,12 +5047,12 @@
     },
     {
       "slug": "mindhunter-inside-the-fbis-elite-serial-crime-unit-olshaker",
-      "asin": "1501138979",
+      "asin": "1501191969",
       "title": "Mindhunter: Inside the FBI's Elite Serial Crime Unit",
       "description": "<p>In Mindhunter, John Douglas and Mark Olshaker take us behind the scenes of some of the most harrowing and notorious crimes of our time. Douglas, the FBI's most celebrated criminal profiler and the inspiration for the Netflix series, shows how he and his colleagues at Quantico's Behavioral Science Unit opened a window into the minds of killers, rapists, and stalkers to understand their fantasies and behaviors â€” and to stop them.</p>",
       "author": "John E. Douglas, Mark Olshaker",
       "coverImage": "https://covers.openlibrary.org/b/isbn/1501138979-L.jpg",
-      "coverImageFallback": "https://m.media-amazon.com/images/P/1501138979.01._SX1000_.jpg",
+      "coverImageFallback": "https://m.media-amazon.com/images/P/1501191969.01._SX1000_.jpg",
       "categories": [
         "true-crime"
       ],
@@ -5069,11 +5066,10 @@
       "reviewCount": 38000,
       "starRating": 4.7,
       "marketplaces": {
-        "amazon.com": "https://www.amazon.com/dp/1501138979",
-        "amazon.de": "https://www.amazon.de/dp/1501138979",
-        "amazon.co.uk": "https://www.amazon.co.uk/dp/1501138979",
-        "amazon.nl": "https://www.amazon.nl/dp/1501138979",
-        "amazon.fr": "https://www.amazon.fr/dp/1501138979"
+        "amazon_us": "https://www.amazon.com/dp/1501191969?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1501191969?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1501191969?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1501191969?tag=31813-20"
       },
       "isOwnBook": false,
       "hookText": null,
@@ -5081,12 +5077,12 @@
     },
     {
       "slug": "helter-skelter-the-true-story-of-the-manson-murders-gentry",
-      "asin": "0393322807",
+      "asin": "0393322238",
       "title": "Helter Skelter: The True Story of the Manson Murders",
       "description": "<p>The prosecution of Charles Manson and his followers for the murders of Sharon Tate and six other people was a defining event in American history. Vincent Bugliosi, who prosecuted Manson, delivers a chilling, complete account of the murders and the investigation, apprehension, and trial of the guilty parties â€” from the first terrifying night of murder through the five-year legal process that followed.</p>",
       "author": "Vincent Bugliosi, Curt Gentry",
       "coverImage": "https://covers.openlibrary.org/b/isbn/0393322807-L.jpg",
-      "coverImageFallback": "https://m.media-amazon.com/images/P/0393322807.01._SX1000_.jpg",
+      "coverImageFallback": "https://m.media-amazon.com/images/P/0393322238.01._SX1000_.jpg",
       "categories": [
         "true-crime",
         "dark-history"
@@ -5101,11 +5097,10 @@
       "reviewCount": 25000,
       "starRating": 4.6,
       "marketplaces": {
-        "amazon.com": "https://www.amazon.com/dp/0393322807",
-        "amazon.de": "https://www.amazon.de/dp/0393322807",
-        "amazon.co.uk": "https://www.amazon.co.uk/dp/0393322807",
-        "amazon.nl": "https://www.amazon.nl/dp/0393322807",
-        "amazon.fr": "https://www.amazon.fr/dp/0393322807"
+        "amazon_us": "https://www.amazon.com/dp/0393322238?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0393322238?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0393322238?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0393322238?tag=31813-20"
       },
       "isOwnBook": false,
       "hookText": null,
