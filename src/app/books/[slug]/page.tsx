@@ -8,6 +8,7 @@ import { StarRating } from "@/components/StarRating";
 import { BookGrid } from "@/components/BookGrid";
 import { BookCoverImage } from "@/components/BookCoverImage";
 import { SectionHeader } from "@/components/SectionHeader";
+import { RecentlyViewed, TrackView } from "@/components/RecentlyViewed";
 import {
   CATEGORIES,
   getCategoryBySlug,
@@ -287,6 +288,18 @@ export default async function BookPage({
             <BookGrid books={related} columns={5} />
           </section>
         )}
+
+        {/* Recently viewed (client, localStorage) */}
+        <RecentlyViewed excludeSlug={book.slug} />
+
+        {/* Record this book as viewed */}
+        <TrackView
+          slug={book.slug}
+          title={book.title}
+          coverImage={book.coverImage}
+          coverImageFallback={book.coverImageFallback ?? undefined}
+          isOwnBook={book.isOwnBook}
+        />
       </div>
     </>
   );

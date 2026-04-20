@@ -4,6 +4,7 @@ import { BookGrid } from "@/components/BookGrid";
 import { SearchBar } from "@/components/SearchBar";
 import { SectionHeader } from "@/components/SectionHeader";
 import { StarRating } from "@/components/StarRating";
+import { RecentlyViewed } from "@/components/RecentlyViewed";
 import { getFeaturedBooks, getBestsellers, getAllBooks, getRecentlyAdded } from "@/lib/books";
 import { getAllBlogPosts } from "@/lib/blog";
 import { buildAffiliateUrl } from "@/lib/affiliate";
@@ -204,6 +205,11 @@ export default function HomePage() {
       <section className="max-w-5xl mx-auto px-4 pt-12 pb-6">
         <FeaturedBook book={featuredBook} />
       </section>
+
+      {/* Recently viewed — only renders for returning visitors with localStorage */}
+      <div className="max-w-7xl mx-auto px-4">
+        <RecentlyViewed title="Pick up where you left off" />
+      </div>
 
       {/* New Arrivals */}
       {recentlyAdded.length > 0 && (
