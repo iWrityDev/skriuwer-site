@@ -22,7 +22,7 @@ export default function BestVikingBooksPage() {
   return (
     <BestOfPage
       title="Best Viking Books"
-      description="The Vikings were more than raiders — they were explorers, traders, craftsmen, and poets who shaped medieval Europe. These are the best Viking books, covering Norse history, mythology, and the legendary sagas, ranked by readers obsessed with the Norse world."
+      description="The Vikings were more than raiders, they were explorers, traders, craftsmen, and poets who shaped medieval Europe. These are the best Viking books, covering Norse history, mythology, and the legendary sagas, ranked by readers obsessed with the Norse world."
       books={books}
       breadcrumb="Best Viking Books"
       categoryPage="/category/mythology"

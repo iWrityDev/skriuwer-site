@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Start Here — Find Your Next Great Book",
+  title: "Start Here, Find Your Next Great Book",
   description:
     "New to Skriuwer? Start here. Find the best books by category, browse our top-ranked reading lists, and discover books our editors love.",
   alternates: { canonical: "https://skriuwer.com/start-here" },
@@ -22,7 +22,7 @@ const CATEGORIES = [
     emoji: "⚡",
     title: "Mythology",
     subtitle: "Gods, heroes, and ancient legends",
-    desc: "Greek, Norse, Egyptian, and world mythology — stories that explain everything about human nature and still do, 3,000 years later.",
+    desc: "Greek, Norse, Egyptian, and world mythology, stories that explain everything about human nature and still do, 3,000 years later.",
     href: "/category/mythology",
     bestOf: "/best-mythology-books",
     bestOfLabel: "Best Mythology Books →",
@@ -31,7 +31,7 @@ const CATEGORIES = [
     emoji: "🧠",
     title: "Psychology",
     subtitle: "How the mind really works",
-    desc: "Why people do what they do — including you. The science of decision-making, memory, identity, and the surprising irrationality of the human brain.",
+    desc: "Why people do what they do, including you. The science of decision-making, memory, identity, and the surprising irrationality of the human brain.",
     href: "/category/psychology",
     bestOf: "/best-psychology-books",
     bestOfLabel: "Best Psychology Books →",
@@ -49,7 +49,7 @@ const CATEGORIES = [
     emoji: "🕵️",
     title: "Conspiracy & Dark History",
     subtitle: "What they left out of the textbooks",
-    desc: "Cover-ups, hidden agendas, and the real events behind official accounts. Rigorously researched — these are facts, not fiction.",
+    desc: "Cover-ups, hidden agendas, and the real events behind official accounts. Rigorously researched, these are facts, not fiction.",
     href: "/category/conspiracy",
     bestOf: "/best-conspiracy-books",
     bestOfLabel: "Best Conspiracy Books →",
@@ -58,7 +58,7 @@ const CATEGORIES = [
     emoji: "🌍",
     title: "Language Learning",
     subtitle: "Master any language faster",
-    desc: "Bilingual readers, grammar guides, and language learning books proven to work — including books in Frisian, Dutch, French, and German.",
+    desc: "Bilingual readers, grammar guides, and language learning books proven to work, including books in Frisian, Dutch, French, and German.",
     href: "/category/language-learning",
     bestOf: "/best-language-learning-books",
     bestOfLabel: "Best Language Books →",
@@ -93,19 +93,19 @@ export default function StartHerePage() {
       </div>
       <p className="text-[var(--color-text-muted)] ml-4 mb-10 leading-relaxed max-w-2xl">
         Skriuwer.com curates the best books in history, mythology, psychology, language learning, and more.
-        Every book links directly to Amazon — no subscriptions, no sign-ups required. Browse by what you love
+        Every book links directly to Amazon, no subscriptions, no sign-ups required. Browse by what you love
         below, or use the reading lists to find exactly what you need.
       </p>
 
-      {/* Who we are — mini trust box */}
+      {/* Who we are, mini trust box */}
       <div className="mb-10 p-5 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl flex flex-col sm:flex-row gap-4 items-start">
         <span className="text-3xl">🏴󠁮󠁬󠁦󠁲󠁿</span>
         <div>
           <p className="font-semibold text-[var(--color-text)] text-sm mb-1">Built by readers, for readers</p>
           <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
             We are a small team of authors and editors based in Friesland, France, and Spain. We publish our own
-            history and mythology books under the Skriuwer imprint, and we curate the best third-party books we
-            can find. Every buy link is an Amazon affiliate link — we earn a small commission at no extra cost to you.{" "}
+            history and mythology books under the Skriuwer imprint, and we pick the best third-party books we
+            can find. Every buy link is an Amazon affiliate link, we earn a small commission at no extra cost to you.{" "}
             <Link href="/about" className="text-[var(--color-orange-light)] hover:underline font-semibold">
               More about us →
             </Link>
@@ -165,7 +165,7 @@ export default function StartHerePage() {
           <Link href="/best-true-crime-books" className="text-[var(--color-orange-light)] hover:underline">
             Best True Crime Books
           </Link>{" "}
-          — we have a ranked reading list for every niche.
+         , we have a ranked reading list for every niche.
         </p>
         <Link
           href="/reading-lists"
@@ -183,7 +183,7 @@ export default function StartHerePage() {
         </div>
         <p className="text-sm text-[var(--color-text-muted)] mb-4 leading-relaxed">
           Our gift guides help you pick the perfect book for the history lover, mythology fan, or bookworm in
-          your life — with options at every price point.
+          your life, with options at every price point.
         </p>
         <Link
           href="/gift-guides"

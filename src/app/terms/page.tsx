@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Terms of Service for Skriuwer.com — an Amazon affiliate book discovery site.",
+  description: "Terms of Service for Skriuwer.com, an Amazon affiliate book discovery site.",
   alternates: { canonical: "https://skriuwer.com/terms" },
 };
 
@@ -22,7 +22,7 @@ export default function TermsPage() {
 
       <div className="mt-8 space-y-6 text-[var(--color-text-muted)] leading-relaxed">
         <p>
-          By using Skriuwer.com, you agree to the following terms. Please read them carefully — they&apos;re short and straightforward.
+          By using Skriuwer.com, you agree to the following terms. Please read them carefully, they&apos;re short and straightforward.
         </p>
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">Purpose of This Site</h2>
@@ -51,7 +51,7 @@ export default function TermsPage() {
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">No Warranties</h2>
         <p>
-          The content on Skriuwer.com is provided &ldquo;as is&rdquo; for informational purposes. We make reasonable efforts to keep information accurate and up to date, but we make no warranties — express or implied — about the completeness, accuracy, or suitability of the information on this site.
+          The content on Skriuwer.com is provided &ldquo;as is&rdquo; for informational purposes. We make reasonable efforts to keep information accurate and up to date, but we make no warranties, express or implied, about the completeness, accuracy, or suitability of the information on this site.
         </p>
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">Affiliate Links</h2>

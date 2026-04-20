@@ -23,7 +23,7 @@ export default function BestRomanHistoryBooksPage() {
   return (
     <BestOfPage
       title="Best Roman History Books in 2026"
-      description="Rome built an empire that lasted centuries and left its mark on law, language, and culture across the Western world. These are the best Roman history books ranked by reader reviews — covering the Republic, the Caesars, the legions, and the eventual fall of the greatest empire in antiquity."
+      description="Rome built an empire that lasted centuries and left its mark on law, language, and culture across the Western world. These are the best Roman history books ranked by reader reviews, covering the Republic, the Caesars, the legions, and the eventual fall of the greatest empire in antiquity."
       books={books}
       breadcrumb="Best Roman History Books"
       categoryPage="/category/history"

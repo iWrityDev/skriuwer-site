@@ -19,7 +19,7 @@ export default function BestLanguageLearningBooksPage() {
   return (
     <BestOfPage
       title="Best Language Learning Books in 2026"
-      description="The most effective way to learn a language is through reading. These are the best language learning books available today — bilingual stories, vocabulary guides, and parallel-text collections that make it possible to absorb a new language at your own pace. All ranked by reader reviews."
+      description="The most effective way to learn a language is through reading. These are the best language learning books available today, bilingual stories, vocabulary guides, and parallel-text collections that make it possible to absorb a new language at your own pace. All ranked by reader reviews."
       books={books}
       breadcrumb="Best Language Learning Books"
       categoryPage="/category/language-learning"

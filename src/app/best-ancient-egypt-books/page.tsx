@@ -22,7 +22,7 @@ export default function BestAncientEgyptBooksPage() {
   return (
     <BestOfPage
       title="Best Books About Ancient Egypt"
-      description="Ancient Egypt built wonders that still defy explanation — the pyramids, the Sphinx, and a civilization that lasted 3,000 years. These are the best books about Ancient Egypt, covering everything from the pharaohs and gods to daily life along the Nile, ranked by passionate readers."
+      description="Ancient Egypt built wonders that still defy explanation, the pyramids, the Sphinx, and a civilization that lasted 3,000 years. These are the best books about Ancient Egypt, covering everything from the pharaohs and gods to daily life along the Nile, ranked by passionate readers."
       books={books}
       breadcrumb="Best Ancient Egypt Books"
       categoryPage="/category/history"

@@ -182,7 +182,7 @@ export function BestOfPage({
           {/* Quick Comparison Table */}
           {showComparison && topBooks.length > 0 && (
             <div className="mb-10">
-              <SectionHeader title="Quick comparison — top 5" size="sm" tone="gold" />
+              <SectionHeader title="Quick comparison, top 5" size="sm" tone="gold" />
               <div className="overflow-x-auto rounded-lg border border-[var(--color-border)]">
                 <table className="w-full text-sm border-collapse">
                   <thead>
@@ -231,11 +231,11 @@ export function BestOfPage({
                                 {book.starRating.toFixed(1)} ★
                               </span>
                             ) : (
-                              <span className="text-[var(--color-text-dim)]">—</span>
+                              <span className="text-[var(--color-text-dim)]">, </span>
                             )}
                           </td>
                           <td className="px-3 py-3 text-[var(--color-text-muted)] text-sm hidden md:table-cell">
-                            {book.pages && book.pages > 0 ? book.pages : "—"}
+                            {book.pages && book.pages > 0 ? book.pages : ", "}
                           </td>
                           <td className="px-3 py-3">
                             {amazonUrl && (
@@ -406,7 +406,7 @@ export function BestOfPage({
             </div>
           )}
 
-          {/* Newsletter — DISABLED (Buttondown endpoint returns 404,
+          {/* Newsletter, DISABLED (Buttondown endpoint returns 404,
               see note on src/app/page.tsx). Re-enable after setting up a
               real list provider. */}
 

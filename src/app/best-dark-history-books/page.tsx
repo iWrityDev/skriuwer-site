@@ -19,7 +19,7 @@ export default function BestDarkHistoryBooksPage() {
   return (
     <BestOfPage
       title="Best Dark History Books"
-      description="History is far darker than any textbook will ever admit. These are the best dark history books — unflinching accounts of atrocities, cover-ups, and the brutal realities of the past — ranked by readers who wanted the full truth."
+      description="History is far darker than any textbook will ever admit. These are the best dark history books, unflinching accounts of atrocities, cover-ups, and the brutal realities of the past, ranked by readers who wanted the full truth."
       books={books}
       breadcrumb="Best Dark History Books"
       categoryPage="/category/dark-history"

@@ -27,17 +27,17 @@ export default function AffiliateDisclosurePage() {
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">How It Works</h2>
         <p>
-          When you click a book link on Skriuwer.com and then make a purchase on Amazon, we earn a small commission. This happens at <strong className="text-[var(--color-text)]">no extra cost to you</strong> — the price you pay on Amazon is exactly the same whether you arrived via our link or not.
+          When you click a book link on Skriuwer.com and then make a purchase on Amazon, we earn a small commission. This happens at <strong className="text-[var(--color-text)]">no extra cost to you</strong>, the price you pay on Amazon is exactly the same whether you arrived via our link or not.
         </p>
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">Why We Do This</h2>
         <p>
-          The commissions we earn help fund the running costs of this site — hosting, tooling, and the time it takes to research and write about great books. Without affiliate income, Skriuwer.com wouldn&apos;t exist in its current form.
+          The commissions we earn help fund the running costs of this site, hosting, tooling, and the time it takes to research and write about great books. Without affiliate income, Skriuwer.com wouldn&apos;t exist in its current form.
         </p>
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">Our Commitment to You</h2>
         <p>
-          We only recommend books we genuinely believe are worth reading. Our selections are based on their quality, relevance, and value to readers — not on commission rates. Our editorial judgement is not for sale.
+          We only recommend books we genuinely believe are worth reading. Our selections are based on their quality, relevance, and value to readers, not on commission rates. Our editorial judgement is not for sale.
         </p>
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">FTC Compliance</h2>

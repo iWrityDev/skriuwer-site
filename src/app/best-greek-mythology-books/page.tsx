@@ -19,7 +19,7 @@ export default function BestGreekMythologyBooksPage() {
   return (
     <BestOfPage
       title="Best Greek Mythology Books in 2026"
-      description="Greek mythology has fascinated readers for millennia — from the brutal gods of Olympus to the heroes who defied them. These are the best Greek mythology books available today, ranked by reader popularity. Whether you want the original dark myths or modern retellings, this list covers the full range."
+      description="Greek mythology has fascinated readers for millennia, from the brutal gods of Olympus to the heroes who defied them. These are the best Greek mythology books available today, ranked by reader popularity. Whether you want the original dark myths or modern retellings, this list covers the full range."
       books={books}
       breadcrumb="Best Greek Mythology Books"
       categoryPage="/category/mythology"

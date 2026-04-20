@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { SearchResults } from "./SearchResults";
 
 export const metadata: Metadata = {
-  title: "Search Books — Find Your Next Read",
+  title: "Search Books, Find Your Next Read",
   description: "Search across 1000+ books on history, mythology, language learning, psychology, business, true crime, and more. Find your perfect book by title, author, or topic.",
 };
 

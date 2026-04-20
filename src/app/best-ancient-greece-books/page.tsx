@@ -22,7 +22,7 @@ export default function BestAncientGreeceBooksPage() {
   return (
     <BestOfPage
       title="Best Books About Ancient Greece"
-      description="Ancient Greece gave us democracy, philosophy, drama, and the Olympic Games. These are the best books about Ancient Greece — from the city-states of Athens and Sparta to the conquests of Alexander the Great — ranked by readers passionate about the birthplace of Western civilization."
+      description="Ancient Greece gave us democracy, philosophy, drama, and the Olympic Games. These are the best books about Ancient Greece, from the city-states of Athens and Sparta to the conquests of Alexander the Great, ranked by readers passionate about the birthplace of Western civilization."
       books={books}
       breadcrumb="Best Ancient Greece Books"
       categoryPage="/category/history"

@@ -24,7 +24,7 @@
   --color-card-gradient: linear-gradient(180deg, #243055 0%, #1a2440 100%);
 
   /* ===== Text ===== */
-  /* Contrast fixes — muted/dim used to be 0.55/0.35 which failed WCAG AA on #0a0e1a */
+  /* Contrast fixes, muted/dim used to be 0.55/0.35 which failed WCAG AA on #0a0e1a */
   --color-text: #f0ede8;
   --color-text-muted: rgba(240, 237, 232, 0.72);
   --color-text-dim: rgba(240, 237, 232, 0.50);
@@ -56,13 +56,13 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  /* Ambient page-level warmth — soft orange in the top-left, soft
+  /* Ambient page-level warmth, soft orange in the top-left, soft
      gold in the top-right, fading away by ~70% down the fold.
      Fixed-positioned so it stays put as you scroll. */
   position: relative;
 }
 body::before {
-  /* Orange wash across the entire viewport — anchored in 4 spots so
+  /* Orange wash across the entire viewport, anchored in 4 spots so
      no matter where you scroll or which section you land on, you're
      surrounded by the same warm glow the user likes in the hero.
      A single small gold accent in the top-right keeps a second hue
@@ -71,13 +71,13 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    /* Dominant top-left — wide and warm */
+    /* Dominant top-left, wide and warm */
     radial-gradient(
       ellipse 95% 70% at 10% 0%,
       rgba(232, 100, 10, 0.24) 0%,
       transparent 65%
     ),
-    /* Mid-right — keeps orange on screen as you scroll */
+    /* Mid-right, keeps orange on screen as you scroll */
     radial-gradient(
       ellipse 70% 55% at 100% 45%,
       rgba(232, 100, 10, 0.18) 0%,
@@ -89,7 +89,7 @@ body::before {
       rgba(232, 100, 10, 0.15) 0%,
       transparent 60%
     ),
-    /* Bottom-right subtle — closes the loop */
+    /* Bottom-right subtle, closes the loop */
     radial-gradient(
       ellipse 60% 50% at 95% 100%,
       rgba(232, 100, 10, 0.12) 0%,
@@ -267,7 +267,7 @@ body > * {
 .section-header.section-header-gold .accent-bar { background: linear-gradient(180deg, var(--color-gold), #d97706); }
 .section-header.section-header-teal .accent-bar { background: linear-gradient(180deg, #2dd4bf, var(--color-teal)); }
 
-/* ===== Section divider — 2px gradient instead of 1px flat ===== */
+/* ===== Section divider, 2px gradient instead of 1px flat ===== */
 .section-divider {
   position: relative;
 }

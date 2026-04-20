@@ -34,7 +34,7 @@ export async function generateMetadata({
   if (!label) return {};
   return {
     title: `${label} Articles`,
-    description: `Blog posts about ${label.toLowerCase()} — history, mythology, language, and more at Skriuwer.com.`,
+    description: `Blog posts about ${label.toLowerCase()}, history, mythology, language, and more at Skriuwer.com.`,
     alternates: { canonical: `https://skriuwer.com/blog/category/${cat}` },
   };
 }

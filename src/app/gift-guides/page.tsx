@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Book Gift Guides — Perfect Books for Every Reader",
+  title: "Book Gift Guides, Perfect Books for Every Reader",
   description:
-    "Find the perfect book as a gift. Curated gift guides for history lovers, mythology fans, book clubs, and more — all available on Amazon with fast shipping.",
+    "Find the perfect book as a gift. Curated gift guides for history lovers, mythology fans, book clubs, and more, all available on Amazon with fast shipping.",
   alternates: { canonical: "https://skriuwer.com/gift-guides" },
 };
 
@@ -12,7 +12,7 @@ const GUIDES = [
   {
     emoji: "🏛️",
     title: "Best Gifts for History Lovers",
-    desc: "Top history books that make exceptional gifts — from ancient civilizations to modern conflicts. Beautifully written and thoroughly researched.",
+    desc: "Top history books that make exceptional gifts, from ancient civilizations to modern conflicts. Beautifully written and thoroughly researched.",
     href: "/gift-guides/history-lovers",
     tags: ["History", "Nonfiction", "Ancient Civilizations"],
   },
@@ -48,7 +48,7 @@ export default function GiftGuidesPage() {
       </div>
       <p className="text-[var(--color-text-muted)] ml-4 mb-10 leading-relaxed max-w-2xl">
         Buying a book as a gift? These curated guides take the guesswork out of it.
-        Every book links to Amazon — fast shipping, easy returns, all price points covered.
+        Every book links to Amazon, fast shipping, easy returns, all price points covered.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
@@ -89,25 +89,25 @@ export default function GiftGuidesPage() {
           <li className="flex gap-2">
             <span className="text-[var(--color-orange)] font-bold flex-shrink-0">✓</span>
             <span>
-              <strong className="text-[var(--color-text)]">Match the person&apos;s existing interests</strong> — a history lover will appreciate a well-researched narrative history far more than a self-help book.
+              <strong className="text-[var(--color-text)]">Match the person&apos;s existing interests</strong>, a history lover will appreciate a well-researched narrative history far more than a self-help book.
             </span>
           </li>
           <li className="flex gap-2">
             <span className="text-[var(--color-orange)] font-bold flex-shrink-0">✓</span>
             <span>
-              <strong className="text-[var(--color-text)]">Check page count</strong> — a 450-page book is a commitment. For casual readers, 200–280 pages is the sweet spot.
+              <strong className="text-[var(--color-text)]">Check page count</strong>, a 450-page book is a commitment. For casual readers, 200–280 pages is the sweet spot.
             </span>
           </li>
           <li className="flex gap-2">
             <span className="text-[var(--color-orange)] font-bold flex-shrink-0">✓</span>
             <span>
-              <strong className="text-[var(--color-text)]">Reader reviews are your friend</strong> — all books in our guides have 4+ star ratings from real readers.
+              <strong className="text-[var(--color-text)]">Reader reviews are your friend</strong>, all books in our guides have 4+ star ratings from real readers.
             </span>
           </li>
           <li className="flex gap-2">
             <span className="text-[var(--color-orange)] font-bold flex-shrink-0">✓</span>
             <span>
-              <strong className="text-[var(--color-text)]">Amazon delivers internationally</strong> — if the recipient is abroad, Amazon&apos;s local stores (UK, DE, NL, FR) carry these titles.
+              <strong className="text-[var(--color-text)]">Amazon delivers internationally</strong>, if the recipient is abroad, Amazon&apos;s local stores (UK, DE, NL, FR) carry these titles.
             </span>
           </li>
         </ul>

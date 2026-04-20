@@ -22,7 +22,7 @@ export default function BestNorseMythologyBooksPage() {
   return (
     <BestOfPage
       title="Best Norse Mythology Books"
-      description="Norse mythology is one of the richest and most dramatic traditions in world folklore — full of gods, monsters, and world-ending prophecies. These are the best books on Norse myths and the Vikings, ranked by readers who explored every saga."
+      description="Norse mythology is one of the richest and most dramatic traditions in world folklore, full of gods, monsters, and world-ending prophecies. These are the best books on Norse myths and the Vikings, ranked by readers who explored every saga."
       books={books}
       breadcrumb="Best Norse Mythology Books"
       categoryPage="/category/mythology"

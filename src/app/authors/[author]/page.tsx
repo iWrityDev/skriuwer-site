@@ -19,7 +19,7 @@ export async function generateMetadata({
   const author = getAuthorBySlug(slug);
   if (!author) return {};
   return {
-    title: `${author.name} — ${author.role} at Skriuwer`,
+    title: `${author.name}, ${author.role} at Skriuwer`,
     description: `${author.bio[0].slice(0, 155)}`,
     alternates: { canonical: `https://skriuwer.com/authors/${slug}` },
   };

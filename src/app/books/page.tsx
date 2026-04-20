@@ -6,7 +6,7 @@ import { getAllBooks, getBookCount, getBookCountByCategory } from "@/lib/books";
 import { CATEGORIES, getCategoryCssVar } from "@/lib/categories";
 
 export const metadata: Metadata = {
-  title: "All Books — Browse Our Complete Collection | Skriuwer",
+  title: "All Books, Browse Our Complete Collection | Skriuwer",
   description: "Browse 200+ curated books across history, mythology, language learning, psychology, self-help, true crime, and more. Honest picks with Amazon links.",
   alternates: { canonical: "https://skriuwer.com/books" },
 };
@@ -51,7 +51,7 @@ export default function BooksPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 pb-10">
-        {/* Category quick-filter — each chip in its category color */}
+        {/* Category quick-filter, each chip in its category color */}
         <div className="flex flex-wrap gap-2 mb-8">
           <span className="px-3 py-1.5 text-xs font-semibold rounded-full border text-[var(--color-orange)] bg-[color-mix(in_srgb,var(--color-orange)_12%,transparent)]" style={{ borderColor: "var(--color-orange)" }}>
             All ({totalCount})

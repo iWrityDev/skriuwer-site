@@ -22,12 +22,12 @@ export default function AboutPage() {
 
       <div className="mt-8 space-y-6 text-[var(--color-text-muted)] leading-relaxed">
         <p>
-          <strong className="text-[var(--color-text)]">Skriuwer</strong> means &ldquo;writer&rdquo; in Frisian — the ancient language spoken in Friesland, the northern province of the Netherlands. It&apos;s a fitting name for a site built around a love of books and the written word.
+          <strong className="text-[var(--color-text)]">Skriuwer</strong> means &ldquo;writer&rdquo; in Frisian, the ancient language spoken in Friesland, the northern province of the Netherlands. It&apos;s a fitting name for a site built around a love of books and the written word.
         </p>
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">Who We Are</h2>
         <p>
-          Skriuwer.com was founded by Auke, an author and publisher based in Friesland, Netherlands. With a deep passion for books on history, mythology, language learning, and culture, Auke started this site to help readers discover the best titles across these niches — books that are genuinely worth your time.
+          Skriuwer.com was founded by Auke, an author and publisher based in Friesland, Netherlands. With a deep passion for books on history, mythology, language learning, and culture, Auke started this site to help readers discover the best titles across these niches, books that are genuinely worth your time.
         </p>
         <p>
           Our small international team of authors and editors spans Friesland, France, and Spain. A portion of proceeds from our books supports <strong className="text-[var(--color-text)]">De Fryske Wrâld</strong>, a nonprofit foundation dedicated to preserving the Frisian language and culture.{" "}
@@ -38,12 +38,12 @@ export default function AboutPage() {
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">What We Do</h2>
         <p>
-          We discover and curate outstanding books in history, mythology, languages, and culture. Every book featured on Skriuwer.com has been selected because we believe it offers real value to curious readers. We link directly to Amazon so you can purchase from a trusted, established retailer with reliable shipping and returns.
+          We pick outstanding books in history, mythology, languages, and culture. Every book featured on Skriuwer.com earns its spot because we think it offers real value to curious readers. We link directly to Amazon so you can buy from a trusted retailer with reliable shipping and returns.
         </p>
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">Affiliate Links</h2>
         <p>
-          As an Amazon Associate, we earn a small commission when you click our links and make a purchase — at no extra cost to you whatsoever. These commissions help keep the site running and allow us to keep finding great books to recommend.
+          As an Amazon Associate, we earn a small commission when you click our links and make a purchase, at no extra cost to you whatsoever. These commissions help keep the site running and allow us to keep finding great books to recommend.
         </p>
 
         <h2 className="text-lg font-semibold text-[var(--color-text)] mt-8 mb-2">Contact &amp; Address</h2>

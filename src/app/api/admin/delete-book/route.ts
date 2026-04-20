@@ -16,7 +16,7 @@ const GH_DELETED_FILE = "data/deleted_slugs.json";
 async function deleteViaGitHub(slug: string) {
   const token = process.env.GITHUB_TOKEN;
   if (!token) {
-    return { error: "GITHUB_TOKEN not set — add it in Vercel environment variables" };
+    return { error: "GITHUB_TOKEN not set, add it in Vercel environment variables" };
   }
 
   const base = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}`;
@@ -160,6 +160,6 @@ export async function POST(req: NextRequest) {
     success: true,
     remaining: result.remaining,
     via: "github",
-    note: "Committed to GitHub — live after next deploy",
+    note: "Committed to GitHub, live after next deploy",
   });
 }

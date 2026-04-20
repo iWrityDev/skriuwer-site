@@ -5,7 +5,7 @@ import Image from "next/image";
 import type { Book } from "@/lib/types";
 
 export function BookCoverImage({ book }: { book: Book }) {
-  // Own books use high-res Shopify CDN images — keep as primary.
+  // Own books use high-res Shopify CDN images, keep as primary.
   // Third-party books: Amazon images/P/{ISBN} returns a 1×1 placeholder for physical books.
   // Google Books must be primary; Amazon URL is kept as fallback only.
   const pickPrimary = () => {

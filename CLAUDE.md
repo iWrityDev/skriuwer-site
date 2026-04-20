@@ -3,6 +3,77 @@
 Next.js 15 app on Vercel. Data-driven book catalog served from
 `data/books.json` (statically generated at build time).
 
+## Voice & copywriting (LOAD-BEARING — enforce on every edit)
+
+**Every piece of copy you write or touch on this site must pass this
+filter.** These rules carry the same weight as the technical ones
+below — sloppy word choices make the site read as AI slop and the
+user has explicitly asked, more than once, to keep that out.
+
+### Hard bans
+
+1. **No em-dashes (`—`, `&mdash;`, or U+2014) as clause separators.**
+   This is the single strongest AI tell. Use a comma, period,
+   colon, or parentheses instead. Acceptable em-dash uses are
+   basically zero on this site — if you find yourself reaching for
+   one, split the sentence or use a comma.
+
+   - Wrong: `"Skriuwer.com — meaning 'writer' in Frisian — was founded..."`
+   - Right: `"Skriuwer.com, meaning 'writer' in Frisian, was founded..."`
+   - Wrong: `"169 curated titles across history, mythology — every one worth your time"`
+   - Right: `"169 curated titles across history, mythology. Every one worth your time."`
+
+2. **No AI-speak phrases.** Grep these before committing any copy:
+   `delve`, `dive into`, `it's worth noting`, `it is worth`,
+   `in conclusion`, `in today's world`, `landscape`, `tapestry`,
+   `seamless`, `seamlessly`, `leverage`, `unlock`,
+   `unleash`, `unveil`, `cutting-edge`, `state-of-the-art`,
+   `robust`, `plethora`, `myriad`, `moreover`, `furthermore`,
+   `holistic`, `curate` (the verb, overused — use "pick" / "choose"),
+   `empower` / `empowering`, `embark`, `realm`, `journey` (when
+   not literal), `navigate the complexities`, `in the modern age`.
+
+3. **No passive voice where active works.**
+   - Wrong: `"The best books were chosen by our editors."`
+   - Right: `"Our editors chose the best books."`
+
+4. **No corporate-speak hedging.** `"arguably"`, `"perhaps"`,
+   `"in many ways"`, `"it can be said that"`, `"tends to"` → cut them.
+
+5. **No hyped adjectives paired with abstract nouns.** "Ultimate
+   companion", "comprehensive guide", "essential resource",
+   "definitive handbook", "incredible journey". These say nothing.
+   Replace with a concrete promise: "300 pages", "1300 sentences",
+   "reviewed by 50,000 readers".
+
+### Preferred voice
+
+- **Direct second-person.** `"You"`, `"your"`. Not `"readers"`,
+  `"one", or `"we" + abstract`.
+- **Specific numbers.** `169 books`, `35 reading lists`,
+  `1500px covers` — not `hundreds of books`, `many lists`.
+- **Short sentences.** If a sentence has two em-dashes or three
+  commas, split it.
+- **Contractions OK.** `it's`, `don't`, `you'll`. Keep it
+  conversational.
+- **"Because"-first promises.** Open with what the reader gets,
+  then why. `"Find your next read. 169 titles hand-picked by people
+  who actually read them."` beats `"At Skriuwer.com we believe..."`.
+
+### Find violations before shipping
+
+Run in the repo root before any non-data commit that touches copy:
+
+```bash
+grep -rEn "—|&mdash;|delve|dive into|it's worth noting|in conclusion|landscape|tapestry|seamless|leverage|unlock|unleash|plethora|myriad|moreover|furthermore|holistic|empower|embark|realm" src/
+```
+
+If the grep hits anything in code you're adding or editing, rewrite
+it before pushing. `data/books.json` is exempt — those are Amazon's
+own descriptions, not our copy, so leave them alone.
+
+---
+
 ## When adding a new book to the site
 
 > **Don't skip any step.** Each one fixes a real bug we've already shipped and had to back out.

@@ -6,7 +6,7 @@ import { BestOfPage } from "@/components/BestOfPage";
 export const metadata: Metadata = {
   title: "Best Frisian Books in 2026",
   description:
-    "The best books for learning and exploring the Frisian language — one of Europe's oldest and most fascinating minority languages. From beginner guides to bilingual readers.",
+    "The best books for learning and exploring the Frisian language, one of Europe's oldest and most fascinating minority languages. From beginner guides to bilingual readers.",
   alternates: { canonical: "https://skriuwer.com/best-frisian-books" },
 };
 
@@ -22,7 +22,7 @@ export default function BestFrisianBooksPage() {
   return (
     <BestOfPage
       title="Best Frisian Books in 2026"
-      description="Frisian is one of the closest living relatives to English and one of Europe's most endangered minority languages. These are the best Frisian books available — from language learning guides to bilingual readers — perfect for anyone wanting to connect with this remarkable linguistic heritage."
+      description="Frisian is one of the closest living relatives to English and one of Europe's most endangered minority languages. These are the best Frisian books available, from language learning guides to bilingual readers, perfect for anyone wanting to connect with this remarkable linguistic heritage."
       books={books}
       breadcrumb="Best Frisian Books"
       categoryPage="/category/language-learning"

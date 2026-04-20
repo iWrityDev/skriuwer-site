@@ -22,7 +22,7 @@ export async function generateMetadata({
   const cat = getCategoryBySlug(category);
   if (!cat) return {};
   return {
-    title: `Best ${cat.name} Books — Top Picks for ${new Date().getFullYear()}`,
+    title: `Best ${cat.name} Books, Top Picks for ${new Date().getFullYear()}`,
     description: `${cat.description} Browse our curated collection of the best ${cat.name.toLowerCase()} books, all available on Amazon.`,
     alternates: { canonical: `https://skriuwer.com/category/${category}` },
   };

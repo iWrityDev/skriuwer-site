@@ -4,7 +4,7 @@ import type { Book } from "@/lib/types";
 import { BestOfPage } from "@/components/BestOfPage";
 
 export const metadata: Metadata = {
-  title: "Best World War 2 Books — Top Picks for 2026",
+  title: "Best World War 2 Books, Top Picks for 2026",
   description: "The best books about World War II, ranked by reader reviews. From battles and strategy to personal memoirs, these titles bring the war to life.",
   alternates: { canonical: "https://skriuwer.com/best-world-war-2-books" },
 };
@@ -33,7 +33,7 @@ export default function BestWW2BooksPage() {
   return (
     <BestOfPage
       title="Best World War 2 Books in 2026"
-      description="World War II was the defining event of the 20th century — a conflict that reshaped the entire world. These are the best WW2 books available today, from gripping battlefield accounts to psychological profiles of Nazi leadership, ranked by readers who have lived with these stories. Whether you want the big picture or the intimate personal account, this list has it."
+      description="World War II was the defining event of the 20th century, a conflict that reshaped the entire world. These are the best WW2 books available today, from gripping battlefield accounts to psychological profiles of Nazi leadership, ranked by readers who have lived with these stories. Whether you want the big picture or the intimate personal account, this list has it."
       books={finalBooks}
       breadcrumb="Best WW2 Books"
       categoryPage="/category/history"

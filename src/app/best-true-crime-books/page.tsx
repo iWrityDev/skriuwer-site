@@ -25,7 +25,7 @@ export default function BestTrueCrimeBooksPage() {
   return (
     <BestOfPage
       title="Best True Crime Books"
-      description="True crime books turn real-world horror into compulsive reading — the kind you finish in a single sitting. These are the most gripping accounts of murders, heists, cults, and criminal masterminds, ranked by readers who couldn't put them down."
+      description="True crime books turn real-world horror into compulsive reading, the kind you finish in a single sitting. These are the most gripping accounts of murders, heists, cults, and criminal masterminds, ranked by readers who couldn't put them down."
       books={books}
       breadcrumb="Best True Crime Books"
       categoryPage="/category/true-crime"

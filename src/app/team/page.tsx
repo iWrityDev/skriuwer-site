@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Meet the Authors",
-  description: "Meet the team behind Skriuwer.com — authors and editors passionate about history, mythology, language, and culture.",
+  description: "Meet the team behind Skriuwer.com, authors and editors passionate about history, mythology, language, and culture.",
   alternates: { canonical: "https://skriuwer.com/team" },
 };
 
@@ -15,7 +15,7 @@ const authors = [
     location: "Friesland, Netherlands",
     bio: [
       "Auke is a Frisian language advocate and publisher based in Friesland. He founded Skriuwer.com out of a deep love for books and a desire to help readers discover outstanding titles across history, mythology, languages, and culture.",
-      "Frisian is spoken by roughly 500,000 people, primarily in Friesland, and holds official status alongside Dutch — one of the few minority languages in Europe with genuine legal recognition. Auke has made it his mission to keep that language and culture alive through education and publishing.",
+      "Frisian is spoken by roughly 500,000 people, primarily in Friesland, and holds official status alongside Dutch, one of the few minority languages in Europe with genuine legal recognition. Auke has made it his mission to keep that language and culture alive through education and publishing.",
       "A portion of proceeds from Skriuwer's books supports De Fryske Wrâld, a nonprofit foundation dedicated to Frisian language and cultural preservation.",
     ],
     specialties: ["Frisian language & culture", "History", "Mythology", "Publishing"],
@@ -27,7 +27,7 @@ const authors = [
     location: "France",
     bio: [
       "Jennifer holds a BA in International Relations from the University of Rochester and an MA in International Law from the Hebrew University of Jerusalem. An American who has lived and worked internationally, she brings a global perspective to her writing.",
-      "At Skriuwer.com, Jennifer specialises in books that explore the hidden connections between history, law, and culture — the kind of stories that reveal how ideas shape societies across centuries.",
+      "At Skriuwer.com, Jennifer specialises in books that explore the hidden connections between history, law, and culture, the kind of stories that reveal how ideas shape societies across centuries.",
       "Her background in international law and her years teaching English in China give her an instinct for making complex subjects accessible and compelling to a wide audience.",
     ],
     specialties: ["International history", "Languages", "Cultural connections", "Writing"],
@@ -38,9 +38,9 @@ const authors = [
     flag: "🇪🇬",
     location: "Spain",
     bio: [
-      "Yahia is an Egyptian author and editor based in Spain. Fluent in multiple languages, he has dedicated his career to exploring the histories of nations, empires, and ancient civilizations — combining rigorous research with careful editing to create accurate, engaging narratives.",
+      "Yahia is an Egyptian author and editor based in Spain. Fluent in multiple languages, he has dedicated his career to exploring the histories of nations, empires, and ancient civilizations, combining rigorous research with careful editing to create accurate, engaging narratives.",
       "His philosophy is simple: history is far more than a list of dates and facts. As Yahia puts it, \"History goes beyond lists of dates and facts; it reveals the key stories that have built our world.\"",
-      "His work at Skriuwer.com focuses on ancient civilizations — Egypt, Mesopotamia, Rome, Greece — bringing these worlds to life for modern readers.",
+      "His work at Skriuwer.com focuses on ancient civilizations, Egypt, Mesopotamia, Rome, Greece, bringing these worlds to life for modern readers.",
     ],
     specialties: ["Ancient civilizations", "World history", "Research & editing", "Multiple languages"],
   },
@@ -112,7 +112,7 @@ export default function TeamPage() {
           <h2 className="text-base font-bold text-[var(--color-text)]">Our Mission & De Fryske Wrâld</h2>
         </div>
         <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-          Skriuwer — &ldquo;writer&rdquo; in Frisian — was born from a belief that great books deserve to be discovered. Beyond curating books, we support the preservation of the Frisian language. A portion of proceeds from our book sales supports{" "}
+          Skriuwer, &ldquo;writer&rdquo; in Frisian, was born from a belief that great books deserve to be discovered. Beyond curating books, we support the preservation of the Frisian language. A portion of proceeds from our book sales supports{" "}
           <strong className="text-[var(--color-text)]">De Fryske Wrâld</strong>, a nonprofit foundation working to keep the Frisian language and culture alive for future generations.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">

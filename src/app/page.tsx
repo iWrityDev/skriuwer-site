@@ -137,7 +137,7 @@ export default function HomePage() {
     categories: b.categories,
   }));
 
-  // Pick a featured book — own book, English, with cover and description
+  // Pick a featured book, own book, English, with cover and description
   const featuredBook =
     featured
       .filter(
@@ -181,7 +181,7 @@ export default function HomePage() {
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-[var(--color-text-muted)] leading-relaxed">
             {allBooks.length}+ curated titles across history, mythology, language learning,
-            true crime and more. {ownBookCount} of them written by us — every one of them
+            true crime and more. {ownBookCount} of them written by us, every one of them
             worth your time.
           </p>
           <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -203,7 +203,7 @@ export default function HomePage() {
         <FeaturedBook book={featuredBook} />
       </section>
 
-      {/* Recently viewed — only renders for returning visitors with localStorage */}
+      {/* Recently viewed, only renders for returning visitors with localStorage */}
       <div className="max-w-7xl mx-auto px-4">
         <RecentlyViewed title="Pick up where you left off" />
       </div>
@@ -355,7 +355,7 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Newsletter — DISABLED
+      {/* Newsletter, DISABLED
           The Buttondown endpoint buttondown.email/api/emails/embed-subscribe/skriuwer
           returns 404 (the 'skriuwer' tenant doesn't exist), so every subscribe
           attempt went into the void. Block is hidden until a real list is set up.
@@ -369,7 +369,7 @@ export default function HomePage() {
           Preserving the Frisian Language
         </h2>
         <p className="text-[var(--color-text-muted)] leading-relaxed mb-3">
-          At Skriuwer.com &mdash; meaning &ldquo;writer&rdquo; in Frisian &mdash; we believe that language is
+          At Skriuwer.com, meaning &ldquo;writer&rdquo; in Frisian, we believe that language is
           living heritage. Every book we publish contributes to keeping Frisian culture alive.
         </p>
         <p className="text-[var(--color-text-muted)] leading-relaxed mb-6">

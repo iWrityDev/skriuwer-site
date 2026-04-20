@@ -19,7 +19,7 @@ export default function BestSelfHelpBooksPage() {
   return (
     <BestOfPage
       title="Best Self-Help Books"
-      description="The right self-help book at the right time can genuinely change how you think, work, and live. These are the top-rated self-help books ranked by reader popularity — covering habits, mindset, productivity, and personal growth."
+      description="The right self-help book at the right time can genuinely change how you think, work, and live. These are the top-rated self-help books ranked by reader popularity, covering habits, mindset, productivity, and personal growth."
       books={books}
       breadcrumb="Best Self-Help Books"
       categoryPage="/category/self-help"

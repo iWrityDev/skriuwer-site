@@ -2,10 +2,10 @@ import booksData from "../../data/books.json";
 import deletedSlugsData from "../../data/deleted_slugs.json";
 import type { Book } from "./types";
 
-// Persistent blocklist — slugs admin-deleted via the panel or clean_books.py
+// Persistent blocklist, slugs admin-deleted via the panel or clean_books.py
 const DELETED_SLUGS = new Set<string>(deletedSlugsData as string[]);
 
-// Exclude third-party Kindle-only editions (B0* ASINs) — but keep own books (KDP uses B0 ASINs too)
+// Exclude third-party Kindle-only editions (B0* ASINs), but keep own books (KDP uses B0 ASINs too)
 const books: Book[] = (booksData.books as unknown as Book[]).filter(
   (b) => (b.isOwnBook || !b.asin || !b.asin.startsWith("B0")) && !DELETED_SLUGS.has(b.slug)
 );

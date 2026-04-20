@@ -25,7 +25,7 @@ export default function BestPhilosophyBooksPage() {
   return (
     <BestOfPage
       title="Best Philosophy Books"
-      description="Philosophy asks the questions that every other discipline tries to avoid. These are the best-rated philosophy books — from Plato's dialogues to Nietzsche's provocations — ranked by readers who found them genuinely thought-changing."
+      description="Philosophy asks the questions that every other discipline tries to avoid. These are the best-rated philosophy books, from Plato's dialogues to Nietzsche's provocations, ranked by readers who found them genuinely thought-changing."
       books={books}
       breadcrumb="Best Philosophy Books"
       categoryPage="/category/philosophy"

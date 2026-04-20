@@ -87,13 +87,13 @@ export default function AdminClient({ initialBooks }: { initialBooks: Book[] }) 
         setBooks((prev) => prev.filter((b) => b.slug !== deleteTarget.slug));
         setDeleted((prev) => [deleteTarget, ...prev]);
         setDeleteTarget(null);
-        const extra = data.note ? ` — ${data.note}` : "";
+        const extra = data.note ? `, ${data.note}` : "";
         showToast(`Deleted: ${deleteTarget.title}${extra}`);
       } else {
         showToast(data.error || "Delete failed", false);
       }
     } catch {
-      showToast("Network error — try again", false);
+      showToast("Network error, try again", false);
     }
     setDeleting(false);
   };
@@ -195,7 +195,7 @@ export default function AdminClient({ initialBooks }: { initialBooks: Book[] }) 
             <p className="text-[var(--color-text)] font-medium mb-0.5">{deleteTarget.title}</p>
             <p className="text-[var(--color-text-muted)] text-sm mb-1">by {deleteTarget.author}</p>
             <p className="text-[var(--color-text-dim)] text-xs font-mono mb-6">
-              ASIN: {deleteTarget.asin ?? "—"} · {deleteTarget.slug}
+              ASIN: {deleteTarget.asin ?? ", "} · {deleteTarget.slug}
             </p>
             <div className="flex gap-3">
               <button
@@ -382,7 +382,7 @@ export default function AdminClient({ initialBooks }: { initialBooks: Book[] }) 
                   {/* ASIN */}
                   <td className="px-3 py-2 hidden md:table-cell">
                     <span className="text-[var(--color-text-dim)] font-mono text-xs">
-                      {book.asin ?? "—"}
+                      {book.asin ?? ", "}
                     </span>
                   </td>
 
@@ -406,7 +406,7 @@ export default function AdminClient({ initialBooks }: { initialBooks: Book[] }) 
 
                   {/* Reviews */}
                   <td className="px-3 py-2 text-[var(--color-text-muted)] text-xs hidden sm:table-cell">
-                    {book.reviewCount > 0 ? book.reviewCount.toLocaleString() : "—"}
+                    {book.reviewCount > 0 ? book.reviewCount.toLocaleString() : ", "}
                   </td>
 
                   {/* Type */}
@@ -483,7 +483,7 @@ export default function AdminClient({ initialBooks }: { initialBooks: Book[] }) 
             </div>
             <p className="text-xs" style={{ color: "rgba(245,158,11,0.55)" }}>
               On localhost: changes are in{" "}
-              <code className="bg-white/5 px-1 rounded">data/books.json</code> — run{" "}
+              <code className="bg-white/5 px-1 rounded">data/books.json</code>, run{" "}
               <code className="bg-white/5 px-1 rounded">git add data/books.json &amp;&amp; git commit -m &quot;Remove books&quot; &amp;&amp; git push</code>.
               On skriuwer.com: Vercel is already rebuilding.
             </p>

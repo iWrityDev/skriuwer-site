@@ -13,7 +13,7 @@ export const CATEGORIES: Category[] = [
     slug: "mythology",
     name: "Mythology",
     description:
-      "Dive into the myths and legends of ancient civilizations, from Greek gods to Norse warriors.",
+      "The myths and legends of ancient civilizations, from Greek gods to Norse warriors.",
     keywords: ["mythology", "myth", "legends", "gods", "norse", "greek"],
     cssVar: "--cat-mythology",
   },
@@ -92,7 +92,7 @@ export const CATEGORIES: Category[] = [
   {
     slug: "biography",
     name: "Biography & Memoir",
-    description: "True stories of remarkable lives — from world leaders and explorers to artists and athletes.",
+    description: "True stories of remarkable lives, from world leaders and explorers to artists and athletes.",
     keywords: ["biography", "memoir", "autobiography", "life story", "true story", "real life"],
     cssVar: "--cat-biography",
   },
@@ -120,7 +120,7 @@ export const CATEGORIES: Category[] = [
   {
     slug: "philosophy",
     name: "Philosophy",
-    description: "From Plato to Nietzsche — books that challenge how you think about existence and meaning.",
+    description: "From Plato to Nietzsche, books that challenge how you think about existence and meaning.",
     keywords: ["philosophy", "stoic", "stoicism", "ethics", "logic", "metaphysics", "existential", "plato", "aristotle", "nietzsche"],
     cssVar: "--cat-philosophy",
   },
@@ -141,7 +141,7 @@ export function getCategoryCssVar(slug?: string | null): string {
 }
 
 /**
- * Pick the best "primary" category slug from a book's categories array —
+ * Pick the best "primary" category slug from a book's categories array,
  * used to color the book card. Prefers the first non-"general" slug.
  */
 export function primaryCategorySlug(categories: string[] | undefined): string | null {

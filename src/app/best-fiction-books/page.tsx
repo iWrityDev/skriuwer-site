@@ -19,7 +19,7 @@ export default function BestFictionBooksPage() {
   return (
     <BestOfPage
       title="Best Fiction Books of All Time"
-      description="Great fiction doesn't just tell a story — it changes how you see the world. These are the best fiction books ranked by reader popularity, spanning literary novels, psychological thrillers, and genre-defining classics."
+      description="Great fiction doesn't just tell a story, it changes how you see the world. These are the best fiction books ranked by reader popularity, spanning literary novels, psychological thrillers, and genre-defining classics."
       books={books}
       breadcrumb="Best Fiction Books of All Time"
       categoryPage="/category/fiction"

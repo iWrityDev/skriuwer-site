@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Book Reading Lists — Curated by Category",
+  title: "Best Book Reading Lists, Curated by Category",
   description:
-    "Explore our curated reading lists — the best history books, best mythology books, best conspiracy books, best language learning books, and more. Each list ranked by reader popularity.",
+    "Explore our curated reading lists, the best history books, best mythology books, best conspiracy books, best language learning books, and more. Each list ranked by reader popularity.",
   alternates: { canonical: "https://skriuwer.com/reading-lists" },
 };
 
@@ -75,7 +75,7 @@ export default function ReadingListsPage() {
         <h1 className="text-2xl font-bold text-[var(--color-text)]">Reading Lists</h1>
       </div>
       <p className="text-[var(--color-text-muted)] mb-10 ml-5">
-        {totalLists} curated reading lists — every book ranked by reader popularity.
+        {totalLists} curated reading lists, every book ranked by reader popularity.
       </p>
 
       <div className="space-y-10">

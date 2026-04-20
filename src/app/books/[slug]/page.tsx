@@ -270,7 +270,7 @@ export default async function BookPage({
           )}
         </div>
 
-        {/* Tags (additional tags only — primary categories are already at the top) */}
+        {/* Tags (additional tags only, primary categories are already at the top) */}
         {book.tags.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-8">
             {book.tags.map((tag) => (

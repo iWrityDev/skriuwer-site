@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Skriuwer.com — Book Recommendations & Reviews",
+    default: "Skriuwer.com, Book Recommendations & Reviews",
     template: "%s – Skriuwer.com",
   },
   description:

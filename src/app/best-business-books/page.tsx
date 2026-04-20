@@ -25,7 +25,7 @@ export default function BestBusinessBooksPage() {
   return (
     <BestOfPage
       title="Best Business Books"
-      description="The best business books don't just teach tactics — they change how you see markets, money, and people. These are the top-rated titles on entrepreneurship, investing, leadership, and finance, ranked by the readers who applied them."
+      description="The best business books don't just teach tactics, they change how you see markets, money, and people. These are the top-rated titles on entrepreneurship, investing, leadership, and finance, ranked by the readers who applied them."
       books={books}
       breadcrumb="Best Business Books"
       categoryPage="/category/business"

@@ -22,7 +22,7 @@ export default function BestBooksForHistoryLoversPage() {
   return (
     <BestOfPage
       title="Best Books for History Lovers"
-      description="History lovers know that the past is never as simple as textbooks suggest — it is messier, stranger, and far more gripping. These are the top-rated history books across all eras and topics, ranked by readers who couldn't stop at just one."
+      description="History lovers know that the past is never as simple as textbooks suggest, it is messier, stranger, and far more gripping. These are the top-rated history books across all eras and topics, ranked by readers who couldn't stop at just one."
       books={books}
       breadcrumb="Best Books for History Lovers"
       categoryPage="/category/history"
