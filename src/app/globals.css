@@ -12,12 +12,16 @@
   --color-teal: #14b8a6;
   --color-teal-dim: rgba(20, 184, 166, 0.15);
 
-  /* ===== Background & surfaces ===== */
-  --color-bg: #0a0e1a;
-  --color-surface: #111827;
-  --color-surface-light: #1a2236;
-  --color-surface-border: rgba(232, 100, 10, 0.15);
-  --color-card-gradient: linear-gradient(180deg, #141c2e 0%, #0f1524 100%);
+  /* ===== Background & surfaces =====
+     Base is a warm deep navy rather than OLED black — just enough
+     tint that the orange/gold accents feel "on top" of something,
+     not floating over a void. Surfaces step up from bg in +3-4
+     lightness increments to keep card/bg contrast readable. */
+  --color-bg: #0f1524;
+  --color-surface: #17213a;
+  --color-surface-light: #202b48;
+  --color-surface-border: rgba(232, 100, 10, 0.18);
+  --color-card-gradient: linear-gradient(180deg, #1b274a 0%, #141d34 100%);
 
   /* ===== Text ===== */
   /* Contrast fixes — muted/dim used to be 0.55/0.35 which failed WCAG AA on #0a0e1a */
