@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Viking Books in 2026, Ranked by Reader Reviews",
   description:
     "The 15 best Viking books in 2026, ranked by Amazon reviews. Covers Viking history (Neil Price, John Haywood), sagas (Njal, Egil, Volsungs), and the best-rated Viking historical fiction and archaeological deep-dives.",
-  alternates: { canonical: "https://skriuwer.com/best-viking-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-viking-books" },
 };
 
 const INTRO_PARAGRAPHS = [
@@ -64,7 +64,7 @@ export default function BestVikingBooksPage() {
       breadcrumb="Best Viking Books"
       categoryPage="/category/mythology"
       categoryLabel="mythology"
-      canonical="https://skriuwer.com/best-viking-books"
+      canonical="https://www.skriuwer.com/best-viking-books"
       intro={INTRO_PARAGRAPHS}
       faq={FAQ}
       showComparison

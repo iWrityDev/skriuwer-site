@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Books on Ancient Civilizations in 2026",
   description:
     "The best books on ancient civilizations, Greece, Rome, Egypt, and more. Ranked by reader reviews, covering the history, culture, and legacy of the world's earliest great empires.",
-  alternates: { canonical: "https://skriuwer.com/best-ancient-civilizations-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-ancient-civilizations-books" },
 };
 
 export default function BestAncientCivilizationsBooksPage() {
@@ -33,7 +33,7 @@ export default function BestAncientCivilizationsBooksPage() {
       breadcrumb="Best Books on Ancient Civilizations"
       categoryPage="/category/history"
       categoryLabel="history"
-      canonical="https://skriuwer.com/best-ancient-civilizations-books"
+      canonical="https://www.skriuwer.com/best-ancient-civilizations-books"
     />
   );
 }

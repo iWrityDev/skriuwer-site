@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description:
     "Discover the best books across history, mythology, language learning, psychology, true crime, and more. Curated lists with Amazon affiliate links.",
-  metadataBase: new URL("https://skriuwer.com"),
+  metadataBase: new URL("https://www.skriuwer.com"),
   openGraph: {
     siteName: "Skriuwer.com",
     type: "website",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     types: {
-      "application/rss+xml": "https://skriuwer.com/feed.xml",
+      "application/rss+xml": "https://www.skriuwer.com/feed.xml",
     },
   },
 };

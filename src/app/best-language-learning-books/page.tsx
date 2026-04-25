@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Language Learning Books in 2026",
   description:
     "The best books for learning a new language, from bilingual short story collections to vocabulary guides. Ranked by reader reviews across dozens of language pairs.",
-  alternates: { canonical: "https://skriuwer.com/best-language-learning-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-language-learning-books" },
 };
 
 export default function BestLanguageLearningBooksPage() {
@@ -24,7 +24,7 @@ export default function BestLanguageLearningBooksPage() {
       breadcrumb="Best Language Learning Books"
       categoryPage="/category/language-learning"
       categoryLabel="language learning"
-      canonical="https://skriuwer.com/best-language-learning-books"
+      canonical="https://www.skriuwer.com/best-language-learning-books"
     />
   );
 }

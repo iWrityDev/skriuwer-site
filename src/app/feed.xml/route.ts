@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 export function GET() {
   const posts = getAllBlogPosts().slice(0, 50); // Last 50 posts in feed
-  const siteUrl = "https://skriuwer.com";
+  const siteUrl = "https://www.skriuwer.com";
 
   const items = posts
     .map((post) => {

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Dark History Books in 2026 | True Stories of Horror & Brutality",
   description:
     "The best dark history books ranked by reader reviews. Uncover the gruesome, brutal, and disturbing facts from history that mainstream textbooks leave out.",
-  alternates: { canonical: "https://skriuwer.com/best-dark-history-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-dark-history-books" },
 };
 
 export default function BestDarkHistoryBooksPage() {
@@ -24,7 +24,7 @@ export default function BestDarkHistoryBooksPage() {
       breadcrumb="Best Dark History Books"
       categoryPage="/category/dark-history"
       categoryLabel="dark history"
-      canonical="https://skriuwer.com/best-dark-history-books"
+      canonical="https://www.skriuwer.com/best-dark-history-books"
     />
   );
 }

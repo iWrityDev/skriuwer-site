@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Bilingual Books for Language Learners in 2026",
   description:
     "The best bilingual books for learning a new language. Side-by-side parallel text in dozens of language pairs, the natural, enjoyable way to build fluency.",
-  alternates: { canonical: "https://skriuwer.com/best-bilingual-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-bilingual-books" },
 };
 
 export default function BestBilingualBooksPage() {
@@ -31,7 +31,7 @@ export default function BestBilingualBooksPage() {
       breadcrumb="Best Bilingual Books for Language Learners"
       categoryPage="/category/language-learning"
       categoryLabel="language learning"
-      canonical="https://skriuwer.com/best-bilingual-books"
+      canonical="https://www.skriuwer.com/best-bilingual-books"
     />
   );
 }

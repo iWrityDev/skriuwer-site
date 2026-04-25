@@ -47,7 +47,7 @@ export async function generateMetadata({
       siteName: "Skriuwer.com",
     },
     alternates: {
-      canonical: `https://skriuwer.com/blog/${slug}`,
+      canonical: `https://www.skriuwer.com/blog/${slug}`,
     },
   };
 }
@@ -124,24 +124,24 @@ export default async function BlogPostPage({
     description,
     datePublished: post.date,
     dateModified: post.date,
-    url: `https://skriuwer.com/blog/${slug}`,
+    url: `https://www.skriuwer.com/blog/${slug}`,
     author: {
       "@type": "Organization",
       name: "Skriuwer",
-      url: "https://skriuwer.com",
+      url: "https://www.skriuwer.com",
     },
     publisher: {
       "@type": "Organization",
       name: "Skriuwer.com",
-      url: "https://skriuwer.com",
+      url: "https://www.skriuwer.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://skriuwer.com/logo.png",
+        url: "https://www.skriuwer.com/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://skriuwer.com/blog/${slug}`,
+      "@id": `https://www.skriuwer.com/blog/${slug}`,
     },
   };
 

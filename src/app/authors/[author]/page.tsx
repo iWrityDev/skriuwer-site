@@ -21,7 +21,7 @@ export async function generateMetadata({
   return {
     title: `${author.name}, ${author.role} at Skriuwer`,
     description: `${author.bio[0].slice(0, 155)}`,
-    alternates: { canonical: `https://skriuwer.com/authors/${slug}` },
+    alternates: { canonical: `https://www.skriuwer.com/authors/${slug}` },
   };
 }
 
@@ -57,9 +57,9 @@ export default async function AuthorPage({
     worksFor: {
       "@type": "Organization",
       name: "Skriuwer",
-      url: "https://skriuwer.com",
+      url: "https://www.skriuwer.com",
     },
-    url: `https://skriuwer.com/authors/${slug}`,
+    url: `https://www.skriuwer.com/authors/${slug}`,
     description: author.bio[0],
     knowsAbout: author.specialties,
   };

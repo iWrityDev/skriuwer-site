@@ -6,7 +6,7 @@ import { BestOfPage } from "@/components/BestOfPage";
 export const metadata: Metadata = {
   title: "Best Mindset Books, Books That Will Change How You Think",
   description: "The best books on mindset, growth, and mental strength, ranked by reader reviews. These titles will rewire how you think and push you forward.",
-  alternates: { canonical: "https://skriuwer.com/best-mindset-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-mindset-books" },
 };
 
 export default function BestMindsetBooksPage() {
@@ -23,7 +23,7 @@ export default function BestMindsetBooksPage() {
       breadcrumb="Best Mindset Books"
       categoryPage="/category/self-help"
       categoryLabel="self-help"
-      canonical="https://skriuwer.com/best-mindset-books"
+      canonical="https://www.skriuwer.com/best-mindset-books"
     />
   );
 }

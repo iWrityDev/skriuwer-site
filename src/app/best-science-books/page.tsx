@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Popular Science Books in 2026 | Top Reads on Science & Nature",
   description:
     "The best popular science books ranked by reader reviews. Discover groundbreaking ideas in physics, biology, cosmology, and the natural world, written to captivate every reader.",
-  alternates: { canonical: "https://skriuwer.com/best-science-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-science-books" },
 };
 
 export default function BestScienceBooksPage() {
@@ -24,7 +24,7 @@ export default function BestScienceBooksPage() {
       breadcrumb="Best Popular Science Books"
       categoryPage="/category/science"
       categoryLabel="science & nature"
-      canonical="https://skriuwer.com/best-science-books"
+      canonical="https://www.skriuwer.com/best-science-books"
     />
   );
 }

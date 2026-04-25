@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Gifts for History Lovers, Books They'll Actually Read",
   description:
     "The best history books to give as gifts in 2026. Top-rated, beautifully written, and available on Amazon with fast shipping. Curated for anyone who loves history.",
-  alternates: { canonical: "https://skriuwer.com/gift-guides/history-lovers" },
+  alternates: { canonical: "https://www.skriuwer.com/gift-guides/history-lovers" },
 };
 
 const INTRO = [
@@ -28,7 +28,7 @@ export default function GiftHistoryLoversPage() {
       breadcrumb="History Lover Gifts"
       categoryPage="/category/history"
       categoryLabel="history"
-      canonical="https://skriuwer.com/gift-guides/history-lovers"
+      canonical="https://www.skriuwer.com/gift-guides/history-lovers"
       reviewer="Auke & the Skriuwer Team"
       updatedDate="April 2026"
       intro={INTRO}

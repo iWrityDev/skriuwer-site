@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best World War 2 Books in 2026, Ranked by Reader Reviews",
   description:
     "The 15 best World War 2 books in 2026, ranked by Amazon reviews. Covers grand strategy (Beevor, Hastings, Roberts), personal memoirs, Holocaust accounts, Pacific theater, code-breakers, and the most acclaimed WW2 historical fiction.",
-  alternates: { canonical: "https://skriuwer.com/best-world-war-2-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-world-war-2-books" },
 };
 
 const INTRO_PARAGRAPHS = [
@@ -76,7 +76,7 @@ export default function BestWW2BooksPage() {
       breadcrumb="Best WW2 Books"
       categoryPage="/category/history"
       categoryLabel="history"
-      canonical="https://skriuwer.com/best-world-war-2-books"
+      canonical="https://www.skriuwer.com/best-world-war-2-books"
       intro={INTRO_PARAGRAPHS}
       faq={FAQ}
       showComparison

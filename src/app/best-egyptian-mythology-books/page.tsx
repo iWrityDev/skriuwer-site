@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Egyptian Mythology Books in 2026 | Top Reads on Ancient Egypt",
   description:
     "The best Egyptian mythology books ranked by reader reviews. Discover the gods, pharaohs, and sacred rituals of ancient Egypt, from Osiris and Ra to the mysteries of the pyramids.",
-  alternates: { canonical: "https://skriuwer.com/best-egyptian-mythology-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-egyptian-mythology-books" },
 };
 
 export default function BestEgyptianMythologyBooksPage() {
@@ -27,7 +27,7 @@ export default function BestEgyptianMythologyBooksPage() {
       breadcrumb="Best Egyptian Mythology Books"
       categoryPage="/category/mythology"
       categoryLabel="mythology"
-      canonical="https://skriuwer.com/best-egyptian-mythology-books"
+      canonical="https://www.skriuwer.com/best-egyptian-mythology-books"
     />
   );
 }

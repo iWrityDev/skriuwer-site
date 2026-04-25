@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Books for Book Clubs, Discussion-Worthy Picks for 2026",
   description:
     "The best books for book clubs in 2026. Books with rich themes, compelling characters, and ideas that generate great discussion, all available on Amazon.",
-  alternates: { canonical: "https://skriuwer.com/gift-guides/book-club" },
+  alternates: { canonical: "https://www.skriuwer.com/gift-guides/book-club" },
 };
 
 const INTRO = [
@@ -50,7 +50,7 @@ export default function GiftBookClubPage() {
       breadcrumb="Book Club Picks"
       categoryPage="/reading-lists"
       categoryLabel="reading list"
-      canonical="https://skriuwer.com/gift-guides/book-club"
+      canonical="https://www.skriuwer.com/gift-guides/book-club"
       reviewer="Jennifer Joseph & the Skriuwer Team"
       updatedDate="April 2026"
       intro={INTRO}

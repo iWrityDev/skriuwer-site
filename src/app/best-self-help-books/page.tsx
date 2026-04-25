@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Self-Help Books in 2026 | Top Picks Ranked by Readers",
   description:
     "The best self-help books ranked by reader reviews. From building better habits to unlocking your mindset, these top picks have helped millions of people improve their lives.",
-  alternates: { canonical: "https://skriuwer.com/best-self-help-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-self-help-books" },
 };
 
 export default function BestSelfHelpBooksPage() {
@@ -24,7 +24,7 @@ export default function BestSelfHelpBooksPage() {
       breadcrumb="Best Self-Help Books"
       categoryPage="/category/self-help"
       categoryLabel="self-help"
-      canonical="https://skriuwer.com/best-self-help-books"
+      canonical="https://www.skriuwer.com/best-self-help-books"
     />
   );
 }

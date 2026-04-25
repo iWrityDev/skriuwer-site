@@ -80,7 +80,7 @@ export function BestOfPage({
         author: {
           "@type": "Organization",
           name: "Skriuwer",
-          url: "https://skriuwer.com/about",
+          url: "https://www.skriuwer.com/about",
         },
         mainEntity: {
           "@type": "ItemList",
@@ -89,7 +89,7 @@ export function BestOfPage({
             "@type": "ListItem",
             position: i + 1,
             name: book.title,
-            url: `https://skriuwer.com/books/${book.slug}`,
+            url: `https://www.skriuwer.com/books/${book.slug}`,
           })),
         },
       }

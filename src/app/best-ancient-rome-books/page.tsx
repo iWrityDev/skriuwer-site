@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Books About Ancient Rome in 2026 | Top Roman History Picks",
   description:
     "The best books about Ancient Rome ranked by reader reviews. From Julius Caesar and the Republic to the fall of the Empire, these are the essential reads for Roman history fans.",
-  alternates: { canonical: "https://skriuwer.com/best-ancient-rome-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-ancient-rome-books" },
 };
 
 export default function BestAncientRomeBooksPage() {
@@ -27,7 +27,7 @@ export default function BestAncientRomeBooksPage() {
       breadcrumb="Best Ancient Rome Books"
       categoryPage="/category/history"
       categoryLabel="history"
-      canonical="https://skriuwer.com/best-ancient-rome-books"
+      canonical="https://www.skriuwer.com/best-ancient-rome-books"
     />
   );
 }

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Best Book Reading Lists, Curated by Category",
   description:
     "Explore our curated reading lists, the best history books, best mythology books, best conspiracy books, best language learning books, and more. Each list ranked by reader popularity.",
-  alternates: { canonical: "https://skriuwer.com/reading-lists" },
+  alternates: { canonical: "https://www.skriuwer.com/reading-lists" },
 };
 
 const LISTS = [

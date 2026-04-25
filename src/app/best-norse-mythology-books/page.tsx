@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Norse Mythology Books in 2026, Ranked by Reader Reviews",
   description:
     "The 15 best Norse mythology books in 2026, ranked by Amazon reviews. From Neil Gaiman's accessible retelling to Snorri Sturluson's original Eddas, plus Viking sagas and modern fiction based on Odin, Thor, and Ragnarok.",
-  alternates: { canonical: "https://skriuwer.com/best-norse-mythology-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-norse-mythology-books" },
 };
 
 const INTRO_PARAGRAPHS = [
@@ -64,7 +64,7 @@ export default function BestNorseMythologyBooksPage() {
       breadcrumb="Best Norse Mythology Books"
       categoryPage="/category/mythology"
       categoryLabel="mythology"
-      canonical="https://skriuwer.com/best-norse-mythology-books"
+      canonical="https://www.skriuwer.com/best-norse-mythology-books"
       intro={INTRO_PARAGRAPHS}
       faq={FAQ}
       showComparison

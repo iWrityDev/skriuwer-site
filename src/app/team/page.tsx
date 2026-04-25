@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Meet the Authors",
   description: "Meet the team behind Skriuwer.com, authors and editors passionate about history, mythology, language, and culture.",
-  alternates: { canonical: "https://skriuwer.com/team" },
+  alternates: { canonical: "https://www.skriuwer.com/team" },
 };
 
 const authors = [

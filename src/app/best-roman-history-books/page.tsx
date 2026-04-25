@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Roman History Books in 2026",
   description:
     "The best books on Roman history, from the Republic to the fall of the Empire. Ranked by reader reviews, these titles cover everything from Julius Caesar to the legions that shaped Western civilization.",
-  alternates: { canonical: "https://skriuwer.com/best-roman-history-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-roman-history-books" },
 };
 
 export default function BestRomanHistoryBooksPage() {
@@ -28,7 +28,7 @@ export default function BestRomanHistoryBooksPage() {
       breadcrumb="Best Roman History Books"
       categoryPage="/category/history"
       categoryLabel="history"
-      canonical="https://skriuwer.com/best-roman-history-books"
+      canonical="https://www.skriuwer.com/best-roman-history-books"
     />
   );
 }

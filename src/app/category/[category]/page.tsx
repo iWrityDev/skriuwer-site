@@ -24,7 +24,7 @@ export async function generateMetadata({
   return {
     title: `Best ${cat.name} Books, Top Picks for ${new Date().getFullYear()}`,
     description: `${cat.description} Browse our curated collection of the best ${cat.name.toLowerCase()} books, all available on Amazon.`,
-    alternates: { canonical: `https://skriuwer.com/category/${category}` },
+    alternates: { canonical: `https://www.skriuwer.com/category/${category}` },
   };
 }
 
@@ -93,7 +93,7 @@ export default async function CategoryPage({
     "@type": "CollectionPage",
     name: `Best ${cat.name} Books`,
     description: cat.description,
-    url: `https://skriuwer.com/category/${category}`,
+    url: `https://www.skriuwer.com/category/${category}`,
   };
 
   return (

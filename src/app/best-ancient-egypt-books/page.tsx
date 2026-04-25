@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Books About Ancient Egypt in 2026 | Top Picks for Egypt Fans",
   description:
     "The best books about Ancient Egypt ranked by reader reviews. From the pharaohs and pyramids to Egyptian mythology and daily life, discover the top picks for Egypt enthusiasts.",
-  alternates: { canonical: "https://skriuwer.com/best-ancient-egypt-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-ancient-egypt-books" },
 };
 
 export default function BestAncientEgyptBooksPage() {
@@ -27,7 +27,7 @@ export default function BestAncientEgyptBooksPage() {
       breadcrumb="Best Ancient Egypt Books"
       categoryPage="/category/history"
       categoryLabel="history"
-      canonical="https://skriuwer.com/best-ancient-egypt-books"
+      canonical="https://www.skriuwer.com/best-ancient-egypt-books"
     />
   );
 }

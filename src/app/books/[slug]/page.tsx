@@ -38,7 +38,7 @@ export async function generateMetadata({
   return {
     title: fullTitle,
     description,
-    alternates: { canonical: `https://skriuwer.com/books/${slug}` },
+    alternates: { canonical: `https://www.skriuwer.com/books/${slug}` },
     openGraph: {
       title: book.title,
       description,
@@ -72,7 +72,7 @@ export default async function BookPage({
     image: book.coverImage,
     description: cleanDescription.slice(0, 300),
     author: { "@type": "Person", name: book.author },
-    url: `https://skriuwer.com/books/${slug}`,
+    url: `https://www.skriuwer.com/books/${slug}`,
     ...(book.pages && book.pages > 0 && { numberOfPages: book.pages }),
     ...(book.publishedDate && { datePublished: book.publishedDate }),
     ...(book.language && { inLanguage: book.language }),
@@ -104,12 +104,12 @@ export default async function BookPage({
         author: {
           "@type": "Organization",
           name: "Skriuwer",
-          url: "https://skriuwer.com/about",
+          url: "https://www.skriuwer.com/about",
         },
         publisher: {
           "@type": "Organization",
           name: "Skriuwer",
-          url: "https://skriuwer.com",
+          url: "https://www.skriuwer.com",
         },
       },
     }),
@@ -119,12 +119,12 @@ export default async function BookPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://skriuwer.com" },
-      { "@type": "ListItem", position: 2, name: "Books", item: "https://skriuwer.com/books" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.skriuwer.com" },
+      { "@type": "ListItem", position: 2, name: "Books", item: "https://www.skriuwer.com/books" },
       ...(book.categories[0]
-        ? [{ "@type": "ListItem", position: 3, name: book.categories[0].replace(/-/g, " "), item: `https://skriuwer.com/category/${book.categories[0]}` }]
+        ? [{ "@type": "ListItem", position: 3, name: book.categories[0].replace(/-/g, " "), item: `https://www.skriuwer.com/category/${book.categories[0]}` }]
         : []),
-      { "@type": "ListItem", position: book.categories[0] ? 4 : 3, name: book.title, item: `https://skriuwer.com/books/${slug}` },
+      { "@type": "ListItem", position: book.categories[0] ? 4 : 3, name: book.title, item: `https://www.skriuwer.com/books/${slug}` },
     ],
   };
 

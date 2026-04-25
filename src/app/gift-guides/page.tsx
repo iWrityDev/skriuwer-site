@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Book Gift Guides, Perfect Books for Every Reader",
   description:
     "Find the perfect book as a gift. Curated gift guides for history lovers, mythology fans, book clubs, and more, all available on Amazon with fast shipping.",
-  alternates: { canonical: "https://skriuwer.com/gift-guides" },
+  alternates: { canonical: "https://www.skriuwer.com/gift-guides" },
 };
 
 const GUIDES = [

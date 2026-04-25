@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Books for History Lovers in 2026 | Top History Reads Ranked",
   description:
     "The best books for history lovers, ranked by reader reviews. From ancient civilisations and world wars to dark historical secrets, these are the essential reads for every history enthusiast.",
-  alternates: { canonical: "https://skriuwer.com/best-books-for-history-lovers" },
+  alternates: { canonical: "https://www.skriuwer.com/best-books-for-history-lovers" },
 };
 
 export default function BestBooksForHistoryLoversPage() {
@@ -27,7 +27,7 @@ export default function BestBooksForHistoryLoversPage() {
       breadcrumb="Best Books for History Lovers"
       categoryPage="/category/history"
       categoryLabel="history"
-      canonical="https://skriuwer.com/best-books-for-history-lovers"
+      canonical="https://www.skriuwer.com/best-books-for-history-lovers"
     />
   );
 }

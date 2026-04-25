@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Privacy policy for Skriuwer.com, how we handle data and use Amazon affiliate links.",
-  alternates: { canonical: "https://skriuwer.com/privacy-policy" },
+  alternates: { canonical: "https://www.skriuwer.com/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

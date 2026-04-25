@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Business Books in 2026 | Top Books on Finance & Entrepreneurship",
   description:
     "The best business books ranked by reader reviews. Whether you want to start a company, invest smarter, or lead better, these are the titles serious professionals recommend.",
-  alternates: { canonical: "https://skriuwer.com/best-business-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-business-books" },
 };
 
 export default function BestBusinessBooksPage() {
@@ -30,7 +30,7 @@ export default function BestBusinessBooksPage() {
       breadcrumb="Best Business Books"
       categoryPage="/category/business"
       categoryLabel="business & finance"
-      canonical="https://skriuwer.com/best-business-books"
+      canonical="https://www.skriuwer.com/best-business-books"
     />
   );
 }

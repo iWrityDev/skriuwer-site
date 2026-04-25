@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Conspiracy Books in 2026, Cover-Ups & Hidden History",
   description:
     "The best conspiracy and dark history books ranked by readers. Real cover-ups, suppressed facts, and the events they don't put in textbooks. Editor-curated and reviewed.",
-  alternates: { canonical: "https://skriuwer.com/best-conspiracy-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-conspiracy-books" },
 };
 
 const INTRO = [
@@ -47,7 +47,7 @@ export default function BestConspiracyBooksPage() {
       breadcrumb="Best Conspiracy Books"
       categoryPage="/category/conspiracy"
       categoryLabel="conspiracy"
-      canonical="https://skriuwer.com/best-conspiracy-books"
+      canonical="https://www.skriuwer.com/best-conspiracy-books"
       reviewer="Auke & the Skriuwer Team"
       updatedDate="April 2026"
       intro={INTRO}

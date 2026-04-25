@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Books on Stoicism in 2026 | Top Reads on Stoic Philosophy",
   description:
     "The best Stoicism books ranked by reader reviews. From Marcus Aurelius and Seneca to modern guides on Stoic living, these are the essential reads for anyone drawn to ancient wisdom.",
-  alternates: { canonical: "https://skriuwer.com/best-stoicism-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-stoicism-books" },
 };
 
 export default function BestStoicismBooksPage() {
@@ -27,7 +27,7 @@ export default function BestStoicismBooksPage() {
       breadcrumb="Best Books on Stoicism"
       categoryPage="/category/philosophy"
       categoryLabel="philosophy"
-      canonical="https://skriuwer.com/best-stoicism-books"
+      canonical="https://www.skriuwer.com/best-stoicism-books"
     />
   );
 }

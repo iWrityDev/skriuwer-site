@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Frisian Books in 2026",
   description:
     "The best books for learning and exploring the Frisian language, one of Europe's oldest and most fascinating minority languages. From beginner guides to bilingual readers.",
-  alternates: { canonical: "https://skriuwer.com/best-frisian-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-frisian-books" },
 };
 
 export default function BestFrisianBooksPage() {
@@ -27,7 +27,7 @@ export default function BestFrisianBooksPage() {
       breadcrumb="Best Frisian Books"
       categoryPage="/category/language-learning"
       categoryLabel="language learning"
-      canonical="https://skriuwer.com/best-frisian-books"
+      canonical="https://www.skriuwer.com/best-frisian-books"
     />
   );
 }

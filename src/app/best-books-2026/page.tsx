@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Books of 2026 | Top Rated Books Right Now",
   description:
     "The best books of 2026 ranked by reader reviews. The most popular and highly rated titles across all genres, history, mythology, self-help, fiction, and more.",
-  alternates: { canonical: "https://skriuwer.com/best-books-2026" },
+  alternates: { canonical: "https://www.skriuwer.com/best-books-2026" },
 };
 
 export default function BestBooks2026Page() {
@@ -24,7 +24,7 @@ export default function BestBooks2026Page() {
       breadcrumb="Best Books of 2026"
       categoryPage="/bestsellers"
       categoryLabel="bestseller"
-      canonical="https://skriuwer.com/best-books-2026"
+      canonical="https://www.skriuwer.com/best-books-2026"
     />
   );
 }

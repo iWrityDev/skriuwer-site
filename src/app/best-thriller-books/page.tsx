@@ -6,7 +6,7 @@ import { BestOfPage } from "@/components/BestOfPage";
 export const metadata: Metadata = {
   title: "Best Thriller Books, Page-Turning Reads for 2026",
   description: "The best thriller novels ranked by reader reviews. Heart-pounding suspense, twists you won't see coming, and characters you can't forget.",
-  alternates: { canonical: "https://skriuwer.com/best-thriller-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-thriller-books" },
 };
 
 export default function BestThrillerBooksPage() {
@@ -23,7 +23,7 @@ export default function BestThrillerBooksPage() {
       breadcrumb="Best Thriller Books"
       categoryPage="/category/fiction"
       categoryLabel="fiction"
-      canonical="https://skriuwer.com/best-thriller-books"
+      canonical="https://www.skriuwer.com/best-thriller-books"
     />
   );
 }

@@ -45,7 +45,7 @@ const BEST_OF_SLUGS = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://skriuwer.com";
+  const baseUrl = "https://www.skriuwer.com";
   const books = getAllBooks();
 
   const bookEntries: MetadataRoute.Sitemap = books.map((book) => ({

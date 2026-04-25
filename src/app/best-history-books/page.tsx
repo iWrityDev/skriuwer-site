@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best History Books in 2026, Ranked by 100,000+ Readers",
   description:
     "The 15 best history books of 2026, ranked by reader reviews. Ancient civilizations, wars, empires, and the events that shaped the modern world. Each pick reviewed by our editors.",
-  alternates: { canonical: "https://skriuwer.com/best-history-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-history-books" },
 };
 
 const INTRO = [
@@ -51,7 +51,7 @@ export default function BestHistoryBooksPage() {
       breadcrumb="Best History Books"
       categoryPage="/category/history"
       categoryLabel="history"
-      canonical="https://skriuwer.com/best-history-books"
+      canonical="https://www.skriuwer.com/best-history-books"
       reviewer="Auke & the Skriuwer Team"
       updatedDate="April 2026"
       intro={INTRO}

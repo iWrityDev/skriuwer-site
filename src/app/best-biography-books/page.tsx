@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Biography Books in 2026, Lives Worth Reading About",
   description:
     "The best biographies and memoirs ranked by reader reviews. True stories of remarkable people, leaders, visionaries, and survivors, reviewed by our editors.",
-  alternates: { canonical: "https://skriuwer.com/best-biography-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-biography-books" },
 };
 
 const INTRO = [
@@ -47,7 +47,7 @@ export default function BestBiographyBooksPage() {
       breadcrumb="Best Biography Books"
       categoryPage="/category/biography"
       categoryLabel="biography"
-      canonical="https://skriuwer.com/best-biography-books"
+      canonical="https://www.skriuwer.com/best-biography-books"
       reviewer="Auke & the Skriuwer Team"
       updatedDate="April 2026"
       intro={INTRO}

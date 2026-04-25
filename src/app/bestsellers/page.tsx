@@ -9,7 +9,7 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "Bestselling Books, Most Reviewed & Highest Rated",
   description: "Discover the most popular books right now, ranked by reader reviews across history, mythology, psychology, business, and more. Updated daily.",
-  alternates: { canonical: "https://skriuwer.com/bestsellers" },
+  alternates: { canonical: "https://www.skriuwer.com/bestsellers" },
 };
 
 export default function BestsellersPage() {

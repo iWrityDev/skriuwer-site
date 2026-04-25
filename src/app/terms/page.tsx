@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Terms of Service for Skriuwer.com, an Amazon affiliate book discovery site.",
-  alternates: { canonical: "https://skriuwer.com/terms" },
+  alternates: { canonical: "https://www.skriuwer.com/terms" },
 };
 
 export default function TermsPage() {

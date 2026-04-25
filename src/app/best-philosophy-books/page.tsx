@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Philosophy Books in 2026 | Top Reads from Plato to Nietzsche",
   description:
     "The best philosophy books ranked by reader reviews. From ancient Stoics to modern existentialists, these essential works will challenge how you think about life, meaning, and ethics.",
-  alternates: { canonical: "https://skriuwer.com/best-philosophy-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-philosophy-books" },
 };
 
 export default function BestPhilosophyBooksPage() {
@@ -30,7 +30,7 @@ export default function BestPhilosophyBooksPage() {
       breadcrumb="Best Philosophy Books"
       categoryPage="/category/philosophy"
       categoryLabel="philosophy"
-      canonical="https://skriuwer.com/best-philosophy-books"
+      canonical="https://www.skriuwer.com/best-philosophy-books"
     />
   );
 }

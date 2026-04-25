@@ -5,7 +5,7 @@ import { getAllBlogPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Blog, History, Mythology, Psychology & More",
   description: "300+ articles about ancient history, mythology, language learning, true crime, psychology, science, and business. New posts added regularly.",
-  alternates: { canonical: "https://skriuwer.com/blog" },
+  alternates: { canonical: "https://www.skriuwer.com/blog" },
 };
 
 const CATEGORY_LABELS: Record<string, string> = {

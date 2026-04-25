@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Greek Mythology Books in 2026, Ranked by Reader Reviews",
   description:
     "The 15 best Greek mythology books worth reading in 2026, ranked by Amazon reviews. From dark retellings like Circe and The Song of Achilles to classic collections by Edith Hamilton and Stephen Fry, plus hidden gems we actually finished.",
-  alternates: { canonical: "https://skriuwer.com/best-greek-mythology-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-greek-mythology-books" },
 };
 
 const INTRO_PARAGRAPHS = [
@@ -61,7 +61,7 @@ export default function BestGreekMythologyBooksPage() {
       breadcrumb="Best Greek Mythology Books"
       categoryPage="/category/mythology"
       categoryLabel="mythology"
-      canonical="https://skriuwer.com/best-greek-mythology-books"
+      canonical="https://www.skriuwer.com/best-greek-mythology-books"
       intro={INTRO_PARAGRAPHS}
       faq={FAQ}
       showComparison

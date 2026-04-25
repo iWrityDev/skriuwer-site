@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Psychology Books in 2026, Understanding the Human Mind",
   description:
     "The best psychology books ranked by reader reviews. How the mind works, why people behave the way they do, and what science reveals about human nature. Editor-reviewed picks.",
-  alternates: { canonical: "https://skriuwer.com/best-psychology-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-psychology-books" },
 };
 
 const INTRO = [
@@ -47,7 +47,7 @@ export default function BestPsychologyBooksPage() {
       breadcrumb="Best Psychology Books"
       categoryPage="/category/psychology"
       categoryLabel="psychology"
-      canonical="https://skriuwer.com/best-psychology-books"
+      canonical="https://www.skriuwer.com/best-psychology-books"
       reviewer="Jennifer Joseph & the Skriuwer Team"
       updatedDate="April 2026"
       intro={INTRO}

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Books on Religion & Spirituality in 2026 | Top Reads Ranked",
   description:
     "The best books on religion and spirituality ranked by reader reviews. Explore faith traditions, biblical history, and spiritual wisdom from across the world's great religions.",
-  alternates: { canonical: "https://skriuwer.com/best-religion-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-religion-books" },
 };
 
 export default function BestReligionBooksPage() {
@@ -24,7 +24,7 @@ export default function BestReligionBooksPage() {
       breadcrumb="Best Books on Religion & Spirituality"
       categoryPage="/category/religion"
       categoryLabel="religion & spirituality"
-      canonical="https://skriuwer.com/best-religion-books"
+      canonical="https://www.skriuwer.com/best-religion-books"
     />
   );
 }

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Best Fiction Books of All Time | Top Novels Ranked by Readers",
   description:
     "The best fiction books of all time ranked by reader reviews. From literary classics to gripping thrillers, these are the novels readers return to again and again.",
-  alternates: { canonical: "https://skriuwer.com/best-fiction-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-fiction-books" },
 };
 
 export default function BestFictionBooksPage() {
@@ -24,7 +24,7 @@ export default function BestFictionBooksPage() {
       breadcrumb="Best Fiction Books of All Time"
       categoryPage="/category/fiction"
       categoryLabel="fiction"
-      canonical="https://skriuwer.com/best-fiction-books"
+      canonical="https://www.skriuwer.com/best-fiction-books"
     />
   );
 }

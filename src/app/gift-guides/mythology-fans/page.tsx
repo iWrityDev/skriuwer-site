@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Gifts for Mythology Fans, Greek, Norse & World Mythology Books",
   description:
     "The best mythology books to give as gifts in 2026. Greek gods, Norse sagas, Egyptian myths, perfect for fans of ancient stories, fantasy, and world culture.",
-  alternates: { canonical: "https://skriuwer.com/gift-guides/mythology-fans" },
+  alternates: { canonical: "https://www.skriuwer.com/gift-guides/mythology-fans" },
 };
 
 const INTRO = [
@@ -28,7 +28,7 @@ export default function GiftMythologyFansPage() {
       breadcrumb="Mythology Fan Gifts"
       categoryPage="/category/mythology"
       categoryLabel="mythology"
-      canonical="https://skriuwer.com/gift-guides/mythology-fans"
+      canonical="https://www.skriuwer.com/gift-guides/mythology-fans"
       reviewer="Yahia Fathy & the Skriuwer Team"
       updatedDate="April 2026"
       intro={INTRO}

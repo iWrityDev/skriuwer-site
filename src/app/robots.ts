@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin"],
     },
-    sitemap: "https://skriuwer.com/sitemap.xml",
+    sitemap: "https://www.skriuwer.com/sitemap.xml",
   };
 }

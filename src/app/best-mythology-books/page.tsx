@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Mythology Books in 2026, Gods, Heroes & Ancient Legends",
   description:
     "The best mythology books ranked by reader reviews. Greek, Norse, Egyptian mythology and beyond, ancient stories that explain everything about human nature. Editor-reviewed picks.",
-  alternates: { canonical: "https://skriuwer.com/best-mythology-books" },
+  alternates: { canonical: "https://www.skriuwer.com/best-mythology-books" },
 };
 
 const INTRO = [
@@ -47,7 +47,7 @@ export default function BestMythologyBooksPage() {
       breadcrumb="Best Mythology Books"
       categoryPage="/category/mythology"
       categoryLabel="mythology"
-      canonical="https://skriuwer.com/best-mythology-books"
+      canonical="https://www.skriuwer.com/best-mythology-books"
       reviewer="Yahia Fathy & the Skriuwer Team"
       updatedDate="April 2026"
       intro={INTRO}

@@ -95,7 +95,7 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Skriuwer.com",
-  url: "https://skriuwer.com",
+  url: "https://www.skriuwer.com",
   description: "An affiliate book discovery site specializing in history, mythology, language learning, and more.",
   address: {
     "@type": "PostalAddress",
@@ -113,12 +113,12 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Skriuwer.com",
-  url: "https://skriuwer.com",
+  url: "https://www.skriuwer.com",
   potentialAction: {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://skriuwer.com/search?q={search_term_string}",
+      urlTemplate: "https://www.skriuwer.com/search?q={search_term_string}",
     },
     "query-input": "required name=search_term_string",
   },

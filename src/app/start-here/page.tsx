@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Start Here, Find Your Next Great Book",
   description:
     "New to Skriuwer? Start here. Find the best books by category, browse our top-ranked reading lists, and discover books our editors love.",
-  alternates: { canonical: "https://skriuwer.com/start-here" },
+  alternates: { canonical: "https://www.skriuwer.com/start-here" },
 };
 
 const CATEGORIES = [
