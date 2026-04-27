@@ -69,6 +69,60 @@ const CAT_NAME_FR: Record<string, string> = {
   frisian: "Langue Frisonne",
 };
 
+const CAT_NAME_ES: Record<string, string> = {
+  history: "Historia",
+  mythology: "Mitología",
+  "dark-history": "Historia Oscura",
+  conspiracy: "Conspiraciones",
+  religion: "Religión & Espiritualidad",
+  "self-help": "Desarrollo Personal",
+  fiction: "Ficción",
+  science: "Ciencia & Naturaleza",
+  biography: "Biografía & Memorias",
+  business: "Negocios & Finanzas",
+  psychology: "Psicología",
+  "true-crime": "Crimen Real",
+  philosophy: "Filosofía",
+  "language-learning": "Aprendizaje de Idiomas",
+  frisian: "Lengua Frisona",
+};
+
+const CAT_NAME_IT: Record<string, string> = {
+  history: "Storia",
+  mythology: "Mitologia",
+  "dark-history": "Storia Oscura",
+  conspiracy: "Complotti",
+  religion: "Religione & Spiritualità",
+  "self-help": "Crescita Personale",
+  fiction: "Narrativa",
+  science: "Scienza & Natura",
+  biography: "Biografia & Memorie",
+  business: "Business & Finanza",
+  psychology: "Psicologia",
+  "true-crime": "True Crime",
+  philosophy: "Filosofia",
+  "language-learning": "Apprendimento Lingue",
+  frisian: "Lingua Frisone",
+};
+
+const CAT_NAME_PT: Record<string, string> = {
+  history: "História",
+  mythology: "Mitologia",
+  "dark-history": "História Sombria",
+  conspiracy: "Conspirações",
+  religion: "Religião & Espiritualidade",
+  "self-help": "Desenvolvimento Pessoal",
+  fiction: "Ficção",
+  science: "Ciência & Natureza",
+  biography: "Biografia & Memórias",
+  business: "Negócios & Finanças",
+  psychology: "Psicologia",
+  "true-crime": "Crime Real",
+  philosophy: "Filosofia",
+  "language-learning": "Aprendizado de Idiomas",
+  frisian: "Língua Frisona",
+};
+
 const PAGE_LABELS = {
   en: {
     home: "Home",
@@ -174,6 +228,84 @@ const PAGE_LABELS = {
     readingListsHref: "/fr",
     homeHref: "/fr",
   },
+  es: {
+    home: "Inicio",
+    readingListsLabel: "Listas de lectura",
+    readingList: "Lista de lectura",
+    curatedBy: "Seleccionado por",
+    updated: "Actualizado",
+    affiliateLinks: "Enlaces de afiliado",
+    bookPlural: "libros",
+    bookSingular: "libro",
+    noBooks: "No se encontraron libros para esta selección.",
+    buyOnAmazon: "Comprar en Amazon →",
+    buyShort: "Comprar →",
+    ourPick: "★ Nuestra Elección",
+    quickComparison: "Comparación rápida, top 5",
+    theRankedList: "El ranking",
+    faqTitle: "Preguntas frecuentes",
+    seeAllBooks: (label: string) => `Ver todos los libros de ${label} →`,
+    moreReadingLists: "← Más listas de lectura",
+    reviews: "reseñas",
+    tableBook: "Libro",
+    tableAuthor: "Autor",
+    tableRating: "Valoración",
+    tablePages: "Páginas",
+    readingListsHref: "/es",
+    homeHref: "/es",
+  },
+  it: {
+    home: "Home",
+    readingListsLabel: "Liste di lettura",
+    readingList: "Lista di lettura",
+    curatedBy: "Selezionato da",
+    updated: "Aggiornato",
+    affiliateLinks: "Link affiliati",
+    bookPlural: "libri",
+    bookSingular: "libro",
+    noBooks: "Nessun libro trovato per questa selezione.",
+    buyOnAmazon: "Acquista su Amazon →",
+    buyShort: "Acquista →",
+    ourPick: "★ La Nostra Scelta",
+    quickComparison: "Confronto rapido, top 5",
+    theRankedList: "La classifica",
+    faqTitle: "Domande frequenti",
+    seeAllBooks: (label: string) => `Vedi tutti i libri di ${label} →`,
+    moreReadingLists: "← Altre liste di lettura",
+    reviews: "recensioni",
+    tableBook: "Libro",
+    tableAuthor: "Autore",
+    tableRating: "Valutazione",
+    tablePages: "Pagine",
+    readingListsHref: "/it",
+    homeHref: "/it",
+  },
+  pt: {
+    home: "Início",
+    readingListsLabel: "Listas de leitura",
+    readingList: "Lista de leitura",
+    curatedBy: "Selecionado por",
+    updated: "Atualizado",
+    affiliateLinks: "Links de afiliado",
+    bookPlural: "livros",
+    bookSingular: "livro",
+    noBooks: "Nenhum livro encontrado para esta seleção.",
+    buyOnAmazon: "Comprar na Amazon →",
+    buyShort: "Comprar →",
+    ourPick: "★ Nossa Escolha",
+    quickComparison: "Comparação rápida, top 5",
+    theRankedList: "O ranking",
+    faqTitle: "Perguntas frequentes",
+    seeAllBooks: (label: string) => `Ver todos os livros de ${label} →`,
+    moreReadingLists: "← Mais listas de leitura",
+    reviews: "avaliações",
+    tableBook: "Livro",
+    tableAuthor: "Autor",
+    tableRating: "Avaliação",
+    tablePages: "Páginas",
+    readingListsHref: "/pt",
+    homeHref: "/pt",
+  },
 } as const;
 
 interface FAQ {
@@ -194,7 +326,7 @@ interface BestOfPageProps {
   intro?: string[];
   faq?: FAQ[];
   showComparison?: boolean;
-  locale?: "en" | "de" | "nl" | "fr";
+  locale?: "en" | "de" | "nl" | "fr" | "es" | "it" | "pt";
 }
 
 function stripHtml(html: string): string {
@@ -217,7 +349,14 @@ export function BestOfPage({
   locale = "en",
 }: BestOfPageProps) {
   const L = PAGE_LABELS[locale];
-  const catNameMap = locale === "de" ? CAT_NAME_DE : locale === "nl" ? CAT_NAME_NL : locale === "fr" ? CAT_NAME_FR : CAT_NAME_BY_SLUG;
+  const catNameMap =
+    locale === "de" ? CAT_NAME_DE :
+    locale === "nl" ? CAT_NAME_NL :
+    locale === "fr" ? CAT_NAME_FR :
+    locale === "es" ? CAT_NAME_ES :
+    locale === "it" ? CAT_NAME_IT :
+    locale === "pt" ? CAT_NAME_PT :
+    CAT_NAME_BY_SLUG;
   // Infer a category accent for the whole page from the most common
   // category in the book set, falling back to orange.
   const catSlug = (() => {
