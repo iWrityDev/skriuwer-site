@@ -1,6 +1,428 @@
 {
   "books": [
     {
+      "slug": "die-dunkle-geschichte-der-bibel",
+      "asin": "B0GHXD5Y2R",
+      "title": "Die dunkle Geschichte der Bibel: Unbekannte Skandale, biblische Mythen und religiose Kontroversen der Antike",
+      "description": "<p>Was ware, wenn die Bibel ein Netz aus Machtspielen, zensierten Geschichten und rohen Manipulationen verbirgt, die noch immer in unserem taglichen Leben nachwirken? <em>Die dunkle Geschichte der Bibel</em> lufet den Vorhang uber diese verborgenen Geheimnisse und zeigt, wie sich das, was als Stammesmythen begann, zu einem Instrument der Kontrolle, Eroberung und Spaltung entwickelte.</p><p>Von der Entstehung der Schopfungsgeschichten im mesopotamischen Kulturraum uber die politischen Machtkampfe der israelitischen Konige bis hin zu den umstrittenen Konzilsentscheidungen, die bestimmten, welche Texte als heilig galten und welche verschwinden mussten: Dieses Buch folgt der dunklen Spur durch 1.500 Jahre Bibelgeschichte. Archaologisch fundiert, ohne theologische Voreingenommenheit.</p>",
+      "author": "Skriuwer.com",
+      "coverImage": "https://m.media-amazon.com/images/P/B0GHXD5Y2R.01._SX1000_.jpg",
+      "coverImageFallback": "https://m.media-amazon.com/images/P/B0GHZHQHZM.01._SX1000_.jpg",
+      "categories": [
+        "religion",
+        "history",
+        "dark-history"
+      ],
+      "tags": [
+        "In German"
+      ],
+      "language": "de",
+      "pages": null,
+      "price": "13.07",
+      "currency": "EUR",
+      "reviewCount": 8,
+      "starRating": 3.5,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/B0GHXD5Y2R?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/B0GHXD5Y2R?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/B0GHXD5Y2R?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/B0GHXD5Y2R?tag=31813-20"
+      },
+      "isOwnBook": true,
+      "hookText": null,
+      "publishedDate": "2026-01-21"
+    },
+    {
+      "slug": "bilingual-short-stories-english-turkish",
+      "asin": "B0GW7L557Q",
+      "title": "Bilingual short stories: English-Turkish: 75 Magical Stories for English speakers learning Turkish",
+      "description": "<p>75 short stories. A new language. Without the usual learning struggle.</p><p>Learning Turkish can finally feel warm, vibrant and genuinely enjoyable. Instead of wrestling with vowel harmony or long vocabulary lists, this book lets you simply relax with a beautiful short story and watch new Turkish words and expressions settle naturally into your mind as you read.</p><p>This collection brings you 75 thoughtfully selected short stories in a clear, practical English-Turkish parallel format. The English and Turkish texts sit side by side, so you can check any unfamiliar word in a single glance. Each story also includes vocabulary exercises to reinforce what you have just read.</p>",
+      "author": "Skriuwer.com",
+      "coverImage": "https://m.media-amazon.com/images/I/71F7B3ite2L._SL1430_.jpg",
+      "coverImageFallback": "https://m.media-amazon.com/images/P/B0GW7L557Q.01._SX1000_.jpg",
+      "categories": [
+        "language-learning"
+      ],
+      "tags": [
+        "In English"
+      ],
+      "language": "en",
+      "pages": null,
+      "price": "15.99",
+      "currency": "USD",
+      "reviewCount": 2,
+      "starRating": 5.0,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/B0GW7L557Q?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/B0GW7L557Q?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/B0GW7L557Q?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/B0GW7L557Q?tag=31813-20"
+      },
+      "isOwnBook": true,
+      "hookText": null,
+      "publishedDate": "2026-04-06"
+    },
+    {
+      "slug": "bilingual-short-stories-english-ukrainian",
+      "asin": "B0GW9GFWX1",
+      "title": "Bilingual short stories: English-Ukrainian: 75 Magical Stories for English speakers learning Ukrainian",
+      "description": "<p>75 short stories. A new language. Without the usual learning struggle.</p><p>Learning Ukrainian can finally feel warm, natural and deeply rewarding. Instead of struggling through complex grammar or long vocabulary lists, this book lets you simply relax with a beautiful short story and watch new Ukrainian words and expressions quietly find their place in your mind as you read.</p><p>This collection brings you 75 thoughtfully selected short stories in a clear, practical English-Ukrainian parallel format. Each story includes vocabulary exercises to reinforce what you have just read.</p>",
+      "author": "Skriuwer.com",
+      "coverImage": "https://m.media-amazon.com/images/I/71ATnLIcQHL._SL1430_.jpg",
+      "coverImageFallback": "https://m.media-amazon.com/images/P/B0GW9GFWX1.01._SX1000_.jpg",
+      "categories": [
+        "language-learning"
+      ],
+      "tags": [
+        "In English"
+      ],
+      "language": "en",
+      "pages": null,
+      "price": "15.99",
+      "currency": "USD",
+      "reviewCount": 2,
+      "starRating": 4.5,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/B0GW9GFWX1?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/B0GW9GFWX1?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/B0GW9GFWX1?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/B0GW9GFWX1?tag=31813-20"
+      },
+      "isOwnBook": true,
+      "hookText": null,
+      "publishedDate": "2026-04-06"
+    },
+    {
+      "slug": "bilingual-short-stories-english-hungarian",
+      "asin": "B0GW2CDYJG",
+      "title": "Bilingual short stories: English-Hungarian: 75 Magical Stories for English speakers learning Hungarian",
+      "description": "<p>75 short stories. A new language. Without the usual learning struggle.</p><p>Learning Hungarian can finally feel warm, natural and surprisingly enjoyable. Instead of struggling with its unique grammar or long vocabulary lists, this book invites you to simply relax with a charming short story and let fresh Hungarian words and expressions settle gently into your mind as you read.</p><p>This collection brings you 75 thoughtfully selected short stories in a clear, practical English-Hungarian parallel format. Each story includes vocabulary exercises to reinforce what you have just read.</p>",
+      "author": "Skriuwer.com",
+      "coverImage": "https://m.media-amazon.com/images/I/71Un4sCmdEL._SL1430_.jpg",
+      "coverImageFallback": "https://m.media-amazon.com/images/P/B0GW2CDYJG.01._SX1000_.jpg",
+      "categories": [
+        "language-learning"
+      ],
+      "tags": [
+        "In English"
+      ],
+      "language": "en",
+      "pages": null,
+      "price": "15.99",
+      "currency": "USD",
+      "reviewCount": 3,
+      "starRating": 5.0,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/B0GW2CDYJG?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/B0GW2CDYJG?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/B0GW2CDYJG?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/B0GW2CDYJG?tag=31813-20"
+      },
+      "isOwnBook": true,
+      "hookText": null,
+      "publishedDate": "2026-04-04"
+    },
+    {
+      "slug": "bilingual-short-stories-english-romanian",
+      "asin": "B0GVY8P9TN",
+      "title": "Bilingual short stories: English-Romanian: 75 Magical Stories for English speakers learning Romanian",
+      "description": "<p>75 short stories. A new language. Without the usual learning struggle.</p><p>Learning Romanian can finally feel warm, natural and surprisingly delightful. Instead of battling through heavy grammar or endless word lists, this book lets you simply settle back with a lovely short story and watch fresh Romanian words and expressions quietly find their place in your mind as you read.</p><p>This collection offers 75 carefully chosen short stories in a clear, practical English-Romanian parallel format. Each story includes vocabulary exercises to reinforce what you have just read.</p>",
+      "author": "Skriuwer.com",
+      "coverImage": "https://m.media-amazon.com/images/I/71xCqcjPP5L._SL1430_.jpg",
+      "coverImageFallback": "https://m.media-amazon.com/images/P/B0GVY8P9TN.01._SX1000_.jpg",
+      "categories": [
+        "language-learning"
+      ],
+      "tags": [
+        "In English"
+      ],
+      "language": "en",
+      "pages": null,
+      "price": "15.99",
+      "currency": "USD",
+      "reviewCount": 3,
+      "starRating": 5.0,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/B0GVY8P9TN?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/B0GVY8P9TN?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/B0GVY8P9TN?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/B0GVY8P9TN?tag=31813-20"
+      },
+      "isOwnBook": true,
+      "hookText": null,
+      "publishedDate": "2026-04-03"
+    },
+    {
+      "slug": "crypto-profit-your-expert-guide-to-financial-freedom-through-cryptocurrency-inve",
+      "asin": "1916340202",
+      "title": "Crypto Profit: Your Expert Guide to Financial Freedom Through Cryptocurrency Investing",
+      "description": "This eye-opening book explains why, contrary to what most people believe, investing in cryptocurrencies is actually a good idea. In fact, cryptos are on track to be the best investment opportunity of the 21st century. Author Peter Bryant ('the Crypto Prof') is an experienced, professional investor. He has achieved significant profits by investing in cryptocurrencies and has helped his clients to do the same. Now, he presents his case for trading and investing in cryptos and explains how to do so safely and successfully. In this book, Bryant explains in clear, non-technical language what bitcoin and other cryptocurrencies actually are, why they are rapidly gaining acceptance and the best ways to invest in them. The book is written for sceptics and doubters, patiently addressing all of the common objections and dispelling the myths surrounding these little-understood new ways of transacting value. The investment strategies are presented as clear, simple step-by-step guides that anyone can follow. Welcome to the truth about Crypto Profit.",
+      "author": "Peter Bryant Msc",
+      "coverImage": "https://books.google.com/books/content?id=PMP4zQEACAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1916340202.01.LZZZZZZZ.jpg",
+      "categories": [
+        "history"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 134,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 15,
+      "starRating": 4.5,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1916340202?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1916340202?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1916340202?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1916340202?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2020-01-07",
+      "shortDescription": "This eye-opening book explains why, contrary to what most people believe, investing in cryptocurrencies is actually a good idea. In fact, cryptos are on track to be the best investment opportunity of ...",
+      "source": "google_books"
+    },
+    {
+      "slug": "how-to-make-money-from-crypto-trading-investing-for-beginners-complete-guide-on",
+      "asin": "8558992061",
+      "title": "How to Make Money from Crypto Trading & Investing for Beginners: Complete Guide on How to Buy & Sell Bitcoin & Altcoins for Profit, DeFi Yield Farming with Cryptocurrency Investments Tips",
+      "description": "Step by step guide with screenshots on the basics of blockchain technology, bitcoin & altcoins, crypto security tips, cryptocurrency market analysis (FA & TA), long term & short term trading, how to calculate your profits in excel, legit ways to make money with cryptocurrencies, DeFi yield farming & staking, how to use any centralized & decentralized exchange platform & more, plus crypto investment bonus Crypto trading & investment are some of the lucrative business ideas that can make you rich within a short period of time. It can also wreck you financially very quickly if not properly guided. That is why you need a grounded knowledge of cryptocurrencies in order to make money in this field. I have been a cryptocurrency investor since 2016. My goal is to retire young & wealthy, escaping the daily grinds. I taught myself how to trade Bitcoin & other altcoins for profit, both on short term (including day trading) & long term basis. Although I learnt crypto trading the hard way, but that was what made me stronger & successful. It took me years of studies, trial & error to become a consistent online money maker. My main aim of writing this book is to help young investors understand the real-life strategies of succeeding as a cryptocurrency trader within a short period of time. Cryptocurrency trading is not gambling or an online poker game. To be successful in crypto trading, you need the right tools & you need to be motivated, to work hard, & to persevere. Here are some of the things you will learn from this book, How to Make Money from Crypto Trading & Investing for Beginners: All About Bitcoin & Blockchain: History of Bitcoin & Blockchain, Basic Unit of Bitcoin, Bitcoin Price Forecast, Database vs. Blockchain, Bitcoin Investment Strategies, Various Types of Bitcoin Wallets, Long Term Bitcoin Investment vs. Bitcoin Trading, Real Life Bitcoin Investment Strategies All About Altcoins: Some popular Altcoins, All about Ethereum, Basic Unit of Ethereum Cryptocurrency Security Tips: Crypto Cyber Crime Strategies, How to Protect & Recover Lost Cryptocurrencies Cryptocurrency Basics: Crypto Acronyms & Terms, Legit Ways to Make Money with Cryptocurrencies, DeFi Yield Farming & Staking, Sites that Pay with Cryptocurrencies, Classifications of Cryptocurrencies Based on Market Cap Cryptocurrency Market Analysis & Tools: Fundamental Analysis (FA), Technical Analysis (TA), How News affect the Prices of Assets, Best Websites/Tools for Crypto Coins Analysis & News Cryptocurrency Trading Basics: Day Trading Guide, Bitcoin vs. Stocks, How to Convert any USD Amount to BTC or Satoshi, How to Convert any USD Amount to ETH or Gwei, Best Time to Buy & Sell Crypto Coins, How to Track BTC & ETH Transactions, How to Choose a Secure Crypto Exchange Platform, Recommended Centralized & Decentralized Exchange Platforms, How to Calculate your Cryptocurrency Profit in Excel Centralized Crypto Exchange Trading Guide: How to Sign Up with Any Exchange Platform, Spot Trading vs. Futures and Margin Trading, How to Set Two Factor Authentication (2FA) for your Exchange Apps, Different Ways to Buy & Sell Cryptocurrencies, How to Use KuCoin Exchange App, How to Use Binance Exchange App Decentralized Crypto Exchange Trading Guide: Private Key vs. Recovery Phrase, How to Use Trust Wallet & ImToken Wallet App, How to Use WalletConnect with Trust Wallet & ImToken App, How to Trade with any DEX from your Decentralized Wallet App, How to Setup & Use Metamask Wallet, Uniswap Trading Guide Cryptocurrency Investment Bonus! This book equips you with all you need to know in order to be successful as a crypto trader & investor. Now buy this book & follow the guides. You will surely become financially stable. Don't forget to share your testimony once this book helps you.",
+      "author": "Buzzer Joseph",
+      "coverImage": "https://books.google.com/books/content?id=7SUfzgEACAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/8558992061.01.LZZZZZZZ.jpg",
+      "categories": [
+        "history"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 180,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 10,
+      "starRating": 4.5,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/8558992061?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/8558992061?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/8558992061?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/8558992061?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2020-11-04",
+      "shortDescription": "Step by step guide with screenshots on the basics of blockchain technology, bitcoin & altcoins, crypto security tips, cryptocurrency market analysis (FA & TA), long term & short term trading, how to c...",
+      "source": "google_books"
+    },
+    {
+      "slug": "cell-a-novel",
+      "asin": "0743296729",
+      "title": "Cell: A Novel",
+      "description": "The next call you take could be your last in this terrifying #1 New York Times bestseller by master storyteller Stephen King! On October 1, God is in His heaven, the stock market stands at 10,140, most of the planes are on time, and graphic artist Clayton Riddell is visiting Boston, having just landed a deal that might finally enable him to make art instead of teaching it. But all those good feelings about the future change in a hurry thanks to a devastating phenomenon that will come to be known as The Pulse. The delivery method is a cell phone—everyone’s cell phone. Now Clay and the few desperate survivors who join him suddenly find themselves in the pitch-black night of civilization’s darkest age, surrounded by chaos, carnage, and a relentless human horde that has been reduced to its basest nature...and then begins to evolve. There’s really no escaping this nightmare. But for Clay, an arrow points the way home to his family in Maine, and as he and his fellow refugees make their harrowing journey north, they begin to see the crude signs confirming their direction. A promise of a safe haven, perhaps, or quite possibly the deadliest trap of all…",
+      "author": "Stephen King",
+      "coverImage": "https://books.google.com/books/content?id=y0L2B1E8w74C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0743296729.01.LZZZZZZZ.jpg",
+      "categories": [
+        "fiction"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 416,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 36,
+      "starRating": 4.0,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0743296729?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0743296729?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0743296729?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0743296729?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2006-01-24",
+      "shortDescription": "The next call you take could be your last in this terrifying #1 New York Times bestseller by master storyteller Stephen King! On October 1, God is in His heaven, the stock market stands at 10,140, mos...",
+      "source": "google_books"
+    },
+    {
+      "slug": "it-a-novel",
+      "asin": "1501175467",
+      "title": "It: A Novel",
+      "description": "It began -- and ended -- in 1958 when seven children searched in the drains beneath Derry for an evil creature, but in 1985, Mike, once one of those children, makes six phone calls and disinters an unremembered promise that sets off the ultimate terror.",
+      "author": "Stephen King",
+      "coverImage": "https://books.google.com/books/content?id=KiszDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1501175467.01.LZZZZZZZ.jpg",
+      "categories": [
+        "fiction"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 1184,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 16,
+      "starRating": 4.5,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1501175467?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1501175467?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1501175467?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1501175467?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2017-09-05",
+      "shortDescription": "It began -- and ended -- in 1958 when seven children searched in the drains beneath Derry for an evil creature, but in 1985, Mike, once one of those children, makes six phone calls and disinters an un...",
+      "source": "google_books"
+    },
+    {
+      "slug": "benjamin-franklin-an-american-life",
+      "asin": "074325807X",
+      "title": "Benjamin Franklin: An American Life",
+      "description": "During his 84-year life Benjamin Franklin was America's best scientist, inventor, publisher, business strategist, diplomat, and writer. He was also one of its most practical political thinkers. America's first great publicist, he carefully crafted his own persona, portrayed it in public and polished it for posterity. In this riveting new biography Walter Isaacson provides readers with a full portrait of Franklin's public and private life - his loyal but neglected wife, his bastard son with whom he broke over going to war with England, his endless replacement families and his many amorous, but probably unconsummated, liaisons. But this is not just a biography of Benjamin Franklin but rather a fascinating look at American and European political history at that time. Isaacson examines the run up to the Revolutionary War, the intimate relations between Britain, France and the colonies and the decisive events that led to America's independence. Just as David McCullough brought life to the historic figure of John Adams, Isaacson portrays Franklin in the flesh, showing readers how this radical man helped define America's national character and personality.",
+      "author": "Walter Isaacson",
+      "coverImage": "https://books.google.com/books/content?id=L64OOJGaCKIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/074325807X.01.LZZZZZZZ.jpg",
+      "categories": [
+        "biography"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 628,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 23,
+      "starRating": 4.0,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/074325807X?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/074325807X?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/074325807X?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/074325807X?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2004-05-04",
+      "shortDescription": "During his 84-year life Benjamin Franklin was America's best scientist, inventor, publisher, business strategist, diplomat, and writer. He was also one of its most practical political thinkers. Americ...",
+      "source": "google_books"
+    },
+    {
+      "slug": "cleopatra-a-life",
+      "asin": "0316121800",
+      "title": "Cleopatra: A Life",
+      "description": "The Pulitzer Prize-winning biographer brings to life the most intriguing woman in the history of the world: Cleopatra, the last queen of Egypt. Her palace shimmered with onyx, garnets, and gold, but was richer still in political and sexual intrigue. Above all else, Cleopatra was a shrewd strategist and an ingenious negotiator. Though her life spanned fewer than forty years, it reshaped the contours of the ancient world. She was married twice, each time to a brother. She waged a brutal civil war against the first when both were teenagers. She poisoned the second. Ultimately she dispensed with an ambitious sister as well; incest and assassination were family specialties. Cleopatra appears to have had sex with only two men. They happen, however, to have been Julius Caesar and Mark Antony, among the most prominent Romans of the day. Both were married to other women. Cleopatra had a child with Caesar and -- after his murder -- three more with his protégé. Already she was the wealthiest ruler in the Mediterranean; the relationship with Antony confirmed her status as the most influential woman of the age. The two would together attempt to forge a new empire, in an alliance that spelled their ends. Cleopatra has lodged herself in our imaginations ever since. Famous long before she was notorious, Cleopatra has gone down in history for all the wrong reasons. Shakespeare and Shaw put words in her mouth. Michelangelo, Tiepolo, and Elizabeth Taylor put a face to her name. Along the way, Cleopatra's supple personality and the drama of her circumstances have been lost. In a masterly return to the classical sources, Stacy Schiff here boldly separates fact from fiction to rescue the magnetic queen whose death ushered in a new world order. Rich in detail, epic in scope, Schiff 's is a luminous, deeply original reconstruction of a dazzling life.",
+      "author": "Stacy Schiff",
+      "coverImage": "https://books.google.com/books/content?id=dKIo6D9yh3cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0316121800.01.LZZZZZZZ.jpg",
+      "categories": [
+        "biography"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 342,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 12,
+      "starRating": 3.5,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0316121800?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0316121800?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0316121800?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0316121800?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2010-11-01",
+      "shortDescription": "The Pulitzer Prize-winning biographer brings to life the most intriguing woman in the history of the world: Cleopatra, the last queen of Egypt. Her palace shimmered with onyx, garnets, and gold, but w...",
+      "source": "google_books"
+    },
+    {
+      "slug": "the-crypto-book-how-to-invest-safely-in-bitcoin-and-other-cryptocurrencies",
+      "asin": "1473693330",
+      "title": "The Crypto Book: How to Invest Safely in Bitcoin and Other Cryptocurrencies",
+      "description": "THE CRYPTO GOLD RUSH IS ONLY JUST BEGINNING... This book is for everyone who has heard of bitcoin and cryptocurrencies, wants to learn more - and make money on the back of it. Believe it or not, if you bought $1,000 of Bitcoin in 2010, you would now be worth over $220m! This has left the public stunned. People around the world are asking \"What on earth is a crypto?\", \"Should I buy some Bitcoin?\", \"How do I even buy some cryptocurrencies?\", \"Isn't this just one big bubble?\" and more. Siam Kidd is one of the world's leading authorities on how to safely invest in cryptocurrencies. He runs The Realistic Trader, home to the world's best crypto investing course for beginners with a community of followers from around the globe. He created this book to lift up the crypto bonnet in order to reveal, explain and illustrate everything you really need to know about this fascinating market. You'll learn: * What all this Crypto stuff is * Why it exists * Where this industry is going in the future * How it will positively change your life * The pitfalls and errors every newbie makes * And importantly, how to safely play in this market if you so wish to have a dabble with some risk capital! Blockchain technology and the cryptocurrencies it enables are being described by some people as the biggest thing since the internet, but very few people understand it, or the opportunities it brings. Enter this down-to-earth guide to understanding what cryptocurrencies are, why it matters, and how to make money from them. This book does all that without boring you with mathematics and Geek Speak.",
+      "author": "Siam Kidd",
+      "coverImage": "https://books.google.com/books/content?id=7SFkDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1473693330.01.LZZZZZZZ.jpg",
+      "categories": [
+        "business"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 210,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 20,
+      "starRating": 5.0,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1473693330?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1473693330?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1473693330?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1473693330?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2018-10-04",
+      "shortDescription": "THE CRYPTO GOLD RUSH IS ONLY JUST BEGINNING... This book is for everyone who has heard of bitcoin and cryptocurrencies, wants to learn more - and make money on the back of it. Believe it or not, if yo...",
+      "source": "google_books"
+    },
+    {
+      "slug": "bitcoin-and-cryptocurrency-trading-for-beginners-novice-to-expert-3-books-in-1",
+      "asin": "8592761700",
+      "title": "Bitcoin and Cryptocurrency Trading for Beginners: Novice To Expert 3 Books In 1",
+      "description": "THIS BOOK INCLUDES 3 MANUSCRIPTS: -BOOK 1: BASIC DEFINITIONS, CRYPTO EXCHANGES, TOOLS AND PRACTICAL TRADING TIPS-BOOK 2: BITCOIN OPTIONS & MARGIN TRADING TIPS USING TRADING BOTS-BOOK 3: TECHNICAL ANALYSIS: HOW TO READ JAPANESE CANDLESTICKS, CHARTS, VOLUME, TREND AND INDICATORSIF YOU WANT TO TRADE BITCON AND OTHER CRYPTOCURRENCIES, BUY THIS BOOK NOW AND GET STARTED TODAY!BOOK 1 COVERS: -Why Bitcoin it's an excellent trading instrument. -What are best cryptocurrency exchanges to start trading right away. -What are the best Mobile and Hardware Wallets for trading crypto. -Basic trading terms such as currency pairs, base and quote, order book, bids and asks, stop limit option and dollar cost averaging. -How to use BNB as a Trading Tool to exchange Bitcoin or other cryptocurrencies on various platforms. -How you can earn passive Income on Coinbase and how you can earn interest with Compound Finance. -Tricks on how to sell & withdraw Crypto from Coinbase Pro paying the least fees there is. -Several practical guides on how to install and use the Binance Widget Trading Tool in Brave browser, how to place Market Orders on Coinbase Pro, Blockchain & Binance and how to buy, sell and trade crypto on eToro. -How to value DeFi tokens and what are top 5 cryptocurrency picks are for 2021.BOOK 2 COVERS: -Cryptocurrency Market Cycles so you can make better trading decisions, -Market Manipulation Tactics and how to avoid them, -Leverage Trading Strategies step by step, -Trading Mistakes you must avoid, -Margin Trading Tips & Strategies-What are the best Crypto Trading Bot Platforms-What is Option Moneyness & Put Call Ratio-What are Options Skew & Market Parameters-What are Options Expiry Dates-How to Trade Bitcoin Options-How to build Deribit Position Strategies-How to avoid the Gambler's Fallacy-The Law of Small Numbers & Trading-Confirmation, Survivorship and Hindsight Bias-Correlation, Recency & Attribution Bias-How to Avoid the Sung Cost Trap-How to Become a Disciplined TraderBOOK 3 COVERS: -What are the best exchanges for trading cryptocurrencies and what essential trading tools you must utilise using trading checklist. -What are the differences between Winners and Losers and what kind of trading strategies exist that you can use. -What is Implied Volatility and how to set up a trade order. -What are the differences between Fundamental Analysis and Technical Analysis. -How Technical Analysis work and why it is working. -What is Support and Resistance, what time frame you should use on the chart and how to read Japanese Candlesticks. -Basic chart elements, bearish Candlesticks and bullish Candlesticks such as Bullish engulfing, Hammer, Doji, Morning Doji star, Bearish engulfing, Dark cloud cover, Shooting star, Inverse hammer, Piercing line, Three white soldiers, Hanging man, Evening star, Three black crows, Spinning top, Falling three methods and Rising three methods. -How to read Volume, moving averages, Trends and Indicators. -What are the 3 best Crypto TAX software BUY THIS BOOK NOW AND GET STARTED TODAY!",
+      "author": "Mark Zuckerman",
+      "coverImage": "https://books.google.com/books/content?id=X1ZazgEACAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/8592761700.01.LZZZZZZZ.jpg",
+      "categories": [
+        "history"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 440,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 11,
+      "starRating": 4.5,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/8592761700?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/8592761700?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/8592761700?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/8592761700?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2021-01-09",
+      "shortDescription": "THIS BOOK INCLUDES 3 MANUSCRIPTS: -BOOK 1: BASIC DEFINITIONS, CRYPTO EXCHANGES, TOOLS AND PRACTICAL TRADING TIPS-BOOK 2: BITCOIN OPTIONS & MARGIN TRADING TIPS USING TRADING BOTS-BOOK 3: TECHNICAL ANAL...",
+      "source": "google_books"
+    },
+    {
+      "slug": "steve-jobs-die-autorisierte-biografie-des-apple-gr-nders-der-welt-bestseller-mit",
+      "asin": "3641074622",
+      "title": "Steve Jobs: Die autorisierte Biografie des Apple-Gründers - Der Welt-Bestseller mit neuem Nachwort",
+      "description": "»Walter Isaacson ist Jobs so nahe gekommen wie wohl kein anderer Journalist zuvor.« (Handelsblatt) │ »Klar, elegant und prägnant.« (New York Times) │ »Voller Momente, die einem den Atem verschlagen.« (The Guardian) │ Die einzige autorisierte Biografie des Ausnahmegenies - jetzt als Taschenbuch mit neuem Nachwort Macintosh, iMac, iPod, iTunes, iPhone, iPad – Steve Jobs verlieh der digitalen Welt mit der Kultmarke Apple Ästhetik und Aura. Bis heute gilt er als die Stilikone des IT-Zeitalters, ein begnadeter Vordenker, der kompromisslos seiner Idee folgte. Genial und selbstbewusst machte er trotz ökonomischer und persönlicher Krisen den Apfel mit Biss (Bite) zum Synonym für Innovation und Vision. Doch wer war dieser Meister der Inszenierung, was trieb ihn an? Walter Isaacson gewann das Vertrauen des Apple-Chefs und konnte als erster Biograf während der langjährigen Recherchen auf seine uneingeschränkte Unterstützung ebenso bauen wie auf die seiner Familie, seiner Weggefährten und auch der Kontrahenten. Dabei kooperierte Jobs uneingeschränkt mit Isaacson, machte aber von Anfang an klar, dass er seinem Biografen keinerlei Grenzen setzte. Entstanden ist ein so intimes und ehrliches wie eindrucksvolles Porträt von Steve Jobs und seinem Unternehmen – nicht nur für Apple-Fans. Das Buch stieß beim Erscheinen auf begeisterte Resonanz bei Lesern und in der Presse und avancierte schnell zum weltweiten Phänomen und Millionenbestseller. Als einzig je von Steve Jobs autorisierte Biografie ist es der ultimative Blick hinter die Kulissen von Apple und in den Geist eines Mannes, der die Welt für immer verändert hat.",
+      "author": "Walter Isaacson",
+      "coverImage": "https://books.google.com/books/content?id=ZgrDRPlNNfQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/3641074622.01.LZZZZZZZ.jpg",
+      "categories": [
+        "biography"
+      ],
+      "tags": [],
+      "language": "de",
+      "pages": 704,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 30,
+      "starRating": 4.0,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/3641074622?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/3641074622?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/3641074622?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/3641074622?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2011-10-25",
+      "shortDescription": "»Walter Isaacson ist Jobs so nahe gekommen wie wohl kein anderer Journalist zuvor.« (Handelsblatt) │ »Klar, elegant und prägnant.« (New York Times) │ »Voller Momente, die einem den Atem verschlagen.« ...",
+      "source": "google_books"
+    },
+    {
       "slug": "the-50-craziest-conspiracies",
       "asin": "B0DYPCM8P9",
       "title": "The 50 Craziest Conspiracies",
