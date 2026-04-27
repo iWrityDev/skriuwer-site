@@ -33,6 +33,42 @@ const CAT_NAME_DE: Record<string, string> = {
   frisian: "Friesische Sprache",
 };
 
+const CAT_NAME_NL: Record<string, string> = {
+  history: "Geschiedenis",
+  mythology: "Mythologie",
+  "dark-history": "Donkere Geschiedenis",
+  conspiracy: "Complottheorie",
+  religion: "Religie & Spiritualiteit",
+  "self-help": "Zelfhulp",
+  fiction: "Fictie",
+  science: "Wetenschap & Natuur",
+  biography: "Biografie & Memoires",
+  business: "Business & Financiën",
+  psychology: "Psychologie",
+  "true-crime": "True Crime",
+  philosophy: "Filosofie",
+  "language-learning": "Taal leren",
+  frisian: "Friese Taal",
+};
+
+const CAT_NAME_FR: Record<string, string> = {
+  history: "Histoire",
+  mythology: "Mythologie",
+  "dark-history": "Histoire Sombre",
+  conspiracy: "Complot",
+  religion: "Religion & Spiritualité",
+  "self-help": "Développement Personnel",
+  fiction: "Fiction",
+  science: "Science & Nature",
+  biography: "Biographie & Mémoires",
+  business: "Business & Finance",
+  psychology: "Psychologie",
+  "true-crime": "True Crime",
+  philosophy: "Philosophie",
+  "language-learning": "Apprentissage des Langues",
+  frisian: "Langue Frisonne",
+};
+
 const PAGE_LABELS = {
   en: {
     home: "Home",
@@ -45,6 +81,7 @@ const PAGE_LABELS = {
     bookSingular: "book",
     noBooks: "No books found for this selection.",
     buyOnAmazon: "Buy on Amazon →",
+    buyShort: "Buy →",
     ourPick: "★ Our Pick",
     quickComparison: "Quick comparison, top 5",
     theRankedList: "The ranked list",
@@ -57,6 +94,7 @@ const PAGE_LABELS = {
     tableRating: "Rating",
     tablePages: "Pages",
     readingListsHref: "/reading-lists",
+    homeHref: "/",
   },
   de: {
     home: "Startseite",
@@ -69,6 +107,7 @@ const PAGE_LABELS = {
     bookSingular: "Buch",
     noBooks: "Keine Bücher für diese Auswahl gefunden.",
     buyOnAmazon: "Bei Amazon kaufen →",
+    buyShort: "Kaufen →",
     ourPick: "★ Unsere Wahl",
     quickComparison: "Schnellvergleich, Top 5",
     theRankedList: "Die Rangliste",
@@ -81,6 +120,59 @@ const PAGE_LABELS = {
     tableRating: "Bewertung",
     tablePages: "Seiten",
     readingListsHref: "/de",
+    homeHref: "/de",
+  },
+  nl: {
+    home: "Startpagina",
+    readingListsLabel: "Leeslijsten",
+    readingList: "Leeslijst",
+    curatedBy: "Samengesteld door",
+    updated: "Bijgewerkt",
+    affiliateLinks: "Affiliate-links",
+    bookPlural: "boeken",
+    bookSingular: "boek",
+    noBooks: "Geen boeken gevonden voor deze selectie.",
+    buyOnAmazon: "Kopen op Amazon →",
+    buyShort: "Kopen →",
+    ourPick: "★ Onze Keuze",
+    quickComparison: "Snelle vergelijking, top 5",
+    theRankedList: "De ranglijst",
+    faqTitle: "Veelgestelde vragen",
+    seeAllBooks: (label: string) => `Alle ${label}-boeken bekijken →`,
+    moreReadingLists: "← Meer leeslijsten",
+    reviews: "beoordelingen",
+    tableBook: "Boek",
+    tableAuthor: "Auteur",
+    tableRating: "Beoordeling",
+    tablePages: "Pagina's",
+    readingListsHref: "/nl",
+    homeHref: "/nl",
+  },
+  fr: {
+    home: "Accueil",
+    readingListsLabel: "Listes de lecture",
+    readingList: "Liste de lecture",
+    curatedBy: "Sélectionné par",
+    updated: "Mis à jour",
+    affiliateLinks: "Liens affiliés",
+    bookPlural: "livres",
+    bookSingular: "livre",
+    noBooks: "Aucun livre trouvé pour cette sélection.",
+    buyOnAmazon: "Acheter sur Amazon →",
+    buyShort: "Acheter →",
+    ourPick: "★ Notre Choix",
+    quickComparison: "Comparaison rapide, top 5",
+    theRankedList: "Le classement",
+    faqTitle: "Questions fréquentes",
+    seeAllBooks: (label: string) => `Voir tous les livres ${label} →`,
+    moreReadingLists: "← Plus de listes de lecture",
+    reviews: "avis",
+    tableBook: "Livre",
+    tableAuthor: "Auteur",
+    tableRating: "Note",
+    tablePages: "Pages",
+    readingListsHref: "/fr",
+    homeHref: "/fr",
   },
 } as const;
 
@@ -102,7 +194,7 @@ interface BestOfPageProps {
   intro?: string[];
   faq?: FAQ[];
   showComparison?: boolean;
-  locale?: "en" | "de";
+  locale?: "en" | "de" | "nl" | "fr";
 }
 
 function stripHtml(html: string): string {
@@ -125,7 +217,7 @@ export function BestOfPage({
   locale = "en",
 }: BestOfPageProps) {
   const L = PAGE_LABELS[locale];
-  const catNameMap = locale === "de" ? CAT_NAME_DE : CAT_NAME_BY_SLUG;
+  const catNameMap = locale === "de" ? CAT_NAME_DE : locale === "nl" ? CAT_NAME_NL : locale === "fr" ? CAT_NAME_FR : CAT_NAME_BY_SLUG;
   // Infer a category accent for the whole page from the most common
   // category in the book set, falling back to orange.
   const catSlug = (() => {
@@ -197,7 +289,7 @@ export function BestOfPage({
         <section className="hero-glow-cat">
           <div className="max-w-4xl mx-auto px-4 pt-8 pb-8">
             <nav className="text-xs text-[var(--color-text-dim)] mb-5">
-              <Link href={locale === "de" ? "/de" : "/"} className="hover:text-[var(--color-orange-light)] transition-colors">{L.home}</Link>
+              <Link href={L.homeHref} className="hover:text-[var(--color-orange-light)] transition-colors">{L.home}</Link>
               <span className="mx-1.5 opacity-60">/</span>
               <Link href={L.readingListsHref} className="hover:text-[var(--color-orange-light)] transition-colors">{L.readingListsLabel}</Link>
               <span className="mx-1.5 opacity-60">/</span>
@@ -318,7 +410,7 @@ export function BestOfPage({
                                 rel="noopener noreferrer nofollow sponsored"
                                 className="px-2.5 py-1 text-xs font-bold bg-[var(--color-orange)] text-white rounded hover:bg-[var(--color-orange-light)] transition-colors whitespace-nowrap"
                               >
-                                {locale === "de" ? "Kaufen →" : "Buy →"}
+                                {L.buyShort}
                               </a>
                             )}
                           </td>

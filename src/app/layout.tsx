@@ -30,45 +30,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const h = await headers();
-  const pathname = h.get("x-pathname") ?? "";
-  const isDE = pathname.startsWith("/de");
+type Locale = "en" | "de" | "nl" | "fr";
 
-  const nav = isDE ? {
-    shop: "Bücher",
-    bestsellers: "Bestseller",
-    categories: "Kategorien ▾",
-    readingLists: "Leselisten",
-    blog: "Blog",
-    homeHref: "/de",
-    shopHref: "/books",
-    bestsellersHref: "/bestsellers",
-    readingListsHref: "/de",
-    blogHref: "/blog",
-    searchHref: "/search",
-    cats: [
-      { label: "Geschichte", slug: "history" },
-      { label: "Dunkle Geschichte", slug: "dark-history" },
-      { label: "Verschwörung", slug: "conspiracy" },
-      { label: "Mythologie", slug: "mythology" },
-      { label: "Religion & Spiritualität", slug: "religion" },
-      { label: "Wissenschaft & Natur", slug: "science" },
-      { label: "Sprachlernen", slug: "language-learning" },
-      { label: "Selbsthilfe", slug: "self-help" },
-    ],
-  } : {
-    shop: "Shop",
-    bestsellers: "Bestsellers",
-    categories: "Categories ▾",
-    readingLists: "Reading Lists",
-    blog: "Blog",
-    homeHref: "/",
-    shopHref: "/books",
-    bestsellersHref: "/bestsellers",
-    readingListsHref: "/reading-lists",
-    blogHref: "/blog",
-    searchHref: "/search",
+const NAV_CONFIG: Record<Locale, {
+  shop: string; bestsellers: string; categories: string; readingLists: string; blog: string;
+  homeHref: string; shopHref: string; bestsellersHref: string; readingListsHref: string;
+  blogHref: string; searchHref: string;
+  cats: { label: string; slug: string }[];
+}> = {
+  en: {
+    shop: "Shop", bestsellers: "Bestsellers", categories: "Categories ▾",
+    readingLists: "Reading Lists", blog: "Blog",
+    homeHref: "/", shopHref: "/books", bestsellersHref: "/bestsellers",
+    readingListsHref: "/reading-lists", blogHref: "/blog", searchHref: "/search",
     cats: [
       { label: "History", slug: "history" },
       { label: "Dark History", slug: "dark-history" },
@@ -80,10 +54,74 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       { label: "Frisian Language", slug: "frisian" },
       { label: "Self-Help", slug: "self-help" },
     ],
-  };
+  },
+  de: {
+    shop: "Bücher", bestsellers: "Bestseller", categories: "Kategorien ▾",
+    readingLists: "Leselisten", blog: "Blog",
+    homeHref: "/de", shopHref: "/books", bestsellersHref: "/bestsellers",
+    readingListsHref: "/de", blogHref: "/blog", searchHref: "/search",
+    cats: [
+      { label: "Geschichte", slug: "history" },
+      { label: "Dunkle Geschichte", slug: "dark-history" },
+      { label: "Verschwörung", slug: "conspiracy" },
+      { label: "Mythologie", slug: "mythology" },
+      { label: "Religion & Spiritualität", slug: "religion" },
+      { label: "Wissenschaft & Natur", slug: "science" },
+      { label: "Sprachlernen", slug: "language-learning" },
+      { label: "Selbsthilfe", slug: "self-help" },
+    ],
+  },
+  nl: {
+    shop: "Boeken", bestsellers: "Bestsellers", categories: "Categorieën ▾",
+    readingLists: "Leeslijsten", blog: "Blog",
+    homeHref: "/nl", shopHref: "/books", bestsellersHref: "/bestsellers",
+    readingListsHref: "/nl", blogHref: "/blog", searchHref: "/search",
+    cats: [
+      { label: "Geschiedenis", slug: "history" },
+      { label: "Donkere Geschiedenis", slug: "dark-history" },
+      { label: "Complottheorie", slug: "conspiracy" },
+      { label: "Mythologie", slug: "mythology" },
+      { label: "Religie & Spiritualiteit", slug: "religion" },
+      { label: "Wetenschap & Natuur", slug: "science" },
+      { label: "Taal leren", slug: "language-learning" },
+      { label: "Zelfhulp", slug: "self-help" },
+    ],
+  },
+  fr: {
+    shop: "Livres", bestsellers: "Meilleures Ventes", categories: "Catégories ▾",
+    readingLists: "Listes de Lecture", blog: "Blog",
+    homeHref: "/fr", shopHref: "/books", bestsellersHref: "/bestsellers",
+    readingListsHref: "/fr", blogHref: "/blog", searchHref: "/search",
+    cats: [
+      { label: "Histoire", slug: "history" },
+      { label: "Histoire Sombre", slug: "dark-history" },
+      { label: "Complot", slug: "conspiracy" },
+      { label: "Mythologie", slug: "mythology" },
+      { label: "Religion & Spiritualité", slug: "religion" },
+      { label: "Science & Nature", slug: "science" },
+      { label: "Apprentissage des Langues", slug: "language-learning" },
+      { label: "Développement Personnel", slug: "self-help" },
+    ],
+  },
+};
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const h = await headers();
+  const pathname = h.get("x-pathname") ?? "";
+  const locale: Locale = pathname.startsWith("/de") ? "de"
+    : pathname.startsWith("/nl") ? "nl"
+    : pathname.startsWith("/fr") ? "fr"
+    : "en";
+  const isDE = locale === "de";
+  const isNL = locale === "nl";
+  const isFR = locale === "fr";
+  const isLocalized = locale !== "en";
+
+  const nav = NAV_CONFIG[locale];
+  const htmlLang = locale;
 
   return (
-    <html lang="en">
+    <html lang={htmlLang}>
       <body className="min-h-screen flex flex-col">
         {/* Header */}
         <header className="bg-[var(--color-surface)] border-b border-[var(--color-border)] sticky top-0 z-40">
@@ -130,7 +168,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               <Link href={nav.readingListsHref} className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
                 {nav.readingLists}
               </Link>
-              {!isDE && (
+              {!isLocalized && (
                 <Link href="/gift-guides" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
                   Gift Guides
                 </Link>
@@ -204,6 +242,80 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                     </div>
                   </div>
                 </>
+              ) : isNL ? (
+                <>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Bladeren</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/nl" className="text-[var(--color-orange-light)] hover:text-[var(--color-orange)] transition font-semibold">Startpagina</Link>
+                      <Link href="/books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Alle Boeken</Link>
+                      <Link href="/bestsellers" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Bestsellers</Link>
+                      <Link href="/category/history" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Geschiedenisboeken</Link>
+                      <Link href="/category/mythology" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Mythologie-boeken</Link>
+                      <Link href="/category/language-learning" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Taal leren</Link>
+                      <Link href="/blog" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Blog</Link>
+                      <Link href="/search" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Zoeken</Link>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Beste Boeken Lijsten</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/nl/beste-geschiedenisboeken" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Geschiedenisboeken</Link>
+                      <Link href="/nl/beste-mythologie-boeken" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Mythologie-boeken</Link>
+                      <Link href="/nl/beste-complottheorie-boeken" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Complottheorie-boeken</Link>
+                      <Link href="/nl/beste-donkere-geschiedenis-boeken" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Donkere Geschiedenis-boeken</Link>
+                      <Link href="/nl/beste-noordse-mythologie-boeken" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Noordse Mythologie-boeken</Link>
+                      <Link href="/nl/beste-boeken-in-het-nederlands" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Boeken in het Nederlands</Link>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Bedrijf</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/about" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Over ons</Link>
+                      <Link href="/contact" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Contact</Link>
+                      <Link href="/affiliate-disclosure" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Affiliate-informatie</Link>
+                      <Link href="/privacy-policy" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Privacybeleid</Link>
+                      <Link href="/terms" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Gebruiksvoorwaarden</Link>
+                    </div>
+                  </div>
+                </>
+              ) : isFR ? (
+                <>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Explorer</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/fr" className="text-[var(--color-orange-light)] hover:text-[var(--color-orange)] transition font-semibold">Accueil</Link>
+                      <Link href="/books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Tous les Livres</Link>
+                      <Link href="/bestsellers" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Meilleures Ventes</Link>
+                      <Link href="/category/history" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Livres d&apos;Histoire</Link>
+                      <Link href="/category/mythology" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Livres de Mythologie</Link>
+                      <Link href="/category/language-learning" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Apprentissage des Langues</Link>
+                      <Link href="/blog" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Blog</Link>
+                      <Link href="/search" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Recherche</Link>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Meilleures Listes</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/fr/meilleurs-livres-histoire" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Meilleurs Livres d&apos;Histoire</Link>
+                      <Link href="/fr/meilleurs-livres-mythologie" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Meilleurs Livres de Mythologie</Link>
+                      <Link href="/fr/meilleurs-livres-complots" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Meilleurs Livres sur les Complots</Link>
+                      <Link href="/fr/meilleurs-livres-histoire-sombre" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Meilleurs Livres d&apos;Histoire Sombre</Link>
+                      <Link href="/fr/meilleurs-livres-mythologie-nordique" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Meilleurs Livres de Mythologie Nordique</Link>
+                      <Link href="/fr/meilleurs-livres-en-francais" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Meilleurs Livres en Français</Link>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">À Propos</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/about" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">À Propos de Nous</Link>
+                      <Link href="/contact" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Contact</Link>
+                      <Link href="/affiliate-disclosure" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Liens Affiliés</Link>
+                      <Link href="/privacy-policy" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Politique de Confidentialité</Link>
+                      <Link href="/terms" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Conditions d&apos;Utilisation</Link>
+                    </div>
+                  </div>
+                </>
               ) : (
                 <>
                   <div>
@@ -251,10 +363,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 </>
               )}
               <div>
-                <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">{isDE ? "Kontakt" : "Contact"}</h3>
+                <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">{isDE ? "Kontakt" : isNL ? "Contact" : isFR ? "Contact" : "Contact"}</h3>
                 <div className="text-sm text-[var(--color-text-muted)] space-y-1">
                   <p className="font-semibold text-[var(--color-text)]">Skriuwer.com</p>
-                  <p>{isDE ? "Friesland, Niederlande" : "Friesland, Netherlands"}</p>
+                  <p>{isDE ? "Friesland, Niederlande" : isNL ? "Friesland, Nederland" : isFR ? "Frise, Pays-Bas" : "Friesland, Netherlands"}</p>
                   <p className="mt-3">
                     <a href="mailto:kontakt@skriuwer.com" className="text-[var(--color-orange-light)] hover:underline">
                       kontakt@skriuwer.com
@@ -305,10 +417,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             <div className="mt-10 pt-6 border-t border-[var(--color-border)] text-xs text-[var(--color-text-dim)]">
               {isDE ? (
                 <p>Als Amazon-Partner verdient Skriuwer an qualifizierten Käufen. Preise und Verfügbarkeit können sich ändern.</p>
+              ) : isNL ? (
+                <p>Als Amazon-partner verdient Skriuwer aan in aanmerking komende aankopen. Prijzen en beschikbaarheid kunnen veranderen.</p>
+              ) : isFR ? (
+                <p>En tant que partenaire Amazon, Skriuwer gagne une commission sur les achats qualifiés. Les prix et disponibilités peuvent changer.</p>
               ) : (
                 <p>As an Amazon Associate, Skriuwer earns from qualifying purchases. Book prices and availability are subject to change.</p>
               )}
-              <p className="mt-1">&copy; {new Date().getFullYear()} Skriuwer.com. {isDE ? "Alle Rechte vorbehalten." : "All rights reserved."}</p>
+              <p className="mt-1">&copy; {new Date().getFullYear()} Skriuwer.com. {isDE ? "Alle Rechte vorbehalten." : isNL ? "Alle rechten voorbehouden." : isFR ? "Tous droits réservés." : "All rights reserved."}</p>
             </div>
           </div>
         </footer>
