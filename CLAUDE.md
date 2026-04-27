@@ -175,7 +175,25 @@ The affiliate tag is **`31813-20`** everywhere. Don't invent a different
 one per marketplace — the frontend rewrites the hostname at runtime and
 reuses the same tag.
 
-### 5. JSON file hygiene — always edit with Python, never with PowerShell
+### 5. Run the validation script before committing — non-negotiable
+
+```bash
+cd C:/Users/aukeh/skriuwer-site
+python scripts/validate_books.py
+```
+
+This script checks **every book** for:
+- `images/P/` placeholder URLs (1×1 pixel, always wrong)
+- `ssl-images-amazon` old CDN (also returns placeholders)
+- Cover image HTTP status (must be 200 with `image/*` content-type)
+- Cover file size < 2 kB (1×1 pixel placeholder detected)
+- Amazon product 404 for own books
+
+**Exit code 1 = do not commit.** Fix every error it reports first.
+
+This script exists because bulk-adding books has repeatedly shipped broken covers despite the rules above being written down. The script catches what human review misses when adding 30+ books at once.
+
+### 6. JSON file hygiene — always edit with Python, never with PowerShell
 
 `ConvertTo-Json` in Windows PowerShell will:
 - Prepend a UTF-8 BOM (breaks Next.js build on Vercel)
