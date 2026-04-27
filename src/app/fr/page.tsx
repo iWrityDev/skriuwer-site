@@ -12,7 +12,12 @@ export const metadata: Metadata = {
     canonical: "https://www.skriuwer.com/fr",
     languages: {
       en: "https://www.skriuwer.com",
+      de: "https://www.skriuwer.com/de",
+      nl: "https://www.skriuwer.com/nl",
       fr: "https://www.skriuwer.com/fr",
+      es: "https://www.skriuwer.com/es",
+      it: "https://www.skriuwer.com/it",
+      pt: "https://www.skriuwer.com/pt",
     },
   },
   openGraph: {
