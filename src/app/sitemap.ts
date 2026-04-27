@@ -42,6 +42,8 @@ const BEST_OF_SLUGS = [
   "/best-viking-books",
   "/best-ancient-rome-books",
   "/best-ancient-greece-books",
+  "/best-books-in-german",
+  "/best-american-history-books",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

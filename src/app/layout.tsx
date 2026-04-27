@@ -144,6 +144,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <Link href="/best-language-learning-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Language Learning Books</Link>
                   <Link href="/best-religion-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Religion Books</Link>
                   <Link href="/best-science-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Science Books</Link>
+                  <Link href="/best-american-history-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best American History Books</Link>
+                  <Link href="/best-books-in-german" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Books in German</Link>
                 </div>
               </div>
               <div>

@@ -6,6 +6,7 @@ import type { CSSProperties } from "react";
 import { BookGrid } from "@/components/BookGrid";
 import { getBooksByCategory } from "@/lib/books";
 import { CATEGORIES, getCategoryBySlug, getCategoryCssVar } from "@/lib/categories";
+import { CATEGORY_FAQS } from "@/lib/categoryFaqs";
 import { buildAffiliateUrl } from "@/lib/affiliate";
 import type { Book } from "@/lib/types";
 
@@ -96,28 +97,46 @@ export default async function CategoryPage({
     "--cat-color": `var(${getCategoryCssVar(category)})`,
   } as CSSProperties;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: `Best ${cat.name} Books`,
-    description: cat.description,
-    url: `https://www.skriuwer.com/category/${category}`,
-    mainEntity: {
-      "@type": "ItemList",
+  const faqs = CATEGORY_FAQS[category] ?? [];
+
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
       name: `Best ${cat.name} Books`,
-      numberOfItems: books.length,
-      itemListElement: books.slice(0, 10).map((book, i) => ({
-        "@type": "ListItem",
-        position: i + 1,
-        url: `https://www.skriuwer.com/books/${book.slug}`,
-        name: book.title,
-      })),
+      description: cat.description,
+      url: `https://www.skriuwer.com/category/${category}`,
+      mainEntity: {
+        "@type": "ItemList",
+        name: `Best ${cat.name} Books`,
+        numberOfItems: books.length,
+        itemListElement: books.slice(0, 10).map((book, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          url: `https://www.skriuwer.com/books/${book.slug}`,
+          name: book.title,
+        })),
+      },
     },
-  };
+    ...(faqs.length > 0
+      ? [
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.q,
+              acceptedAnswer: { "@type": "Answer", text: faq.a },
+            })),
+          },
+        ]
+      : []),
+  ];
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
 
       <div style={catStyle}>
         {/* Hero */}
@@ -188,6 +207,34 @@ export default async function CategoryPage({
             </>
           ) : (
             <p className="text-[var(--color-text-dim)] py-8">No books in this category yet. Check back soon!</p>
+          )}
+
+          {/* FAQ section */}
+          {faqs.length > 0 && (
+            <section className="mt-16 mb-4">
+              <div className="section-header mb-6">
+                <span className="accent-bar" style={{ background: "var(--cat-color)" }} />
+                <h2 className="text-lg font-bold text-[var(--color-text)]">
+                  Frequently Asked Questions
+                </h2>
+              </div>
+              <div className="space-y-4 max-w-3xl">
+                {faqs.map((faq, i) => (
+                  <details
+                    key={i}
+                    className="group border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] overflow-hidden"
+                  >
+                    <summary className="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer font-semibold text-sm text-[var(--color-text)] list-none select-none hover:text-[var(--color-orange-light)] transition-colors">
+                      {faq.q}
+                      <span className="flex-shrink-0 text-[var(--color-text-dim)] group-open:rotate-45 transition-transform text-lg leading-none">+</span>
+                    </summary>
+                    <p className="px-5 pb-4 text-sm text-[var(--color-text-muted)] leading-relaxed border-t border-[var(--color-border)] pt-3">
+                      {faq.a}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </section>
           )}
         </div>
       </div>
