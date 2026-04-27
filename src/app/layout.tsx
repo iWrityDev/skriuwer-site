@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { headers } from "next/headers";
 import { Logo } from "@/components/Logo";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import "./globals.css";
@@ -28,14 +29,65 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const h = await headers();
+  const pathname = h.get("x-pathname") ?? "";
+  const isDE = pathname.startsWith("/de");
+
+  const nav = isDE ? {
+    shop: "Bücher",
+    bestsellers: "Bestseller",
+    categories: "Kategorien ▾",
+    readingLists: "Leselisten",
+    blog: "Blog",
+    homeHref: "/de",
+    shopHref: "/books",
+    bestsellersHref: "/bestsellers",
+    readingListsHref: "/de",
+    blogHref: "/blog",
+    searchHref: "/search",
+    cats: [
+      { label: "Geschichte", slug: "history" },
+      { label: "Dunkle Geschichte", slug: "dark-history" },
+      { label: "Verschwörung", slug: "conspiracy" },
+      { label: "Mythologie", slug: "mythology" },
+      { label: "Religion & Spiritualität", slug: "religion" },
+      { label: "Wissenschaft & Natur", slug: "science" },
+      { label: "Sprachlernen", slug: "language-learning" },
+      { label: "Selbsthilfe", slug: "self-help" },
+    ],
+  } : {
+    shop: "Shop",
+    bestsellers: "Bestsellers",
+    categories: "Categories ▾",
+    readingLists: "Reading Lists",
+    blog: "Blog",
+    homeHref: "/",
+    shopHref: "/books",
+    bestsellersHref: "/bestsellers",
+    readingListsHref: "/reading-lists",
+    blogHref: "/blog",
+    searchHref: "/search",
+    cats: [
+      { label: "History", slug: "history" },
+      { label: "Dark History", slug: "dark-history" },
+      { label: "Conspiracy", slug: "conspiracy" },
+      { label: "Mythology", slug: "mythology" },
+      { label: "Religion & Spirituality", slug: "religion" },
+      { label: "Science & Nature", slug: "science" },
+      { label: "Language Learning", slug: "language-learning" },
+      { label: "Frisian Language", slug: "frisian" },
+      { label: "Self-Help", slug: "self-help" },
+    ],
+  };
+
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
         {/* Header */}
         <header className="bg-[var(--color-surface)] border-b border-[var(--color-border)] sticky top-0 z-40">
           <nav className="max-w-7xl mx-auto px-4 py-3 flex items-center">
-            <Link href="/" className="flex items-center gap-2.5">
+            <Link href={nav.homeHref} className="flex items-center gap-2.5">
               <Logo size={40} />
               <span
                 className="text-[1.15rem] font-extrabold text-[var(--color-orange-light)] hidden sm:inline"
@@ -51,29 +103,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </span>
             </Link>
             <div className="flex items-center gap-6 text-sm font-semibold uppercase tracking-wider ml-8">
-              <Link href="/books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
-                Shop
+              <Link href={nav.shopHref} className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
+                {nav.shop}
               </Link>
-              <Link href="/bestsellers" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
-                Bestsellers
+              <Link href={nav.bestsellersHref} className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
+                {nav.bestsellers}
               </Link>
               {/* Categories dropdown */}
               <div className="relative group hidden sm:block">
                 <button className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition cursor-pointer bg-transparent border-0 p-0 font-semibold uppercase tracking-wider text-sm">
-                  Categories ▾
+                  {nav.categories}
                 </button>
                 <div className="absolute top-full left-0 mt-1 w-52 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 py-1">
-                  {[
-                    { label: "History", slug: "history" },
-                    { label: "Dark History", slug: "dark-history" },
-                    { label: "Conspiracy", slug: "conspiracy" },
-                    { label: "Mythology", slug: "mythology" },
-                    { label: "Religion & Spirituality", slug: "religion" },
-                    { label: "Science & Nature", slug: "science" },
-                    { label: "Language Learning", slug: "language-learning" },
-                    { label: "Frisian Language", slug: "frisian" },
-                    { label: "Self-Help", slug: "self-help" },
-                  ].map((cat) => (
+                  {nav.cats.map((cat) => (
                     <Link
                       key={cat.slug}
                       href={`/category/${cat.slug}`}
@@ -84,21 +126,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   ))}
                 </div>
               </div>
-              <Link href="/reading-lists" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
-                Reading Lists
+              <Link href={nav.readingListsHref} className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
+                {nav.readingLists}
               </Link>
-              <Link href="/gift-guides" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
-                Gift Guides
-              </Link>
-              <Link href="/blog" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
-                Blog
+              {!isDE && (
+                <Link href="/gift-guides" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
+                  Gift Guides
+                </Link>
+              )}
+              <Link href={nav.blogHref} className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
+                {nav.blog}
               </Link>
             </div>
             <div className="ml-auto flex items-center gap-3">
               <LanguageSwitcher />
               {/* Search icon - desktop */}
               <Link
-                href="/search"
+                href={nav.searchHref}
                 className="hidden sm:flex items-center gap-1.5 text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition text-sm"
                 aria-label="Search books"
               >
@@ -107,7 +151,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </svg>
               </Link>
               {/* Mobile: hamburger */}
-              <Link href="/books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition sm:hidden">
+              <Link href={nav.shopHref} className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition sm:hidden">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -122,53 +166,94 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="bg-[var(--color-surface)] border-t border-[var(--color-border)] mt-16">
           <div className="max-w-7xl mx-auto px-4 py-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {isDE ? (
+                <>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Stöbern</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/de" className="text-[var(--color-orange-light)] hover:text-[var(--color-orange)] transition font-semibold">Startseite</Link>
+                      <Link href="/books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Alle Bücher</Link>
+                      <Link href="/bestsellers" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Bestseller</Link>
+                      <Link href="/category/history" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Geschichtsbücher</Link>
+                      <Link href="/category/mythology" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Mythologie-Bücher</Link>
+                      <Link href="/category/language-learning" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Sprachlernen</Link>
+                      <Link href="/blog" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Blog</Link>
+                      <Link href="/search" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Suche</Link>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Beste-Bücher-Listen</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/de/beste-geschichtsbuecher" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Geschichtsbücher</Link>
+                      <Link href="/de/beste-mythologie-buecher" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Mythologie-Bücher</Link>
+                      <Link href="/de/beste-verschwoerungstheorie-buecher" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Verschwörungstheorie-Bücher</Link>
+                      <Link href="/de/beste-dunkle-geschichte-buecher" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Bücher über Dunkle Geschichte</Link>
+                      <Link href="/de/beste-nordische-mythologie-buecher" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Bücher über Nordische Mythologie</Link>
+                      <Link href="/de/beste-buecher-auf-deutsch" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Beste Bücher auf Deutsch</Link>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Unternehmen</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/about" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Über uns</Link>
+                      <Link href="/contact" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Kontakt</Link>
+                      <Link href="/affiliate-disclosure" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Affiliate-Hinweis</Link>
+                      <Link href="/privacy-policy" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Datenschutz</Link>
+                      <Link href="/terms" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Nutzungsbedingungen</Link>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Browse</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/start-here" className="text-[var(--color-orange-light)] hover:text-[var(--color-orange)] transition font-semibold">Start Here</Link>
+                      <Link href="/books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">All Books</Link>
+                      <Link href="/bestsellers" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Bestsellers</Link>
+                      <Link href="/category/history" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">History Books</Link>
+                      <Link href="/category/mythology" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Mythology Books</Link>
+                      <Link href="/category/language-learning" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Language Learning</Link>
+                      <Link href="/gift-guides" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Gift Guides</Link>
+                      <Link href="/blog" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Blog</Link>
+                      <Link href="/search" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Search</Link>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Best Of Lists</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/best-history-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best History Books</Link>
+                      <Link href="/best-mythology-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Mythology Books</Link>
+                      <Link href="/best-conspiracy-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Conspiracy Books</Link>
+                      <Link href="/best-dark-history-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Dark History Books</Link>
+                      <Link href="/best-language-learning-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Language Learning Books</Link>
+                      <Link href="/best-religion-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Religion Books</Link>
+                      <Link href="/best-science-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Science Books</Link>
+                      <Link href="/best-american-history-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best American History Books</Link>
+                      <Link href="/best-books-in-german" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Books in German</Link>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Company</h3>
+                    <div className="flex flex-col gap-2 text-sm">
+                      <Link href="/about" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">About Us</Link>
+                      <Link href="/team" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Meet the Authors</Link>
+                      <Link href="/authors/auke" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Author: Auke</Link>
+                      <Link href="/authors/jennifer-joseph" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Author: Jennifer Joseph</Link>
+                      <Link href="/authors/yahia-fathy" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Author: Yahia Fathy</Link>
+                      <Link href="/contact" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Contact</Link>
+                      <Link href="/affiliate-disclosure" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Affiliate Disclosure</Link>
+                      <Link href="/privacy-policy" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Privacy Policy</Link>
+                      <Link href="/terms" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Terms of Service</Link>
+                    </div>
+                  </div>
+                </>
+              )}
               <div>
-                <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Browse</h3>
-                <div className="flex flex-col gap-2 text-sm">
-                  <Link href="/start-here" className="text-[var(--color-orange-light)] hover:text-[var(--color-orange)] transition font-semibold">Start Here</Link>
-                  <Link href="/books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">All Books</Link>
-                  <Link href="/bestsellers" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Bestsellers</Link>
-                  <Link href="/category/history" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">History Books</Link>
-                  <Link href="/category/mythology" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Mythology Books</Link>
-                  <Link href="/category/language-learning" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Language Learning</Link>
-                  <Link href="/gift-guides" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Gift Guides</Link>
-                  <Link href="/blog" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Blog</Link>
-                  <Link href="/search" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Search</Link>
-                </div>
-              </div>
-              <div>
-                <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Best Of Lists</h3>
-                <div className="flex flex-col gap-2 text-sm">
-                  <Link href="/best-history-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best History Books</Link>
-                  <Link href="/best-mythology-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Mythology Books</Link>
-                  <Link href="/best-conspiracy-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Conspiracy Books</Link>
-                  <Link href="/best-dark-history-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Dark History Books</Link>
-                  <Link href="/best-language-learning-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Language Learning Books</Link>
-                  <Link href="/best-religion-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Religion Books</Link>
-                  <Link href="/best-science-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Science Books</Link>
-                  <Link href="/best-american-history-books" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best American History Books</Link>
-                  <Link href="/best-books-in-german" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Best Books in German</Link>
-                </div>
-              </div>
-              <div>
-                <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Company</h3>
-                <div className="flex flex-col gap-2 text-sm">
-                  <Link href="/about" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">About Us</Link>
-                  <Link href="/team" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Meet the Authors</Link>
-                  <Link href="/authors/auke" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Author: Auke</Link>
-                  <Link href="/authors/jennifer-joseph" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Author: Jennifer Joseph</Link>
-                  <Link href="/authors/yahia-fathy" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Author: Yahia Fathy</Link>
-                  <Link href="/contact" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Contact</Link>
-                  <Link href="/affiliate-disclosure" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Affiliate Disclosure</Link>
-                  <Link href="/privacy-policy" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Privacy Policy</Link>
-                  <Link href="/terms" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Terms of Service</Link>
-                </div>
-              </div>
-              <div>
-                <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">Contact</h3>
+                <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">{isDE ? "Kontakt" : "Contact"}</h3>
                 <div className="text-sm text-[var(--color-text-muted)] space-y-1">
                   <p className="font-semibold text-[var(--color-text)]">Skriuwer.com</p>
-                  <p>Friesland, Netherlands</p>
+                  <p>{isDE ? "Friesland, Niederlande" : "Friesland, Netherlands"}</p>
                   <p className="mt-3">
                     <a href="mailto:kontakt@skriuwer.com" className="text-[var(--color-orange-light)] hover:underline">
                       kontakt@skriuwer.com
@@ -217,8 +302,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
             </div>
             <div className="mt-10 pt-6 border-t border-[var(--color-border)] text-xs text-[var(--color-text-dim)]">
-              <p>As an Amazon Associate, Skriuwer earns from qualifying purchases. Book prices and availability are subject to change.</p>
-              <p className="mt-1">&copy; {new Date().getFullYear()} Skriuwer.com. All rights reserved.</p>
+              {isDE ? (
+                <p>Als Amazon-Partner verdient Skriuwer an qualifizierten Käufen. Preise und Verfügbarkeit können sich ändern.</p>
+              ) : (
+                <p>As an Amazon Associate, Skriuwer earns from qualifying purchases. Book prices and availability are subject to change.</p>
+              )}
+              <p className="mt-1">&copy; {new Date().getFullYear()} Skriuwer.com. {isDE ? "Alle Rechte vorbehalten." : "All rights reserved."}</p>
             </div>
           </div>
         </footer>

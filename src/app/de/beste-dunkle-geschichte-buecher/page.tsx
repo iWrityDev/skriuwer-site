@@ -5,7 +5,7 @@ import { BestOfPage } from "@/components/BestOfPage";
 export const metadata: Metadata = {
   title: "Beste Bücher über dunkle Geschichte 2026 – Was Schulbücher auslassen",
   description:
-    "Die besten Bücher über die dunklen Seiten der Geschichte — Verbrechen, Vertuschungen und vergessene Gräueltaten. Nach Amazon-Leserbewertungen sortiert.",
+    "Die besten Bücher über die dunklen Seiten der Geschichte: Verbrechen, Vertuschungen und vergessene Gräueltaten. Nach Amazon-Leserbewertungen sortiert.",
   alternates: {
     canonical: "https://www.skriuwer.com/de/beste-dunkle-geschichte-buecher",
     languages: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Beste Bücher über dunkle Geschichte 2026 – Was Schulbücher auslassen",
     description:
-      "Die besten Bücher über die dunklen Seiten der Geschichte — Verbrechen, Vertuschungen und vergessene Gräueltaten.",
+      "Die besten Bücher über die dunklen Seiten der Geschichte: Verbrechen, Vertuschungen und vergessene Gräueltaten.",
     url: "https://www.skriuwer.com/de/beste-dunkle-geschichte-buecher",
     type: "website",
     locale: "de_DE",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const INTRO = [
   "Die offizielle Geschichtsschreibung lässt vieles aus. Nicht aus Versehen, sondern weil unbequeme Wahrheiten Macht untergraben, Helden entzaubern und bequeme Narrative zerstören. Die Bücher auf dieser Seite gehen dorthin, wo Schulbücher aufhören.",
-  "Dunkle Geschichte bedeutet nicht Sensationslust. Es bedeutet, die vollständige Geschichte zu erzählen — einschließlich der Teile, die absichtlich vergraben wurden. Sortiert nach Leserbewertungen auf Amazon, damit die Bücher oben stehen, die tatsächlich etwas bewirkt haben.",
+  "Dunkle Geschichte bedeutet nicht Sensationslust. Es bedeutet, die vollständige Geschichte zu erzählen (einschließlich der Teile, die absichtlich vergraben wurden). Sortiert nach Leserbewertungen auf Amazon, damit die Bücher oben stehen, die tatsächlich etwas bewirkt haben.",
 ];
 
 const FAQ = [
@@ -35,11 +35,11 @@ const FAQ = [
   },
   {
     q: "Sind diese Bücher für ein breites Publikum geeignet?",
-    a: "Die meisten ja. Sie sind für interessierte Leser ohne Fachkenntnisse geschrieben. Manche Inhalte sind erschütternd — das ist beabsichtigt. Geschichte, die nicht erschüttert, ist keine ehrliche Geschichte.",
+    a: "Die meisten ja. Sie sind für interessierte Leser ohne Fachkenntnisse geschrieben. Manche Inhalte sind erschütternd, und das ist beabsichtigt. Geschichte, die nicht erschüttert, ist keine ehrliche Geschichte.",
   },
   {
     q: "Sind die Inhalte faktisch belegt?",
-    a: "Die auf dieser Seite empfohlenen Bücher stützen sich auf historische Quellen, Archivmaterial und akademische Forschung. Populäre Geschichte bedeutet nicht ungenaue Geschichte — die besten Autoren in diesem Genre sind rigoros in ihrer Quellenarbeit.",
+    a: "Die auf dieser Seite empfohlenen Bücher stützen sich auf historische Quellen, Archivmaterial und akademische Forschung. Populäre Geschichte bedeutet nicht ungenaue Geschichte. Die besten Autoren in diesem Genre sind rigoros in ihrer Quellenarbeit.",
   },
   {
     q: "Gibt es dunkle Geschichtsbücher auf Deutsch?",
@@ -60,7 +60,7 @@ export default function BesteDunkleGeschichteBuecher() {
   return (
     <BestOfPage
       title="Beste Bücher über dunkle Geschichte 2026"
-      description="Die meistgelesenen Bücher über die dunklen Seiten der Geschichte — was Schulbücher weglassen, Vertuschungen aufdecken und unbequeme Wahrheiten erzählen."
+      description="Die meistgelesenen Bücher über die dunklen Seiten der Geschichte, was Schulbücher weglassen, Vertuschungen aufdecken und unbequeme Wahrheiten erzählen."
       books={books}
       breadcrumb="Dunkle Geschichte"
       categoryPage="/category/dark-history"

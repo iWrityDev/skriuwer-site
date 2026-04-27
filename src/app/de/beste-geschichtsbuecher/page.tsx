@@ -5,7 +5,7 @@ import { BestOfPage } from "@/components/BestOfPage";
 export const metadata: Metadata = {
   title: "Beste Geschichtsbücher 2026 – Nach Lesern bewertet",
   description:
-    "Die besten Geschichtsbücher, sortiert nach verifizierten Amazon-Leserbewertungen. Von der Antike bis zur Moderne — das Richtige für jeden Geschichtsinteressierten.",
+    "Die besten Geschichtsbücher, sortiert nach verifizierten Amazon-Leserbewertungen. Von der Antike bis zur Moderne, das Richtige für jeden Geschichtsinteressierten.",
   alternates: {
     canonical: "https://www.skriuwer.com/de/beste-geschichtsbuecher",
     languages: {
@@ -24,18 +24,18 @@ export const metadata: Metadata = {
 };
 
 const INTRO = [
-  "Geschichte ist keine trockene Aneinanderreihung von Jahreszahlen. Die besten Geschichtsbücher zeigen, wie einzelne Entscheidungen ganze Reiche schufen oder vernichteten — und warum dieselben Muster sich immer wieder wiederholen, auch heute noch.",
+  "Geschichte ist keine trockene Aneinanderreihung von Jahreszahlen. Die besten Geschichtsbücher zeigen, wie einzelne Entscheidungen ganze Reiche schufen oder vernichteten. Und warum dieselben Muster sich immer wieder wiederholen, auch heute noch.",
   "Die Bücher auf dieser Seite sind nach verifizierten Amazon-Leserbewertungen sortiert. Je mehr Bewertungen ein Buch hat, desto mehr Menschen haben es tatsächlich gelesen und bewertet. Das ist ein zuverlässigerer Indikator als jede Redakteursmeinung.",
 ];
 
 const FAQ = [
   {
     q: "Welche Geschichtsbücher eignen sich für Einsteiger?",
-    a: "Beginnen Sie mit Büchern, die eine bestimmte Epoche oder ein einzelnes Ereignis abdecken, anstatt die gesamte Weltgeschichte auf einmal zu behandeln. Die auf dieser Seite am höchsten bewerteten Bücher sind in der Regel auch die zugänglichsten — sie sind wie Geschichten geschrieben, nicht wie Lehrbücher.",
+    a: "Beginnen Sie mit Büchern, die eine bestimmte Epoche oder ein einzelnes Ereignis abdecken, anstatt die gesamte Weltgeschichte auf einmal zu behandeln. Die auf dieser Seite am höchsten bewerteten Bücher sind in der Regel auch die zugänglichsten: Sie sind wie Geschichten geschrieben, nicht wie Lehrbücher.",
   },
   {
     q: "Gibt es diese Geschichtsbücher auch auf Deutsch?",
-    a: "Viele der beliebtesten Titel sind als deutsche Übersetzung auf Amazon.de erhältlich. Auf den einzelnen Buchseiten finden Sie Links zu Amazon DE, NL, UK und US — wählen Sie den Shop, der für Ihren Standort am besten geeignet ist.",
+    a: "Viele der beliebtesten Titel sind als deutsche Übersetzung auf Amazon.de erhältlich. Auf den einzelnen Buchseiten finden Sie Links zu Amazon DE, NL, UK und US. Wählen Sie den Shop, der für Ihren Standort am besten geeignet ist.",
   },
   {
     q: "Welche Zeitspanne decken die Bücher auf dieser Seite ab?",
@@ -47,7 +47,7 @@ const FAQ = [
   },
   {
     q: "Wie werden die Bücher auf dieser Seite eingestuft?",
-    a: "Ausschließlich nach der Anzahl der verifizierten Leserbewertungen auf Amazon. Bücher mit mehr Bewertungen stehen weiter oben — das bedeutet nicht unbedingt, dass sie objektiv besser sind, aber es bedeutet, dass tatsächlich mehr Menschen sie gelesen und ihre Meinung dazu geäußert haben.",
+    a: "Ausschließlich nach der Anzahl der verifizierten Leserbewertungen auf Amazon. Bücher mit mehr Bewertungen stehen weiter oben. Das bedeutet nicht unbedingt, dass sie objektiv besser sind, aber es bedeutet, dass tatsächlich mehr Menschen sie gelesen und ihre Meinung dazu geäußert haben.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function BesteGeschichtsbuecher() {
   return (
     <BestOfPage
       title="Beste Geschichtsbücher 2026"
-      description="Die meistgelesenen und bestbewerteten Geschichtsbücher auf Amazon — von der Antike bis zur Gegenwart, sortiert nach Leserbewertungen."
+      description="Die meistgelesenen und bestbewerteten Geschichtsbücher auf Amazon, von der Antike bis zur Gegenwart, sortiert nach Leserbewertungen."
       books={books}
       breadcrumb="Beste Geschichtsbücher"
       categoryPage="/category/history"

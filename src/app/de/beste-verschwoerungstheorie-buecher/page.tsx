@@ -5,7 +5,7 @@ import { BestOfPage } from "@/components/BestOfPage";
 export const metadata: Metadata = {
   title: "Beste Verschwörungstheorie-Bücher 2026 – Fakten hinter den Mythen",
   description:
-    "Die besten Bücher über Verschwörungstheorien, Vertuschungen und verborgene Geschichte. Sortiert nach verifizierten Amazon-Leserbewertungen.",
+    "Die besten Bücher über Verschwörungstheorien, Vertuschungen und verborgene Geschichte, sortiert nach verifizierten Amazon-Leserbewertungen.",
   alternates: {
     canonical: "https://www.skriuwer.com/de/beste-verschwoerungstheorie-buecher",
     languages: {
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
 };
 
 const INTRO = [
-  "Nicht jede Verschwörungstheorie ist falsch — und nicht jede ist wahr. Die besten Bücher zu diesem Thema trennen belegbare Fakten von Spekulation, untersuchen reale Vertuschungsaktionen von Regierungen und Konzernen und zeigen, wie Desinformation funktioniert.",
+  "Nicht jede Verschwörungstheorie ist falsch, und nicht jede ist wahr. Die besten Bücher zu diesem Thema trennen belegbare Fakten von Spekulation, untersuchen reale Vertuschungsaktionen von Regierungen und Konzernen und zeigen, wie Desinformation funktioniert.",
   "Diese Liste umfasst sowohl Bücher, die echte historische Verschwörungen dokumentieren, als auch solche, die kritisch mit populären Theorien umgehen. Alle nach der Anzahl der verifizierten Leserbewertungen auf Amazon sortiert.",
 ];
 
 const FAQ = [
   {
     q: "Was ist der Unterschied zwischen einer echten Verschwörung und einer Verschwörungstheorie?",
-    a: "Eine echte Verschwörung ist ein belegtes, geheimes Komplott — wie MKUltra, Watergate oder die Tabak-Lobby-Kampagnen der 1960er-Jahre. Eine Verschwörungstheorie ist eine unbeweisbare Behauptung über eine geheime Macht. Die Grenzen sind fließend, und genau das macht dieses Thema so faszinierend.",
+    a: "Eine echte Verschwörung ist ein belegtes, geheimes Komplott (wie MKUltra, Watergate oder die Tabak-Lobby-Kampagnen der 1960er-Jahre). Eine Verschwörungstheorie ist eine unbeweisbare Behauptung über eine geheime Macht. Die Grenzen sind fließend, und genau das macht dieses Thema so faszinierend.",
   },
   {
     q: "Sind diese Bücher seriös oder eher reißerisch?",
@@ -60,7 +60,7 @@ export default function BesteVerschwoerungstheorieBuecher() {
   return (
     <BestOfPage
       title="Beste Verschwörungstheorie-Bücher 2026"
-      description="Die meistgelesenen Bücher über Verschwörungen, Vertuschungen und verborgene Geschichte — faktenbasiert, nach Leserbewertungen auf Amazon sortiert."
+      description="Die meistgelesenen Bücher über Verschwörungen, Vertuschungen und verborgene Geschichte, faktenbasiert, nach Leserbewertungen auf Amazon sortiert."
       books={books}
       breadcrumb="Verschwörungstheorie-Bücher"
       categoryPage="/category/conspiracy"

@@ -5,7 +5,7 @@ import { BestOfPage } from "@/components/BestOfPage";
 export const metadata: Metadata = {
   title: "Beste Bücher auf Deutsch 2026 – Top-Titel nach Leserbewertungen",
   description:
-    "Die besten deutschsprachigen Bücher aus allen Genres — Geschichte, Mythologie, Sprachlernen, dunkle Geschichte und mehr. Nach Amazon-Bewertungen sortiert.",
+    "Die besten deutschsprachigen Bücher aus allen Genres: Geschichte, Mythologie, Sprachlernen, dunkle Geschichte und mehr. Nach Amazon-Bewertungen sortiert.",
   alternates: {
     canonical: "https://www.skriuwer.com/de/beste-buecher-auf-deutsch",
     languages: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Beste Bücher auf Deutsch 2026 – Top-Titel nach Leserbewertungen",
     description:
-      "Die besten deutschsprachigen Bücher aus allen Genres — Geschichte, Mythologie, Sprachlernen, dunkle Geschichte und mehr.",
+      "Die besten deutschsprachigen Bücher aus allen Genres: Geschichte, Mythologie, Sprachlernen, dunkle Geschichte und mehr.",
     url: "https://www.skriuwer.com/de/beste-buecher-auf-deutsch",
     type: "website",
     locale: "de_DE",
@@ -24,22 +24,22 @@ export const metadata: Metadata = {
 };
 
 const INTRO = [
-  "Diese Seite versammelt die beliebtesten Bücher, die auf Deutsch erschienen sind — egal ob als Originalwerk oder als Übersetzung. Sachbücher über Geschichte und dunkle Geschichte, zweisprachige Kurzgeschichten für Sprachenlernende sowie Titel aus Mythologie und Verschwörungstheorien.",
-  "Alle Bücher sind nach der Anzahl der verifizierten Leserbewertungen auf Amazon sortiert. Das bedeutet: oben stehen die Bücher, die am meisten Menschen tatsächlich gelesen und bewertet haben — nicht die mit dem höchsten Werbebudget.",
+  "Diese Seite versammelt die beliebtesten Bücher, die auf Deutsch erschienen sind, egal ob als Originalwerk oder als Übersetzung. Sachbücher über Geschichte und dunkle Geschichte, zweisprachige Kurzgeschichten für Sprachenlernende sowie Titel aus Mythologie und Verschwörungstheorien.",
+  "Alle Bücher sind nach der Anzahl der verifizierten Leserbewertungen auf Amazon sortiert. Das bedeutet: oben stehen die Bücher, die am meisten Menschen tatsächlich gelesen und bewertet haben, nicht die mit dem höchsten Werbebudget.",
 ];
 
 const FAQ = [
   {
     q: "Welche deutschen Bücher sind bei Lesern am beliebtesten?",
-    a: "Deutschsprachige Sachbücher über Geschichte, dunkle Geschichte und Überlebensgeschichten sind besonders gefragt. Auf dieser Seite werden Bücher nach Anzahl der Amazon-Bewertungen sortiert — je mehr Bewertungen, desto bewährter das Buch.",
+    a: "Deutschsprachige Sachbücher über Geschichte, dunkle Geschichte und Überlebensgeschichten sind besonders gefragt. Auf dieser Seite werden Bücher nach Anzahl der Amazon-Bewertungen sortiert. Je mehr Bewertungen, desto bewährter das Buch.",
   },
   {
     q: "Gibt es zweisprachige Bücher auf Deutsch?",
-    a: "Ja, diese Seite enthält eine Auswahl an zweisprachigen Kurzgeschichten für Deutschsprachige, die eine neue Sprache lernen möchten — darunter Deutsch-Englisch, Deutsch-Russisch, Deutsch-Türkisch und weitere.",
+    a: "Ja, diese Seite enthält eine Auswahl an zweisprachigen Kurzgeschichten für Deutschsprachige, die eine neue Sprache lernen möchten, darunter Deutsch-Englisch, Deutsch-Russisch, Deutsch-Türkisch und weitere.",
   },
   {
     q: "Sind diese Bücher außerhalb Deutschlands erhältlich?",
-    a: "Ja. Alle Bücher verlinken zu Amazon, das international liefert. Die Links auf den einzelnen Buchseiten führen zu Amazon DE, NL, UK und US — wählen Sie den Shop, der für Ihren Standort am besten geeignet ist.",
+    a: "Ja. Alle Bücher verlinken zu Amazon, das international liefert. Die Links auf den einzelnen Buchseiten führen zu Amazon DE, NL, UK und US. Wählen Sie den Shop, der für Ihren Standort am besten geeignet ist.",
   },
   {
     q: "Welche Kategorien sind auf Deutsch verfügbar?",
@@ -60,7 +60,7 @@ export default function BesteBuecherAufDeutsch() {
   return (
     <BestOfPage
       title="Beste Bücher auf Deutsch 2026"
-      description="Die stärksten deutschsprachigen Titel — Geschichte, dunkle Geschichte, zweisprachige Geschichten und mehr. Nach Leserbewertungen auf Amazon sortiert."
+      description="Die stärksten deutschsprachigen Titel: Geschichte, dunkle Geschichte, zweisprachige Geschichten und mehr. Nach Leserbewertungen auf Amazon sortiert."
       books={books}
       breadcrumb="Beste Bücher auf Deutsch"
       categoryPage="/category/language-learning"

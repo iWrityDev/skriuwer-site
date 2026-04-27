@@ -59,7 +59,7 @@ export default function GermanHomePage() {
             Die besten Bücher,<br />nach Lesern bewertet
           </h1>
           <p className="text-base sm:text-lg text-[var(--color-text-muted)] max-w-2xl mx-auto leading-relaxed">
-            Keine Redakteursmeinungen, keine gesponserten Listen. Jede Rangliste basiert auf verifizierten Amazon-Leserbewertungen — je mehr Bewertungen, desto weiter oben.
+            Keine Redakteursmeinungen, keine gesponserten Listen. Jede Rangliste basiert auf verifizierten Amazon-Leserbewertungen. Je mehr Bewertungen, desto weiter oben.
           </p>
         </div>
       </section>
@@ -134,10 +134,10 @@ export default function GermanHomePage() {
         <section className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl p-6 sm:p-8">
           <h2 className="text-lg font-bold text-[var(--color-text)] mb-3">Über Skriuwer.com</h2>
           <p className="text-sm text-[var(--color-text-muted)] leading-relaxed mb-4">
-            Skriuwer ist eine unabhängige Bücher-Empfehlungsseite aus den Niederlanden. Wir verkaufen keine Bücher selbst — wir verlinken zu Amazon, damit Sie direkt beim Händler kaufen können. Alle Ranglisten basieren auf echten Leserbewertungen, nicht auf Werbeverträgen.
+            Skriuwer ist eine unabhängige Bücher-Empfehlungsseite aus den Niederlanden. Wir verkaufen keine Bücher selbst, sondern verlinken zu Amazon, damit Sie direkt beim Händler kaufen können. Alle Ranglisten basieren auf echten Leserbewertungen, nicht auf Werbeverträgen.
           </p>
           <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-            Als Amazon-Partner verdienen wir eine kleine Provision bei qualifizierten Käufen — für Sie entstehen keine Mehrkosten.
+            Als Amazon-Partner verdienen wir eine kleine Provision bei qualifizierten Käufen. Für Sie entstehen keine Mehrkosten.
           </p>
         </section>
       </div>

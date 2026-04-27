@@ -5,7 +5,7 @@ import { BestOfPage } from "@/components/BestOfPage";
 export const metadata: Metadata = {
   title: "Beste Bücher über nordische Mythologie 2026 – Odin, Thor, Ragnarök",
   description:
-    "Die besten Bücher über nordische Mythologie — Wikinger, Götter, Weltuntergang. Für Einsteiger und Kenner. Nach verifizierten Amazon-Leserbewertungen sortiert.",
+    "Die besten Bücher über nordische Mythologie: Wikinger, Götter, Weltuntergang. Für Einsteiger und Kenner. Nach verifizierten Amazon-Leserbewertungen sortiert.",
   alternates: {
     canonical: "https://www.skriuwer.com/de/beste-nordische-mythologie-buecher",
     languages: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Beste Bücher über nordische Mythologie 2026 – Odin, Thor, Ragnarök",
     description:
-      "Die besten Bücher über nordische Mythologie — Wikinger, Götter, Weltuntergang.",
+      "Die besten Bücher über nordische Mythologie: Wikinger, Götter, Weltuntergang.",
     url: "https://www.skriuwer.com/de/beste-nordische-mythologie-buecher",
     type: "website",
     locale: "de_DE",
@@ -24,18 +24,18 @@ export const metadata: Metadata = {
 };
 
 const INTRO = [
-  "Die nordische Mythologie ist düsterer als die griechische. Hier werden die Götter selbst sterben. Odin weiß es, bereitet sich vor, und kämpft trotzdem weiter. Diese Haltung — Mut angesichts des sicheren Endes — hat die Wikinger-Kultur geprägt und fasziniert bis heute Leser weltweit.",
+  "Die nordische Mythologie ist düsterer als die griechische. Hier werden die Götter selbst sterben. Odin weiß es, bereitet sich vor, und kämpft trotzdem weiter. Diese Haltung (Mut angesichts des sicheren Endes) hat die Wikinger-Kultur geprägt und fasziniert bis heute Leser weltweit.",
   "Die Bücher auf dieser Seite decken das gesamte Spektrum ab: von wissenschaftlichen Texten über die originale Edda bis hin zu packenden modernen Nacherzählungen, die auch ohne Vorkenntnisse zugänglich sind.",
 ];
 
 const FAQ = [
   {
     q: "Was ist die beste Einführung in die nordische Mythologie?",
-    a: "Für Einsteiger empfehlen sich moderne Nacherzählungen, bevor man zur Prosa-Edda oder Lieder-Edda greift — die Primärquellen setzen einiges Kontextwissen voraus. Die auf dieser Seite am höchsten bewerteten Bücher sind in der Regel die zugänglichsten.",
+    a: "Für Einsteiger empfehlen sich moderne Nacherzählungen, bevor man zur Prosa-Edda oder Lieder-Edda greift. Die Primärquellen setzen einiges Kontextwissen voraus. Die auf dieser Seite am höchsten bewerteten Bücher sind in der Regel die zugänglichsten.",
   },
   {
     q: "Was ist Ragnarök und warum ist es so wichtig?",
-    a: "Ragnarök ist das Weltende in der nordischen Mythologie — eine finale Schlacht, in der fast alle Götter und Ungeheuer sterben. Was Ragnarök besonders macht: Es ist vorhergesagt, unvermeidlich, und die Götter bereiten sich trotzdem darauf vor. Diese Akzeptanz des Schicksals ist ein Kernthema nordischer Philosophie.",
+    a: "Ragnarök ist das Weltende in der nordischen Mythologie: eine finale Schlacht, in der fast alle Götter und Ungeheuer sterben. Was Ragnarök besonders macht: Es ist vorhergesagt, unvermeidlich, und die Götter bereiten sich trotzdem darauf vor. Diese Akzeptanz des Schicksals ist ein Kernthema nordischer Philosophie.",
   },
   {
     q: "Wie unterscheidet sich die nordische Mythologie von der Film-Version (Marvel)?",
@@ -47,7 +47,7 @@ const FAQ = [
   },
   {
     q: "Was ist der Unterschied zwischen Prosa-Edda und Lieder-Edda?",
-    a: "Die Prosa-Edda (geschrieben von Snorri Sturluson um 1220) erzählt die Mythen in Prosaform und ist zugänglicher. Die Lieder-Edda ist eine Sammlung alter Gedichte in altnordischer Sprache — die ältere und literarisch reichhaltigere Quelle, aber anspruchsvoller zu lesen.",
+    a: "Die Prosa-Edda (geschrieben von Snorri Sturluson um 1220) erzählt die Mythen in Prosaform und ist zugänglicher. Die Lieder-Edda ist eine Sammlung alter Gedichte in altnordischer Sprache, die ältere und literarisch reichhaltigere Quelle, aber anspruchsvoller zu lesen.",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function BesteNordischeMythologieBuecher() {
   return (
     <BestOfPage
       title="Beste Bücher über nordische Mythologie 2026"
-      description="Die meistgelesenen Bücher über Wikinger, Götter und Ragnarök — von Einsteigerwerken bis zur originalen Edda. Nach Leserbewertungen auf Amazon sortiert."
+      description="Die meistgelesenen Bücher über Wikinger, Götter und Ragnarök, von Einsteigerwerken bis zur originalen Edda. Nach Leserbewertungen auf Amazon sortiert."
       books={books}
       breadcrumb="Nordische Mythologie"
       categoryPage="/category/mythology"

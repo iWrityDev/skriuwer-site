@@ -35,6 +35,8 @@ const CAT_NAME_DE: Record<string, string> = {
 
 const PAGE_LABELS = {
   en: {
+    home: "Home",
+    readingListsLabel: "Reading Lists",
     readingList: "Reading List",
     curatedBy: "Curated by",
     updated: "Updated",
@@ -57,6 +59,8 @@ const PAGE_LABELS = {
     readingListsHref: "/reading-lists",
   },
   de: {
+    home: "Startseite",
+    readingListsLabel: "Leselisten",
     readingList: "Leseliste",
     curatedBy: "Zusammengestellt von",
     updated: "Aktualisiert",
@@ -193,9 +197,9 @@ export function BestOfPage({
         <section className="hero-glow-cat">
           <div className="max-w-4xl mx-auto px-4 pt-8 pb-8">
             <nav className="text-xs text-[var(--color-text-dim)] mb-5">
-              <Link href="/" className="hover:text-[var(--color-orange-light)] transition-colors">Home</Link>
+              <Link href={locale === "de" ? "/de" : "/"} className="hover:text-[var(--color-orange-light)] transition-colors">{L.home}</Link>
               <span className="mx-1.5 opacity-60">/</span>
-              <Link href="/reading-lists" className="hover:text-[var(--color-orange-light)] transition-colors">Reading Lists</Link>
+              <Link href={L.readingListsHref} className="hover:text-[var(--color-orange-light)] transition-colors">{L.readingListsLabel}</Link>
               <span className="mx-1.5 opacity-60">/</span>
               <span className="text-[var(--color-text)]">{breadcrumb}</span>
             </nav>
@@ -404,7 +408,7 @@ export function BestOfPage({
                           </Link>
                           {book.isOwnBook && (
                             <span className="flex-shrink-0 px-1.5 py-0.5 text-[10px] font-bold bg-[color-mix(in_srgb,var(--color-orange)_15%,transparent)] text-[var(--color-orange-light)] border border-[color-mix(in_srgb,var(--color-orange)_30%,transparent)] rounded whitespace-nowrap leading-none mt-0.5">
-                              ★ Our Pick
+                              {L.ourPick}
                             </span>
                           )}
                         </div>
