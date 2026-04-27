@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best philosophy books ranked by reader reviews. From ancient Stoics to modern existentialists, these essential works will challenge how you think about life, meaning, and ethics.",
   alternates: { canonical: "https://www.skriuwer.com/best-philosophy-books" },
+  openGraph: {
+    title: "Best Philosophy Books in 2026 | Top Reads from Plato to Nietzsche",
+    description: "The best philosophy books ranked by reader reviews. From ancient Stoics to modern existentialists, these essential works will challenge how you think about life, meaning, and ethics.",
+    url: "https://www.skriuwer.com/best-philosophy-books",
+    type: "website",
+  },
 };
 
 export default function BestPhilosophyBooksPage() {

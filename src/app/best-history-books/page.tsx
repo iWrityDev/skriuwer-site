@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "The 15 best history books of 2026, ranked by reader reviews. Ancient civilizations, wars, empires, and the events that shaped the modern world. Each pick reviewed by our editors.",
   alternates: { canonical: "https://www.skriuwer.com/best-history-books" },
+  openGraph: {
+    title: "Best History Books in 2026, Ranked by 100,000+ Readers",
+    description: "The 15 best history books of 2026, ranked by reader reviews. Ancient civilizations, wars, empires, and the events that shaped the modern world. Each pick reviewed by our editors.",
+    url: "https://www.skriuwer.com/best-history-books",
+    type: "website",
+  },
 };
 
 const INTRO = [

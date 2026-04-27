@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Best Thriller Books, Page-Turning Reads for 2026",
   description: "The best thriller novels ranked by reader reviews. Heart-pounding suspense, twists you won't see coming, and characters you can't forget.",
   alternates: { canonical: "https://www.skriuwer.com/best-thriller-books" },
+  openGraph: {
+    title: "Best Thriller Books, Page-Turning Reads for 2026",
+    description: "The best thriller novels ranked by reader reviews. Heart-pounding suspense, twists you won't see coming, and characters you can't forget.",
+    url: "https://www.skriuwer.com/best-thriller-books",
+    type: "website",
+  },
 };
 
 export default function BestThrillerBooksPage() {

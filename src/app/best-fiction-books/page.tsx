@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best fiction books of all time ranked by reader reviews. From literary classics to gripping thrillers, these are the novels readers return to again and again.",
   alternates: { canonical: "https://www.skriuwer.com/best-fiction-books" },
+  openGraph: {
+    title: "Best Fiction Books of All Time | Top Novels Ranked by Readers",
+    description: "The best fiction books of all time ranked by reader reviews. From literary classics to gripping thrillers, these are the novels readers return to again and again.",
+    url: "https://www.skriuwer.com/best-fiction-books",
+    type: "website",
+  },
 };
 
 export default function BestFictionBooksPage() {

@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: "Bestselling Books, Most Reviewed & Highest Rated",
   description: "Discover the most popular books right now, ranked by reader reviews across history, mythology, psychology, business, and more. Updated daily.",
   alternates: { canonical: "https://www.skriuwer.com/bestsellers" },
+  openGraph: {
+    title: "Bestselling Books — Most Reviewed & Highest Rated | Skriuwer",
+    description: "Discover the most popular books right now, ranked by reader reviews across history, mythology, psychology, business, and more. Updated daily.",
+    url: "https://www.skriuwer.com/bestsellers",
+    type: "website",
+  },
 };
 
 export default function BestsellersPage() {

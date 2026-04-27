@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Best Mindset Books, Books That Will Change How You Think",
   description: "The best books on mindset, growth, and mental strength, ranked by reader reviews. These titles will rewire how you think and push you forward.",
   alternates: { canonical: "https://www.skriuwer.com/best-mindset-books" },
+  openGraph: {
+    title: "Best Mindset Books, Books That Will Change How You Think",
+    description: "The best books on mindset, growth, and mental strength, ranked by reader reviews. These titles will rewire how you think and push you forward.",
+    url: "https://www.skriuwer.com/best-mindset-books",
+    type: "website",
+  },
 };
 
 export default function BestMindsetBooksPage() {

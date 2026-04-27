@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best true crime books ranked by reader reviews. From serial killers to unsolved heists and shocking cults, these gripping accounts of real events will keep you up at night.",
   alternates: { canonical: "https://www.skriuwer.com/best-true-crime-books" },
+  openGraph: {
+    title: "Best True Crime Books in 2026 | Top Reads on Real Murders & Heists",
+    description: "The best true crime books ranked by reader reviews. From serial killers to unsolved heists and shocking cults, these gripping accounts of real events will keep you up at night.",
+    url: "https://www.skriuwer.com/best-true-crime-books",
+    type: "website",
+  },
 };
 
 export default function BestTrueCrimeBooksPage() {

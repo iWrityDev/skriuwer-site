@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best Stoicism books ranked by reader reviews. From Marcus Aurelius and Seneca to modern guides on Stoic living, these are the essential reads for anyone drawn to ancient wisdom.",
   alternates: { canonical: "https://www.skriuwer.com/best-stoicism-books" },
+  openGraph: {
+    title: "Best Books on Stoicism in 2026 | Top Reads on Stoic Philosophy",
+    description: "The best Stoicism books ranked by reader reviews. From Marcus Aurelius and Seneca to modern guides on Stoic living, these are the essential reads for anyone drawn to ancient wisdom.",
+    url: "https://www.skriuwer.com/best-stoicism-books",
+    type: "website",
+  },
 };
 
 export default function BestStoicismBooksPage() {

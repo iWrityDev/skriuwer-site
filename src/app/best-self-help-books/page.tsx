@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best self-help books ranked by reader reviews. From building better habits to unlocking your mindset, these top picks have helped millions of people improve their lives.",
   alternates: { canonical: "https://www.skriuwer.com/best-self-help-books" },
+  openGraph: {
+    title: "Best Self-Help Books in 2026 | Top Picks Ranked by Readers",
+    description: "The best self-help books ranked by reader reviews. From building better habits to unlocking your mindset, these top picks have helped millions of people improve their lives.",
+    url: "https://www.skriuwer.com/best-self-help-books",
+    type: "website",
+  },
 };
 
 export default function BestSelfHelpBooksPage() {

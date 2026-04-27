@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best dark history books ranked by reader reviews. Uncover the gruesome, brutal, and disturbing facts from history that mainstream textbooks leave out.",
   alternates: { canonical: "https://www.skriuwer.com/best-dark-history-books" },
+  openGraph: {
+    title: "Best Dark History Books in 2026 | True Stories of Horror & Brutality",
+    description: "The best dark history books ranked by reader reviews. Uncover the gruesome, brutal, and disturbing facts from history that mainstream textbooks leave out.",
+    url: "https://www.skriuwer.com/best-dark-history-books",
+    type: "website",
+  },
 };
 
 export default function BestDarkHistoryBooksPage() {

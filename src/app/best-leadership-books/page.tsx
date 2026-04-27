@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Best Leadership Books, Top Reads for Leaders in 2026",
   description: "The best leadership books of all time, ranked by reader reviews. Whether you lead a team or a country, these books will transform how you think about leadership.",
   alternates: { canonical: "https://www.skriuwer.com/best-leadership-books" },
+  openGraph: {
+    title: "Best Leadership Books, Top Reads for Leaders in 2026",
+    description: "The best leadership books of all time, ranked by reader reviews. Whether you lead a team or a country, these books will transform how you think about leadership.",
+    url: "https://www.skriuwer.com/best-leadership-books",
+    type: "website",
+  },
 };
 
 export default function BestLeadershipBooksPage() {

@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "The 15 best Norse mythology books in 2026, ranked by Amazon reviews. From Neil Gaiman's accessible retelling to Snorri Sturluson's original Eddas, plus Viking sagas and modern fiction based on Odin, Thor, and Ragnarok.",
   alternates: { canonical: "https://www.skriuwer.com/best-norse-mythology-books" },
+  openGraph: {
+    title: "Best Norse Mythology Books in 2026, Ranked by Reader Reviews",
+    description: "The 15 best Norse mythology books in 2026, ranked by Amazon reviews. From Neil Gaiman's accessible retelling to Snorri Sturluson's original Eddas, plus Viking sagas and modern fiction based on Odin, Thor, and Ragnarok.",
+    url: "https://www.skriuwer.com/best-norse-mythology-books",
+    type: "website",
+  },
 };
 
 const INTRO_PARAGRAPHS = [

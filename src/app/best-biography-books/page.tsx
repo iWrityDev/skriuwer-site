@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "The best biographies and memoirs ranked by reader reviews. True stories of remarkable people, leaders, visionaries, and survivors, reviewed by our editors.",
   alternates: { canonical: "https://www.skriuwer.com/best-biography-books" },
+  openGraph: {
+    title: "Best Biography Books in 2026, Lives Worth Reading About",
+    description: "The best biographies and memoirs ranked by reader reviews. True stories of remarkable people, leaders, visionaries, and survivors, reviewed by our editors.",
+    url: "https://www.skriuwer.com/best-biography-books",
+    type: "website",
+  },
 };
 
 const INTRO = [

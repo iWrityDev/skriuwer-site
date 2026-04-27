@@ -21,10 +21,18 @@ export async function generateMetadata({
   const { category } = await params;
   const cat = getCategoryBySlug(category);
   if (!cat) return {};
+  const title = `Best ${cat.name} Books, Top Picks for ${new Date().getFullYear()}`;
+  const description = `${cat.description} Browse our curated collection of the best ${cat.name.toLowerCase()} books, all available on Amazon.`;
   return {
-    title: `Best ${cat.name} Books, Top Picks for ${new Date().getFullYear()}`,
-    description: `${cat.description} Browse our curated collection of the best ${cat.name.toLowerCase()} books, all available on Amazon.`,
+    title,
+    description,
     alternates: { canonical: `https://www.skriuwer.com/category/${category}` },
+    openGraph: {
+      title,
+      description,
+      url: `https://www.skriuwer.com/category/${category}`,
+      type: "website",
+    },
   };
 }
 
@@ -94,6 +102,17 @@ export default async function CategoryPage({
     name: `Best ${cat.name} Books`,
     description: cat.description,
     url: `https://www.skriuwer.com/category/${category}`,
+    mainEntity: {
+      "@type": "ItemList",
+      name: `Best ${cat.name} Books`,
+      numberOfItems: books.length,
+      itemListElement: books.slice(0, 10).map((book, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `https://www.skriuwer.com/books/${book.slug}`,
+        name: book.title,
+      })),
+    },
   };
 
   return (

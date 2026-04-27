@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best books for learning a new language, from bilingual short story collections to vocabulary guides. Ranked by reader reviews across dozens of language pairs.",
   alternates: { canonical: "https://www.skriuwer.com/best-language-learning-books" },
+  openGraph: {
+    title: "Best Language Learning Books in 2026",
+    description: "The best books for learning a new language, from bilingual short story collections to vocabulary guides. Ranked by reader reviews across dozens of language pairs.",
+    url: "https://www.skriuwer.com/best-language-learning-books",
+    type: "website",
+  },
 };
 
 export default function BestLanguageLearningBooksPage() {

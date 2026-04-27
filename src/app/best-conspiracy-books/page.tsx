@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "The best conspiracy and dark history books ranked by readers. Real cover-ups, suppressed facts, and the events they don't put in textbooks. Editor-curated and reviewed.",
   alternates: { canonical: "https://www.skriuwer.com/best-conspiracy-books" },
+  openGraph: {
+    title: "Best Conspiracy Books in 2026, Cover-Ups & Hidden History",
+    description: "The best conspiracy and dark history books ranked by readers. Real cover-ups, suppressed facts, and the events they don't put in textbooks. Editor-curated and reviewed.",
+    url: "https://www.skriuwer.com/best-conspiracy-books",
+    type: "website",
+  },
 };
 
 const INTRO = [

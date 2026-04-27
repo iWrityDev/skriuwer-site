@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best business books ranked by reader reviews. Whether you want to start a company, invest smarter, or lead better, these are the titles serious professionals recommend.",
   alternates: { canonical: "https://www.skriuwer.com/best-business-books" },
+  openGraph: {
+    title: "Best Business Books in 2026 | Top Books on Finance & Entrepreneurship",
+    description: "The best business books ranked by reader reviews. Whether you want to start a company, invest smarter, or lead better, these are the titles serious professionals recommend.",
+    url: "https://www.skriuwer.com/best-business-books",
+    type: "website",
+  },
 };
 
 export default function BestBusinessBooksPage() {

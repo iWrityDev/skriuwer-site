@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best books about Ancient Greece ranked by reader reviews. From Socrates and Plato to the Trojan War and Alexander the Great, discover the essential reads for Greek history fans.",
   alternates: { canonical: "https://www.skriuwer.com/best-ancient-greece-books" },
+  openGraph: {
+    title: "Best Books About Ancient Greece in 2026 | Top Greek History Picks",
+    description: "The best books about Ancient Greece ranked by reader reviews. From Socrates and Plato to the Trojan War and Alexander the Great, discover the essential reads for Greek history fans.",
+    url: "https://www.skriuwer.com/best-ancient-greece-books",
+    type: "website",
+  },
 };
 
 export default function BestAncientGreeceBooksPage() {

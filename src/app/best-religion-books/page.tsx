@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best books on religion and spirituality ranked by reader reviews. Explore faith traditions, biblical history, and spiritual wisdom from across the world's great religions.",
   alternates: { canonical: "https://www.skriuwer.com/best-religion-books" },
+  openGraph: {
+    title: "Best Books on Religion & Spirituality in 2026 | Top Reads Ranked",
+    description: "The best books on religion and spirituality ranked by reader reviews. Explore faith traditions, biblical history, and spiritual wisdom from across the world's great religions.",
+    url: "https://www.skriuwer.com/best-religion-books",
+    type: "website",
+  },
 };
 
 export default function BestReligionBooksPage() {

@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "The best psychology books ranked by reader reviews. How the mind works, why people behave the way they do, and what science reveals about human nature. Editor-reviewed picks.",
   alternates: { canonical: "https://www.skriuwer.com/best-psychology-books" },
+  openGraph: {
+    title: "Best Psychology Books in 2026, Understanding the Human Mind",
+    description: "The best psychology books ranked by reader reviews. How the mind works, why people behave the way they do, and what science reveals about human nature. Editor-reviewed picks.",
+    url: "https://www.skriuwer.com/best-psychology-books",
+    type: "website",
+  },
 };
 
 const INTRO = [

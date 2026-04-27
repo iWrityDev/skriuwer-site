@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "All Books, Browse Our Complete Collection | Skriuwer",
   description: "Browse 200+ curated books across history, mythology, language learning, psychology, self-help, true crime, and more. Honest picks with Amazon links.",
   alternates: { canonical: "https://www.skriuwer.com/books" },
+  openGraph: {
+    title: "All Books — Browse Our Complete Collection | Skriuwer",
+    description: "Browse 200+ curated books across history, mythology, language learning, psychology, self-help, true crime, and more. Honest picks with Amazon links.",
+    url: "https://www.skriuwer.com/books",
+    type: "website",
+  },
 };
 
 export default function BooksPage() {

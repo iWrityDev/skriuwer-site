@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "The best mythology books ranked by reader reviews. Greek, Norse, Egyptian mythology and beyond, ancient stories that explain everything about human nature. Editor-reviewed picks.",
   alternates: { canonical: "https://www.skriuwer.com/best-mythology-books" },
+  openGraph: {
+    title: "Best Mythology Books in 2026, Gods, Heroes & Ancient Legends",
+    description: "The best mythology books ranked by reader reviews. Greek, Norse, Egyptian mythology and beyond, ancient stories that explain everything about human nature. Editor-reviewed picks.",
+    url: "https://www.skriuwer.com/best-mythology-books",
+    type: "website",
+  },
 };
 
 const INTRO = [

@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best bilingual books for learning a new language. Side-by-side parallel text in dozens of language pairs, the natural, enjoyable way to build fluency.",
   alternates: { canonical: "https://www.skriuwer.com/best-bilingual-books" },
+  openGraph: {
+    title: "Best Bilingual Books for Language Learners in 2026",
+    description: "The best bilingual books for learning a new language. Side-by-side parallel text in dozens of language pairs, the natural, enjoyable way to build fluency.",
+    url: "https://www.skriuwer.com/best-bilingual-books",
+    type: "website",
+  },
 };
 
 export default function BestBilingualBooksPage() {

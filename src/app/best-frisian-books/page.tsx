@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best books for learning and exploring the Frisian language, one of Europe's oldest and most fascinating minority languages. From beginner guides to bilingual readers.",
   alternates: { canonical: "https://www.skriuwer.com/best-frisian-books" },
+  openGraph: {
+    title: "Best Frisian Books in 2026",
+    description: "The best books for learning and exploring the Frisian language, one of Europe's oldest and most fascinating minority languages. From beginner guides to bilingual readers.",
+    url: "https://www.skriuwer.com/best-frisian-books",
+    type: "website",
+  },
 };
 
 export default function BestFrisianBooksPage() {

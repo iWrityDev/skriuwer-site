@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "The 15 best Greek mythology books worth reading in 2026, ranked by Amazon reviews. From dark retellings like Circe and The Song of Achilles to classic collections by Edith Hamilton and Stephen Fry, plus hidden gems we actually finished.",
   alternates: { canonical: "https://www.skriuwer.com/best-greek-mythology-books" },
+  openGraph: {
+    title: "Best Greek Mythology Books in 2026, Ranked by Reader Reviews",
+    description: "The 15 best Greek mythology books worth reading in 2026, ranked by Amazon reviews. From dark retellings like Circe and The Song of Achilles to classic collections by Edith Hamilton and Stephen Fry, plus hidden gems we actually finished.",
+    url: "https://www.skriuwer.com/best-greek-mythology-books",
+    type: "website",
+  },
 };
 
 const INTRO_PARAGRAPHS = [

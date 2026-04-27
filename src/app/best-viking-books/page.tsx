@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "The 15 best Viking books in 2026, ranked by Amazon reviews. Covers Viking history (Neil Price, John Haywood), sagas (Njal, Egil, Volsungs), and the best-rated Viking historical fiction and archaeological deep-dives.",
   alternates: { canonical: "https://www.skriuwer.com/best-viking-books" },
+  openGraph: {
+    title: "Best Viking Books in 2026, Ranked by Reader Reviews",
+    description: "The 15 best Viking books in 2026, ranked by Amazon reviews. Covers Viking history (Neil Price, John Haywood), sagas (Njal, Egil, Volsungs), and the best-rated Viking historical fiction and archaeological deep-dives.",
+    url: "https://www.skriuwer.com/best-viking-books",
+    type: "website",
+  },
 };
 
 const INTRO_PARAGRAPHS = [

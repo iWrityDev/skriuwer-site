@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "The 15 best World War 2 books in 2026, ranked by Amazon reviews. Covers grand strategy (Beevor, Hastings, Roberts), personal memoirs, Holocaust accounts, Pacific theater, code-breakers, and the most acclaimed WW2 historical fiction.",
   alternates: { canonical: "https://www.skriuwer.com/best-world-war-2-books" },
+  openGraph: {
+    title: "Best World War 2 Books in 2026, Ranked by Reader Reviews",
+    description: "The 15 best World War 2 books in 2026, ranked by Amazon reviews. Covers grand strategy (Beevor, Hastings, Roberts), personal memoirs, Holocaust accounts, Pacific theater, code-breakers, and the most acclaimed WW2 historical fiction.",
+    url: "https://www.skriuwer.com/best-world-war-2-books",
+    type: "website",
+  },
 };
 
 const INTRO_PARAGRAPHS = [

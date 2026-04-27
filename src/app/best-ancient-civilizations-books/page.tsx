@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best books on ancient civilizations, Greece, Rome, Egypt, and more. Ranked by reader reviews, covering the history, culture, and legacy of the world's earliest great empires.",
   alternates: { canonical: "https://www.skriuwer.com/best-ancient-civilizations-books" },
+  openGraph: {
+    title: "Best Books on Ancient Civilizations in 2026",
+    description: "The best books on ancient civilizations, Greece, Rome, Egypt, and more. Ranked by reader reviews, covering the history, culture, and legacy of the world's earliest great empires.",
+    url: "https://www.skriuwer.com/best-ancient-civilizations-books",
+    type: "website",
+  },
 };
 
 export default function BestAncientCivilizationsBooksPage() {

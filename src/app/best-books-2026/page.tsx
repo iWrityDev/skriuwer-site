@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best books of 2026 ranked by reader reviews. The most popular and highly rated titles across all genres, history, mythology, self-help, fiction, and more.",
   alternates: { canonical: "https://www.skriuwer.com/best-books-2026" },
+  openGraph: {
+    title: "Best Books of 2026 | Top Rated Books Right Now",
+    description: "The best books of 2026 ranked by reader reviews. The most popular and highly rated titles across all genres, history, mythology, self-help, fiction, and more.",
+    url: "https://www.skriuwer.com/best-books-2026",
+    type: "website",
+  },
 };
 
 export default function BestBooks2026Page() {

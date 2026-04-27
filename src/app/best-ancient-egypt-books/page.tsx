@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "The best books about Ancient Egypt ranked by reader reviews. From the pharaohs and pyramids to Egyptian mythology and daily life, discover the top picks for Egypt enthusiasts.",
   alternates: { canonical: "https://www.skriuwer.com/best-ancient-egypt-books" },
+  openGraph: {
+    title: "Best Books About Ancient Egypt in 2026 | Top Picks for Egypt Fans",
+    description: "The best books about Ancient Egypt ranked by reader reviews. From the pharaohs and pyramids to Egyptian mythology and daily life, discover the top picks for Egypt enthusiasts.",
+    url: "https://www.skriuwer.com/best-ancient-egypt-books",
+    type: "website",
+  },
 };
 
 export default function BestAncientEgyptBooksPage() {
