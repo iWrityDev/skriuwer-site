@@ -528,7 +528,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 </>
               )}
               <div>
-                <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">{isDE ? "Kontakt" : isES ? "Contacto" : "Contact"}</h3>
+                <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[var(--color-text)]">{isDE ? "Kontakt" : isES ? "Contacto" : isIT ? "Contatti" : isPT ? "Contato" : "Contact"}</h3>
                 <div className="text-sm text-[var(--color-text-muted)] space-y-1">
                   <p className="font-semibold text-[var(--color-text)]">Skriuwer.com</p>
                   <p>{isDE ? "Friesland, Niederlande" : isNL ? "Friesland, Nederland" : isFR ? "Frise, Pays-Bas" : isES ? "Frisia, Países Bajos" : isIT ? "Frisia, Paesi Bassi" : isPT ? "Frísia, Países Baixos" : "Friesland, Netherlands"}</p>
