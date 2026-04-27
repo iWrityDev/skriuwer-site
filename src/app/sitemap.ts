@@ -100,6 +100,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority,
   }));
 
+  const germanPages: MetadataRoute.Sitemap = [
+    "/de",
+    "/de/beste-geschichtsbuecher",
+    "/de/beste-mythologie-buecher",
+    "/de/beste-dunkle-geschichte-buecher",
+    "/de/beste-buecher-auf-deutsch",
+    "/de/beste-verschwoerungstheorie-buecher",
+    "/de/beste-nordische-mythologie-buecher",
+  ].map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
   return [
     {
       url: baseUrl,
@@ -125,6 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    ...germanPages,
     ...bestOfEntries,
     ...categoryEntries,
     ...bookEntries,

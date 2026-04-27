@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -94,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </Link>
             </div>
             <div className="ml-auto flex items-center gap-3">
+              <LanguageSwitcher />
               {/* Search icon - desktop */}
               <Link
                 href="/search"

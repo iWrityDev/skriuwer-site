@@ -15,6 +15,71 @@ const CAT_NAME_BY_SLUG: Record<string, string> = Object.fromEntries(
   CATEGORIES.map((c) => [c.slug, c.name])
 );
 
+const CAT_NAME_DE: Record<string, string> = {
+  history: "Geschichte",
+  mythology: "Mythologie",
+  "dark-history": "Dunkle Geschichte",
+  conspiracy: "Verschwörung",
+  religion: "Religion & Spiritualität",
+  "self-help": "Selbsthilfe",
+  fiction: "Belletristik",
+  science: "Wissenschaft & Natur",
+  biography: "Biografie & Memoiren",
+  business: "Business & Finanzen",
+  psychology: "Psychologie",
+  "true-crime": "True Crime",
+  philosophy: "Philosophie",
+  "language-learning": "Sprachlernen",
+  frisian: "Friesische Sprache",
+};
+
+const PAGE_LABELS = {
+  en: {
+    readingList: "Reading List",
+    curatedBy: "Curated by",
+    updated: "Updated",
+    affiliateLinks: "Affiliate links",
+    bookPlural: "books",
+    bookSingular: "book",
+    noBooks: "No books found for this selection.",
+    buyOnAmazon: "Buy on Amazon →",
+    ourPick: "★ Our Pick",
+    quickComparison: "Quick comparison, top 5",
+    theRankedList: "The ranked list",
+    faqTitle: "Frequently asked questions",
+    seeAllBooks: (label: string) => `See all ${label} books →`,
+    moreReadingLists: "← More reading lists",
+    reviews: "reviews",
+    tableBook: "Book",
+    tableAuthor: "Author",
+    tableRating: "Rating",
+    tablePages: "Pages",
+    readingListsHref: "/reading-lists",
+  },
+  de: {
+    readingList: "Leseliste",
+    curatedBy: "Zusammengestellt von",
+    updated: "Aktualisiert",
+    affiliateLinks: "Affiliate-Hinweis",
+    bookPlural: "Bücher",
+    bookSingular: "Buch",
+    noBooks: "Keine Bücher für diese Auswahl gefunden.",
+    buyOnAmazon: "Bei Amazon kaufen →",
+    ourPick: "★ Unsere Wahl",
+    quickComparison: "Schnellvergleich, Top 5",
+    theRankedList: "Die Rangliste",
+    faqTitle: "Häufig gestellte Fragen",
+    seeAllBooks: (label: string) => `Alle ${label}-Bücher anzeigen →`,
+    moreReadingLists: "← Mehr Leselisten",
+    reviews: "Bewertungen",
+    tableBook: "Buch",
+    tableAuthor: "Autor",
+    tableRating: "Bewertung",
+    tablePages: "Seiten",
+    readingListsHref: "/de",
+  },
+} as const;
+
 interface FAQ {
   q: string;
   a: string;
@@ -33,6 +98,7 @@ interface BestOfPageProps {
   intro?: string[];
   faq?: FAQ[];
   showComparison?: boolean;
+  locale?: "en" | "de";
 }
 
 function stripHtml(html: string): string {
@@ -52,7 +118,10 @@ export function BestOfPage({
   intro,
   faq,
   showComparison = false,
+  locale = "en",
 }: BestOfPageProps) {
+  const L = PAGE_LABELS[locale];
+  const catNameMap = locale === "de" ? CAT_NAME_DE : CAT_NAME_BY_SLUG;
   // Infer a category accent for the whole page from the most common
   // category in the book set, falling back to orange.
   const catSlug = (() => {
@@ -134,10 +203,10 @@ export function BestOfPage({
             <div className="flex items-center gap-2 flex-wrap mb-3">
               <span className="cat-chip" style={{ fontSize: 11 }}>
                 <span className="cat-dot" />
-                {catSlug ? CAT_NAME_BY_SLUG[catSlug] ?? "Reading List" : "Reading List"}
+                {catSlug ? catNameMap[catSlug] ?? L.readingList : L.readingList}
               </span>
               <span className="text-xs text-[var(--color-text-dim)]">
-                {books.length} book{books.length === 1 ? "" : "s"}
+                {books.length} {books.length === 1 ? L.bookSingular : L.bookPlural}
               </span>
             </div>
 
@@ -155,14 +224,14 @@ export function BestOfPage({
             </h1>
 
             <p className="mt-4 text-sm text-[var(--color-text-muted)]">
-              Curated by{" "}
+              {L.curatedBy}{" "}
               <Link href="/team" className="font-semibold text-[var(--color-orange-light)] hover:underline">
                 {reviewer}
               </Link>
-              {" · "}Updated {updatedDate}
+              {" · "}{L.updated} {updatedDate}
               {" · "}
               <Link href="/affiliate-disclosure" className="hover:underline opacity-70">
-                Affiliate links
+                {L.affiliateLinks}
               </Link>
             </p>
 
@@ -182,16 +251,16 @@ export function BestOfPage({
           {/* Quick Comparison Table */}
           {showComparison && topBooks.length > 0 && (
             <div className="mb-10">
-              <SectionHeader title="Quick comparison, top 5" size="sm" tone="gold" />
+              <SectionHeader title={L.quickComparison} size="sm" tone="gold" />
               <div className="overflow-x-auto rounded-lg border border-[var(--color-border)]">
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="bg-[var(--color-surface)] border-b border-[var(--color-border)]">
                       <th className="text-left px-3 py-2.5 text-[11px] font-semibold text-[var(--color-text-dim)] uppercase tracking-wide w-8">#</th>
-                      <th className="text-left px-3 py-2.5 text-[11px] font-semibold text-[var(--color-text-dim)] uppercase tracking-wide">Book</th>
-                      <th className="text-left px-3 py-2.5 text-[11px] font-semibold text-[var(--color-text-dim)] uppercase tracking-wide hidden sm:table-cell">Author</th>
-                      <th className="text-left px-3 py-2.5 text-[11px] font-semibold text-[var(--color-text-dim)] uppercase tracking-wide hidden md:table-cell">Rating</th>
-                      <th className="text-left px-3 py-2.5 text-[11px] font-semibold text-[var(--color-text-dim)] uppercase tracking-wide hidden md:table-cell">Pages</th>
+                      <th className="text-left px-3 py-2.5 text-[11px] font-semibold text-[var(--color-text-dim)] uppercase tracking-wide">{L.tableBook}</th>
+                      <th className="text-left px-3 py-2.5 text-[11px] font-semibold text-[var(--color-text-dim)] uppercase tracking-wide hidden sm:table-cell">{L.tableAuthor}</th>
+                      <th className="text-left px-3 py-2.5 text-[11px] font-semibold text-[var(--color-text-dim)] uppercase tracking-wide hidden md:table-cell">{L.tableRating}</th>
+                      <th className="text-left px-3 py-2.5 text-[11px] font-semibold text-[var(--color-text-dim)] uppercase tracking-wide hidden md:table-cell">{L.tablePages}</th>
                       <th className="px-3 py-2.5 w-16" />
                     </tr>
                   </thead>
@@ -220,7 +289,7 @@ export function BestOfPage({
                             </Link>
                             {book.isOwnBook && (
                               <span className="inline-block mt-1 px-1.5 py-0.5 text-[10px] font-bold bg-[color-mix(in_srgb,var(--color-orange)_15%,transparent)] text-[var(--color-orange-light)] border border-[color-mix(in_srgb,var(--color-orange)_30%,transparent)] rounded">
-                                ★ Our Pick
+                                {L.ourPick}
                               </span>
                             )}
                           </td>
@@ -245,7 +314,7 @@ export function BestOfPage({
                                 rel="noopener noreferrer nofollow sponsored"
                                 className="px-2.5 py-1 text-xs font-bold bg-[var(--color-orange)] text-white rounded hover:bg-[var(--color-orange-light)] transition-colors whitespace-nowrap"
                               >
-                                Buy →
+                                {locale === "de" ? "Kaufen →" : "Buy →"}
                               </a>
                             )}
                           </td>
@@ -261,7 +330,7 @@ export function BestOfPage({
           {/* Book list */}
           {books.length > 0 ? (
             <>
-              <SectionHeader title="The ranked list" />
+              <SectionHeader title={L.theRankedList} />
               <ol className="space-y-4 mb-10">
                 {books.map((book, index) => {
                   const excerpt = stripHtml(book.description).slice(0, 180);
@@ -346,7 +415,7 @@ export function BestOfPage({
                           <div className="flex items-center gap-1.5 mb-1">
                             <StarRating rating={book.starRating} />
                             <span className="text-xs text-[var(--color-text-dim)]">
-                              ({book.reviewCount.toLocaleString()} reviews)
+                              ({book.reviewCount.toLocaleString()} {L.reviews})
                             </span>
                           </div>
                         ) : null}
@@ -365,7 +434,7 @@ export function BestOfPage({
                             rel="noopener noreferrer nofollow sponsored"
                             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-[var(--color-orange)] hover:bg-[var(--color-orange-light)] text-white text-sm font-semibold transition-colors"
                           >
-                            Buy on Amazon →
+                            {L.buyOnAmazon}
                           </a>
                         )}
                       </div>
@@ -375,13 +444,13 @@ export function BestOfPage({
               </ol>
             </>
           ) : (
-            <p className="text-[var(--color-text-dim)] py-8">No books found for this selection.</p>
+            <p className="text-[var(--color-text-dim)] py-8">{L.noBooks}</p>
           )}
 
           {/* FAQ */}
           {faq && faq.length > 0 && (
             <div className="mb-10 mt-10 pt-10 section-divider">
-              <SectionHeader title="Frequently asked questions" tone="teal" />
+              <SectionHeader title={L.faqTitle} tone="teal" />
               <div className="space-y-4">
                 {faq.map(({ q, a }, i) => (
                   <details
@@ -416,13 +485,13 @@ export function BestOfPage({
               href={categoryPage}
               className="text-[var(--color-orange-light)] hover:text-[var(--color-orange)] font-medium transition-colors"
             >
-              See all {categoryLabel} books →
+              {L.seeAllBooks(categoryLabel)}
             </Link>
             <Link
-              href="/reading-lists"
+              href={L.readingListsHref}
               className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition-colors"
             >
-              ← More reading lists
+              {L.moreReadingLists}
             </Link>
           </div>
         </div>
