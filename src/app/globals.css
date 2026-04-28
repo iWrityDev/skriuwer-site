@@ -108,6 +108,10 @@ body > * {
   position: relative;
   z-index: 1;
 }
+/* Header must sit above main so its dropdown overflows are never buried */
+body > header {
+  z-index: 40;
+}
 
 /* ===== Focus rings (keyboard users) ===== */
 :focus-visible {
