@@ -28,6 +28,9 @@ export const metadata: Metadata = {
       "application/rss+xml": "https://www.skriuwer.com/feed.xml",
     },
   },
+  verification: {
+    google: "DbBrErTvMfvU-bLCm6StjRd8zo6gwDeBpM3gL7tZ7gI",
+  },
 };
 
 type Locale = "en" | "de" | "nl" | "fr" | "es" | "it" | "pt";
