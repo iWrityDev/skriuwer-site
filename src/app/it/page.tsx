@@ -82,7 +82,7 @@ export default function ItHomePage() {
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {topBooks.map((book) => {
             const amazonUrl = book.asin ? buildAffiliateUrl(book.asin) : null;
-            const cover = book.coverImageFallback?.startsWith("http") ? book.coverImageFallback : book.coverImage;
+            const cover = book.coverImage?.startsWith("http") ? book.coverImage : book.coverImageFallback;
             return (
               <div key={book.slug} className="flex flex-col rounded-xl border border-[var(--color-border)] overflow-hidden bg-[var(--color-surface)] hover:-translate-y-0.5 transition-all">
                 {cover?.startsWith("http") && (

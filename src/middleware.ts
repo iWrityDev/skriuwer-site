@@ -1,13 +1,31 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+const LOCALE_PREFIXES = ["/de", "/nl", "/fr", "/es", "/it", "/pt"] as const;
+type Locale = "de" | "nl" | "fr" | "es" | "it" | "pt";
+
 export function middleware(request: NextRequest) {
   const requestHeaders = new Headers(request.headers);
-  requestHeaders.set("x-pathname", request.nextUrl.pathname);
+  const pathname = request.nextUrl.pathname;
+  requestHeaders.set("x-pathname", pathname);
 
-  return NextResponse.next({
+  // Detect locale from current path
+  const localeFromPath = LOCALE_PREFIXES.find((p) => pathname.startsWith(p))?.slice(1) as Locale | undefined;
+
+  const response = NextResponse.next({
     request: { headers: requestHeaders },
   });
+
+  if (localeFromPath) {
+    // Remember the user's preferred locale for 30 days
+    response.cookies.set("preferred-locale", localeFromPath, {
+      maxAge: 60 * 60 * 24 * 30,
+      path: "/",
+      sameSite: "lax",
+    });
+  }
+
+  return response;
 }
 
 export const config = {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { headers } from "next/headers";
+import { headers, cookies } from "next/headers";
 import { Logo } from "@/components/Logo";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import Script from "next/script";
@@ -158,14 +158,21 @@ const NAV_CONFIG: Record<Locale, {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const h = await headers();
+  const cookieStore = await cookies();
   const pathname = h.get("x-pathname") ?? "";
-  const locale: Locale = pathname.startsWith("/de") ? "de"
+  const validLocales: Locale[] = ["de", "nl", "fr", "es", "it", "pt"];
+  const cookieLocale = cookieStore.get("preferred-locale")?.value as Locale | undefined;
+  const localeFromPath: Locale | undefined =
+    pathname.startsWith("/de") ? "de"
     : pathname.startsWith("/nl") ? "nl"
     : pathname.startsWith("/fr") ? "fr"
     : pathname.startsWith("/es") ? "es"
     : pathname.startsWith("/it") ? "it"
     : pathname.startsWith("/pt") ? "pt"
-    : "en";
+    : undefined;
+  const locale: Locale = localeFromPath
+    ?? (cookieLocale && validLocales.includes(cookieLocale) ? cookieLocale : undefined)
+    ?? "en";
   const isDE = locale === "de";
   const isNL = locale === "nl";
   const isFR = locale === "fr";

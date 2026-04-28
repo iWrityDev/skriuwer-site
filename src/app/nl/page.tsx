@@ -95,10 +95,10 @@ export default function DutchHomePage() {
           <h2 className="text-xl font-bold text-[var(--color-text)] mb-6">Meest beoordeelde boeken</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {topBooks.map((book) => {
-              const src = book.coverImageFallback?.startsWith("http")
-                ? book.coverImageFallback
-                : book.coverImage?.startsWith("http")
+              const src = book.coverImage?.startsWith("http")
                 ? book.coverImage
+                : book.coverImageFallback?.startsWith("http")
+                ? book.coverImageFallback
                 : null;
               return (
                 <div key={book.slug} className="group flex flex-col gap-3 p-3 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl hover:border-[var(--color-orange)] transition-colors">
