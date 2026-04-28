@@ -616,13 +616,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </div>
         </footer>
         <Script
-          src="https://plausible.io/js/pa-tDvtnO57A0AOoBxYGIwx3.js"
+          defer
+          data-domain="skriuwer.com"
+          src="https://plausible.io/js/script.js"
           strategy="afterInteractive"
         />
-        <Script id="plausible-init" strategy="afterInteractive">{`
-          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-          plausible.init()
-        `}</Script>
       </body>
     </html>
   );
