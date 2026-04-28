@@ -23,6 +23,10 @@ export function middleware(request: NextRequest) {
       path: "/",
       sameSite: "lax",
     });
+  } else if (pathname === "/") {
+    // User explicitly navigated to the English homepage — clear locale preference
+    // so the nav/footer render in English, not a previously visited locale
+    response.cookies.delete("preferred-locale");
   }
 
   return response;
