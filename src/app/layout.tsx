@@ -171,7 +171,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     : pathname.startsWith("/pt") ? "pt"
     : undefined;
   const locale: Locale = localeFromPath
-    ?? (cookieLocale && validLocales.includes(cookieLocale) ? cookieLocale : undefined)
+    ?? (pathname !== "/" && cookieLocale && validLocales.includes(cookieLocale) ? cookieLocale : undefined)
     ?? "en";
   const isDE = locale === "de";
   const isNL = locale === "nl";
