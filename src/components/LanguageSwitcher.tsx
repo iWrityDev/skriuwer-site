@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const LOCALE_ROUTES: Record<string, Record<string, string>> = {
@@ -104,7 +103,7 @@ export function LanguageSwitcher() {
   return (
     <div className="flex items-center gap-0.5 text-xs font-bold tracking-wider border border-[var(--color-border)] rounded overflow-hidden">
       {langs.map((l) => (
-        <Link
+        <a
           key={l}
           href={hrefs[l]}
           className={`px-2 py-1 transition-colors ${
@@ -114,7 +113,7 @@ export function LanguageSwitcher() {
           }`}
         >
           {l.toUpperCase()}
-        </Link>
+        </a>
       ))}
     </div>
   );
