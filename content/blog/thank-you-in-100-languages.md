@@ -1,4 +1,4 @@
----
+﻿---
 title: "Thank You In 100 Languages"
 date: ""
 oldUrl: "https://skriuwer.com/blogs/articles/thank-you-in-100-languages"
@@ -52,7 +52,7 @@ categories: ["language-learning"]
 <li>Japanese - ありがとう (Arigatō)</li>
 <li>Javanese - Matur nuwun</li>
 <li>Kannada - ಧನ್ಯವಾದ (Dhanyavāda)</li>
-<li>Kazakh - Рақмет (Rahmet)</li>
+<li>Kazakh - Рақмeт (Rahmet)</li>
 <li>Khmer - សូមអរគុណ (Som arkun)</li>
 <li>Korean - 감사합니다 (Gamsahamnida)</li>
 <li>Kurdish (Kurmanji) - Spas</li>
