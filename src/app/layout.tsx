@@ -579,6 +579,19 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 </div>
               </div>
             </div>
+            {!isLocalized && (
+              <div className="mt-8 pt-6 border-t border-[var(--color-border)]">
+                <p className="text-xs text-[var(--color-text-dim)] mb-2 uppercase tracking-wider font-semibold">Also available in</p>
+                <div className="flex flex-wrap gap-3 text-xs">
+                  <Link href="/de" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">🇩🇪 Deutsch</Link>
+                  <Link href="/nl" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">🇳🇱 Nederlands</Link>
+                  <Link href="/fr" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">🇫🇷 Français</Link>
+                  <Link href="/es" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">🇪🇸 Español</Link>
+                  <Link href="/it" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">🇮🇹 Italiano</Link>
+                  <Link href="/pt" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">🇧🇷 Português</Link>
+                </div>
+              </div>
+            )}
             <div className="mt-10 pt-6 border-t border-[var(--color-border)] text-xs text-[var(--color-text-dim)]">
               {isDE ? (
                 <p>Als Amazon-Partner verdient Skriuwer an qualifizierten Käufen. Preise und Verfügbarkeit können sich ändern.</p>
