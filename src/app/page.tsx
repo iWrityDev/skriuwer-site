@@ -1,5 +1,21 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://www.skriuwer.com",
+    languages: {
+      en: "https://www.skriuwer.com",
+      de: "https://www.skriuwer.com/de",
+      nl: "https://www.skriuwer.com/nl",
+      fr: "https://www.skriuwer.com/fr",
+      es: "https://www.skriuwer.com/es",
+      it: "https://www.skriuwer.com/it",
+      pt: "https://www.skriuwer.com/pt",
+    },
+  },
+};
 import { BookGrid } from "@/components/BookGrid";
 import { SearchBar } from "@/components/SearchBar";
 import { SectionHeader } from "@/components/SectionHeader";
