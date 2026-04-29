@@ -1,7 +1,7 @@
 ---
 title: "The Best History Sleep Stories on YouTube in 2026"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The genre did not exist ten years ago. Now there are dozens of channels producing long-form, calm-narrated history and mythology content specifically built for sleeping. Finding the good ones used to require hours of trial and error. Most channels in the space produce content that is either too dramatic to sleep to — music swells, sound effects, presenter energy better suited to a Netflix documentary — or so dull that it fails to hold the attention even at the boundary of wakefulness. The best <strong>history sleep stories on YouTube</strong> sit in a specific narrow band: genuinely interesting content, calm enough to allow sleep, long enough to last a full night.</p>

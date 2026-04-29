@@ -6,6 +6,7 @@ import { getAllBlogPosts } from "@/lib/blog";
 const CATEGORY_LABELS: Record<string, string> = {
   mythology: "Mythology",
   history: "History",
+  "sleep-stories": "Sleep Stories",
   "language-learning": "Language Learning",
   books: "Books",
   philosophy: "Philosophy",

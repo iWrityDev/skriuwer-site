@@ -1,7 +1,7 @@
 ---
 title: "5 Hours of EPIC Persian Empire History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Persian Empire under Cyrus and his successors was the largest empire the world had seen to that point. It stretched from Greece to India, governed dozens of different languages and cultures, and operated a remarkably sophisticated administrative system that allowed local traditions to survive under Persian suzerainty. Sleep stories covering 5 hours of epic persian empire history facts cover everything from Cyrus's revolutionary approach to conquered peoples through the wars with Greece and the eventual conquest by Alexander.</p>

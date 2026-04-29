@@ -1,7 +1,7 @@
 ---
 title: "3 Hours of DARK Ancient History: Pompeii and Herculaneum: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>On 24 August 79 CE, Mount Vesuvius erupted and buried the city of Pompeii under four metres of volcanic ash, preserving it almost perfectly until its rediscovery in the eighteenth century. What emerged was something unprecedented in archaeology: a complete Roman city, frozen at a single moment. Shops with price lists still on the walls. Graffiti. Electoral slogans. Lovers' messages. The bodies of people who did not escape in time. Sleep stories covering 3 hours of dark ancient history: pompeii and herculaneum take you into the best-preserved snapshot of daily Roman life that exists.</p>

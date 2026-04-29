@@ -1,7 +1,7 @@
 ---
 title: "6 Hours of EPIC Crusader History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Crusades were never purely a religious enterprise. The religious motivation was real for many participants — but the political calculations of European kings, the commercial interests of Italian merchants, and the complex internal politics of the Islamic world all shaped the Crusades as decisively as theology did. Sleep stories covering 6 hours of epic crusader history facts take you through the two centuries of expeditions, kingdoms, and military orders that defined the relationship between Christian Europe and the Islamic Middle East — a relationship whose effects are still visible today.</p>

@@ -1,7 +1,7 @@
 ---
 title: "2 Hours of FASCINATING Christmas History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Christmas has a history far more complicated than most people suspect. The date, December 25th, was not established for centuries after Christ's birth and was chosen partly to coincide with existing Roman and northern European winter festivals. The Christmas tree came from Germany in the eighteenth century. Santa Claus as we know him was largely a nineteenth-century American invention. The carol tradition is largely Victorian. Sleep stories covering 2 hours of fascinating christmas history facts take you through how a religious observance became the cultural phenomenon it is today.</p>

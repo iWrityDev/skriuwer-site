@@ -1,7 +1,7 @@
 ---
 title: "5 Hours: What if the USA Never Existed? Alternate History: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Alternate history is not escapism — it is a tool for understanding why things happened the way they did. When you ask 'what if the South had won the Civil War?' or 'what if Germany had won World War Two?', you are forced to identify exactly which decisions and accidents made the actual outcome possible. Sleep stories covering 5 hours: what if the usa never existed? alternate history use counterfactual scenarios to illuminate the real history behind them.</p>

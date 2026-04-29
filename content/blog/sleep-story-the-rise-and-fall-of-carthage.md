@@ -1,7 +1,7 @@
 ---
 title: "4 Hours: The Rise and Fall of Carthage: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Carthage was destroyed so thoroughly that almost none of its own writing survives. Everything we know about Carthage comes from the Romans who defeated it — which means we are reading history written by the victors about a civilization they worked hard to erase. Carthage was the major Mediterranean commercial power for four centuries. It clashed with Rome three times. Three times Rome nearly lost. The third time, Rome won completely, and the city that had challenged them for supremacy was demolished stone by stone. Sleep stories covering 4 hours: the rise and fall of carthage reconstruct what we know from archaeology and hostile sources.</p>

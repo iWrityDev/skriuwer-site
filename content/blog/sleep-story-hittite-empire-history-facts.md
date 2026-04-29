@@ -1,7 +1,7 @@
 ---
 title: "5 Hours of FASCINATING Hittite Empire History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Hittites controlled Anatolia for over five hundred years, fought Egypt to a standstill at Kadesh in 1274 BCE in one of the earliest recorded battles in history, and then vanished so completely from the historical record that nineteenth-century scholars doubted they had existed at all. Their decipherment revealed a sophisticated legal system, an extensive archive of diplomatic correspondence, and a mythology that contributed elements to both Greek religion and the Hebrew Bible. Sleep stories covering 5 hours of fascinating hittite empire history facts take you into one of the ancient world's most underappreciated powers.</p>

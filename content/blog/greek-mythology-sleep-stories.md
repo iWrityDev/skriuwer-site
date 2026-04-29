@@ -1,7 +1,7 @@
 ---
 title: "Greek Mythology Sleep Stories: Fall Asleep to the Gods of Olympus"
 date: "2026-04-29"
-categories: ["mythology"]
+categories: ["mythology", "sleep-stories"]
 ---
 
 <p>There is something about Greek mythology that refuses to stay quiet. Zeus throwing thunderbolts. Odysseus outwitting the Cyclops. Persephone descending into darkness every autumn. These are not just old stories — they are the raw material of every narrative that came after them. If you have ever wanted to sink into that world as you drift off to sleep, <strong>Greek mythology sleep stories</strong> are the closest thing to time travel your bedroom will ever offer.</p>

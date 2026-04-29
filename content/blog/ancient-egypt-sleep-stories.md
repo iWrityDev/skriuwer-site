@@ -1,7 +1,7 @@
 ---
 title: "Ancient Egypt Sleep Stories: Fall Asleep to the World of Pharaohs and Pyramids"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The pyramids were already ancient when Caesar arrived in Egypt. The Sphinx was already a ruin. The civilization that built them had risen, peaked, fractured, been conquered, and partially recovered — all before the Roman Empire existed. Ancient Egypt spanned 3,000 years, and within that span it changed dramatically: the Old Kingdom that raised the great pyramids of Giza was as distant from Cleopatra as Cleopatra is from us. When you listen to <strong>ancient Egypt sleep stories</strong>, you are not listening to one civilization — you are listening to dozens, layered on top of each other in the same river valley.</p>

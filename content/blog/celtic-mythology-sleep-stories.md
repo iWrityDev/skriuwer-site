@@ -1,7 +1,7 @@
 ---
 title: "Celtic Mythology Sleep Stories: Fall Asleep to Ancient Irish Legends"
 date: "2026-04-29"
-categories: ["mythology"]
+categories: ["mythology", "sleep-stories"]
 ---
 
 <p>Celtic mythology does not give you clean heroes and tidy endings. It gives you shape-shifters, triple goddesses, warriors who return from the dead, and gods who weave themselves into rivers and storms. It is strange and layered and old in a way that Greek mythology sometimes is not — because much of it was never meant to be written down at all. The druids passed it mouth to ear for centuries before anyone committed it to parchment. That oral quality makes it perfect for nighttime listening.</p>

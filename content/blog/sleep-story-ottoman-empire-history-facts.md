@@ -1,7 +1,7 @@
 ---
 title: "3 Hours of FASCINATING Ottoman Empire History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Ottoman Empire lasted longer than the Roman Empire. From its founding in the late thirteenth century to its dissolution after World War One, it governed southeastern Europe, Anatolia, the Middle East, and North Africa for over six centuries. It conquered Constantinople — ending the Byzantine Empire — in 1453. At its height under Suleiman the Magnificent, it was the most powerful state in the world. Sleep stories covering 3 hours of fascinating ottoman empire history facts take you through an imperial history that shaped the modern Middle East more directly than any other.</p>

@@ -1,7 +1,7 @@
 ---
 title: "WW2 Sleep Stories: Fall Asleep to World War II History"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>World War II is the most documented conflict in human history and still one of the least understood. Most people know the broad outline: Hitler, D-Day, the Holocaust, Hiroshima. What they do not know is the Eastern Front, where the war was actually decided. They do not know the full scale of the Pacific theater, the logistical nightmare of supplying an army across two oceans simultaneously, or the political calculations that shaped every major Allied decision. <strong>WW2 sleep stories</strong> give you a way to absorb that depth without sitting through a documentary series that demands your full attention.</p>

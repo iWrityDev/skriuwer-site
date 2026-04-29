@@ -1,7 +1,7 @@
 ---
 title: "3 Hours of AMAZING Ancient China History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>China has the longest continuous recorded history of any civilization on earth. The first dynasty with confirmed archaeological evidence dates to 1600 BCE, and Chinese historical records extend in an unbroken line from there to the present. Sleep stories covering 3 hours of amazing ancient china history facts take you through a history that encompasses the Warring States period, the unification under Qin, the Han dynasty that shaped Chinese identity for two millennia, and everything that followed — a narrative so long that most Western history fits inside it.</p>

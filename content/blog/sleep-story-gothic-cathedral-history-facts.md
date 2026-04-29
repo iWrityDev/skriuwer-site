@@ -1,7 +1,7 @@
 ---
 title: "5 Hours of FASCINATING Gothic Cathedral History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Gothic cathedrals were the engineering marvels of the medieval world. The pointed arch, the flying buttress, and the ribbed vault together allowed medieval builders to construct structures of unprecedented height with enormous windows that flooded interiors with coloured light — creating an architectural experience deliberately designed to evoke the transcendent. Sleep stories covering 5 hours of fascinating gothic cathedral history facts take you into the engineering logic, the religious ambition, and the human stories behind these extraordinary buildings.</p>

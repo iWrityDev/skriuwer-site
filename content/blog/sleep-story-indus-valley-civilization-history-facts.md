@@ -1,7 +1,7 @@
 ---
 title: "4 Hours of MYSTERIOUS Indus Valley Civilization History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Indus Valley Civilization was contemporary with ancient Sumer and Egypt — and in some respects more sophisticated. Its cities had standardized brick sizes, sophisticated sewage systems, and grain storage facilities that suggest a level of urban planning Rome would not match for another two thousand years. We cannot read their script. We do not know what they called themselves. We do not know why their civilization declined around 1900 BCE. Sleep stories covering 4 hours of mysterious indus valley civilization history facts take you into one of history's great mysteries.</p>

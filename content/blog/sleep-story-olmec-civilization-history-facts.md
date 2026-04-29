@@ -1,7 +1,7 @@
 ---
 title: "5 Hours of MYSTERIOUS Olmec Civilization History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Olmec are called the mother culture of Mesoamerica. They built the first cities in the Americas, created the first Mesoamerican writing system, and established the religious and political patterns that the Maya, Aztec, and every other Mesoamerican civilization would later follow. They also carved colossal stone heads — some weighing up to forty tons — depicting rulers with distinctive features, transported across roadless jungle from quarries fifty miles away. Sleep stories covering 5 hours of mysterious olmec civilization history facts take you into a civilization that archaeology is still piecing together.</p>

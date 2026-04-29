@@ -1,7 +1,7 @@
 ---
 title: "Mythology for Sleep: The Best Myths and Legends to Fall Asleep To"
 date: "2026-04-29"
-categories: ["mythology"]
+categories: ["mythology", "sleep-stories"]
 ---
 
 <p>Mythology was always meant to be heard in the dark. The great mythological traditions — Greek, Norse, Celtic, Egyptian, Mesopotamian — emerged from oral cultures where stories were told around fires at night, passed from one generation to the next by voice. The written versions we have now are late transcriptions of something that was fundamentally a spoken, nighttime tradition. Listening to mythology as you fall asleep is not a modern trick. It is the original format.</p>

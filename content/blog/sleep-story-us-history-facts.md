@@ -1,7 +1,7 @@
 ---
 title: "3 Hours of FASCINATING US History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>American history is 250 years old and has generated more historical writing than any other national history on earth. The sheer volume of material makes finding the good work difficult. Sleep stories covering 3 hours of fascinating us history facts cut through the mythology — the founding fathers as demigods, the frontier as empty, the civil war as a quarrel over abstract principles — and give you the actual political, economic, and social forces that made the United States what it is.</p>

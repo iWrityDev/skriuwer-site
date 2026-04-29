@@ -1,7 +1,7 @@
 ---
 title: "5 Hours of SHOCKING Civil War History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The American Civil War killed 620,000 soldiers and an unknown number of civilians — a death toll that exceeds American casualties in every other war combined. It was fought over slavery, whatever the post-war mythology said about states' rights, and it resolved the question of whether the United States would remain a slaveholding republic by the only means available after forty years of failed political compromise: violence. Sleep stories covering 5 hours of shocking civil war history facts take you through four years of industrial slaughter and political crisis that permanently changed what America was.</p>

@@ -1,7 +1,7 @@
 ---
 title: "Knights Templar Sleep Story: 6 Hours of Secret History to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Friday, October 13, 1307. Before dawn, officers across France opened sealed orders simultaneously and arrested every Knight Templar they could find. Within hours, one of the most powerful military orders in history — bankers to kings, defenders of the Crusader states, holders of secrets that the Church clearly found threatening — was broken. The timing was not accidental. Neither was the coordination. What followed was a show trial, confessions extracted under torture, and eventually the burning of the last Grand Master, Jacques de Molay, on a small island in the Seine. He reportedly cursed King Philip and Pope Clement from the flames. Both were dead within the year. The <strong>Knights Templar</strong> remain one of the most genuinely strange episodes in medieval history, and they make extraordinary material for a sleep story.</p>

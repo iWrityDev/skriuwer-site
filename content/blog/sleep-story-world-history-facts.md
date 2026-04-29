@@ -1,7 +1,7 @@
 ---
 title: "3 Hours of EPIC World History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>World history is the attempt to find patterns across civilizations that developed independently of each other. Why did agriculture emerge in multiple places simultaneously around 10,000 BCE? Why did industrialization begin in Britain rather than China, which had most of the same ingredients earlier? Why did some civilizations develop writing and others did not? Sleep stories covering 3 hours of epic world history facts give you the broad sweep of human civilization from the first cities to the modern world.</p>

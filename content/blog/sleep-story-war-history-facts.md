@@ -1,7 +1,7 @@
 ---
 title: "6 Hours of EPIC War History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>War is the most documented human activity in history. From the earliest Sumerian records through to the present, military conflict has generated more historical writing than any other subject. Sleep stories covering 6 hours of epic war history facts take you through the broadest sweep of military history — the battles, the strategies, the technologies, and the human decisions that determined how conflicts began, escalated, and ended.</p>

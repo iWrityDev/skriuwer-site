@@ -1,7 +1,7 @@
 ---
 title: "4 Hours of DARK Ancient Mesopotamia History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Mesopotamia invented writing, the wheel, the city, the legal code, and the concept of organized irrigation agriculture — in roughly that order, over about five thousand years. The civilizations of ancient Mesopotamia are the oldest we have detailed records of, which makes sleep stories covering 4 hours of dark ancient mesopotamia history facts genuinely unlike anything else in the genre: you are listening to the very beginning of recorded human history.</p>

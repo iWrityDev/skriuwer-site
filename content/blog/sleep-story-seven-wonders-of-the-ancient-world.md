@@ -1,7 +1,7 @@
 ---
 title: "4 Hours of DARK Seven Wonders of the Ancient World: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Only one of the Seven Wonders of the Ancient World still stands. The Great Pyramid of Giza has outlasted the Colossus of Rhodes, the Lighthouse of Alexandria, the Temple of Artemis, the Statue of Zeus, the Mausoleum at Halicarnassus, and the Hanging Gardens of Babylon — which may never have existed in the form the ancient writers described. Sleep stories covering 4 hours of dark seven wonders of the ancient world take you through what we actually know about each monument versus what legend has added over two thousand years of retelling.</p>

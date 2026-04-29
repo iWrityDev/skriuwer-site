@@ -1,7 +1,7 @@
 ---
 title: "2 Hours of EPIC Black Death History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Black Death killed between a third and half of Europe's population between 1347 and 1351. In some regions the mortality was higher. Florence lost more than half its population. Entire villages were abandoned. The social and economic consequences — the collapse of the feudal labour system, the questioning of Church authority, the acceleration of the Italian Renaissance — shaped everything that came after. Sleep stories covering 2 hours of epic black death history facts take you through one of the defining catastrophes of human history.</p>

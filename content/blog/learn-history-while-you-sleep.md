@@ -1,7 +1,7 @@
 ---
 title: "Learn History While You Sleep: Does It Actually Work?"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The idea sounds too good to be true: put on a history video, fall asleep, and wake up knowing more than you did the night before. Sleep learning has been a fringe idea for decades — the subject of overblown claims and dismissive rebuttals in equal measure. The actual science sits somewhere more interesting than either camp admits. And a growing audience of people who regularly <strong>learn history while they sleep</strong> reports genuine retention, without any of the effort that traditional studying requires.</p>

@@ -1,7 +1,7 @@
 ---
 title: "Medieval History Sleep Stories: Fall Asleep to Knights, Castles and Kings"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The medieval period is one of the most misunderstood stretches of human history. It was not a dark age in which nothing happened and everyone was miserable. It was a period of extraordinary complexity: the rise of universities, the rebuilding of European trade networks, the construction of cathedrals that still stand as engineering marvels, the slow and violent consolidation of nations. The peasants worked hard. The kings schemed harder. The Church ran everything in between. <strong>Medieval history sleep stories</strong> let you absorb this world slowly, in the dark, without lectures or timelines getting in the way.</p>

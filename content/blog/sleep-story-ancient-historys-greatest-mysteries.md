@@ -1,7 +1,7 @@
 ---
 title: "6 Hours of Ancient History's GREATEST Mysteries: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Some questions in ancient history have been definitively answered. Many have not. Why did the Bronze Age civilizations collapse simultaneously around 1200 BCE? What happened to the population of Easter Island? Why did the Maya cities of the southern lowlands empty out between 800 and 1000 CE? What do the Nazca lines actually represent? Sleep stories covering 6 hours of ancient history's greatest mysteries take you into the genuine unsolved questions at the edges of ancient history.</p>

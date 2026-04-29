@@ -1,7 +1,7 @@
 ---
 title: "3 Hours of EPIC British Empire History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>At its peak, the British Empire covered a quarter of the earth's land surface and governed a quarter of its population. It was the largest empire in human history by those measures — and also one of the most contradictory. The same institution that abolished the slave trade ran plantation economies in the Caribbean for decades after abolition, enforced opium imports on China at gunpoint, and described itself throughout as a civilizing mission. Sleep stories covering 3 hours of epic british empire history facts take you through this complexity without resolving it artificially.</p>

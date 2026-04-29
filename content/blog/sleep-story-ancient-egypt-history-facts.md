@@ -1,7 +1,7 @@
 ---
 title: "3 Hours of FASCINATING Ancient Egypt History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Ancient Egypt is the longest-running civilization in human history. Three thousand years of continuous cultural identity, broken by invasions and internal collapse but always reassembling around the same geography, the same gods, the same symbolic language. When you listen to sleep stories about 3 hours of fascinating ancient egypt history facts, you are absorbing a narrative so long that the pyramids were already ancient ruins by the time Cleopatra was born. The pharaohs of the New Kingdom were as distant from Cleopatra as she is from us.</p>

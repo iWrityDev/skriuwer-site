@@ -1,7 +1,7 @@
 ---
 title: "6 Hours of Fascinating Islam History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Islamic civilization was, for five centuries after the death of Muhammad, the most sophisticated on earth by almost any measure: science, medicine, philosophy, mathematics, astronomy, architecture. The House of Wisdom in Baghdad preserved and extended Greek learning while Europe was in the early medieval period. The translation movement that brought Aristotle back to Europe came through Arabic intermediaries. Sleep stories covering 6 hours of fascinating islam history facts take you through a history that Western education has consistently undersold.</p>

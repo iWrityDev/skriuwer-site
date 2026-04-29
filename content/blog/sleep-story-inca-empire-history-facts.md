@@ -1,7 +1,7 @@
 ---
 title: "5 Hours of FASCINATING Inca Empire History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Inca Empire was the largest empire in pre-Columbian America and, at its height, the largest empire in the world. It controlled a territory stretching 4,000 kilometres along the Andes, governed dozens of distinct ethnic groups, and built a road network that rivalled Rome's — without iron tools, the wheel, or a written language. Instead of writing, the Incas used quipu: knotted strings that recorded numerical data and possibly narratives in a system we have still not fully deciphered. Sleep stories covering 5 hours of fascinating inca empire history facts take you into a civilization that operated on entirely different principles from anything in the Old World.</p>

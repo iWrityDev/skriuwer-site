@@ -1,7 +1,7 @@
 ---
 title: "6 Hours of FORGOTTEN African Kingdom History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>African history before European colonization is one of the most systematically neglected areas of popular historiography. The kingdoms of Mali, Songhai, Kush, Aksum, Zimbabwe, Benin, and dozens of others were sophisticated, wealthy, and complex states — some controlling trade routes that made their rulers among the richest people on earth. Sleep stories covering 6 hours of forgotten african kingdom history facts restore what colonial-era historiography deliberately omitted.</p>

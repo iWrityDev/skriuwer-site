@@ -1,7 +1,7 @@
 ---
 title: "5 Hours of DARK Ancient Rituals History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Every ancient civilization practiced rituals that look, from the outside, somewhere between strange and horrifying. Human sacrifice in Carthage and Mesoamerica. Bull-leaping in Minoan Crete. The Roman practice of reading the future in animal entrails. The Aztec calendar system built around keeping the sun alive through blood. Sleep stories covering 5 hours of dark ancient rituals history facts take these practices seriously — not as evidence of barbarism, but as technologies for managing a world in which the gods were real and their favor genuinely mattered.</p>

@@ -1,7 +1,7 @@
 ---
 title: "3 Hours of DARK Assyrian Empire History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Assyrian Empire was the first true empire in history by modern definitions: a centralized state that conquered and administered a large, multiethnic territory. The Assyrians were also, by ancient standards, exceptionally brutal. Their own inscriptions describe mass deportations, systematic torture of enemies, and the deliberate destruction of cities as policy. This ruthlessness was not incidental to their success — it was a calculated strategy for making rebellion seem more costly than submission. Sleep stories covering 3 hours of dark assyrian empire history facts take you into one of antiquity's most formidable and least sentimentalized states.</p>

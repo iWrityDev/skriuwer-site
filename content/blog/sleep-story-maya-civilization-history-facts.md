@@ -1,7 +1,7 @@
 ---
 title: "4 Hours of DARK Maya Civilization History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Maya are one of the few pre-Columbian civilizations that independently developed a complete writing system, accurate astronomical calculations, and zero as a mathematical concept. Their calendar predicted astronomical events centuries in advance. They built cities in the Mesoamerican jungle without metal tools, the wheel, or draft animals. And their civilization did not simply collapse — it experienced a series of regional collapses across different centuries, with some areas flourishing long after others had been abandoned. Sleep stories covering 4 hours of dark maya civilization history facts take you into one of the most sophisticated ancient cultures in the Americas.</p>

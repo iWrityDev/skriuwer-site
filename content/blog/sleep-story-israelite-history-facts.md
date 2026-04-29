@@ -1,7 +1,7 @@
 ---
 title: "5 Hours of FORGOTTEN Israelite History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The history of ancient Israel is simultaneously one of the most documented and one of the most contested subjects in historical scholarship. The Hebrew Bible is an extraordinary historical source — but it was written by authors with theological and political agendas, edited over centuries, and does not always align with the archaeological record. Sleep stories covering 5 hours of forgotten israelite history facts take you through what we actually know about the kingdoms of Israel and Judah, the Babylonian exile, and the origins of monotheism.</p>

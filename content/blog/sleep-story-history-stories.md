@@ -1,7 +1,7 @@
 ---
 title: "5 Hours of CRAZY History Stories: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Ancient history covers roughly four thousand years of human civilization before the fall of the Western Roman Empire in 476 CE. In that span, humanity invented writing, mathematics, philosophy, democracy, monotheism, architecture, metallurgy, and organized warfare — along with most of the other foundational technologies and ideas that shaped everything that followed. Sleep stories covering 5 hours of crazy history stories take you into the deep roots of the world we live in.</p>

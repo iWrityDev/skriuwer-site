@@ -1,7 +1,7 @@
 ---
 title: "4 Hours of SCARY Medieval History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The medieval period runs from roughly 500 CE to 1500 CE — a thousand years of European history that produced Gothic cathedrals, the Black Death, the Crusades, Magna Carta, the rise of universities, and the slow emergence of the nation-state from feudal fragmentation. Sleep stories covering 4 hours of scary medieval history facts give you access to a period far richer and stranger than its popular image as a dark age suggests.</p>

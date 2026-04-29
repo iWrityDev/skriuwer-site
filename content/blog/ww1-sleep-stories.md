@@ -1,7 +1,7 @@
 ---
 title: "WW1 Sleep Stories: Fall Asleep to the History of the Great War"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>World War One killed seventeen million people and destroyed four empires. It reshaped the map of Europe, the Middle East, and Africa in ways that are still causing conflicts today. It also produced more poetry, memoir, and literature than almost any other event in history — because the people who survived it were desperate to describe something that language kept failing to capture. The trenches. The mud. The absurdity of industrialised slaughter. <strong>WW1 sleep stories</strong> give you a way to absorb that history slowly, without the emotional armoring that comes with trying to study it at a desk in full daylight.</p>

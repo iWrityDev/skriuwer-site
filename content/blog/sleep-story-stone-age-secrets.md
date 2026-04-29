@@ -1,7 +1,7 @@
 ---
 title: "6 Hours of Stone Age SECRETS: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Stone Age covers roughly 99 percent of human history. Everything else — agriculture, cities, writing, empires, industrialisation — fits into the remaining one percent. The humans who lived through the Paleolithic and Neolithic periods were cognitively identical to us, facing challenges of survival that required sophisticated social structures, environmental knowledge, and technology that we have largely lost the ability to replicate. Sleep stories covering 6 hours of stone age secrets take you into the longest chapter of the human story.</p>

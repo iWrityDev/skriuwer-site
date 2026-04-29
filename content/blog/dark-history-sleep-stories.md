@@ -1,7 +1,7 @@
 ---
 title: "Dark History Sleep Stories: Fall Asleep to History's Strangest and Darkest Chapters"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>History's official version has always been cleaned up. The parts that are too embarrassing, too brutal, or too complicated get compressed into footnotes or dropped entirely. The Inquisition becomes a sentence. The medical experiments become a paragraph. The famines engineered by policy get filed under "unfortunate circumstances." <strong>Dark history sleep stories</strong> pull those footnotes out into the open and read them slowly in the dark, where they belong.</p>

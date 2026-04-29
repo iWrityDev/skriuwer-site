@@ -1,7 +1,7 @@
 ---
 title: "The HIDDEN History of Ancient Rome: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Rome was not built in a day, and it did not fall in one either. The Roman Empire's collapse took three centuries of frontier pressure, economic strain, political instability, and slow institutional decay — which is one reason it is so fascinating. There was no single moment of failure. There were hundreds of them, each individually survivable, collectively fatal. Sleep stories covering the hidden history of ancient rome give you access to this enormous span of history in the most natural format available: a calm voice, the dark, and hours of material that carries you from one world into the next.</p>

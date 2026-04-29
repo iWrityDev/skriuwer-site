@@ -1,7 +1,7 @@
 ---
 title: "Spanish Flu History To Fall Asleep To: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The 1918 influenza pandemic killed more people than World War One — some estimates put the death toll at fifty million, others higher. It spread worldwide in three waves, killed young healthy adults at disproportionate rates (the opposite of normal flu patterns), and operated largely invisibly because governments suppressed reporting to maintain wartime morale. Spain was the only major country that reported it honestly, which is why it was called the Spanish Flu despite almost certainly not originating there. Sleep stories covering spanish flu history to fall asleep to take you through a catastrophe that has been consistently underrepresented in historical memory.</p>

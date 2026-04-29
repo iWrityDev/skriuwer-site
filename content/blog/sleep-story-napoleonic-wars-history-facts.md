@@ -1,7 +1,7 @@
 ---
 title: "1 Hour of EPIC Napoleonic Wars History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Napoleon Bonaparte rose from a minor Corsican noble family to become Emperor of the French in fifteen years. He reformed the legal system of France and most of Europe, fought more than sixty battles and lost only a handful, and was ultimately defeated not by military genius on the part of his opponents but by the strategic reality of a continent that refused to stay conquered. Sleep stories covering 1 hour of epic napoleonic wars history facts take you through the most dramatic quarter-century in European history before the twentieth century.</p>

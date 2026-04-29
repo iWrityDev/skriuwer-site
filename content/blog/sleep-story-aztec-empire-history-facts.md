@@ -1,7 +1,7 @@
 ---
 title: "4 Hours of DARK Aztec Empire History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Aztec Empire was built in less than two centuries and conquered by the Spanish in under two years. In between, it built one of the largest cities in the world at Tenochtitlan, developed an elaborate tributary empire across central Mexico, and created a religious system that demanded regular human sacrifice on a scale that still shocks historians. When Cortes arrived in 1519, he found a civilization of genuine complexity and power — and then dismantled it using a combination of disease, alliance with the empire's enemies, and brutal military tactics. Sleep stories covering 4 hours of dark aztec empire history facts give the full picture.</p>

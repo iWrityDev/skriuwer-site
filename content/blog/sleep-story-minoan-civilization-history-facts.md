@@ -1,7 +1,7 @@
 ---
 title: "3 Hours of MYSTERIOUS Minoan Civilization History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Minoans built Europe's first palace civilization on Crete, created the first known European writing systems (Linear A remains undeciphered), and produced art so sophisticated that nineteenth-century archaeologists refused to believe it was actually ancient. Then, around 1450 BCE, Minoan civilization collapsed — almost certainly following a catastrophic volcanic eruption on the nearby island of Thera, possibly the largest eruption in recorded human history. Sleep stories covering 3 hours of mysterious minoan civilization history facts take you into one of the most mysterious civilizations in the ancient world.</p>

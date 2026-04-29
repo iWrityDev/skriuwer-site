@@ -1,7 +1,7 @@
 ---
 title: "Lost Kingdoms Sleep Stories: Fall Asleep to Forgotten Civilizations"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Some of the most interesting civilizations in history are also the most obscure — not because they were minor, but because their destruction was thorough enough to erase most of the record. The Indus Valley civilization built cities with sophisticated sewage systems before Rome existed, then vanished so completely that we still cannot read their script. The kingdom of Aksum minted gold coins and corresponded with Byzantium, then collapsed and was largely forgotten by the outside world for centuries. Carthage was not just defeated — it was demolished and salted. These are not footnotes. They are entire worlds that history misplaced. <strong>Lost kingdoms sleep stories</strong> give you access to that buried material in the most accessible format possible.</p>

@@ -1,7 +1,7 @@
 ---
 title: "3 Hours: The Rise and Fall of Ancient Babylon: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Babylon was the largest city on earth for most of the period between 1770 BCE and 500 BCE. It gave us the Hammurabi law code — one of the first written legal systems in history. It gave us the Tower of Babel, or at least the ziggurat that inspired it. It was conquered by Cyrus the Great, then Alexander, then gradually abandoned as the rivers shifted and the trade routes moved. Sleep stories covering 3 hours: the rise and fall of ancient babylon take you through one of the great urban civilizations of the ancient world.</p>

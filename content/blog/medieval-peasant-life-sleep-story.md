@@ -1,7 +1,7 @@
 ---
 title: "Life as a Medieval Peasant: 5 Hour Sleep Story About Everyday Medieval Life"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>History mostly remembers kings, battles, and disasters. The peasants who fed everyone, built everything, and constituted roughly ninety percent of the medieval population are largely absent from the record — not because their lives were unimportant, but because they left fewer documents. What they did leave behind, through archaeology, manor records, legal proceedings, and the occasional autobiographical fragment, gives us a surprisingly detailed picture of what it actually felt like to live at the bottom of a feudal society. The medieval peasant was not the miserable, half-starved creature of popular imagination — at least not always. But life was hard, contingent, and structured by rhythms that modern people find difficult to imagine.</p>

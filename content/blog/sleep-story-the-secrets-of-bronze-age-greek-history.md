@@ -1,7 +1,7 @@
 ---
 title: "The DARK Secrets of Bronze Age Greek History: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Ancient Greece was not a unified civilization. It was a collection of city-states — often at war with each other — that shared a language, a religious tradition, and a competitive athletic culture. Athens and Sparta were contemporary civilizations with almost nothing in common beyond their Greekness. The wars with Persia, the plague that devastated Athens, the Peloponnesian War that ended Athenian supremacy, and the eventual conquest by Macedon all happened within a single extraordinary century. Sleep stories covering the dark secrets of bronze age greek history take you into one of the richest periods in human cultural history.</p>

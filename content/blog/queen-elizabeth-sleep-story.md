@@ -1,7 +1,7 @@
 ---
 title: "Queen Elizabeth I Sleep Story: 5 Hours of Tudor History to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history", "biography"]
+categories: ["history", "biography", "sleep-stories"]
 ---
 
 <p>Elizabeth I ruled England for 44 years without marrying, without producing an heir, and without being deposed — which, for a female monarch in the sixteenth century, was not just an achievement but something close to a miracle. She inherited a country fractured by religious conflict, financially exhausted, and surrounded by hostile powers. She left it a maritime force with a flourishing arts culture and a settled (if fragile) religious settlement. She also, despite the mythology that would later grow up around her, was not a particularly sentimental ruler. She executed her cousin. She let her favourite come close enough to treason that execution became unavoidable, then agonised over signing the warrant. She played her marriageability as a diplomatic instrument for decades without ever intending to honour the transaction. <strong>Queen Elizabeth I sleep stories</strong> let you absorb the full complexity of her reign without the simplified version that textbooks tend to offer.</p>

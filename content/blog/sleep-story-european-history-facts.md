@@ -1,7 +1,7 @@
 ---
 title: "3 Hours of AMAZING European History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>European history from the fall of Rome to the present is a 1,500-year story of political fragmentation slowly hardening into nation-states, religious uniformity fracturing into endless schism, and a series of catastrophic wars each of which seemed to set the conditions for the next. Sleep stories covering 3 hours of amazing european history facts give you the broad sweep of a civilization that remade itself repeatedly — through the Renaissance, the Reformation, the Enlightenment, the revolutions of 1848, and the two world wars that defined the twentieth century.</p>

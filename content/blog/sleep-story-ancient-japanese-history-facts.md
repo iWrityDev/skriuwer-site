@@ -1,7 +1,7 @@
 ---
 title: "7 Hours of EPIC Ancient Japanese History Facts: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>Japanese history is one of the most distinctive civilizational stories on earth. An island nation that absorbed Chinese culture and made it unrecognizable, that produced a warrior aristocracy unlike anything in the medieval West, that closed itself to the outside world for two centuries and then opened overnight — Japan is a civilization of radical transformations disguised as stability. Sleep stories covering 7 hours of epic ancient japanese history facts take you from the mythological origins of the islands through the samurai era and into the forces that made modern Japan.</p>

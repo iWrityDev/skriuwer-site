@@ -1,7 +1,7 @@
 ---
 title: "The SHOCKING Truth About African Colonization History: Sleep Stories to Fall Asleep To"
 date: "2026-04-29"
-categories: ["history"]
+categories: ["history", "sleep-stories"]
 ---
 
 <p>The Scramble for Africa — the period between 1881 and 1914 when European powers divided virtually the entire African continent between themselves — was one of the most consequential events in modern history. The borders drawn during this period still govern African states today, cutting through ethnic groups and ecological zones with complete indifference to the people who lived there. Sleep stories covering the shocking truth about african colonization history take you through the history of colonization and its long aftermath without the sanitising that European historiography has often applied.</p>
