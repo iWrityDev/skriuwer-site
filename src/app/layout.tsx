@@ -240,6 +240,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               <Link href={nav.blogHref} className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden sm:inline">
                 {nav.blog}
               </Link>
+              {!isLocalized && (
+                <Link href="/sleep-stories" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition hidden lg:inline">
+                  Sleep Stories
+                </Link>
+              )}
             </div>
             <div className="ml-auto flex items-center gap-3">
               <LanguageSwitcher />
@@ -503,6 +508,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                       <Link href="/category/mythology" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Mythology Books</Link>
                       <Link href="/category/language-learning" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Language Learning</Link>
                       <Link href="/gift-guides" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Gift Guides</Link>
+                      <Link href="/sleep-stories" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Sleep Stories</Link>
                       <Link href="/blog" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Blog</Link>
                       <Link href="/search" className="text-[var(--color-text-muted)] hover:text-[var(--color-orange-light)] transition">Search</Link>
                     </div>
