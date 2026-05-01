@@ -1,6 +1,66 @@
 {
   "books": [
     {
+      "slug": "bitcoin-blockchain-and-cryptoassets-a-comprehensive-introduction",
+      "asin": "0262539160",
+      "title": "Bitcoin, Blockchain, and Cryptoassets: A Comprehensive Introduction",
+      "description": "An introduction to cryptocurrencies and blockchain technology; a guide for practitioners and students. Bitcoin and blockchain enable the ownership of virtual property without the need for a central authority. Additionally, Bitcoin and other cryptocurrencies make up an entirely new class of assets that have the potential for fundamental change in the current financial system. This book offers an introduction to cryptocurrencies and blockchain technology that begins from the perspective of monetary economics. The book first presents a nontechnical discussion of monetary theory, enabling readers to understand how cryptocurrencies are a radical departure from existing monetary instruments, and provides an overview of blockchain technology and the Bitcoin system. It then takes up technical aspects of Bitcoin in more detail, covering such topics as the Bitcoin network, its communications protocol, the mathematics underpinning decentralized validation, transaction types, the data structure of blocks, the proof-of-work consensus mechanism, and game theory. Finally, the book discusses specific issues and applications, including price volatility, regulatory uncertainty, and central bank cryptocurrencies, as well as such alternative applications as decentralized verification and attestation, tokens, and smart contracts. The concluding chapter offers practical advice on getting started with Bitcoin. End-of-chapter exercises allow readers to test their knowledge. Bitcoin, Blockchain, and Cryptoassets is suitable for classroom use and as a reference for practitioners.",
+      "author": "Fabian Schar, Aleksander Berentsen",
+      "coverImage": "https://books.google.com/books/content?id=_L34DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0262539160.01.LZZZZZZZ.jpg",
+      "categories": [
+        "business"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 289,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 16,
+      "starRating": 4.5,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0262539160?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0262539160?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0262539160?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0262539160?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2020-09-01",
+      "shortDescription": "An introduction to cryptocurrencies and blockchain technology; a guide for practitioners and students. Bitcoin and blockchain enable the ownership of virtual property without the need for a central au...",
+      "source": "google_books"
+    },
+    {
+      "slug": "the-devil-in-the-white-city-a-saga-of-magic-and-murder-at-the-fair-that-changed",
+      "asin": "1400076315",
+      "title": "The Devil in the White City: A Saga of Magic and Murder at the Fair that Changed America",
+      "description": "#1 NATIONAL BESTSELLER • NATIONAL BOOK AWARD FINALIST • From the #1 New York Times bestselling author of The Splendid and the Vile comes the true tale of the 1893 World's Fair in Chicago and the cunning serial killer who used the magic and majesty of the fair to lure his victims to their death. “As absorbing a piece of popular history as one will ever hope to find.” —San Francisco Chronicle A Kirkus Reviews Best Nonfiction Book of the Century • A Los Angeles Times Best Nonfiction Book of the Last 30 Years Combining meticulous research with nail-biting storytelling, Erik Larson has crafted a narrative with all the wonder of newly discovered history and the thrills of the best fiction. Two men, each handsome and unusually adept at his chosen work, embodied an element of the great dynamic that characterized America’s rush toward the twentieth century. The architect was Daniel Hudson Burnham, the fair’s brilliant director of works and the builder of many of the country’s most important structures, including the Flatiron Building in New York and Union Station in Washington, D.C. The murderer was Henry H. Holmes, a young doctor who, in a malign parody of the White City, built his “World’s Fair Hotel” just west of the fairgrounds—a torture palace complete with dissection table, gas chamber, and 3,000-degree crematorium. Burnham overcame tremendous obstacles and tragedies as he organized the talents of Frederick Law Olmsted, Charles McKim, Louis Sullivan, and others to transform swampy Jackson Park into the White City, while Holmes used the attraction of the great fair and his own satanic charms to lure scores of young women to their deaths. What makes the story all the more chilling is that Holmes really lived, walking the grounds of that dream city by the lake. The Devil in the White City draws the reader into the enchantment of the Guilded Age, made all the more appealing by a supporting cast of real-life characters, including Buffalo Bill, Theodore Dreiser, Susan B. Anthony, Thomas Edison, Archduke Francis Ferdinand, and others. Erik Larson’s gifts as a storyteller are magnificently displayed in this rich narrative of the master builder, the killer, and the great fair that obsessed them both.",
+      "author": "Erik Larson",
+      "coverImage": "https://books.google.com/books/content?id=kJp22rZDOZQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1400076315.01.LZZZZZZZ.jpg",
+      "categories": [
+        "true-crime"
+      ],
+      "tags": [],
+      "language": "en",
+      "pages": 466,
+      "price": "",
+      "currency": "USD",
+      "reviewCount": 46,
+      "starRating": 4.0,
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1400076315?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1400076315?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1400076315?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1400076315?tag=31813-20"
+      },
+      "isOwnBook": false,
+      "hookText": "",
+      "publishedDate": "2004-02-10",
+      "shortDescription": "#1 NATIONAL BESTSELLER • NATIONAL BOOK AWARD FINALIST • From the #1 New York Times bestselling author of The Splendid and the Vile comes the true tale of the 1893 World's Fair in Chicago and the cunni...",
+      "source": "google_books"
+    },
+    {
       "slug": "how-to-make-money-from-crypto-trading-investing-for-beginners-complete-guide-on",
       "asin": "8558992061",
       "title": "How to Make Money from Crypto Trading & Investing for Beginners: Complete Guide on How to Buy & Sell Bitcoin & Altcoins for Profit, DeFi Yield Farming with Cryptocurrency Investments Tips",
@@ -6714,6 +6774,1420 @@
       "isOwnBook": false,
       "hookText": null,
       "publishedDate": "2018"
+    },
+    {
+      "slug": "thinking-fast-and-slow",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "asin": "0374533555",
+      "categories": [
+        "psychology"
+      ],
+      "description": "A groundbreaking tour of the mind that explains the two systems that drive the way we think. System 1 is fast, intuitive, and emotional; System 2 is slower, more deliberative, and more logical. Kahneman exposes the extraordinary capabilities and also the faults and biases of fast thinking, and reveals the pervasive influence of intuitive impressions on our thoughts and behavior. The impact of loss aversion and overconfidence on corporate strategies, the difficulties of predicting what will make us happy in the future, the challenges of properly framing risks at work and at home, the profound effect of cognitive biases on everything from playing the stock market to planning the next vacation — each of these can be understood only by knowing how the two systems work together to shape our judgments and decisions.",
+      "shortDescription": "A groundbreaking tour of the mind and the two systems that drive the way we think — one fast and intuitive, the other slow and deliberate.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0374533555.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 98000,
+      "pages": 499,
+      "publishedDate": "2011-10-25",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0374533555?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0374533555?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0374533555?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0374533555?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-psychology-of-money",
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "asin": "0857197681",
+      "categories": [
+        "psychology",
+        "business"
+      ],
+      "description": "Timeless lessons on wealth, greed, and happiness. Doing well with money is not necessarily about what you know. It is about how you behave. And behavior is hard to teach, even to really smart people. Money investing, personal finance, and business decisions is typically taught as a math-based field, where data and formulas tell us exactly what to do. But in the real world, people do not make financial decisions on a spreadsheet. They make them at the dinner table, or in a meeting room, where personal history, your own unique view of the world, ego, pride, marketing, and odd incentives are scrambled together. In The Psychology of Money, award-winning author Morgan Housel shares 19 short stories exploring the strange ways people think about money and teaches you how to make better sense of one of life's most important topics.",
+      "shortDescription": "Timeless lessons on wealth, greed, and happiness — why doing well with money is more about behavior than knowledge.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0857197681.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 120000,
+      "pages": 256,
+      "publishedDate": "2020-09-08",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0857197681?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0857197681?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0857197681?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0857197681?tag=31813-20"
+      }
+    },
+    {
+      "slug": "predictably-irrational",
+      "title": "Predictably Irrational: The Hidden Forces That Shape Our Decisions",
+      "author": "Dan Ariely",
+      "asin": "0061353248",
+      "categories": [
+        "psychology"
+      ],
+      "description": "Why do our headaches persist after taking a one-cent aspirin but disappear when we take a fifty-cent aspirin? Why does recalling the Ten Commandments reduce our tendency to lie, even when we could not possibly be caught? Why do we splurge on a lavish meal but cut coupons to save twenty-five cents on a can of soup? When it comes to making decisions in our lives, we think we are in control. We think we are making smart, rational choices. But are we? In a series of illuminating, often surprising experiments, MIT behavioral economist Dan Ariely refutes the common assumption that we behave in fundamentally rational ways.",
+      "shortDescription": "MIT behavioral economist Dan Ariely reveals the hidden forces that shape our decisions — and why we are far less rational than we think.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0061353248.01.LZZZZZZZ.jpg",
+      "starRating": 4.4,
+      "reviewCount": 12000,
+      "pages": 368,
+      "publishedDate": "2009-04-27",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0061353248?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0061353248?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0061353248?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0061353248?tag=31813-20"
+      }
+    },
+    {
+      "slug": "12-rules-for-life",
+      "title": "12 Rules for Life: An Antidote to Chaos",
+      "author": "Jordan B. Peterson",
+      "asin": "0345816021",
+      "categories": [
+        "psychology",
+        "philosophy"
+      ],
+      "description": "What does everyone in the modern world need to know? Renowned psychologist Jordan B. Peterson's answer to this most difficult of questions uniquely combines the hard-won insights of thousands of years of human history with cutting-edge scientific research. Humorous, surprising and informative, Dr. Peterson tells us why skateboarding boys and girls must be left alone, what terrible fate awaits those who criticize too easily, and why you should always pet a cat when you meet one on the street. In twelve principles, Dr. Peterson provides a profound antidote to the chaos of modern life.",
+      "shortDescription": "Jordan Peterson's twelve principles for how to live a meaningful life — a provocative and inspiring guide for the modern age.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0345816021.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 55000,
+      "pages": 448,
+      "publishedDate": "2018-01-23",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0345816021?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0345816021?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0345816021?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0345816021?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-power-of-habit",
+      "title": "The Power of Habit: Why We Do What We Do in Life and Business",
+      "author": "Charles Duhigg",
+      "asin": "081298160X",
+      "categories": [
+        "psychology",
+        "business"
+      ],
+      "description": "In The Power of Habit, award-winning business reporter Charles Duhigg takes us to the thrilling edge of scientific discoveries that explain why habits exist and how they can be changed. Distilling vast amounts of information into engrossing narratives that take us from the boardrooms of Procter & Gamble to the sidelines of the NFL to the front lines of the civil rights movement, Duhigg presents a whole new understanding of human nature and its potential. At its core, The Power of Habit contains an exhilarating argument: the key to exercising regularly, losing weight, being more productive, and achieving success is understanding how habits work.",
+      "shortDescription": "An award-winning exploration of the science behind why habits exist and how they can be changed — in life and in business.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/081298160X.01.LZZZZZZZ.jpg",
+      "starRating": 4.6,
+      "reviewCount": 45000,
+      "pages": 371,
+      "publishedDate": "2012-02-28",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/081298160X?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/081298160X?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/081298160X?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/081298160X?tag=31813-20"
+      }
+    },
+    {
+      "slug": "attached",
+      "title": "Attached: The New Science of Adult Attachment and How It Can Help You Find and Keep Love",
+      "author": "Amir Levine, Rachel Heller",
+      "asin": "1585429139",
+      "categories": [
+        "psychology"
+      ],
+      "description": "We already rely on science to tell us what to eat, when to exercise, and how long to sleep. Why not use science to help us improve our romantic relationships? In this groundbreaking book, psychiatrist and neuroscientist Amir Levine and Rachel Heller reveal how an understanding of attachment theory can help us find and sustain love. Attachment theory explains why some people seem comfortable with intimacy and commitment while others are afraid to get too close, and why some adults seem preoccupied with their relationships and constantly worry about them. Once you understand your own attachment style and that of your partner, the theory can transform your relationship.",
+      "shortDescription": "How understanding your attachment style — anxious, avoidant, or secure — can help you find and keep lasting love.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1585429139.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 32000,
+      "pages": 294,
+      "publishedDate": "2010-12-30",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1585429139?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1585429139?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1585429139?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1585429139?tag=31813-20"
+      }
+    },
+    {
+      "slug": "flow-psychology-optimal-experience",
+      "title": "Flow: The Psychology of Optimal Experience",
+      "author": "Mihaly Csikszentmihalyi",
+      "asin": "0061339202",
+      "categories": [
+        "psychology"
+      ],
+      "description": "The bestselling classic that reveals the secrets of the flow experience — a state of joy, creativity, and total involvement with life — and teaches us how to achieve it. Psychologist Mihaly Csikszentmihalyi's famous investigations of optimal experience have revealed that what makes an experience genuinely satisfying is a state of consciousness called flow. During flow, people typically experience deep enjoyment, creativity, and a total involvement with life. In an effort to gain more flow experience, people have climbed mountains, bet their savings on a hand of cards, and become virtuosos at the piano. Csikszentmihalyi demonstrates the ways this positive state can be controlled, not just left to chance.",
+      "shortDescription": "The classic study of the peak experience of total absorption — and how to achieve more joy, creativity, and meaning in everyday life.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0061339202.01.LZZZZZZZ.jpg",
+      "starRating": 4.4,
+      "reviewCount": 11000,
+      "pages": 303,
+      "publishedDate": "2008-07-01",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0061339202?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0061339202?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0061339202?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0061339202?tag=31813-20"
+      }
+    },
+    {
+      "slug": "sophies-world",
+      "title": "Sophie's World",
+      "author": "Jostein Gaarder",
+      "asin": "0374530718",
+      "categories": [
+        "philosophy",
+        "fiction"
+      ],
+      "description": "One day fourteen-year-old Sophie Amundsen comes home from school to find in her mailbox two notes, with one question on each: Who are you? and Where does the world come from? From that point on she is drawn into a strange course of study, where she is introduced to the greatest philosophical thinkers from Socrates to Sartre, as her teacher imparts his unique vision of the world. More than just a history of philosophy, Sophie's World is a complete and entertaining view of our cultural heritage, and became an international bestseller when it was first published in 1991.",
+      "shortDescription": "A wonderful, witty journey through the history of philosophy — as one teenager discovers the greatest thinkers from Socrates to Sartre.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0374530718.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 8500,
+      "pages": 544,
+      "publishedDate": "1994-10-17",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0374530718?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0374530718?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0374530718?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0374530718?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-story-of-philosophy",
+      "title": "The Story of Philosophy: The Lives and Opinions of the Greatest Philosophers",
+      "author": "Will Durant",
+      "asin": "0671739166",
+      "categories": [
+        "philosophy"
+      ],
+      "description": "A brilliant and concise account of the lives and ideas of the great philosophers — Plato, Aristotle, Francis Bacon, Baruch Spinoza, Voltaire, Immanuel Kant, Arthur Schopenhauer, Herbert Spencer, Friedrich Nietzsche, Henri Bergson, Benedetto Croce, Bertrand Russell, George Santayana, William James, and John Dewey. Will Durant, who won the Pulitzer Prize in 1968 and the Presidential Medal of Freedom in 1977, has taken the trouble to retell the history of philosophy in interesting and readable form. The Story of Philosophy has served as a gateway to the ideas of the great thinkers for millions of readers.",
+      "shortDescription": "A brilliant, readable account of the lives and ideas of the great philosophers from Plato to Dewey — a gateway to philosophy for millions.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0671739166.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 5200,
+      "pages": 576,
+      "publishedDate": "1991-09-03",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0671739166?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0671739166?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0671739166?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0671739166?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-republic-plato",
+      "title": "The Republic",
+      "author": "Plato",
+      "asin": "0140455116",
+      "categories": [
+        "philosophy"
+      ],
+      "description": "Plato's Republic is a landmark work of Western philosophy and literature. At its core is an extended argument on the nature of justice, with Socrates asking what makes a city well-ordered and what is the nature of justice. Plato builds an elaborate picture of the ideal city-state, discusses the role of education, arts, and mathematics, and explores the nature of the soul. The Republic also contains Plato's most famous allegory, the Allegory of the Cave, which illuminates his theory of knowledge. This Penguin Classics edition presents Desmond Lee's celebrated translation, with an introduction by Melissa Lane.",
+      "shortDescription": "Plato's foundational work on justice, virtue, and the ideal state — the cornerstone of Western political philosophy.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0140455116.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 6800,
+      "pages": 464,
+      "publishedDate": "2007-05-29",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0140455116?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0140455116?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0140455116?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0140455116?tag=31813-20"
+      }
+    },
+    {
+      "slug": "nicomachean-ethics-aristotle",
+      "title": "Nicomachean Ethics",
+      "author": "Aristotle",
+      "asin": "0872204642",
+      "categories": [
+        "philosophy"
+      ],
+      "description": "The Nicomachean Ethics is the name normally given to Aristotle's best-known work on ethics. Aristotle argues that the highest human good is happiness (eudaimonia), and that happiness consists in excellent activity of the soul. He discusses the virtues — courage, temperance, justice, practical wisdom — and how they can be cultivated through habit. The Ethics also examines friendship, pleasure, and the nature of the contemplative life. One of the most influential philosophical works ever written, it remains essential reading for anyone interested in how to live well.",
+      "shortDescription": "Aristotle's foundational exploration of virtue, happiness, and the good life — the bedrock of Western ethics.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0872204642.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 3500,
+      "pages": 432,
+      "publishedDate": "1999-12-15",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0872204642?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0872204642?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0872204642?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0872204642?tag=31813-20"
+      }
+    },
+    {
+      "slug": "beyond-good-and-evil",
+      "title": "Beyond Good and Evil",
+      "author": "Friedrich Nietzsche",
+      "asin": "1503250881",
+      "categories": [
+        "philosophy"
+      ],
+      "description": "Beyond Good and Evil is one of Nietzsche's most important works and arguably the key text for understanding his mature philosophy. In it, Nietzsche attacks past philosophers for their alleged lack of critical sense and their blind acceptance of Christian-Judaic morality. He calls for a complete reassessment of values, argues that morality is merely a tool by which the weak control the strong, and proposes a new order of values based on life affirmation and power. The book is a fierce, poetic critique of Western philosophy and religion, and a call for a new breed of philosopher who will create values rather than merely accept received ones.",
+      "shortDescription": "Nietzsche's piercing critique of Western philosophy and morality — and his vision for a new philosophy beyond the conventional good and evil.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1503250881.01.LZZZZZZZ.jpg",
+      "starRating": 4.4,
+      "reviewCount": 4200,
+      "pages": 240,
+      "publishedDate": "2014-11-05",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1503250881?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1503250881?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1503250881?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1503250881?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-art-of-living-epictetus",
+      "title": "The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness",
+      "author": "Epictetus (Sharon Lebell)",
+      "asin": "0061286052",
+      "categories": [
+        "philosophy"
+      ],
+      "description": "The Art of Living is a fresh retelling of Epictetus's Enchiridion, one of the great Stoic philosophical texts of antiquity. Sharon Lebell's inspired reinterpretation brings the ancient Stoic philosophical text to life with vivid language and a contemporary understanding. This practical guide to the good life covers how to take care of yourself, how to handle difficult people, how to value freedom over comfort, and how to navigate the unavoidable pain and suffering of life. After nearly two millennia, Epictetus's pithy and practical advice remains as relevant and immediately applicable as ever.",
+      "shortDescription": "A vivid retelling of Epictetus's Stoic wisdom — practical, direct advice on virtue, happiness, and living freely in any circumstance.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0061286052.01.LZZZZZZZ.jpg",
+      "starRating": 4.6,
+      "reviewCount": 4800,
+      "pages": 144,
+      "publishedDate": "2007-02-06",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0061286052?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0061286052?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0061286052?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0061286052?tag=31813-20"
+      }
+    },
+    {
+      "slug": "a-history-of-western-philosophy",
+      "title": "A History of Western Philosophy",
+      "author": "Bertrand Russell",
+      "asin": "0671201581",
+      "categories": [
+        "philosophy"
+      ],
+      "description": "Hailed as lucid and magisterial by The Observer, this book is universally acclaimed as the outstanding one-volume work on the subject of Western philosophy. Considered to be one of the most important philosophical works of the twentieth century, A History of Western Philosophy examines philosophers, scientists, mathematicians, and statesmen from Pythagoras through Bertrand Russell himself. Russell's own penetrating analysis of philosophical problems is woven throughout, and this extraordinary breadth of learning results in a magisterial survey of the philosophical tradition from ancient Greece to the early twentieth century. First published in 1945, this work helped win Russell the Nobel Prize for Literature in 1950.",
+      "shortDescription": "The landmark, Nobel Prize-winning survey of philosophy from ancient Greece to the modern era — still the most comprehensive single-volume overview available.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0671201581.01.LZZZZZZZ.jpg",
+      "starRating": 4.3,
+      "reviewCount": 3800,
+      "pages": 895,
+      "publishedDate": "1967-09-15",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0671201581?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0671201581?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0671201581?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0671201581?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-consolations-of-philosophy",
+      "title": "The Consolations of Philosophy",
+      "author": "Alain de Botton",
+      "asin": "0679779175",
+      "categories": [
+        "philosophy"
+      ],
+      "description": "In an age when most philosophy has retreated to technical problems within the academy, Alain de Botton uses the ideas of the great philosophers to illuminate the most pressing concerns of everyday life. The result is a book that manages to be at once entertaining and deeply enriching. In six chapters ranging over more than 2,000 years of philosophy, de Botton takes on six common problems: unpopularity, not having enough money, frustration, inadequacy, a broken heart, and difficulties. He shows how Socrates, Epicurus, Seneca, Montaigne, Schopenhauer, and Nietzsche each tackled one of these problems with astounding wisdom and relevance.",
+      "shortDescription": "Alain de Botton applies the wisdom of six great philosophers to the most pressing concerns of everyday life — consoling, witty, and wise.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0679779175.01.LZZZZZZZ.jpg",
+      "starRating": 4.2,
+      "reviewCount": 2800,
+      "pages": 272,
+      "publishedDate": "2001-03-27",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0679779175?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0679779175?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0679779175?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0679779175?tag=31813-20"
+      }
+    },
+    {
+      "slug": "justice-what-is-the-right-thing-to-do",
+      "title": "Justice: What's the Right Thing to Do?",
+      "author": "Michael J. Sandel",
+      "asin": "0374532508",
+      "categories": [
+        "philosophy"
+      ],
+      "description": "For Michael Sandel, justice is not a spectator sport. In Justice, Sandel puts us in the position of the decision-maker and asks how we would respond to a range of moral dilemmas. Should we torture terrorists to protect the innocent? Is it ever right to lie? Is it ever right to break a promise? Drawing on the brilliant philosophers of the past — Aristotle, Jeremy Bentham, John Locke, Immanuel Kant, John Rawls, and more — Sandel shows us that these questions have been debated for centuries. Based on his legendary Harvard course, Justice is an education in thinking through complicated issues and controversies we face in public life today.",
+      "shortDescription": "Harvard's legendary political philosophy course in book form — a compelling exploration of justice, morality, and how to make difficult choices.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0374532508.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 4500,
+      "pages": 308,
+      "publishedDate": "2009-09-08",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0374532508?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0374532508?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0374532508?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0374532508?tag=31813-20"
+      }
+    },
+    {
+      "slug": "how-to-win-friends-and-influence-people",
+      "title": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "asin": "0671027034",
+      "categories": [
+        "business"
+      ],
+      "description": "You can go after the job you want and get it! You can take the job you have and improve it! You can take any situation you are in and make it work for you! Since its release in 1936, How to Win Friends and Influence People has sold more than 30 million copies. Dale Carnegie's first book is a timeless bestseller, packed with rock-solid advice that has carried thousands of now famous people up the ladder of success in their business and personal lives. As relevant as ever before, Dale Carnegie's principles endure, and will help you achieve your maximum potential in the complex and competitive modern age.",
+      "shortDescription": "The timeless classic on dealing with people — 30 million copies sold since 1936 and still the most practical guide to human relations.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0671027034.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 65000,
+      "pages": 291,
+      "publishedDate": "1998-10-01",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0671027034?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0671027034?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0671027034?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0671027034?tag=31813-20"
+      }
+    },
+    {
+      "slug": "zero-to-one",
+      "title": "Zero to One: Notes on Startups, or How to Build the Future",
+      "author": "Peter Thiel",
+      "asin": "0804139296",
+      "categories": [
+        "business"
+      ],
+      "description": "If you want to build a better future, you must believe in secrets. The great secret of our time is that there are still uncharted frontiers to explore and new inventions to create. In Zero to One, bold and contrarian thinker Peter Thiel shows how we can find singular ways to create new things. Thiel begins with the contrarian premise that we live in an age of technological stagnation, even if we are too distracted by shiny mobile devices to notice. Information technology has improved rapidly, but there is no reason why progress should be limited to computers or Silicon Valley. Progress can be achieved in any industry or area of business, and the challenge is to find it wherever it exists.",
+      "shortDescription": "Peter Thiel's contrarian guide to building the future — why creating something new is more valuable than copying what already works.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0804139296.01.LZZZZZZZ.jpg",
+      "starRating": 4.6,
+      "reviewCount": 28000,
+      "pages": 224,
+      "publishedDate": "2014-09-16",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0804139296?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0804139296?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0804139296?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0804139296?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-intelligent-investor",
+      "title": "The Intelligent Investor: The Definitive Book on Value Investing",
+      "author": "Benjamin Graham",
+      "asin": "0060555661",
+      "categories": [
+        "business"
+      ],
+      "description": "This classic text is annotated to update Graham's timeless wisdom for today's market conditions. The greatest investment advisor of the twentieth century, Benjamin Graham taught and inspired people worldwide. Graham's philosophy of value investing which shields investors from substantial error and teaches them to develop long-term strategies has made The Intelligent Investor the stock market bible ever since its original publication in 1949. Warren Buffett still calls it the best book on investing ever written.",
+      "shortDescription": "Warren Buffett's best book on investing ever written — Benjamin Graham's timeless principles of value investing, updated for modern markets.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0060555661.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 30000,
+      "pages": 640,
+      "publishedDate": "2006-03-17",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0060555661?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0060555661?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0060555661?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0060555661?tag=31813-20"
+      }
+    },
+    {
+      "slug": "good-to-great",
+      "title": "Good to Great: Why Some Companies Make the Leap and Others Don't",
+      "author": "Jim Collins",
+      "asin": "0066620996",
+      "categories": [
+        "business"
+      ],
+      "description": "Built on a five-year research project at Stanford, Good to Great answers the question: Can a good company become a great company and, if so, how? Jim Collins studied a group of exceptional companies who made the leap from average to exceptional results and sustained those results for at least fifteen years. After the leap, these companies generated cumulative stock returns that beat the general stock market by an average of seven times in fifteen years, better than twice the results delivered by a composite index of the world's greatest companies, including Coca-Cola, Intel, General Electric, and Merck.",
+      "shortDescription": "The landmark study of what separates good companies from truly great ones — based on five years of rigorous research and data.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0066620996.01.LZZZZZZZ.jpg",
+      "starRating": 4.6,
+      "reviewCount": 22000,
+      "pages": 320,
+      "publishedDate": "2001-10-16",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0066620996?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0066620996?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0066620996?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0066620996?tag=31813-20"
+      }
+    },
+    {
+      "slug": "never-split-the-difference",
+      "title": "Never Split the Difference: Negotiating As If Your Life Depended On It",
+      "author": "Chris Voss",
+      "asin": "0062407805",
+      "categories": [
+        "business"
+      ],
+      "description": "A former international hostage negotiator for the FBI offers a new, field-tested approach to high-stakes negotiations — whether in the boardroom or at home. After a stint policing the rough streets of Kansas City, Missouri, Chris Voss joined the FBI, where his career as a hostage negotiator brought him face-to-face with a range of criminals, including bank robbers and terrorists. Reaching the pinnacle of his profession, he became the FBI's lead international kidnapping negotiator. Never Split the Difference takes you inside the world of high-stakes negotiations and into Voss's head, revealing the skills that helped him and his colleagues succeed where it mattered most.",
+      "shortDescription": "A former FBI hostage negotiator's field-tested approach to high-stakes negotiations — powerful techniques that work in business and in life.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0062407805.01.LZZZZZZZ.jpg",
+      "starRating": 4.8,
+      "reviewCount": 55000,
+      "pages": 288,
+      "publishedDate": "2016-05-17",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0062407805?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0062407805?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0062407805?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0062407805?tag=31813-20"
+      }
+    },
+    {
+      "slug": "start-with-why",
+      "title": "Start with Why: How Great Leaders Inspire Everyone to Take Action",
+      "author": "Simon Sinek",
+      "asin": "1591846447",
+      "categories": [
+        "business"
+      ],
+      "description": "In 2009, Simon Sinek started a movement to help people become more inspired at work, and in turn inspire their colleagues and customers. Since then, millions have been touched by the power of his ideas, including more than 28 million who've watched his TED Talk based on this book. Sinek starts with a fundamental question: Why are some people and organizations more innovative, more influential, and more profitable than others? Why do some command greater loyalty from customers and employees alike? He then invites us to look at companies like Apple, businesses like Harley Davidson, and leaders like Martin Luther King Jr. and Steve Jobs. The pattern is unmistakable: they all think, act, and communicate in the exact same way.",
+      "shortDescription": "Simon Sinek's global phenomenon on why some leaders inspire action while others don't — the power of starting with your purpose.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1591846447.01.LZZZZZZZ.jpg",
+      "starRating": 4.6,
+      "reviewCount": 26000,
+      "pages": 256,
+      "publishedDate": "2011-12-27",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1591846447?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1591846447?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1591846447?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1591846447?tag=31813-20"
+      }
+    },
+    {
+      "slug": "rich-dad-poor-dad",
+      "title": "Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
+      "author": "Robert T. Kiyosaki",
+      "asin": "1612681131",
+      "categories": [
+        "business"
+      ],
+      "description": "Rich Dad Poor Dad is Robert Kiyosaki's bestselling personal finance book, which has become the #1 personal finance book of all time, translated into dozens of languages and sold around the world. The book explains the difference in mindset between the poor and middle class versus the rich, using the stories of Kiyosaki's own two dads to illustrate. It challenges the conventional wisdom about money and investing, argues that you do not need a high income to be rich, and introduces concepts such as passive income, assets versus liabilities, and the importance of financial education.",
+      "shortDescription": "The #1 personal finance book of all time — Robert Kiyosaki's story of two dads and why financial education matters more than a high income.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1612681131.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 95000,
+      "pages": 336,
+      "publishedDate": "2017-04-11",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1612681131?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1612681131?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1612681131?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1612681131?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-lean-startup",
+      "title": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+      "author": "Eric Ries",
+      "asin": "0307887898",
+      "categories": [
+        "business"
+      ],
+      "description": "Most startups fail. But many of those failures are preventable. The Lean Startup is a new approach being adopted across the globe, changing the way companies are built and new products are launched. Eric Ries defines a startup as an organization dedicated to creating something new under conditions of extreme uncertainty. This is just as true for one person in a garage or a group of seasoned professionals in a Fortune 500 boardroom. What they have in common is a mission to penetrate that fog of uncertainty to discover a successful path to a sustainable business.",
+      "shortDescription": "The modern blueprint for building a successful business — a scientific approach to creating and managing startups that eliminates waste and maximizes learning.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0307887898.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 18000,
+      "pages": 336,
+      "publishedDate": "2011-09-13",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0307887898?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0307887898?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0307887898?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0307887898?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-hard-thing-about-hard-things",
+      "title": "The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers",
+      "author": "Ben Horowitz",
+      "asin": "0062273205",
+      "categories": [
+        "business"
+      ],
+      "description": "Ben Horowitz, cofounder of Andreessen Horowitz and one of Silicon Valley's most respected and experienced entrepreneurs, offers essential advice on building and running a startup — practical wisdom for managing the toughest problems business school does not cover, based on his popular blog. While many people talk about how great it is to start a business, very few are honest about how difficult it is to run one. Ben Horowitz analyzes the problems that confront leaders every day, sharing the insights he's gained developing, managing, selling, buying, investing in, and supervising technology companies.",
+      "shortDescription": "Ben Horowitz's brutally honest guide to the hardest parts of running a business — the decisions that no one prepares you for.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0062273205.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 12000,
+      "pages": 304,
+      "publishedDate": "2014-03-04",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0062273205?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0062273205?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0062273205?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0062273205?tag=31813-20"
+      }
+    },
+    {
+      "slug": "built-to-last",
+      "title": "Built to Last: Successful Habits of Visionary Companies",
+      "author": "Jim Collins, Jerry I. Porras",
+      "asin": "0060516402",
+      "categories": [
+        "business"
+      ],
+      "description": "Drawing upon a six-year research project at the Stanford University Graduate School of Business, James C. Collins and Jerry I. Porras took eighteen truly exceptional and long-lasting companies and studied each in direct comparison to one of its top competitors. They examined the companies from their very beginnings to the present day as start-ups, as midsize companies, and as large corporations. Their findings destroyed some of the most sacred cows of conventional business wisdom. The primary engine of visionary companies is not a great idea, a charismatic leader, or both. In most cases, they were not even the industry leader when they began.",
+      "shortDescription": "The pioneering study of visionary companies that have endured for decades — what makes them different from merely good companies.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0060516402.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 9000,
+      "pages": 368,
+      "publishedDate": "2004-11-09",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0060516402?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0060516402?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0060516402?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0060516402?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-4-hour-workweek",
+      "title": "The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich",
+      "author": "Timothy Ferriss",
+      "asin": "0307465357",
+      "categories": [
+        "business"
+      ],
+      "description": "What do you do? Tim Ferriss has trouble answering the question. Depending on when you ask this controversial Princeton University guest lecturer, he might answer: I race motorcycles in Europe; I hold a Tango world record; I'm a champion fighter. He has spent more than five years crafting, testing, and rigorously refining the ideas in this book. The book is about lifestyle design — escaping the traditional 9-5 world and creating a life of freedom, adventure, and purposeful work. Highly controversial yet undeniably compelling, The 4-Hour Workweek offers a blueprint for how to make your dreams a reality.",
+      "shortDescription": "Timothy Ferriss's controversial blueprint for escaping the 9-5 grind, building passive income, and designing the life you want.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0307465357.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 34000,
+      "pages": 418,
+      "publishedDate": "2009-12-15",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0307465357?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0307465357?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0307465357?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0307465357?tag=31813-20"
+      }
+    },
+    {
+      "slug": "shoe-dog",
+      "title": "Shoe Dog: A Memoir by the Creator of Nike",
+      "author": "Phil Knight",
+      "asin": "1501135910",
+      "categories": [
+        "business"
+      ],
+      "description": "In this candid and riveting memoir, Nike founder and chairman Phil Knight shares the inside story of the company's early days as an intrepid start-up and its evolution into one of the world's most iconic, game-changing, and profitable brands. Fresh out of business school, Phil Knight borrowed fifty dollars from his father and launched a company with one simple mission: import high-quality, low-cost athletic shoes from Japan. Selling the shoes from the trunk of his lime green Plymouth Valiant, Knight grossed eight thousand dollars that first year, 1963. Today, Nike's annual sales top $30 billion.",
+      "shortDescription": "Phil Knight's candid memoir of how he built Nike from a fifty-dollar idea into one of the most iconic brands in the world.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1501135910.01.LZZZZZZZ.jpg",
+      "starRating": 4.8,
+      "reviewCount": 38000,
+      "pages": 400,
+      "publishedDate": "2016-04-26",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1501135910?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1501135910?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1501135910?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1501135910?tag=31813-20"
+      }
+    },
+    {
+      "slug": "in-cold-blood",
+      "title": "In Cold Blood",
+      "author": "Truman Capote",
+      "asin": "0679745580",
+      "categories": [
+        "true-crime"
+      ],
+      "description": "On November 15, 1959, in the small town of Holcomb, Kansas, four members of the Clutter family were savagely murdered by blasts from a shotgun held a few inches from their faces. There was no apparent motive for the crime, and almost no clues. As Truman Capote reconstructed the murder and the investigation that led to the capture, trial, and execution of the killers, he set the standard for the nonfiction novel. In Cold Blood is a work that transcends its moment, using the tools of fiction to bring to life a terrible crime and its aftermath — considered the father of the true crime genre.",
+      "shortDescription": "Truman Capote's masterpiece that invented the true crime genre — a meticulous reconstruction of a brutal Kansas murder and its aftermath.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0679745580.01.LZZZZZZZ.jpg",
+      "starRating": 4.6,
+      "reviewCount": 22000,
+      "pages": 343,
+      "publishedDate": "1994-02-01",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0679745580?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0679745580?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0679745580?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0679745580?tag=31813-20"
+      }
+    },
+    {
+      "slug": "ill-be-gone-in-the-dark",
+      "title": "I'll Be Gone in the Dark: One Woman's Obsessive Search for the Golden State Killer",
+      "author": "Michelle McNamara",
+      "asin": "0062319795",
+      "categories": [
+        "true-crime"
+      ],
+      "description": "A haunting true story about one woman's obsessive pursuit of the elusive serial killer known as the Golden State Killer. In the 1970s and 1980s, a man committed at least thirteen murders, more than fifty rapes, and one hundred burglaries in California. Then he vanished, eluding capture by multiple police forces and some of the best detectives in the field. Michelle McNamara, a talented journalist who created the popular true crime blog True Crime Diary, spent years investigating the case herself. She died suddenly in 2016 before finishing the book. Two years later, investigators identified the killer as Joseph James DeAngelo using DNA evidence.",
+      "shortDescription": "Michelle McNamara's obsessive, brilliantly written pursuit of the Golden State Killer — one of the most gripping true crime books ever written.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0062319795.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 28000,
+      "pages": 352,
+      "publishedDate": "2018-02-27",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0062319795?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0062319795?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0062319795?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0062319795?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-stranger-beside-me",
+      "title": "The Stranger Beside Me",
+      "author": "Ann Rule",
+      "asin": "1416559590",
+      "categories": [
+        "true-crime"
+      ],
+      "description": "Before she was a bestselling true crime author, Ann Rule worked with Ted Bundy at a Seattle crisis hotline. She considered him a good friend. When Bundy was first identified as a suspect, Rule could not believe it. Yet as she investigated, the evidence became undeniable. The Stranger Beside Me reads like a compelling novel, but it is all too real. Written by one of America's most acclaimed crime writers, it is the story of a monstrous killer as seen through the eyes of someone who knew him — and who struggled to reconcile the charming, caring man she thought she knew with the sadistic murderer he turned out to be.",
+      "shortDescription": "Ann Rule's chilling firsthand account of her friendship with Ted Bundy — the most intimate portrait of a serial killer ever written.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1416559590.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 18000,
+      "pages": 548,
+      "publishedDate": "2008-12-30",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1416559590?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1416559590?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1416559590?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1416559590?tag=31813-20"
+      }
+    },
+    {
+      "slug": "columbine-dave-cullen",
+      "title": "Columbine",
+      "author": "Dave Cullen",
+      "asin": "0446546933",
+      "categories": [
+        "true-crime"
+      ],
+      "description": "Ten years of meticulous research went into this definitive account of the Columbine massacre and its legacy. Dave Cullen was one of the first reporters on the scene on April 20, 1999, and he spent a decade reconstructing the full horror and complexity of the tragedy. He traces the devastation wrought on the Columbine community, the national debate it provoked on guns, faith, the role of media, and the life lessons survivors drew from the worst school shooting in American history. Cullen's work exploded many myths about the Columbine killers and became the standard reference on the topic.",
+      "shortDescription": "The definitive account of the Columbine massacre — ten years of meticulous research that shattered the myths and revealed the full truth.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0446546933.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 9500,
+      "pages": 464,
+      "publishedDate": "2010-03-02",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0446546933?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0446546933?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0446546933?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0446546933?tag=31813-20"
+      }
+    },
+    {
+      "slug": "midnight-in-the-garden-of-good-and-evil",
+      "title": "Midnight in the Garden of Good and Evil",
+      "author": "John Berendt",
+      "asin": "0679751521",
+      "categories": [
+        "true-crime"
+      ],
+      "description": "Shots rang out in Savannah's grandest mansion in the misty, early morning hours of May 2, 1981. Was it murder or self-defense? For nearly a decade, the shooting and its aftermath reverberated throughout this hauntingly beautiful city of moss-hung oaks and shaded squares. John Berendt's sharply observed, suspenseful, and witty narrative reads like a thoroughly engrossing novel, and yet it is all true. Berendt skillfully interweaves a cast of remarkable characters — a fading belle, a piano savant, a voodoo priestess, a drag queen — as he captures the beauty, the mystery, and the essential strangeness of a place unlike any other in America.",
+      "shortDescription": "The landmark true crime narrative that spent four years on the New York Times bestseller list — Savannah's most gripping and beautiful mystery.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0679751521.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 14000,
+      "pages": 388,
+      "publishedDate": "1999-03-23",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0679751521?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0679751521?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0679751521?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0679751521?tag=31813-20"
+      }
+    },
+    {
+      "slug": "american-fire",
+      "title": "American Fire: Love, Arson, and Life in a Vanishing Land",
+      "author": "Monica Hesse",
+      "asin": "1631494511",
+      "categories": [
+        "true-crime"
+      ],
+      "description": "In 2012 and 2013, more than seventy fires were deliberately set on Virginia's Eastern Shore, in an economically struggling county where a third of the population lived below the poverty line. Two local residents — a young couple named Charlie Smith and Tonya Bundick — eventually confessed to the arsons, though questions remained about why. Monica Hesse, a Washington Post features writer, went to Accomack County to understand what happened. American Fire tells the story of this isolated community, the people who lived there, the fires that seemed to threaten everything they had, and what drove two people to burn down their own world.",
+      "shortDescription": "The riveting true story of how seventy fires consumed a small Virginia community — and what drove two ordinary people to burn down their world.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/1631494511.01.LZZZZZZZ.jpg",
+      "starRating": 4.3,
+      "reviewCount": 2800,
+      "pages": 272,
+      "publishedDate": "2018-05-01",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/1631494511?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/1631494511?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/1631494511?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/1631494511?tag=31813-20"
+      }
+    },
+    {
+      "slug": "lost-girls-robert-kolker",
+      "title": "Lost Girls: An Unsolved American Mystery",
+      "author": "Robert Kolker",
+      "asin": "0062183656",
+      "categories": [
+        "true-crime"
+      ],
+      "description": "Along a desolate stretch of road on Long Island's South Shore, police searching for a missing escort made a shocking discovery: the remains of four young women, their bodies wrapped in burlap, discarded like trash, hidden in the high marsh grasses. This was the Gilgo Beach case, and these young women have never been forgotten. Robert Kolker's deeply moving book gives voice to five young women who were victims of the Gilgo Beach serial killer, placing them at the center of their own story. Rather than focusing on the killer, Kolker tells the stories of the victims — Shannan, Melissa, Megan, Amber, and Maureen — and the families they left behind.",
+      "shortDescription": "A moving portrait of five victims of the Gilgo Beach murders — a true crime book that refuses to let them be forgotten or defined only by their deaths.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0062183656.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 6500,
+      "pages": 400,
+      "publishedDate": "2014-06-17",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0062183656?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0062183656?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0062183656?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0062183656?tag=31813-20"
+      }
+    },
+    {
+      "slug": "catch-and-kill",
+      "title": "Catch and Kill: Lies, Spies, and a Conspiracy to Protect Predators",
+      "author": "Ronan Farrow",
+      "asin": "0316486639",
+      "categories": [
+        "true-crime"
+      ],
+      "description": "In 2017, a routine reporting assignment evolved into a race against time to expose one of Hollywood's most powerful predators. But Ronan Farrow uncovered more than just abuse. Working with a team of investigators, he discovered a secret surveillance apparatus used to intimidate witnesses and suppress the truth — a web of fear that reached from Hollywood studios all the way to the Oval Office. Drawing on more than two hundred interviews with sources ranging from Roman Polanski's lawyers to a former Mossad agent to the President of the United States himself, Catch and Kill tells the full story of the reckoning that toppled Harvey Weinstein and shook the world.",
+      "shortDescription": "Ronan Farrow's Pulitzer Prize-winning investigation into Harvey Weinstein — a story of power, predation, and the secret network that protected them.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0316486639.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 14000,
+      "pages": 464,
+      "publishedDate": "2019-10-15",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0316486639?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0316486639?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0316486639?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0316486639?tag=31813-20"
+      }
+    },
+    {
+      "slug": "1984-george-orwell",
+      "title": "1984",
+      "author": "George Orwell",
+      "asin": "0451524934",
+      "categories": [
+        "fiction"
+      ],
+      "description": "Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that grows more haunting as its apocalyptic vision comes ever closer to fruition. Published in 1949, the book offers political satirist George Orwell's nightmare vision of a totalitarian, bureaucratic world and one poor stiff's attempt to find individuality. The brilliance of the novel is Orwell's prescience of modern life — the ubiquity of television, the distortion of the language, and the discrediting of objective truth. Writing in London in 1948, Orwell imagined the world of 1984 to be a grey, bleak place where a government watchdog — Big Brother — sees all.",
+      "shortDescription": "George Orwell's prophetic dystopia about Big Brother, doublethink, and totalitarian control — one of the most influential novels ever written.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0451524934.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 115000,
+      "pages": 328,
+      "publishedDate": "1977-12-30",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0451524934?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0451524934?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0451524934?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0451524934?tag=31813-20"
+      }
+    },
+    {
+      "slug": "to-kill-a-mockingbird",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "asin": "0061935468",
+      "categories": [
+        "fiction"
+      ],
+      "description": "The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic. Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior — to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal.",
+      "shortDescription": "Harper Lee's Pulitzer Prize-winning masterpiece about racial injustice and lost innocence in the American South — a novel that changed the world.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0061935468.01.LZZZZZZZ.jpg",
+      "starRating": 4.8,
+      "reviewCount": 108000,
+      "pages": 336,
+      "publishedDate": "2002-12-17",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0061935468?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0061935468?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0061935468?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0061935468?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-great-gatsby",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "asin": "0743273567",
+      "categories": [
+        "fiction"
+      ],
+      "description": "A true classic of twentieth-century literature, this edition contains the full text of the original novel. The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time of enormous prosperity, of bootleggers and soothsayers, and murder. The Great Gatsby is an exquisitely crafted tale of America in the 1920s — a masterpiece written by a young man as a perfect artistic whole. Its portrayal of the Jazz Age, the hollowness of the American Dream, and the corrupting influence of wealth remains as resonant today as when it was first published in 1925.",
+      "shortDescription": "F. Scott Fitzgerald's jazz-age masterpiece about wealth, obsession, and the hollow promise of the American Dream.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0743273567.01.LZZZZZZZ.jpg",
+      "starRating": 4.5,
+      "reviewCount": 72000,
+      "pages": 180,
+      "publishedDate": "2004-09-30",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0743273567?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0743273567?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0743273567?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0743273567?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-alchemist",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "asin": "0062315005",
+      "categories": [
+        "fiction"
+      ],
+      "description": "Paulo Coelho's enchanting novel, inspired by the story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found, has become a modern classic. Santiago's journey teaches us about the essential wisdom of listening to our hearts, of recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, to follow our dreams. Over 65 million copies of The Alchemist have been sold worldwide, making it one of the best-selling books in history.",
+      "shortDescription": "Paulo Coelho's enchanting fable about following your dreams — one of the best-selling novels in history with over 65 million copies sold.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0062315005.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 98000,
+      "pages": 208,
+      "publishedDate": "2014-04-15",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0062315005?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0062315005?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0062315005?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0062315005?tag=31813-20"
+      }
+    },
+    {
+      "slug": "animal-farm",
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "asin": "0451526341",
+      "categories": [
+        "fiction"
+      ],
+      "description": "A scathing political satire, Animal Farm is the story of a group of barnyard animals who overthrow and chase off their exploitative farmer, only to find themselves subjected to a new form of tyranny under the leadership of the pigs Napoleon and Snowball. The novella is a brilliant allegory of the Soviet Union under Stalin, and a warning about the corrupting nature of power. First published in 1945, Animal Farm is widely considered one of the greatest novels of the 20th century. Along with Nineteen Eighty-Four, it is Orwell's most famous work.",
+      "shortDescription": "Orwell's devastating satire of totalitarianism — the animals take over the farm, only to discover that some animals are more equal than others.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0451526341.01.LZZZZZZZ.jpg",
+      "starRating": 4.7,
+      "reviewCount": 85000,
+      "pages": 144,
+      "publishedDate": "1996-04-06",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0451526341?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0451526341?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0451526341?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0451526341?tag=31813-20"
+      }
+    },
+    {
+      "slug": "brave-new-world",
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "asin": "0060850523",
+      "categories": [
+        "fiction"
+      ],
+      "description": "Aldous Huxley's profoundly unsettling masterpiece remains as prescient today as when it was written nearly a century ago. This novel of a Utopia where the populace is kept happy and pliable through Soma drugs, engineered happiness, and the elimination of family, art, religion, and science continues to inspire debate about the nature of freedom, identity, and what it means to be human. In a world of total conformity and engineered contentment, one man, Bernard Marx, asks: Is it better to be happy or to be free?",
+      "shortDescription": "Aldous Huxley's haunting vision of a future where everyone is happy — but at the cost of everything that makes life meaningful.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0060850523.01.LZZZZZZZ.jpg",
+      "starRating": 4.6,
+      "reviewCount": 65000,
+      "pages": 311,
+      "publishedDate": "2006-10-17",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0060850523?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0060850523?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0060850523?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0060850523?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-handmaids-tale",
+      "title": "The Handmaid's Tale",
+      "author": "Margaret Atwood",
+      "asin": "038549081X",
+      "categories": [
+        "fiction"
+      ],
+      "description": "A gripping vision of our society taken to its logical and alarming extreme. Offred is a Handmaid in the Republic of Gilead, where women are forbidden to read, have no last names, and are valued only for their ability to bear children. She tells her story in stolen moments, exposing the truth of how this terrifying society came to exist and how easily it could come to pass. Now more relevant than ever, this haunting and powerful novel helped establish Margaret Atwood as one of the most important voices in literary fiction.",
+      "shortDescription": "Margaret Atwood's dystopian masterpiece about a totalitarian theocracy where women have been stripped of all rights — chilling, urgent, and impossible to forget.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/038549081X.01.LZZZZZZZ.jpg",
+      "starRating": 4.6,
+      "reviewCount": 78000,
+      "pages": 311,
+      "publishedDate": "1998-03-16",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/038549081X?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/038549081X?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/038549081X?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/038549081X?tag=31813-20"
+      }
+    },
+    {
+      "slug": "crime-and-punishment",
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "asin": "0679734503",
+      "categories": [
+        "fiction"
+      ],
+      "description": "Raskolnikov, a destitute and desperate former student, wanders through the slums of St. Petersburg and commits a random murder without remorse or regret. He imagines himself to be a great man, a Napoleon: acting for a higher purpose beyond conventional moral law. But as he embarks on a precarious game of cat and mouse with a suspicious police investigator, Raskolnikov is pursued by the growing voice of his own conscience and finds the noose of his own guilt tightening around him. Part detective thriller, part psychological portrait, Crime and Punishment is a novel of breathtaking drama and power.",
+      "shortDescription": "Dostoevsky's psychological masterpiece about a young man who commits murder and is consumed by guilt — one of the greatest novels ever written.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0679734503.01.LZZZZZZZ.jpg",
+      "starRating": 4.6,
+      "reviewCount": 20000,
+      "pages": 671,
+      "publishedDate": "1993-05-11",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0679734503?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0679734503?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0679734503?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0679734503?tag=31813-20"
+      }
+    },
+    {
+      "slug": "lord-of-the-flies",
+      "title": "Lord of the Flies",
+      "author": "William Golding",
+      "asin": "0399501487",
+      "categories": [
+        "fiction"
+      ],
+      "description": "William Golding's classic tale about a group of English schoolboys who are plane-wrecked on a deserted island. At first, with no adult supervision, their freedom is something to celebrate; this far from civilization the boys can do anything they want. But gradually the fun they have soon turns to a sort of madness. In Golding's dark vision, democracy quickly dissolves into tyranny, civilization into savagery, and the boys begin to abandon the morality of civilization and act on their darkest impulses. Lord of the Flies is a profound allegory about the darkness at the heart of humanity.",
+      "shortDescription": "William Golding's Nobel Prize-winning allegory about boys stranded on an island who descend into savagery — a dark vision of human nature.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0399501487.01.LZZZZZZZ.jpg",
+      "starRating": 4.6,
+      "reviewCount": 52000,
+      "pages": 208,
+      "publishedDate": "1959-01-01",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0399501487?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0399501487?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0399501487?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0399501487?tag=31813-20"
+      }
+    },
+    {
+      "slug": "the-catcher-in-the-rye",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "asin": "0316769487",
+      "categories": [
+        "fiction"
+      ],
+      "description": "The hero-narrator of The Catcher in the Rye is an ancient child of sixteen, a native New Yorker named Holden Caulfield. Through circumstances that tend to preclude adult, secondhand description, he leaves his prep school in Pennsylvania and goes underground in New York City for three days. The swift, lively story is narrated by Holden Caulfield himself. Since his debut in 1951, in J. D. Salinger's classic novel, Holden has been synonymous with angst and teenage alienation. The novel remains widely read, and continues to have a powerful effect on its readers.",
+      "shortDescription": "J.D. Salinger's iconic coming-of-age novel told through the voice of Holden Caulfield — the most enduring portrait of teenage alienation ever written.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0316769487.01.LZZZZZZZ.jpg",
+      "starRating": 4.3,
+      "reviewCount": 52000,
+      "pages": 288,
+      "publishedDate": "2001-01-30",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0316769487?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0316769487?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0316769487?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0316769487?tag=31813-20"
+      }
+    },
+    {
+      "slug": "a-clockwork-orange",
+      "title": "A Clockwork Orange",
+      "author": "Anthony Burgess",
+      "asin": "0393312836",
+      "categories": [
+        "fiction"
+      ],
+      "description": "A Clockwork Orange is set in a not-too-distant future. Alex, a teenage punk, terrorizes London with his droogs in a series of savage, ritualistic crimes. One day, captured by the authorities, Alex is subjected to the Ludovico Technique — a form of behavioral conditioning designed to cure him of his violent impulses. But does making someone incapable of choosing evil actually make them good? Anthony Burgess's darkly satirical novella is one of the most influential books of the 20th century, a meditation on free will, individual identity, and the nature of evil.",
+      "shortDescription": "Anthony Burgess's ultraviolent satire about free will and moral conditioning — a shocking, brilliant vision of a society that tries to eliminate evil by removing choice.",
+      "coverImage": "",
+      "coverImageFallback": "https://images-na.ssl-images-amazon.com/images/P/0393312836.01.LZZZZZZZ.jpg",
+      "starRating": 4.4,
+      "reviewCount": 18000,
+      "pages": 224,
+      "publishedDate": "1995-02-17",
+      "language": "en",
+      "currency": "USD",
+      "price": "",
+      "isOwnBook": false,
+      "hookText": "",
+      "tags": [],
+      "source": "manual",
+      "marketplaces": {
+        "amazon_us": "https://www.amazon.com/dp/0393312836?tag=31813-20",
+        "amazon_uk": "https://www.amazon.co.uk/dp/0393312836?tag=31813-20",
+        "amazon_de": "https://www.amazon.de/dp/0393312836?tag=31813-20",
+        "amazon_nl": "https://www.amazon.nl/dp/0393312836?tag=31813-20"
+      }
     }
   ]
 }
